@@ -1,6 +1,24 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: "Solomon Smith"
 ---
+
+# Welcome!
+
+I'm Solomon Smith, a Computer Science student passionate about building systems that blend artificial intelligence, machine learning, and full-stack development.
+
+This site is a living portfolio of my work, projects, and technical journey.  
+I am currently focused on:
+
+- AI/ML model development
+- Backend engineering
+- Full-stack applications
+
+---
+
+## Explore
+
+- [About Me](/about/)
+- [Projects](/projects/)
+- [Blog](/blog/)
+- [Contact](mailto:solomonsmithdev@gmail.com)
