@@ -3,7 +3,7 @@ description: "Portfolio site for Solomon Smith — AI, ML, Full-Stack Engineer."
 url: "https://solomon-smith-dev.tech"
 baseurl: ""
 
-author: "Solomon Smith" # <- flatten it to just your name
+author: "Solomon Smith"
 email: "solomonsmithdev@gmail.com"
 github_username: "SolomonSmith-dev"
 linkedin_username: "solomon-smith-dev"
@@ -42,3 +42,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+collections:
+  pages:
+    output: true
+    permalink: /:title/
