@@ -6,12 +6,10 @@ baseurl: ""
 author:
   name: "Solomon Smith"
   email: "solomonsmithdev@gmail.com"
-  github: "SolomonSmith-dev"
-  linkedin: "solomon-smith-dev"
+  github_username: "SolomonSmith-dev"
+  linkedin_username: "solomon-smith-dev"
   bio: "Aspiring software engineer passionate about AI and real-world system development."
 
-twitter_username: "" # leave blank for now
-github_username: "SolomonSmith-dev"
 
 # Build settings
 theme: minima
