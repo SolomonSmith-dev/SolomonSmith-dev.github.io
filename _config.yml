@@ -1,12 +1,17 @@
-# Site settings
 title: "Solomon Smith"
-email: "your-email@example.com" # <- optional; put your real email or delete
-description: "Portfolio site for Solomon Smith — focused on AI, ML, and full-stack engineering."
-baseurl: "" # leave blank unless you host inside a folder
+description: "Portfolio site for Solomon Smith — AI, ML, Full-Stack Engineer."
 url: "https://solomon-smith-dev.tech"
+baseurl: ""
 
-twitter_username: "" # <- blank unless you want to add later
-github_username: "SolomonSmith-dev" # <- your actual GitHub username
+author:
+  name: "Solomon Smith"
+  email: "solomonsmithdev@gmail.com"
+  github: "SolomonSmith-dev"
+  linkedin: "solomon-smith-dev"
+  bio: "Aspiring software engineer passionate about AI and real-world system development."
+
+twitter_username: "" # leave blank for now
+github_username: "SolomonSmith-dev"
 
 # Build settings
 theme: minima

@@ -1,7 +1,10 @@
 ---
 layout: home
-title: "Solomon Smith"
+title: "Solomon Smith | AI, ML, and Software Engineering Portfolio"
+description: "Solomon Smith's portfolio site — showcasing projects in AI, machine learning, backend engineering, and full-stack development."
+permalink: /
 ---
+
 
 # Welcome!
 
