@@ -22,6 +22,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Navigation links
+header_pages:
+  - _pages/about.md
+  - _pages/projects.md
+  - _pages/blog.md
+
 # Exclude from processing (keep default)
 exclude:
   - .sass-cache/
@@ -34,3 +40,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
