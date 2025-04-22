@@ -3,19 +3,17 @@ description: "Portfolio site for Solomon Smith — AI, ML, Full-Stack Engineer."
 url: "https://solomon-smith-dev.tech"
 baseurl: ""
 
-author:
-  name: "Solomon Smith"
-  email: "solomonsmithdev@gmail.com"
-  github_username: "SolomonSmith-dev"
-  linkedin_username: "solomon-smith-dev"
-  bio: "Aspiring software engineer passionate about AI and real-world system development."
-
+author: "Solomon Smith" # <- flatten it to just your name
+email: "solomonsmithdev@gmail.com"
+github_username: "SolomonSmith-dev"
+linkedin_username: "solomon-smith-dev"
+bio: "Aspiring software engineer passionate about AI and real-world system development."
 
 # Build settings
 theme: minima
 
 minima:
-  skin: dark # optional — you can comment out if you want light mode
+  skin: dark
   social_links:
     - { platform: github,  user_url: "https://github.com/SolomonSmith-dev" }
     - { platform: linkedin, user_url: "https://linkedin.com/in/solomon-smith-dev" }
@@ -31,7 +29,7 @@ header_pages:
   - _pages/projects.md
   - _pages/blog.md
 
-# Exclude from processing (keep default)
+# Exclude from processing
 exclude:
   - .sass-cache/
   - .jekyll-cache/
