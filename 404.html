@@ -1,25 +1,27 @@
 ---
 permalink: /404.html
 layout: page
+title: "Page Not Found"
+sitemap: false
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
+<style>
+  .not-found { text-align: center; padding: 2rem 0 3rem; }
+  .not-found h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    letter-spacing: -0.04em;
     line-height: 1;
-    letter-spacing: -1px;
   }
+  .not-found p { opacity: 0.85; margin: 0.75rem 0 1.5rem; }
 </style>
 
-<div class="container">
+<div class="not-found">
   <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>This page wandered off.</strong></p>
+  <p>The page you're looking for doesn't exist or has been moved.</p>
+  <p>
+    <a class="btn btn--primary" href="{{ '/' | relative_url }}">Back to Home</a>
+    <a class="btn btn--ghost" href="{{ '/projects/' | relative_url }}">See Projects</a>
+  </p>
 </div>

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{%- if page.url == "/" -%}
+<section class="hero">
+  <span class="hero__eyebrow">{{ page.eyebrow | default: "Software Engineer · AI / ML" }}</span>
+  <h1 class="hero__title">{{ page.hero_title | default: "Hi, I'm Solomon Smith." }}</h1>
+  <p class="hero__subtitle">
+    {{ page.hero_subtitle | default: "Computer Science student at CSU San Bernardino building AI/ML systems and full-stack applications. Currently seeking software engineering and AI/ML internships." }}
+  </p>
+  <div class="hero__ctas">
+    <a class="btn btn--primary" href="{{ '/projects/' | relative_url }}">View Projects</a>
+    <a class="btn btn--ghost" href="{{ '/resume/' | relative_url }}">Resume</a>
+    <a class="btn btn--ghost" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn btn--ghost" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+{%- endif -%}
+
+<div class="home">
+  {%- if page.title and page.url != "/" -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="section-heading">{{ page.list_title | default: "Latest Writing" }}</h2>
+    <ul class="post-list">
+      {%- assign post_limit = page.post_limit | default: 3 -%}
+      {%- for post in site.posts limit: post_limit -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if post.excerpt -%}
+          <p style="opacity: 0.85;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- if page.url == "/" -%}
+      <p class="rss-subscribe"><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>
+    {%- else -%}
+      <p class="rss-subscribe">Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a>.</p>
+    {%- endif -%}
+  {%- endif -%}
+</div>
