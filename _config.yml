@@ -10,7 +10,7 @@ author:
 
 email: "solomonsmithdev@gmail.com"
 github_username: "SolomonSmith-dev"
-linkedin_username: "solomon-smith-dev"
+linkedin_username: "solomonsmithdev"
 bio: "CS senior at CSUSB building LLM pipelines, RAG systems, and multi-agent infrastructure. Targeting AI/ML engineering roles starting January 2027."
 
 # Build settings
@@ -20,7 +20,7 @@ minima:
   date_format: "%b %-d, %Y"
   social_links:
     github:   SolomonSmith-dev
-    linkedin: solomon-smith-dev
+    linkedin: solomonsmithdev
 
 plugins:
   - jekyll-feed
@@ -42,7 +42,7 @@ social:
   name: Solomon Smith
   links:
     - https://github.com/SolomonSmith-dev
-    - https://linkedin.com/in/solomon-smith-dev
+    - https://linkedin.com/in/solomonsmithdev
 
 # Exclude from processing
 exclude:

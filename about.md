@@ -93,4 +93,4 @@ relocation.
 
 - **Email** — [solomonsmithdev@gmail.com](mailto:solomonsmithdev@gmail.com)
 - **GitHub** — [SolomonSmith-dev](https://github.com/SolomonSmith-dev)
-- **LinkedIn** — [solomon-smith-dev](https://linkedin.com/in/solomonsmithdev)
+- **LinkedIn** — [solomonsmithdev](https://linkedin.com/in/solomonsmithdev)
