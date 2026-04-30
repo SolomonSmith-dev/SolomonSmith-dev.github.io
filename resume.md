@@ -16,7 +16,7 @@ Computer Science student at CSU San Bernardino focused on AI/ML and full-stack e
 Comfortable across the stack — Python, C++, JavaScript, FastAPI, React — and with the
 infrastructure to ship: Docker, Linux, Git/GitHub. Bringing a decade of culinary-industry
 discipline (precision, ownership, working under pressure) into software. Seeking
-**Summer 2025 / 2026 software engineering or AI/ML internships**.
+**Summer / Fall 2026 software engineering or AI/ML internships**.
 
 <h2 class="section-heading">Education</h2>
 
@@ -61,6 +61,34 @@ discipline (precision, ownership, working under pressure) into software. Seeking
 </div>
 
 <h2 class="section-heading">Selected Projects</h2>
+
+<div class="entry">
+  <div class="entry__head">
+    <p class="entry__title">SOC Triage Copilot — AI Security Triage System</p>
+    <p class="entry__meta">Python · FastAPI · PostgreSQL · Next.js · TypeScript · Docker</p>
+  </div>
+  <ul>
+    <li>Designing and building a full-stack AI triage system: ingests raw security alerts,
+      classifies severity via a rules-free ML engine, and maps findings to MITRE ATT&amp;CK
+      techniques.</li>
+    <li>FastAPI backend with argon2id auth, alembic-managed Postgres schema, append-only
+      analyst override log, full audit trail. Next.js TypeScript dashboard for analyst review.</li>
+    <li>43+ tests across engine and API layers; GitHub Actions CI with parallel test jobs.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry__head">
+    <p class="entry__title">Earendil Distributed Task System</p>
+    <p class="entry__meta">Python · FastAPI · OAuth · systemd · Linux · Tailscale</p>
+  </div>
+  <ul>
+    <li>Built a self-hosted distributed task execution system running on a home Mac Mini
+      server, exposed via REST API for dispatching and monitoring long-running tasks.</li>
+    <li>OAuth/token auth, systemd-managed daemon with automatic restart, structured logging;
+      33/33 tests passing. Powers several personal automation pipelines.</li>
+  </ul>
+</div>
 
 <div class="entry">
   <div class="entry__head">

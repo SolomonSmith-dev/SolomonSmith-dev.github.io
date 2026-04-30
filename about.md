@@ -72,7 +72,7 @@ Those habits carried straight into how I write software.
 
 <h2 class="section-heading">What I'm Looking For</h2>
 
-I'm seeking **Summer 2025 / 2026 internships** in software engineering, AI/ML, or
+I'm seeking **Summer / Fall 2026 internships** in software engineering, AI/ML, or
 backend engineering. I'm based in Southern California and open to remote or relocation.
 
 <h2 class="section-heading">Connect</h2>

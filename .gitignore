@@ -13,3 +13,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Tool artifacts
+.claude-mem/
+~/

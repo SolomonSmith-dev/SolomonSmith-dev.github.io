@@ -58,16 +58,20 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
   </article>
 
   <article class="project-card">
-    <span class="project-card__status">Self-Hosted Infra</span>
-    <h3 class="project-card__title">Plex Home Server (Raspberry Pi)</h3>
+    <span class="project-card__status">In Progress · AI / Security</span>
+    <h3 class="project-card__title">SOC Triage Copilot</h3>
     <p class="project-card__desc">
-      Built a self-hosted media server on a Raspberry Pi running Linux, with Docker
-      containerization, secured remote access, and automated backups for the media
-      library and configuration.
+      AI-powered Security Operations Center triage system. Ingests raw security alerts,
+      classifies severity, maps findings to MITRE ATT&amp;CK, and surfaces case summaries
+      for analyst review. FastAPI backend, PostgreSQL event store, Next.js dashboard,
+      append-only override log with full audit trail.
     </p>
     <ul class="project-card__stack">
-      <li>Raspberry Pi</li><li>Linux</li><li>Docker</li><li>Plex</li><li>Networking</li>
+      <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li>
     </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+    </div>
   </article>
 
   <article class="project-card">
@@ -97,5 +101,5 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
 
 - Pursuing a B.S. in Computer Science at CSU San Bernardino
 - Going deeper on PyTorch and applied NLP / classification work
-- Open to **Summer 2025 / 2026 internships** in software engineering or AI/ML
+- Open to **Summer / Fall 2026 internships** in software engineering or AI/ML
 - Reach me at **[solomonsmithdev@gmail.com](mailto:solomonsmithdev@gmail.com)**

@@ -13,6 +13,41 @@ links to source code where available, plus the stack and current status.
 <div class="project-grid">
 
   <article class="project-card">
+    <span class="project-card__status">In Progress · AI / Security</span>
+    <h3 class="project-card__title">SOC Triage Copilot</h3>
+    <p class="project-card__desc">
+      An AI-powered Security Operations Center triage system. Ingests raw security
+      alerts, classifies severity, maps findings to MITRE ATT&amp;CK techniques, and
+      surfaces structured case summaries for analyst review. Built with a FastAPI
+      backend, PostgreSQL event store, Next.js analyst dashboard, and a rules-free ML
+      triage engine. Analyst overrides are append-only with full audit trail.
+    </p>
+    <ul class="project-card__stack">
+      <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li><li>NLP</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <span class="project-card__status">Live · Distributed Systems</span>
+    <h3 class="project-card__title">Earendil Task System</h3>
+    <p class="project-card__desc">
+      A self-hosted distributed task execution system running on a home Mac Mini server.
+      Exposes a REST API for dispatching, querying, and monitoring long-running tasks
+      across processes. Built with OAuth/token auth, a systemd-managed daemon, and a
+      full test suite (33/33 passing). Powers several of my personal automation pipelines.
+    </p>
+    <ul class="project-card__stack">
+      <li>Python</li><li>FastAPI</li><li>OAuth</li><li>systemd</li><li>Linux</li><li>Tailscale</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </article>
+
+  <article class="project-card">
     <span class="project-card__status">Open Source · In Progress</span>
     <h3 class="project-card__title">TargetRecon CLI</h3>
     <p class="project-card__desc">
@@ -65,6 +100,22 @@ links to source code where available, plus the stack and current status.
 <h2 class="section-heading">In the Pipeline</h2>
 
 <div class="project-grid">
+
+  <article class="project-card">
+    <span class="project-card__status">Live · Discord Bot</span>
+    <h3 class="project-card__title">Tom Bombadil Discord Bot</h3>
+    <p class="project-card__desc">
+      A Gemini-powered Discord bot deployed on my home server. Handles natural-language
+      queries, command routing, and multi-turn conversation context. Deployed as a
+      systemd service with automatic restart and structured logging.
+    </p>
+    <ul class="project-card__stack">
+      <li>Python</li><li>Gemini API</li><li>discord.py</li><li>systemd</li><li>Linux</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </article>
 
   <article class="project-card">
     <span class="project-card__status">Planned · AI / ML</span>
