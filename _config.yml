@@ -1,35 +1,48 @@
 title: "Solomon Smith"
-description: "Portfolio site for Solomon Smith — AI, ML, Full-Stack Engineer."
+description: "Computer Science student building AI, ML, and full-stack systems. Internship-seeking engineer based in Southern California."
 url: "https://solomon-smith-dev.tech"
 baseurl: ""
+lang: en
 
-author: "Solomon Smith"
+author:
+  name: "Solomon Smith"
+  email: "solomonsmithdev@gmail.com"
+
 email: "solomonsmithdev@gmail.com"
 github_username: "SolomonSmith-dev"
 linkedin_username: "solomon-smith-dev"
-bio: "Aspiring software engineer passionate about AI and real-world system development."
+bio: "CS student at CSUSB focused on AI/ML and full-stack engineering. Open to 2025/2026 internships."
 
 # Build settings
 theme: minima
 
 minima:
-  skin: dark
+  date_format: "%b %-d, %Y"
   social_links:
-    - { platform: github,  user_url: "https://github.com/SolomonSmith-dev" }
-    - { platform: linkedin, user_url: "https://linkedin.com/in/solomon-smith-dev" }
+    github:   SolomonSmith-dev
+    linkedin: solomon-smith-dev
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Navigation links
+# Navigation links (paths must match each page's source path)
 header_pages:
-  - _pages/about.md
-  - _pages/projects.md
-  - _pages/blog.md
-  - _pages/resume.md
+  - about.md
+  - projects.md
+  - blog.md
+  - resume.md
 
+# SEO defaults
+twitter:
+  username: solomonsmithdev
+  card: summary
+social:
+  name: Solomon Smith
+  links:
+    - https://github.com/SolomonSmith-dev
+    - https://linkedin.com/in/solomon-smith-dev
 
 # Exclude from processing
 exclude:
@@ -43,8 +56,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-collections:
-  pages:
-    output: true
-    permalink: /:title/
+  - README.md
+  - vendor/

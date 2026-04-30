@@ -3,63 +3,45 @@ layout: post
 title: "Building My Portfolio Site"
 date: 2024-04-22 12:00:00 -0700
 categories: portfolio update
+description: "Notes from shipping the first version of solomon-smith-dev.tech — Jekyll, GitHub Pages, custom domain, and the bugs I hit along the way."
 ---
 
-# Building My Portfolio Site
+Today I shipped the first real version of my portfolio site at
+[solomon-smith-dev.tech](https://solomon-smith-dev.tech). Hosted on GitHub Pages,
+generated with Jekyll, written from scratch instead of cloning a template.
 
-Today I completed the first major version of my professional portfolio site, hosted on GitHub Pages using Jekyll.
+This post is the build log.
 
----
+## What I shipped
 
-## 🛠 What I Accomplished
+- A fresh Jekyll project, no template — `index.md`, About, Projects, Blog, Resume
+- GitHub Pages deployment with a custom domain (`CNAME` + DNS)
+- The Minima theme as a starting point
+- SEO, sitemap, and RSS feed plugins wired up
+- A first blog post (this one) and a downloadable resume
 
-- Set up Ruby, Bundler, and Jekyll on my local machine
-- Scaffolded a clean new Jekyll project (no template, fully manual)
-- Created a GitHub Pages repository with a custom domain: `solomon-smith-dev.tech`
-- Structured the site properly with:
-  - Home (`index.md`)
-  - About page
-  - Projects page
-  - Blog page
-- Set up a clean, working navigation bar
-- Added a first real blog post
-- Installed plugins for SEO, feed, and sitemap
-- Fixed GitHub Pages build issues
-- Correctly configured the custom domain with CNAME
-- Fixed Minima theme rendering issues (author object bug)
+## Skills I practiced
 
----
+- Git fundamentals — branching, fixing wrong-remote pushes, clean commits
+- GitHub Pages deployment workflow end-to-end
+- Jekyll's YAML front matter, layouts, and the `_pages` collection
+- Basic SEO — meta descriptions, OpenGraph, sitemap submission
+- Debugging Liquid/Sass issues inside the Minima theme
+- Configuring a custom domain with TLS
 
-## 🧠 Skills I Practiced Today
+## Obstacles I hit
 
-- Git basics and branching
-- GitHub Pages deployment workflow
-- YAML configuration in Jekyll
-- SEO optimization for personal websites
-- Debugging front-end theming issues
-- Terminal basics (file creation, folder structuring)
-- Clean Git commit practices
+- Bundler / Jekyll install friction on a fresh machine
+- A pre-existing GitHub Pages repo conflicting with the custom domain — had to
+  archive the old one before DNS would point cleanly
+- A footer rendering bug caused by Minima expecting `author` as a string when I had
+  it set as an object — fixed by updating `_config.yml` to match the schema
+- Generally, learning to read theme source code instead of guessing at fixes
 
----
+## What's next
 
-## 🧱 Obstacles I Overcame
+- Document each project in more depth (TargetRecon CLI, Plex server, future ML work)
+- Replace Minima's default look with my own Sass theme on top of it
+- Start writing about the AI/ML side — model experiments, NLP, classification
 
-- Jekyll installation issues
-- Git push errors (wrong branch, wrong remote origin)
-- GitHub Pages custom domain conflict (archived old repo)
-- Footer rendering bug caused by Minima theme's author handling
-- Cleaning up object rendering issues in site layouts
-
----
-
-## 🚀 What's Next
-
-- Add more blog posts and document future projects
-- Polish the Projects page with more detailed case studies
-- (Optional) Upgrade to Minimal Mistakes theme for a sleeker design
-- Set up OpenGraph and social media meta tags
-- Add downloadable resume and contact form
-
----
-
-**First big sprint done. Site is live, clean, and professional. More to come.** 🔥
+First sprint is done. Site is live. More to come.

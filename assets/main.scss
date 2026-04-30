@@ -1,0 +1,73 @@
+---
+# Override Minima's main stylesheet so we can inject our own variables and
+# add a dark color scheme on top of the Minima 2.5 base.
+---
+
+@charset "utf-8";
+
+// ---------- Dark theme + brand variables (must come BEFORE @import "minima")
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+                   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-size:   17px;
+$base-line-height: 1.6;
+
+$text-color:       #e6edf3;
+$background-color: #0d1117;
+$brand-color:      #5eead4;
+
+$grey-color:       #8b949e;
+$grey-color-light: lighten($grey-color, 18%);
+$grey-color-dark:  darken($grey-color, 22%);
+
+$content-width:    860px;
+
+@import "minima";
+@import "minima/custom-styles";
+
+// ---- Element-level dark mode polish (over Minima base) ---------------------
+body { background-color: $background-color; color: $text-color; }
+
+a { color: $brand-color; }
+a:visited { color: $brand-color; }
+a:hover { color: lighten($brand-color, 10%); }
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.18);
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.site-title, .site-title:visited { color: $text-color; }
+.site-nav .page-link { color: $text-color; }
+
+.site-footer {
+  border-top: 1px solid rgba(127, 127, 127, 0.18);
+  color: $grey-color;
+}
+
+blockquote {
+  color: $grey-color-light;
+  border-left-color: $brand-color;
+}
+
+pre, code {
+  background-color: #161b22;
+  border-color: rgba(127, 127, 127, 0.22);
+  color: #e6edf3;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(127, 127, 127, 0.22);
+  margin: 2rem 0;
+}
+
+table {
+  th, td { border-color: rgba(127, 127, 127, 0.22); }
+  th { background-color: #161b22; }
+  tr:nth-child(even) { background-color: rgba(127, 127, 127, 0.05); }
+}
