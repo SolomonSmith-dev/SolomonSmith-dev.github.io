@@ -13,34 +13,34 @@ source code where available.
 <div class="project-grid">
 
   <article class="project-card">
-    <span class="project-card__status">In Progress · AI / Security</span>
-    <h3 class="project-card__title">SOC Triage Copilot</h3>
+    <span class="project-card__status">Shipped · AI / Security</span>
+    <h3 class="project-card__title">SOC Triage AI</h3>
     <p class="project-card__desc">
-      An AI-powered Security Operations Center triage system. Ingests raw security
-      alerts, classifies severity via a rules-free ML engine, maps findings to MITRE
-      ATT&amp;CK techniques, and surfaces structured case summaries for analyst review.
-      FastAPI backend, PostgreSQL event store, Next.js analyst dashboard. Analyst
-      overrides are append-only with a full audit trail.
+      RAG-grounded security alert triage system mapping alerts to MITRE ATT&amp;CK
+      techniques with strict JSON schema validation. Achieved 100% pass rate across a
+      7-case reliability harness. Guardrail logic refuses low-similarity alerts and
+      validates LLM output structurally, preventing fabrication in security contexts.
+      v2 platform rewrite (FastAPI + PostgreSQL + Next.js) in progress.
     </p>
     <ul class="project-card__stack">
-      <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li><li>NLP</li>
+      <li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>RAG</li><li>Streamlit</li><li>pytest</li>
     </ul>
     <div class="project-card__links">
-      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+      <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </article>
 
   <article class="project-card">
-    <span class="project-card__status">Live · Distributed Systems</span>
-    <h3 class="project-card__title">Earendil Task System</h3>
+    <span class="project-card__status">Live · Multi-Agent AI</span>
+    <h3 class="project-card__title">Multi-Agent AI System (Sauron Stack)</h3>
     <p class="project-card__desc">
-      Self-hosted distributed task execution system running on a home Mac Mini server.
-      Exposes a REST API for dispatching, querying, and monitoring long-running tasks
-      across processes. OAuth/token auth, systemd-managed daemon, 33/33 tests passing.
-      Powers several personal automation pipelines.
+      Production multi-agent system on a Debian home server. PM2-managed services:
+      router (Earendil), executor (Sauron), orchestrator (Morgoth), security daemon
+      (Balrog). Redis-backed memory store, 24/7 uptime over Tailscale mesh. Built and
+      diagnosed crash-loop cascades and ABI mismatches in a live distributed environment.
     </p>
     <ul class="project-card__stack">
-      <li>Python</li><li>FastAPI</li><li>OAuth</li><li>systemd</li><li>Linux</li><li>Tailscale</li>
+      <li>Python</li><li>Node.js</li><li>Anthropic Claude API</li><li>Redis</li><li>PM2</li><li>Tailscale</li><li>Docker</li>
     </ul>
     <div class="project-card__links">
       <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
@@ -52,9 +52,9 @@ source code where available.
     <h3 class="project-card__title">TargetRecon CLI</h3>
     <p class="project-card__desc">
       Python CLI for the reconnaissance phase of security engagements. Takes a username,
-      domain, or IP and runs a structured set of OSINT lookups — public breach data,
-      DNS info, WHOIS, social-handle discovery — outputting a clean report-style summary
-      for downstream investigation.
+      domain, or IP and runs structured OSINT lookups — breach data, DNS, WHOIS,
+      social-handle discovery — outputting a clean report-style summary for downstream
+      investigation.
     </p>
     <ul class="project-card__stack">
       <li>Python</li><li>argparse</li><li>requests</li><li>OSINT</li><li>JSON</li>

@@ -4,8 +4,8 @@ title: "Solomon Smith — AI, ML & Software Engineering Portfolio"
 description: "Portfolio of Solomon Smith, a CS student at CSU San Bernardino building AI/ML and full-stack systems."
 permalink: /
 hero_title: "Hi, I'm Solomon Smith."
-hero_subtitle: "Computer Science student at CSU San Bernardino. I build AI/ML systems and full-stack applications, with a focus on backend engineering and practical, real-world tools."
-eyebrow: "Software Engineer · AI / ML · Full-Stack"
+hero_subtitle: "CS senior at CSUSB. I build LLM pipelines, RAG systems, and multi-agent infrastructure — and ship the backend to make them production-worthy."
+eyebrow: "AI / ML Engineer · Backend · LLM Systems"
 ---
 
 <h2 class="section-heading">What I Work On</h2>
@@ -42,33 +42,33 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
 <div class="project-grid">
 
   <article class="project-card">
-    <span class="project-card__status">In Progress · AI / Security</span>
-    <h3 class="project-card__title">SOC Triage Copilot</h3>
+    <span class="project-card__status">Shipped · AI / Security</span>
+    <h3 class="project-card__title">SOC Triage AI</h3>
     <p class="project-card__desc">
-      AI-powered Security Operations Center triage system. Ingests raw security alerts,
-      classifies severity via a rules-free ML engine, maps findings to MITRE ATT&amp;CK,
-      and surfaces structured case summaries for analyst review. FastAPI backend,
-      PostgreSQL event store, Next.js dashboard, append-only override log with full
-      audit trail.
+      RAG-grounded security alert triage system mapping alerts to MITRE ATT&amp;CK
+      with strict JSON schema validation. 100% pass rate on a 7-case reliability
+      harness. Guardrail logic prevents fabrication and confident wrong-answer failures
+      in security contexts.
     </p>
     <ul class="project-card__stack">
-      <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li>
+      <li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>RAG</li><li>Streamlit</li>
     </ul>
     <div class="project-card__links">
-      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+      <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </article>
 
   <article class="project-card">
-    <span class="project-card__status">Live · Distributed Systems</span>
-    <h3 class="project-card__title">Earendil Task System</h3>
+    <span class="project-card__status">Live · Multi-Agent AI</span>
+    <h3 class="project-card__title">Multi-Agent AI System (Sauron Stack)</h3>
     <p class="project-card__desc">
-      Self-hosted distributed task execution system running on a home Mac Mini server.
-      REST API for dispatching and monitoring long-running tasks across processes.
-      OAuth/token auth, systemd daemon, 33/33 tests. Powers personal automation pipelines.
+      Production multi-agent system on a Debian home server. PM2-managed services:
+      router (Earendil), executor (Sauron), orchestrator (Morgoth), security daemon
+      (Balrog). Redis-backed memory, 24/7 uptime over Tailscale mesh. Debugged
+      crash-loop cascades and ABI mismatches live.
     </p>
     <ul class="project-card__stack">
-      <li>Python</li><li>FastAPI</li><li>OAuth</li><li>systemd</li><li>Linux</li>
+      <li>Python</li><li>Node.js</li><li>Claude API</li><li>Redis</li><li>PM2</li><li>Tailscale</li>
     </ul>
     <div class="project-card__links">
       <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
@@ -99,7 +99,8 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
 
 <h2 class="section-heading">Currently</h2>
 
-- Pursuing a B.S. in Computer Science at CSU San Bernardino
-- Going deeper on PyTorch and applied NLP / classification work
-- Open to **Summer / Fall 2026 internships** in software engineering or AI/ML
+- Finishing B.S. Computer Science at CSUSB — graduating **December 2026**
+- Building LLM pipelines, RAG systems, and multi-agent infrastructure
+- Previously interned at Recursa AI (RAG / legal NLP) and RideSplits (full-stack)
+- Targeting **full-time AI/ML engineering roles starting January 2027**
 - Reach me at **[solomonsmithdev@gmail.com](mailto:solomonsmithdev@gmail.com)**
