@@ -42,29 +42,14 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
 <div class="project-grid">
 
   <article class="project-card">
-    <span class="project-card__status">Open Source · In Progress</span>
-    <h3 class="project-card__title">TargetRecon CLI</h3>
-    <p class="project-card__desc">
-      A Python command-line tool that gathers basic OSINT (open-source intelligence)
-      on usernames, domains, and IPs — designed as a structured way to learn the
-      reconnaissance phase of cybersecurity engagements.
-    </p>
-    <ul class="project-card__stack">
-      <li>Python</li><li>argparse</li><li>requests</li><li>OSINT</li>
-    </ul>
-    <div class="project-card__links">
-      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
-    </div>
-  </article>
-
-  <article class="project-card">
     <span class="project-card__status">In Progress · AI / Security</span>
     <h3 class="project-card__title">SOC Triage Copilot</h3>
     <p class="project-card__desc">
       AI-powered Security Operations Center triage system. Ingests raw security alerts,
-      classifies severity, maps findings to MITRE ATT&amp;CK, and surfaces case summaries
-      for analyst review. FastAPI backend, PostgreSQL event store, Next.js dashboard,
-      append-only override log with full audit trail.
+      classifies severity via a rules-free ML engine, maps findings to MITRE ATT&amp;CK,
+      and surfaces structured case summaries for analyst review. FastAPI backend,
+      PostgreSQL event store, Next.js dashboard, append-only override log with full
+      audit trail.
     </p>
     <ul class="project-card__stack">
       <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li>
@@ -75,19 +60,34 @@ eyebrow: "Software Engineer · AI / ML · Full-Stack"
   </article>
 
   <article class="project-card">
-    <span class="project-card__status">Live</span>
-    <h3 class="project-card__title">Personal Portfolio Site</h3>
+    <span class="project-card__status">Live · Distributed Systems</span>
+    <h3 class="project-card__title">Earendil Task System</h3>
     <p class="project-card__desc">
-      This site — a custom Jekyll build deployed on GitHub Pages with a custom
-      domain. Custom Sass theme, SEO-tagged, sitemap- and feed-enabled, hand-built
-      from scratch (no template).
+      Self-hosted distributed task execution system running on a home Mac Mini server.
+      REST API for dispatching and monitoring long-running tasks across processes.
+      OAuth/token auth, systemd daemon, 33/33 tests. Powers personal automation pipelines.
     </p>
     <ul class="project-card__stack">
-      <li>Jekyll</li><li>Ruby</li><li>Sass</li><li>GitHub Pages</li>
+      <li>Python</li><li>FastAPI</li><li>OAuth</li><li>systemd</li><li>Linux</li>
     </ul>
     <div class="project-card__links">
-      <a href="https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io" target="_blank" rel="noopener">Source →</a>
-      <a href="https://solomon-smith-dev.tech" target="_blank" rel="noopener">Live →</a>
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+  </article>
+
+  <article class="project-card">
+    <span class="project-card__status">Open Source · In Progress</span>
+    <h3 class="project-card__title">TargetRecon CLI</h3>
+    <p class="project-card__desc">
+      Python CLI for the reconnaissance phase of security engagements. Takes a username,
+      domain, or IP and runs structured OSINT lookups — breach data, DNS, WHOIS,
+      social-handle discovery — outputting a clean report-style summary.
+    </p>
+    <ul class="project-card__stack">
+      <li>Python</li><li>argparse</li><li>requests</li><li>OSINT</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </article>
 

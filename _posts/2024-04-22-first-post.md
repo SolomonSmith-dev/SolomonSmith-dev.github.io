@@ -38,10 +38,10 @@ This post is the build log.
   it set as an object — fixed by updating `_config.yml` to match the schema
 - Generally, learning to read theme source code instead of guessing at fixes
 
-## What's next
+## What came next
 
-- Document each project in more depth (TargetRecon CLI, Plex server, future ML work)
-- Replace Minima's default look with my own Sass theme on top of it
-- Start writing about the AI/ML side — model experiments, NLP, classification
+- Rewrote all pages with real project content (TargetRecon CLI, Earendil, SOC Triage Copilot)
+- Built a custom dark Sass theme on top of Minima -- project cards, skills grid, sticky header
+- Started writing about the AI/ML work: see [Building a SOC Triage Copilot](/2026/04/30/building-soc-triage-copilot.html)
 
-First sprint is done. Site is live. More to come.
+First sprint done. Site is live. The work continues.
