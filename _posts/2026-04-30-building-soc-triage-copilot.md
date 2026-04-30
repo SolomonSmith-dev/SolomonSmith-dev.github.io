@@ -7,12 +7,20 @@ description: "Architecture notes from building an AI-powered SOC triage system â
 ---
 
 Security operations centers drown in alerts. Most are noise. The ones that matter
-get buried. I'm building a system to fix that.
+get buried. I built a system to fix that.
 
-**SOC Triage Copilot** ingests raw security alerts, classifies their severity via a
-rules-free ML engine, maps findings to MITRE ATT&CK techniques, and surfaces structured
-case summaries for analyst review. This post is a snapshot of the architecture and the
-decisions behind it.
+**Quick context:** v1 is shipped -- RAG-grounded triage using the Claude API and
+sentence-transformers, with a Streamlit UI and a 7-case reliability harness at 100%
+pass rate. The source is on [GitHub](https://github.com/SolomonSmith-dev/soc-triage-ai).
+This post covers the architecture of **v2**: a full platform rewrite with a FastAPI
+backend, PostgreSQL event store, and a Next.js analyst dashboard. v2 is currently
+in progress.
+
+---
+
+The v2 system ingests raw security alerts, classifies their severity via a rules-free ML
+engine, maps findings to MITRE ATT&CK techniques, and surfaces structured case summaries
+for analyst review. Below is a snapshot of the architecture and the decisions behind it.
 
 ## The core problem
 

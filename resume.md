@@ -6,7 +6,7 @@ description: "Resume of Solomon Smith — CS senior at CSUSB and AI/ML engineer.
 ---
 
 <p>
-  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonJobResume2025.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF Resume</a>
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithInternship.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF Resume</a>
   <a class="btn btn--ghost" href="mailto:solomonsmithdev@gmail.com">Email Me</a>
 </p>
 
@@ -156,6 +156,7 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
     <p class="entry__meta">Jul 2024 – Dec 2026 (Expected)</p>
   </div>
   <ul>
+    <li><strong>GPA:</strong> 3.14</li>
     <li><strong>Honors:</strong> Dean's List Spring 2025, Dean's List Fall 2025</li>
     <li><strong>Coursework:</strong> Machine Learning, Artificial Intelligence, Algorithms, Operating Systems, Computer Architecture, Statistics</li>
   </ul>

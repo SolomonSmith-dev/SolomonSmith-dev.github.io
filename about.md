@@ -79,7 +79,7 @@ time, and refine a system until it holds. Those habits transfer directly.
     <p class="entry__title">B.S. Computer Science — California State University, San Bernardino</p>
     <p class="entry__meta">Expected December 2026</p>
   </div>
-  <p>Dean's List Spring 2025, Dean's List Fall 2025. Coursework in Machine Learning,
+  <p>GPA: 3.14. Dean's List Spring 2025, Dean's List Fall 2025. Coursework in Machine Learning,
   Artificial Intelligence, Algorithms, Operating Systems, and Computer Architecture.</p>
 </div>
 
