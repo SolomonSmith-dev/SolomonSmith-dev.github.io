@@ -2,27 +2,25 @@
 layout: page
 title: "Resume"
 permalink: /resume/
-description: "Resume of Solomon Smith — CS senior at CSUSB and AI/ML engineer."
+description: "Resume of Solomon Smith. CS senior at CSUSB and AI/ML engineer."
+lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure that puts them in production."
 ---
 
-<p>
-  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithInternship.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF Resume</a>
-  <a class="btn btn--ghost" href="mailto:solomonsmithdev@gmail.com">Email Me</a>
+<p style="margin-bottom: 3rem;">
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithInternship.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+  <a class="btn" href="mailto:solomonsmithdev@gmail.com">Email me</a>
 </p>
 
-<h2 class="section-heading">Summary</h2>
+## Summary
 
-CS senior at CSUSB with a background in high-pressure kitchens (dishwasher to Head Chef,
-~10 years) redirected into software engineering and AI. Strong foundation in Python, C++,
-and systems thinking. Currently building LLM pipelines, RAG systems, and multi-agent
-infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
+CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Targeting **full-time AI/ML engineering roles starting January 2027**.
 
-<h2 class="section-heading">Experience</h2>
+## Experience
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Software Engineering Intern — Recursa AI (courtrules.app)</p>
-    <p class="entry__meta">Dec 2025 – Mar 2026 · Remote</p>
+    <p class="entry__title">Software Engineering Intern, Recursa AI (courtrules.app)</p>
+    <p class="entry__meta">Dec 2025 to Mar 2026 &middot; Remote</p>
   </div>
   <ul>
     <li>Built distributed scraping pipeline ingesting court rules across 50+ U.S. jurisdictions; retry, backoff, and deduplication layers handling 200K+ documents at 99%+ extraction accuracy.</li>
@@ -34,13 +32,13 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Full-Stack Developer Intern — RideSplits</p>
-    <p class="entry__meta">Jun 2025 – Sep 2025 · San Bernardino, CA</p>
+    <p class="entry__title">Full-Stack Developer Intern, RideSplits</p>
+    <p class="entry__meta">Jun 2025 to Sep 2025 &middot; San Bernardino, CA</p>
   </div>
   <ul>
     <li>Migrated 100% of authentication flows from JWT to Firebase Auth across multiple user roles; reduced login-related bugs by 60%.</li>
     <li>Designed secure multi-screen document upload pipeline with validation and size limits, enabling ID verification for 50+ users.</li>
-    <li>Integrated Stripe Connect for secure driver onboarding, payments, and webhook-based transaction tracking.</li>
+    <li>Integrated Stripe Connect for driver onboarding, payments, and webhook-based transaction tracking.</li>
     <li>Designed and executed MySQL schema migrations; implemented real-time sync infrastructure with Socket.IO.</li>
     <li>Developed RESTful APIs supporting user authentication, profiles, rides, and real-time features.</li>
   </ul>
@@ -48,20 +46,20 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Student Administrative Assistant — Office of Student Research and Innovation, CSUSB</p>
-    <p class="entry__meta">Feb 2026 – Present · San Bernardino, CA</p>
+    <p class="entry__title">Student Administrative Assistant, Office of Student Research and Innovation, CSUSB</p>
+    <p class="entry__meta">Feb 2026 to present &middot; San Bernardino, CA</p>
   </div>
   <ul>
     <li>Supporting operational coordination for university-wide student research and innovation initiatives.</li>
-    <li>Assisting in onboarding, documentation management, and research compliance tracking.</li>
-    <li>Contributing to workflow optimization and event logistics for research workshops and innovation programs.</li>
+    <li>Onboarding, documentation management, and research compliance tracking.</li>
+    <li>Workflow optimization and event logistics for research workshops and innovation programs.</li>
   </ul>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">IT Student Assistant — Cañada College</p>
-    <p class="entry__meta">Jun 2023 – May 2025 · Redwood City, CA</p>
+    <p class="entry__title">IT Student Assistant, Cañada College</p>
+    <p class="entry__meta">Jun 2023 to May 2025 &middot; Redwood City, CA</p>
   </div>
   <ul>
     <li>Improved system reliability by 20% through troubleshooting hardware, software, and networking for 100+ institutional users.</li>
@@ -72,63 +70,61 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Culinary Leadership — Head Chef / Chef de Cuisine / Kitchen Manager</p>
-    <p class="entry__meta">~10 years · Various</p>
+    <p class="entry__title">Culinary Leadership: Head Chef, Chef de Cuisine, Kitchen Manager</p>
+    <p class="entry__meta">10+ years &middot; Various</p>
   </div>
   <ul>
-    <li>Progressed from dishwasher to Head Chef across multiple high-volume operations.
-      The same discipline — precision, ownership, and recovery under pressure — now
-      applied to production systems.</li>
+    <li>Progressed from dishwasher to Head Chef across multiple high-volume operations. The same discipline, precision, ownership, and recovery under pressure, now applied to production systems.</li>
   </ul>
 </div>
 
-<h2 class="section-heading">Technical Skills</h2>
+## Technical Skills
 
-<div class="skills-grid">
-  <div class="skills-grid__cell">
-    <h4>Languages</h4>
-    <ul>
+<div class="stations">
+  <div class="station">
+    <p class="station__name">Languages</p>
+    <ul class="station__list">
       <li>Python</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Bash</li><li>R</li>
     </ul>
   </div>
-  <div class="skills-grid__cell">
-    <h4>AI / ML</h4>
-    <ul>
-      <li>LangChain</li><li>Anthropic Claude API</li><li>RAG</li><li>pgvector</li><li>Milvus</li><li>sentence-transformers</li><li>scikit-learn</li><li>PyTorch</li><li>NLP</li><li>Multi-agent orchestration</li><li>MCP</li>
+  <div class="station">
+    <p class="station__name">AI / ML</p>
+    <ul class="station__list">
+      <li>LangChain</li><li>Claude API</li><li>RAG, pgvector, Milvus</li><li>sentence-transformers</li><li>scikit-learn, PyTorch</li><li>Multi-agent orchestration, MCP</li>
     </ul>
   </div>
-  <div class="skills-grid__cell">
-    <h4>Backend &amp; Data</h4>
-    <ul>
-      <li>FastAPI</li><li>Express</li><li>Django</li><li>Node.js</li><li>React</li><li>PostgreSQL</li><li>MySQL</li><li>Redis</li><li>Firebase</li><li>Supabase</li><li>REST APIs</li><li>Stripe Connect</li><li>Socket.IO</li>
+  <div class="station">
+    <p class="station__name">Backend &amp; Data</p>
+    <ul class="station__list">
+      <li>FastAPI, Express, Django</li><li>Node.js, React</li><li>PostgreSQL, MySQL, Redis</li><li>Firebase, Supabase</li><li>REST APIs, Stripe, Socket.IO</li>
     </ul>
   </div>
-  <div class="skills-grid__cell">
-    <h4>Infra &amp; Cloud</h4>
-    <ul>
-      <li>Docker</li><li>Linux</li><li>systemd</li><li>PM2</li><li>Nginx</li><li>Tailscale</li><li>GitHub Actions</li><li>GCP</li><li>AWS (S3, EC2)</li>
+  <div class="station">
+    <p class="station__name">Infra &amp; Cloud</p>
+    <ul class="station__list">
+      <li>Docker, Linux, systemd</li><li>PM2, Nginx, Tailscale</li><li>GitHub Actions</li><li>GCP, AWS (S3, EC2)</li>
     </ul>
   </div>
 </div>
 
-<h2 class="section-heading">Selected Projects</h2>
+## Selected Projects
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">SOC Triage AI — RAG-Grounded Security Alert Triage</p>
-    <p class="entry__meta">Python · Claude API · sentence-transformers · Streamlit · pytest · <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">GitHub →</a></p>
+    <p class="entry__title">soc-triage-ai &middot; RAG-grounded security alert triage</p>
+    <p class="entry__meta">Python &middot; Claude API &middot; sentence-transformers &middot; Streamlit &middot; pytest</p>
   </div>
   <ul>
-    <li>Built RAG-grounded security alert triage system mapping alerts to MITRE ATT&amp;CK techniques with strict JSON schema validation; achieved 100% pass rate across a 7-case reliability harness.</li>
+    <li>Built RAG-grounded security alert triage system mapping alerts to MITRE ATT&amp;CK techniques with strict JSON schema validation; 100% pass rate across a 7-case reliability harness.</li>
     <li>Engineered guardrail logic that refuses to triage low-similarity alerts and validates LLM output structurally, preventing fabrication and confident wrong-answer failures in security contexts.</li>
-    <li>Diagnosed root cause of 43% harness failure rate as corpus chunking rather than prompt design; improved to 100% pass rate after corpus rebuild.</li>
+    <li>Improved harness pass rate from 43% to 100% by diagnosing the root cause as corpus chunking rather than prompt design; documented full reflection in a model card.</li>
   </ul>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Multi-Agent AI System — Sauron Stack</p>
-    <p class="entry__meta">Python · Node.js · Redis · PM2 · Anthropic Claude API · Tailscale · Docker</p>
+    <p class="entry__title">Multi-Agent AI System (Sauron Stack)</p>
+    <p class="entry__meta">Python &middot; Node.js &middot; Redis &middot; PM2 &middot; Claude API &middot; Tailscale &middot; Docker</p>
   </div>
   <ul>
     <li>Built production multi-agent system on Debian server with PM2-managed services: router (Earendil), executor (Sauron), orchestrator (Morgoth), security daemon (Balrog); 24/7 uptime over Tailscale mesh.</li>
@@ -140,20 +136,21 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
 <div class="entry">
   <div class="entry__head">
     <p class="entry__title">Adversarial Search and Intelligent Agents</p>
-    <p class="entry__meta">Python · Pygame</p>
+    <p class="entry__meta">Python &middot; pygame &middot; numpy &middot; pytest</p>
   </div>
   <ul>
     <li>Implemented Minimax with alpha-beta pruning for a 5x5 Tic-Tac-Toe agent at depth 4 with sub-500ms latency across 1,000+ game states; center-and-corner heuristic cut effective search space by ~40%.</li>
     <li>Solved Constraint Satisfaction Problems for 5 vehicles and 20+ constraints using backtracking with arc-consistency, achieving 100% conflict-free assignment.</li>
+    <li>21-case pytest suite and GitHub Actions CI verify GameStatus, minimax/negamax behavior, and CSP solution validity.</li>
   </ul>
 </div>
 
-<h2 class="section-heading">Education</h2>
+## Education
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">B.S. Computer Science — California State University, San Bernardino</p>
-    <p class="entry__meta">Jul 2024 – Dec 2026 (Expected)</p>
+    <p class="entry__title">B.S. Computer Science, California State University, San Bernardino</p>
+    <p class="entry__meta">Jul 2024 to Dec 2026 (Expected)</p>
   </div>
   <ul>
     <li><strong>GPA:</strong> 3.14</li>
@@ -164,24 +161,23 @@ infrastructure. Targeting **AI/ML engineering roles starting January 2027**.
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Computer Science — Skyline College</p>
-    <p class="entry__meta">Aug 2022 – Jun 2024</p>
+    <p class="entry__title">Computer Science, Skyline College</p>
+    <p class="entry__meta">Aug 2022 to Jun 2024</p>
   </div>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Computer Science — Butte College</p>
-    <p class="entry__meta">2020 – 2022</p>
+    <p class="entry__title">Computer Science, Butte College</p>
+    <p class="entry__meta">2020 to 2022</p>
   </div>
 </div>
 
-<h2 class="section-heading">Certifications</h2>
+## Certifications
 
 - Google IT Support Specialization
 - Google Cloud Computing Foundations Certificate
 
-<p style="margin-top: 1.5rem; opacity: 0.8;">
-  For the formatted PDF version, use the <strong>Download PDF Resume</strong> button at
-  the top of this page.
+<p style="margin-top: 2.5rem; opacity: 0.75;">
+  For the formatted PDF version, use the <strong>Download PDF</strong> button at the top of this page.
 </p>

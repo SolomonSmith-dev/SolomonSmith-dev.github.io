@@ -4,50 +4,65 @@ layout: default
 
 {%- if page.url == "/" -%}
 <section class="hero">
-  <span class="hero__eyebrow">{{ page.eyebrow | default: "Software Engineer · AI / ML" }}</span>
-  <h1 class="hero__title">{{ page.hero_title | default: "Hi, I'm Solomon Smith." }}</h1>
-  <p class="hero__subtitle">
-    {{ page.hero_subtitle | default: "Computer Science student at CSU San Bernardino building AI/ML systems and full-stack applications. Currently seeking software engineering and AI/ML internships." }}
-  </p>
-  <div class="hero__ctas">
-    <a class="btn btn--primary" href="{{ '/projects/' | relative_url }}">View Projects</a>
-    <a class="btn btn--ghost" href="{{ '/resume/' | relative_url }}">Resume</a>
-    <a class="btn btn--ghost" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn btn--ghost" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="hero__primary">
+    <h1 class="hero__name">Solomon<br><em>Smith.</em></h1>
+    <p class="hero__lede">{{ page.hero_subtitle | default: "Chef turned engineer. Ten years on the line before this. Same discipline, new craft." }}</p>
+    <div class="hero__links">
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin</a>
+      <a href="mailto:{{ site.email }}">email</a>
+    </div>
   </div>
+
+  <aside class="status-board">
+    <div class="status-board__block">
+      <p class="status-board__label">Focus</p>
+      <p class="status-board__value">AI / ML <span class="accent">·</span> Backend <span class="accent">·</span> LLM Systems</p>
+    </div>
+
+    <div class="status-board__block">
+      <p class="status-board__label">Building</p>
+      <ul class="status-board__list">
+        <li><span>soc-triage-ai</span><span class="tag">v1.0</span></li>
+        <li><span>arda</span><span class="tag">active</span></li>
+        <li><span>phishguard</span><span class="tag">v0.2</span></li>
+      </ul>
+    </div>
+
+    <div class="status-board__block">
+      <p class="status-board__label">Open For</p>
+      <p class="status-board__value">Full-time AI/ML roles<br>starting January 2027</p>
+    </div>
+
+    <div class="status-board__block">
+      <p class="status-board__label">Based In</p>
+      <p class="status-board__value">Montclair, CA. Remote or relocation.</p>
+    </div>
+  </aside>
 </section>
 {%- endif -%}
 
-<div class="home">
-  {%- if page.title and page.url != "/" -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+{{ content }}
 
-  {{ content }}
+{%- if page.url == "/" and site.posts.size > 0 -%}
+<section class="section-marker">
+  <span class="section-marker__roman">IV</span>
+  <span class="section-marker__label">Writing</span>
+</section>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="section-heading">{{ page.list_title | default: "Latest Writing" }}</h2>
-    <ul class="post-list">
-      {%- assign post_limit = page.post_limit | default: 3 -%}
-      {%- for post in site.posts limit: post_limit -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if post.excerpt -%}
-          <p style="opacity: 0.85;">{{ post.excerpt | strip_html | truncate: 200 }}</p>
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-    {%- if page.url == "/" -%}
-      <p class="rss-subscribe"><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>
-    {%- else -%}
-      <p class="rss-subscribe">Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a>.</p>
+<ul class="post-list">
+  {%- for post in site.posts limit: 3 -%}
+  <li>
+    <p class="post-list__meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+    {%- if post.excerpt -%}
+    <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
     {%- endif -%}
-  {%- endif -%}
-</div>
+  </li>
+  {%- endfor -%}
+</ul>
+
+<p style="margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase;">
+  <a href="{{ '/blog/' | relative_url }}" style="color: var(--color-cream-soft);">All writing →</a>
+</p>
+{%- endif -%}

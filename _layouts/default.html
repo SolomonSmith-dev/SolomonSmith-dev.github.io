@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+  {% feed_meta %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">Solomon Smith</a>
+    <nav class="site-nav">
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active"{% endif %}>Projects</a>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' or page.url contains '/20' %}class="active"{% endif %}>Blog</a>
+      <a href="{{ '/resume/' | relative_url }}" {% if page.url contains '/resume' %}class="active"{% endif %}>Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main class="shell">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="shell site-footer__inner">
+    <p>Solomon Smith. AI/ML engineer. Open for full-time roles starting January 2027.</p>
+    <ul>
+      <li><a href="mailto:{{ site.email }}">email</a></li>
+      <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a></li>
+      <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

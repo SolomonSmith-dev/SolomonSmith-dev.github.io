@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="intro">
+    <h1 class="page-heading">{{ page.title }}</h1>
+    <p class="page-lede mono" style="font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-cream-muted);">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </p>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  <p style="margin-top: 4rem; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase;">
+    <a href="{{ '/blog/' | relative_url }}" style="color: var(--color-cream-soft);">← All writing</a>
+  </p>
+</article>
