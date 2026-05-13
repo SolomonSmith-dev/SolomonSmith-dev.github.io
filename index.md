@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Solomon Smith. AI, ML and Software Engineering Portfolio."
+title: "AI, ML and Software Engineering Portfolio"
 description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open for full-time roles January 2027."
 permalink: /
 hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwasher to head chef. Same discipline, new craft. Building LLM pipelines, RAG systems, and the backend that makes them production-worthy."
