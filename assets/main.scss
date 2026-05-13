@@ -512,13 +512,13 @@ main.shell {
   color: var(--color-cream);
 }
 
-.prose a {
+.prose a:not(.btn) {
   color: var(--color-amber);
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition-fast);
 }
 
-.prose a:hover { border-bottom-color: var(--color-amber); }
+.prose a:not(.btn):hover { border-bottom-color: var(--color-amber); }
 
 .prose ul, .prose ol { padding-left: 1.25rem; }
 
