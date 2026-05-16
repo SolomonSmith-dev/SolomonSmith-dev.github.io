@@ -47,6 +47,7 @@ social:
 # Exclude from processing
 exclude:
   - docs/
+  - CLAUDE.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

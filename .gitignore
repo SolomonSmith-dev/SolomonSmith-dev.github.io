@@ -16,4 +16,6 @@ Thumbs.db
 
 # Tool artifacts
 .claude-mem/
+.claude/
+.playwright-mcp/
 ~/
