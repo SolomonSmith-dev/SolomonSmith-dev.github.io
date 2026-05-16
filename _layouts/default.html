@@ -10,7 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 </head>
@@ -20,10 +20,10 @@
   <div class="shell site-header__inner">
     <a class="site-title" href="{{ '/' | relative_url }}">Solomon Smith</a>
     <nav class="site-nav">
-      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
-      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active"{% endif %}>Projects</a>
-      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' or page.url contains '/20' %}class="active"{% endif %}>Blog</a>
-      <a href="{{ '/resume/' | relative_url }}" {% if page.url contains '/resume' %}class="active"{% endif %}>Resume</a>
+      <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>~/about</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active"{% endif %}>~/projects</a>
+      <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' or page.url contains '/20' %}class="active"{% endif %}>~/writing</a>
+      <a href="{{ '/resume/' | relative_url }}" {% if page.url contains '/resume' %}class="active"{% endif %}>~/resume</a>
     </nav>
   </div>
 </header>
@@ -42,6 +42,8 @@
     </ul>
   </div>
 </footer>
+
+<script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script>
 
 </body>
 </html>

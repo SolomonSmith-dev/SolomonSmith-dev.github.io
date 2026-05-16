@@ -46,6 +46,7 @@ social:
 
 # Exclude from processing
 exclude:
+  - docs/
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
