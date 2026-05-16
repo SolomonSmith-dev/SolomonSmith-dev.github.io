@@ -57,7 +57,7 @@ Three units of work, each independently testable:
 |---|---|---|
 | `--color-iron` | `#13110F` | `#0A0E0A` (near black, faint green cast) |
 | `--color-iron-2` | `#1A1714` | `#0F140F` (code block / panel) |
-| `--color-cream` | `#EDE6D6` | `--color-green: #00FF41` (primary text) |
+| `--color-cream` | `#EDE6D6` | `--color-green: #00D936` (primary text, dimmed phosphor for lower eye strain on text heavy pages) |
 | `--color-cream-soft` | rgba cream .78 | `#7CFF9E` (secondary text, AA on new black) |
 | `--color-cream-muted` | rgba cream .55 | `rgba(0,255,65,0.72)` (retuned to pass AA for small text) |
 | `--color-cream-faint` | rgba cream .35 | `rgba(0,255,65,0.58)` (retuned, course numbers now legible) |
@@ -70,7 +70,7 @@ keeps its name but holds green. A short comment block at the top of
 edits.
 
 Contrast targets (verify with a contrast checker during build):
-- Primary green `#00FF41` on `#0A0E0A`: very high, passes AAA.
+- Primary green `#00D936` on `#0A0E0A`: very high, passes AAA.
 - `--color-cream-muted` and `--color-cream-faint` retuned so all small
   text (section labels, course numbers, meta) clears WCAG AA 4.5:1.
   This is the fix for audit findings on faint and muted contrast.
@@ -151,7 +151,8 @@ Behavior:
 
 In scope: `index.md`, `about.md`, `projects.md`, `resume.md`, `blog.md`,
 `_layouts/*.html`, `404.html`, `assets/main.scss`, new
-`assets/js/rain.js`.
+`assets/js/rain.js`, and `_config.yml` (add `docs/` to `exclude:` so
+spec files are not built into the deployed site; confirmed 2026-05-15).
 
 Pages without dedicated audit changes (about, projects, resume, blog,
 post) still inherit the reskinned primitives and are visually verified.
