@@ -1,6 +1,6 @@
 title: "Solomon Smith"
 description: "Solomon Smith. CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open for full-time roles January 2027."
-url: "https://solomonsmith-dev.github.io"
+url: "https://solomonsmith.dev"
 baseurl: ""
 lang: en
 
@@ -46,6 +46,8 @@ social:
 
 # Exclude from processing
 exclude:
+  - docs/
+  - CLAUDE.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

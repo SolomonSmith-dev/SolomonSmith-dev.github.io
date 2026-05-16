@@ -14,32 +14,37 @@ LinkedIn: solomonsmithdev
 - Jekyll on GitHub Pages.
 - `assets/main.scss` is the single, standalone stylesheet. It does NOT import Minima. Minima is still declared as the gem `theme` but its layouts and styles are overridden in this repo.
 - Plugins: jekyll-feed, jekyll-seo-tag, jekyll-sitemap.
-- Fonts loaded from Google Fonts in `_layouts/default.html`: Fraunces (display), Newsreader (body), JetBrains Mono (labels).
+- Fonts loaded from Google Fonts in `_layouts/default.html`: JetBrains Mono only (single typeface, weights 400/500/700).
 
 ## Design System
-A custom editorial layout built around Solomon's chef-to-engineer narrative. The discipline of a Michelin pass made visible as web design, without literal kitchen iconography.
+A Matrix terminal aesthetic: dimmed phosphor green on near-black, all monospace, with a subtle ambient digital-rain canvas behind content. Token-driven via CSS custom properties in `assets/main.scss`.
+
+**Important token naming caveat:** the token NAMES are retained from the prior editorial system to avoid a 714-line rename. The values are the terminal palette. The `--color-cream*` names now hold green tiers. Do not infer color from a variable name; read the value. A comment block at the top of `:root` documents this.
 
 **Palette (in `assets/main.scss` as CSS custom properties):**
-- `--color-iron: #13110F` (warm iron background, not GitHub black)
-- `--color-cream: #EDE6D6` (parchment cream type)
-- `--color-amber: #E8A05B` (kitchen-pass amber, single accent used surgically)
-- `--color-cream-soft / muted / faint`: alpha layers on the cream
-- `--color-hairline: rgba(237, 230, 214, 0.16)` (subtle dividers)
+- `--color-iron: #0A0E0A` (near-black page background), `--color-iron-2: #0F140F` (panels/code)
+- `--color-cream: #00D936` (primary text: dimmed phosphor, lower eye strain than #00FF41)
+- `--color-cream-soft / muted / faint`: `#5FE07F` / `#3FB85C` / `#2E9E48`, all tuned to clear WCAG AA on the near-black background
+- `--color-amber: #E8A05B`: DEMOTED, used only as a live/active status LED (project status, status-board tags), never decoratively
+- `--color-hairline: rgba(0, 217, 54, 0.22)` (green dividers)
 
 **Typography:**
-- Display: Fraunces (variable serif with italic axis)
-- Body: Newsreader (transitional serif)
-- Mono labels and status info: JetBrains Mono
+- JetBrains Mono everywhere. Hierarchy by weight (700 display, 500 headings, 400 body) and size, not by family. No serif fonts.
+
+**Digital rain:** `assets/js/rain.js` is a self-contained vanilla-JS canvas module wired with `defer` in `_layouts/default.html`. It renders a low-opacity katakana rain at `z-index: -1` behind all content. Guards: returns before creating the canvas under `prefers-reduced-motion: reduce`, pauses via the Page Visibility API when the tab is hidden, throttled to ~18 fps, debounced resize. Progressive enhancement: the site is fully functional with zero rain.
+
+**Accessibility:** global `:focus-visible` ring (green, 2px), site-wide `@media (prefers-reduced-motion: reduce)` that disables smooth scroll, transitions, and the hero cursor blink (and the rain JS self-disables on the same query).
 
 **Layout primitives (defined in `assets/main.scss`):**
-- `.hero` (asymmetric 1.6fr / 1fr grid on the homepage)
+- `.hero` (asymmetric 1.6fr / 1fr grid on the homepage); `.hero__lede` has a CSS blinking cursor
 - `.status-board` (mono right-rail with FOCUS / BUILDING / OPEN FOR / BASED IN blocks)
-- `.section-marker` (Roman numeral on the left, mono label on the right, hairline below)
-- `.course-list` and `.course` (numbered project entries with hairline dividers, no boxes, amber underline on title hover)
-- `.stations` (skills grid with hairline-bordered cells)
+- `.section-marker` (bracketed mono index like `[01]` on the left, `> label` on the right, hairline below)
+- `.course-list` and `.course` (numbered project entries with hairline dividers, amber corner-bracket frame on title hover/focus)
+- `.stations` (skills grid: 1px gap over a hairline background plus outer border, no per-cell side borders, so wrapped rows never leave dangling edges)
 - `.entry` (experience / education entries on about.md and resume.md)
 - `.prose` (markdown content wrapper used by page.html)
-- `.btn` and `.btn--primary` (mono uppercase CTAs)
+- `.btn` and `.btn--primary` (mono uppercase CTAs with a leading `>` glyph)
+- `.section-link`, `.post-meta-line`, `.page-404*` (utility classes that replaced former inline styles)
 
 ## File Map
 - `index.md`: home page (hero handled by layout, body has Stations + Featured Work + Currently sections).

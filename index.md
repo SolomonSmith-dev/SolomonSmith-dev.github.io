@@ -7,8 +7,8 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 ---
 
 <section class="section-marker">
-  <span class="section-marker__roman">I</span>
-  <span class="section-marker__label">Stations</span>
+  <span class="section-marker__roman">[01]</span>
+  <span class="section-marker__label">&gt; stations</span>
 </section>
 
 <div class="stations">
@@ -56,8 +56,8 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 </div>
 
 <section class="section-marker">
-  <span class="section-marker__roman">II</span>
-  <span class="section-marker__label">Featured Work</span>
+  <span class="section-marker__roman">[02]</span>
+  <span class="section-marker__label">&gt; featured_work</span>
 </section>
 
 <div class="course-list">
@@ -122,13 +122,13 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 
 </div>
 
-<p style="margin-top: 2rem; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase;">
-  <a href="{{ '/projects/' | relative_url }}" style="color: var(--color-cream-soft);">All projects →</a>
+<p class="section-link">
+  <a href="{{ '/projects/' | relative_url }}">cd ../projects &rarr;</a>
 </p>
 
 <section class="section-marker">
-  <span class="section-marker__roman">III</span>
-  <span class="section-marker__label">Currently</span>
+  <span class="section-marker__roman">[03]</span>
+  <span class="section-marker__label">&gt; currently</span>
 </section>
 
 <div class="prose">
