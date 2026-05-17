@@ -13,12 +13,13 @@ Email: solomonsmithdev@gmail.com | GitHub: SolomonSmith-dev | LinkedIn: solomons
 ## Commands
 
 ```bash
-bundle install                              # install dependencies
-bundle exec jekyll serve --livereload       # local dev at http://localhost:4000
-bundle exec jekyll build                   # production build only
+# Use Homebrew Ruby 3.3 -- system Ruby 2.6 is incompatible with bundler 2.6.8
+PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH" bundle install
+PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH" bundle exec jekyll serve --livereload
+PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH" bundle exec jekyll build
 ```
 
-Pages CI triggers on every push to `main` (30-60s build). If `bundle exec` fails, run `gem install bundler` -- Solomon's machine has had a Ruby/bundler version mismatch.
+Pages CI triggers on every push to `main` (30-60s build). Local build requires Homebrew Ruby 3.3 -- system Ruby is 2.6 and incompatible with bundler 2.6.8.
 
 ## Stack
 - Jekyll 4.4.x on GitHub Pages.
