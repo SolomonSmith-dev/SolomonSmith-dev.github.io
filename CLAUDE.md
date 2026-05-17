@@ -1,74 +1,97 @@
-# CLAUDE.md, SolomonSmith-dev.github.io
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What This Is
-Personal portfolio site for Solomon Smith. Jekyll + GitHub Pages with a fully custom editorial design system. The lapsed `solomon-smith-dev.tech` custom domain has been removed from Pages config.
-Live at: https://solomonsmith-dev.github.io
+Personal portfolio site for Solomon Smith. Jekyll + GitHub Pages with a Matrix terminal aesthetic.
+Live at: https://solomonsmith.dev (CNAME in repo root; falls back to https://solomonsmith-dev.github.io)
 
 ## Owner
 Solomon Smith. CS senior at CSUSB, targeting AI/ML engineering roles starting January 2027.
-Email: solomonsmithdev@gmail.com
-GitHub: SolomonSmith-dev
-LinkedIn: solomonsmithdev
+Email: solomonsmithdev@gmail.com | GitHub: SolomonSmith-dev | LinkedIn: solomonsmithdev
+
+## Commands
+
+```bash
+bundle install                              # install dependencies
+bundle exec jekyll serve --livereload       # local dev at http://localhost:4000
+bundle exec jekyll build                   # production build only
+```
+
+Pages CI triggers on every push to `main` (30-60s build). If `bundle exec` fails, run `gem install bundler` -- Solomon's machine has had a Ruby/bundler version mismatch.
 
 ## Stack
-- Jekyll on GitHub Pages.
-- `assets/main.scss` is the single, standalone stylesheet. It does NOT import Minima. Minima is still declared as the gem `theme` but its layouts and styles are overridden in this repo.
+- Jekyll 4.4.x on GitHub Pages.
+- `assets/main.scss` is the single, standalone stylesheet. It does NOT import Minima. Minima is still declared as the gem `theme` but all layouts and styles are fully overridden.
 - Plugins: jekyll-feed, jekyll-seo-tag, jekyll-sitemap.
-- Fonts loaded from Google Fonts in `_layouts/default.html`: JetBrains Mono only (single typeface, weights 400/500/700).
+- Fonts: JetBrains Mono only, loaded from Google Fonts in `_layouts/default.html`.
+
+## Architecture
+
+### The only stylesheet that matters
+`assets/main.scss` (~930 lines) is the entire design system. Every CSS custom property, layout primitive, and component lives here. Do not look elsewhere for styles.
+
+### `_sass/minima/` is dead weight
+`_sass/minima/custom-variables.scss` and `_sass/minima/custom-styles.scss` exist as leftover Minima override scaffolding. They are **not imported anywhere** and have no effect on the rendered site. Do not edit them; they are inert.
+
+### `assets/js/rain.js`
+Self-contained vanilla-JS canvas module. Wired with `defer` in `_layouts/default.html`. Renders low-opacity katakana rain at `z-index: -1`. Guards: self-disables under `prefers-reduced-motion: reduce`, pauses via Page Visibility API, throttled to ~18 fps, debounced resize. Site is fully functional with JS off.
+
+### Layout inheritance chain
+All layouts extend `default.html`:
+- `default.html`: HTML shell, sticky header with active-nav state, footer, Google Fonts `<link>`, `rain.js` `<script defer>`.
+- `home.html` extends default: hero + status board on `/`, recent-posts list at bottom.
+- `page.html` extends default: `.intro` (heading + lede) + `.prose` body wrapper.
+- `post.html` extends default: post title, date, prose body.
+
+### `docs/` -- plans and specs, excluded from build
+`docs/superpowers/plans/` and `docs/superpowers/specs/` hold design plans and specs. `docs/` is in `_config.yml` exclude list and will not deploy.
 
 ## Design System
-A Matrix terminal aesthetic: dimmed phosphor green on near-black, all monospace, with a subtle ambient digital-rain canvas behind content. Token-driven via CSS custom properties in `assets/main.scss`.
+Matrix terminal aesthetic: dimmed phosphor green on near-black, all monospace, with a subtle ambient digital-rain canvas behind content.
 
-**Important token naming caveat:** the token NAMES are retained from the prior editorial system to avoid a 714-line rename. The values are the terminal palette. The `--color-cream*` names now hold green tiers. Do not infer color from a variable name; read the value. A comment block at the top of `:root` documents this.
+**Token naming caveat:** token NAMES are retained from the prior editorial system to avoid a mass rename. The VALUES are the terminal palette. `--color-cream*` names now hold phosphor-green tiers. Read the value, not the name.
 
 **Palette (in `assets/main.scss` as CSS custom properties):**
 - `--color-iron: #0A0E0A` (near-black page background), `--color-iron-2: #0F140F` (panels/code)
-- `--color-cream: #00D936` (primary text: dimmed phosphor, lower eye strain than #00FF41)
-- `--color-cream-soft / muted / faint`: `#5FE07F` / `#3FB85C` / `#2E9E48`, all tuned to clear WCAG AA on the near-black background
-- `--color-amber: #E8A05B`: DEMOTED, used only as a live/active status LED (project status, status-board tags), never decoratively
+- `--color-cream: #00D936` (primary text: dimmed phosphor)
+- `--color-cream-soft / muted / faint`: `#5FE07F` / `#3FB85C` / `#2E9E48` (green tiers, WCAG AA on near-black)
+- `--color-amber: #E8A05B` (demoted -- live/active status LED only, never decorative)
 - `--color-hairline: rgba(0, 217, 54, 0.22)` (green dividers)
 
-**Typography:**
-- JetBrains Mono everywhere. Hierarchy by weight (700 display, 500 headings, 400 body) and size, not by family. No serif fonts.
+**Typography:** JetBrains Mono everywhere. Hierarchy by weight (700 display, 500 headings, 400 body) and size, not family.
 
-**Digital rain:** `assets/js/rain.js` is a self-contained vanilla-JS canvas module wired with `defer` in `_layouts/default.html`. It renders a low-opacity katakana rain at `z-index: -1` behind all content. Guards: returns before creating the canvas under `prefers-reduced-motion: reduce`, pauses via the Page Visibility API when the tab is hidden, throttled to ~18 fps, debounced resize. Progressive enhancement: the site is fully functional with zero rain.
+**Accessibility:** global `:focus-visible` ring (green, 2px), `@media (prefers-reduced-motion: reduce)` disables smooth scroll, transitions, cursor blink, and rain.
 
-**Accessibility:** global `:focus-visible` ring (green, 2px), site-wide `@media (prefers-reduced-motion: reduce)` that disables smooth scroll, transitions, and the hero cursor blink (and the rain JS self-disables on the same query).
-
-**Layout primitives (defined in `assets/main.scss`):**
-- `.hero` (asymmetric 1.6fr / 1fr grid on the homepage); `.hero__lede` has a CSS blinking cursor
-- `.status-board` (mono right-rail with FOCUS / BUILDING / OPEN FOR / BASED IN blocks)
-- `.section-marker` (bracketed mono index like `[01]` on the left, `> label` on the right, hairline below)
-- `.course-list` and `.course` (numbered project entries with hairline dividers, amber corner-bracket frame on title hover/focus)
-- `.stations` (skills grid: 1px gap over a hairline background plus outer border, no per-cell side borders, so wrapped rows never leave dangling edges)
-- `.entry` (experience / education entries on about.md and resume.md)
-- `.prose` (markdown content wrapper used by page.html)
-- `.btn` and `.btn--primary` (mono uppercase CTAs with a leading `>` glyph)
-- `.section-link`, `.post-meta-line`, `.page-404*` (utility classes that replaced former inline styles)
+**Layout primitives** (all in `assets/main.scss`):
+- `.hero`: asymmetric 1.6fr / 1fr grid; `.hero__lede` has a CSS blinking cursor
+- `.status-board`: mono right-rail with FOCUS / BUILDING / OPEN FOR / BASED IN blocks
+- `.section-marker`: bracketed index like `[01]` left, `> label` right, hairline below
+- `.course-list` / `.course`: numbered project entries, hairline dividers, amber corner-bracket on hover
+- `.stations`: skills grid with 1px gap over hairline background + outer border
+- `.entry`: experience / education rows on about.md and resume.md
+- `.prose`: markdown content wrapper used by page.html
+- `.btn` / `.btn--primary`: mono uppercase CTAs with leading `>` glyph
+- `.section-link`, `.post-meta-line`, `.page-404*`: utility classes replacing former inline styles
 
 ## File Map
-- `index.md`: home page (hero handled by layout, body has Stations + Featured Work + Currently sections).
-- `about.md`: bio, "What I Build" prose, Experience entries, Education, Reach.
-- `projects.md`: full course list aligned to the pin slate (soc-triage-ai, arda, phishguard, claude-agents, DocMind, adversarial-search-csp) plus Sauron Stack.
-- `resume.md`: Summary, Experience entries, Technical Skills (.stations grid), Selected Projects, Education, Certifications.
-- `blog.md`: full post list (uses `layout: page` and renders posts via Liquid for-loop).
-- `_posts/`: blog posts (Solomon writes these himself).
-- `_layouts/default.html`: shell wrapped around every page (head, sticky header with active-nav state, footer). Replaces Minima's default.
-- `_layouts/home.html`: extends default. Hero + status board on `/`, recent-posts list at bottom of `/`. Loads on `/` and `/blog/`.
-- `_layouts/page.html`: extends default. Renders `.intro` (heading + lede) and `.prose` body wrapper.
-- `_layouts/post.html`: extends default. Post title, date, and prose body.
-- `404.html`: editorial "Off the menu." 404.
+- `index.md`: hero (via layout), Stations + Featured Work + Currently sections.
+- `about.md`: bio, "What I Build", Experience entries, Education, Reach.
+- `projects.md`: full project list aligned to GitHub pin slate + Sauron Stack.
+- `resume.md`: Summary, Experience, Technical Skills (.stations grid), Projects, Education, Certifications.
+- `blog.md`: post index (layout: page, Liquid for-loop renders posts).
+- `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
+- `404.html`: terminal "SIGNAL LOST" 404.
 - `assets/resume/SolomonSmithInternship.pdf`: current downloadable resume.
 
 ## Key Content Rules
-- Solomon writes blog posts himself. Do not generate blog posts unless explicitly asked.
-- **No em dashes anywhere**, including frontmatter, body copy, descriptions, and commit messages. Use a colon, a period, `--`, or rewrite. This was last enforced site-wide on 2026-05-13.
+- **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
 - No emojis on the rendered site unless explicitly requested.
 - Target language: "full-time AI/ML engineering roles starting January 2027" (not internships).
 - GPA: 3.14 (confirmed). Dean's List Spring 2025, Dean's List Fall 2025.
+- Solomon writes blog posts himself. Do not generate blog posts unless explicitly asked.
 
 ## Active Projects (for portfolio accuracy, aligned to GitHub pin slate)
-The site's "Featured Work" (index.md top 3) and "Projects" list (projects.md) align to the actual GitHub pin slate, in this order:
 
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
 2. **arda**: Python LLM agents with LangChain. FastAPI + MCP + Redis. Active.
@@ -77,9 +100,7 @@ The site's "Featured Work" (index.md top 3) and "Projects" list (projects.md) al
 5. **DocMind**: RAG document Q&A with prompt injection defense. Active.
 6. **adversarial-search-csp**: Minimax, Negamax, Alpha-Beta + CSP solver. 21 pytest cases, CI-tested.
 
-Sauron Stack (PM2-managed Debian server with Earendil/Sauron/Morgoth/Balrog) is on `projects.md` and `resume.md` but is not pinned on GitHub.
-
-TargetRecon CLI is no longer on the site (was a placeholder for an in-progress project that did not graduate to a pin).
+Sauron Stack (PM2-managed Debian server) appears on `projects.md` and `resume.md` but is not a GitHub pin.
 
 ## Work Experience (for resume accuracy)
 1. Software Engineering Intern, Recursa AI (Dec 2025 to Mar 2026)
@@ -88,24 +109,20 @@ TargetRecon CLI is no longer on the site (was a placeholder for an in-progress p
 4. IT Student Assistant, Cañada College (Jun 2023 to May 2025)
 5. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager)
 
-## Resume PDF
-Current file: `assets/resume/SolomonSmithInternship.pdf`
-To update: drop new PDF into `assets/resume/`, update the href in `resume.md` line 9.
-
 ## Common Tasks
-- **Add a project**: edit `projects.md` (add a `.course` entry) and consider adding to the top 3 in `index.md` "Featured Work".
+- **Add a project**: edit `projects.md` (add a `.course` entry) and consider updating the top 3 in `index.md` "Featured Work".
 - **Update resume**: edit `resume.md`. Mirror key changes to `about.md` Experience section.
-- **Change target language**: update `index.md` Currently section, `about.md` "What I am Looking For" section, `_config.yml` description.
+- **Change target language**: update `index.md` Currently section, `about.md` "What I am Looking For", `_config.yml` description.
 - **Add a `.station` skill**: edit the `.stations` grid in `index.md`, `about.md`, and `resume.md` (all three for consistency).
-- **Recolor or retype**: edit the `:root` CSS variables at the top of `assets/main.scss`. The design system is token-driven; changing one variable cascades.
+- **Recolor or retype**: edit the `:root` CSS variables at the top of `assets/main.scss`. Token-driven; one change cascades.
+- **Update resume PDF**: drop new PDF into `assets/resume/`, update the href in `resume.md` line 9.
 
 ## Build Notes
-- Local build: `bundle exec jekyll build`. Solomon's machine had a bundler-version mismatch with system Ruby on 2026-05-13; install a matching bundler or use Pages CI to verify.
-- Pages CI: every push to `main` triggers `pages-build-deployment`. Typical build time 30 to 60 seconds.
-- HTTPS is enforced. HSTS header is set by GitHub Pages once HTTPS enforcement is on.
+- Local build: `bundle exec jekyll serve --livereload`. Pages CI: every push to `main` triggers `pages-build-deployment`.
+- HTTPS enforced. HSTS set by GitHub Pages once HTTPS enforcement is on.
+- Custom domain: `solomonsmith.dev` via `CNAME` file in repo root. If the domain lapses, remove `CNAME` and update `url:` in `_config.yml` back to `https://solomonsmith-dev.github.io`.
 
 ## Reconciliation Notes (pending)
-- LinkedIn degree field shows "Computational Science" but should be "Computer Science". Fix on LinkedIn.
+- LinkedIn degree field shows "Computational Science" but should be "Computer Science".
 - Recursa role title: standardize to "Software Engineering Intern" on LinkedIn.
 - RideSplits title: standardize to "Full-Stack Developer Intern" on LinkedIn.
-- `solomon-smith-dev.tech` domain lapsed. Pages config no longer references it. If Solomon repurchases later, drop a `CNAME` file at repo root and set `https_enforced` after the cert provisions.
