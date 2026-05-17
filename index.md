@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "AI, ML and Software Engineering Portfolio"
-description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open for full-time roles January 2027."
+description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Seeking internships Summer 2026 and full-time roles January 2027."
 permalink: /
 hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwasher to head chef. Same discipline, new craft. Building LLM pipelines, RAG systems, and the backend that makes them production-worthy."
 ---
@@ -136,7 +136,7 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 - Finishing B.S. Computer Science at CSUSB, graduating <strong>December 2026</strong>
 - Most recent role: Software Engineering Intern at <strong>Recursa AI</strong>, shipping RAG over a legal corpus with an evaluation harness that caught a 12% hallucination regression before release
 - Building LLM pipelines, RAG systems, and multi-agent infrastructure on my home server stack
-- Targeting <strong>full-time AI/ML engineering roles starting January 2027</strong>
+- Targeting <strong>internships for Summer 2026</strong> and <strong>full-time AI/ML engineering roles starting January 2027</strong>
 - Reach me at <a href="mailto:solomonsmithdev@gmail.com">solomonsmithdev@gmail.com</a>
 
 </div>

@@ -15,7 +15,7 @@
   console.log("%c--------------------------------------------", D);
   console.log("%c  stack:   Python · FastAPI · LangChain · Claude API · RAG · MCP", S);
   console.log("%c  arda:    online  [Earendil routing | Sauron executing | Balrog guarding]", A);
-  console.log("%c  status:  open for full-time AI/ML roles -- January 2027", G);
+  console.log("%c  status:  internships Summer 2026 / full-time AI/ML roles Jan 2027", G);
   console.log("%c--------------------------------------------", D);
   console.log("%c  contact: solomonsmithdev@gmail.com", S);
   console.log("%c  hint:    press / anywhere to open the terminal", D);
@@ -66,6 +66,7 @@
         "  ls projects          project index",
         "  ls skills            skill manifest",
         "  ls writing           recent posts",
+        "  cat <post-slug>      read post lede",
         "",
         "  -- navigate --",
         "  open <page>          go to: about, projects, blog, resume, home",
@@ -93,7 +94,7 @@
         "  same mise en place. different kitchen.",
         "",
         "LOCATION:  Montclair, CA. remote or relocation.",
-        "AVAILABLE: January 2027",
+        "AVAILABLE: Summer 2026 (internship) | January 2027 (full-time)",
       ].join("\n");
     },
 
@@ -148,7 +149,7 @@
         "  CS senior at CSU San Bernardino. Over a decade in professional",
         "  kitchens before pivoting into engineering. Building LLM pipelines,",
         "  RAG systems, and multi-agent infrastructure.",
-        "  Targeting full-time AI/ML engineering roles starting January 2027.",
+        "  Targeting internships (Summer 2026) and full-time AI/ML roles (January 2027).",
         "",
         "EXPERIENCE",
         "  Software Engineering Intern, Recursa AI        Dec 2025 - Mar 2026",
@@ -277,8 +278,41 @@
         "/home/solomon/writing/",
         "",
         "  2026-04-30   building-soc-triage-copilot",
+        "  2024-04-22   first-post",
         "",
-        'full list: type "open blog"',
+        'type "cat <slug>" to read the lede. "open blog" for the full site.',
+      ].join("\n");
+    },
+
+    "cat building-soc-triage-copilot": function () {
+      return [
+        "Building a SOC Triage Copilot: AI-Assisted Security Alert Triage",
+        "2026-04-30",
+        "",
+        "  Security operations centers drown in alerts. Most are noise.",
+        "  The ones that matter get buried. I built a system to fix that.",
+        "",
+        "  v1 is shipped: RAG-grounded triage using the Claude API and",
+        "  sentence-transformers, 7-case reliability harness at 100% pass rate.",
+        "  This post covers v2 -- a full platform rewrite with FastAPI,",
+        "  PostgreSQL event store, and a Next.js analyst dashboard.",
+        "",
+        'read it: type "open blog"',
+      ].join("\n");
+    },
+
+    "cat first-post": function () {
+      return [
+        "Building My Portfolio Site",
+        "2024-04-22",
+        "",
+        "  Today I shipped the first real version of my portfolio site.",
+        "  Hosted on GitHub Pages, generated with Jekyll,",
+        "  written from scratch instead of cloning a template.",
+        "",
+        "  It has come a long way since then.",
+        "",
+        'read it: type "open blog"',
       ].join("\n");
     },
 
@@ -319,7 +353,8 @@
         "                                        STACK:   Python · FastAPI",
         "                                                 LangChain · RAG · MCP",
         "                                        CONTACT: solomonsmithdev@gmail.com",
-        "                                        STATUS:  available January 2027",
+        "                                        STATUS:  intern Summer 2026",
+        "                                                 full-time Jan 2027",
         "",
       ].join("\n");
     },
@@ -330,7 +365,7 @@
         "",
         "  USER=solomon",
         "  ROLE=ai-ml-engineer",
-        "  AVAILABLE=january-2027",
+        "  AVAILABLE=summer-2026-internship,jan-2027-fulltime",
         "  LOCATION=montclair-ca",
         "  OPEN_TO=remote,relocation",
         "  CURRENT_BUILD=arda,soc-triage-ai,phishguard",
@@ -349,7 +384,7 @@
         "  solomon -- AI/ML engineer, former head chef",
         "",
         "SYNOPSIS",
-        "  solomon [--role ai-ml-engineer] [--available january-2027]",
+        "  solomon [--role ai-ml-engineer] [--available summer-2026 | jan-2027]",
         "          [--location montclair-ca] [--open-to remote,relocation]",
         "",
         "DESCRIPTION",
@@ -360,7 +395,7 @@
         "",
         "OPTIONS",
         "  --hire        Strongly recommended.",
-        "  --available   January 2027.",
+        "  --available   Summer 2026 (internship). January 2027 (full-time).",
         "  --location    Montclair, CA.",
         "",
         "FILES",
@@ -387,7 +422,7 @@
         "",
         "  ACTION REQUIRED: human approval needed.",
         "  contact:          solomonsmithdev@gmail.com",
-        "  available:        January 2027",
+        "  available:        Summer 2026 (internship) or January 2027 (full-time)",
         "",
         "  note: the kitchen taught me that good service is invisible.",
         "        the same is true of good systems.",
@@ -562,7 +597,6 @@
       return;
     }
 
-    // history -- reads cmdHistory at call time, so handled here not in CMDS
     if (key === "history") {
       if (cmdHistory.length === 0) {
         print("\n  no commands in history yet.\n");
@@ -576,7 +610,6 @@
       return;
     }
 
-    // open / cd -- argument-bearing navigation commands
     if (key.indexOf("open") === 0 || key.indexOf("cd ") === 0) {
       var dest = key.indexOf("open") === 0
         ? key.slice(4).trim()
@@ -625,6 +658,14 @@
     termOpen = false;
     if (terminal) { terminal.style.transform = "translateY(100%)"; }
   }
+
+  // ── Footer hint button ────────────────────────────────────────────────────────
+  document.addEventListener("DOMContentLoaded", function () {
+    var btn = document.getElementById("term-hint-btn");
+    if (btn) {
+      btn.addEventListener("click", function () { openTerminal(); });
+    }
+  });
 
   // ── Konami overlay (DOM methods only, no innerHTML) ───────────────────────────
   function buildKonamiOverlay() {

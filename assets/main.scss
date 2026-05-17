@@ -765,6 +765,20 @@ main.shell {
 .site-footer ul a { color: var(--color-cream-soft); }
 .site-footer ul a:hover { color: var(--color-amber); }
 
+.term-hint {
+  background: transparent;
+  border: none;
+  color: var(--color-cream-faint);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  padding: 0;
+  transition: color var(--transition-fast);
+}
+
+.term-hint:hover { color: var(--color-cream-muted); }
+
 /* ----- Inline lede next to page heading -------------------------------- */
 
 .intro {

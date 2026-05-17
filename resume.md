@@ -7,13 +7,13 @@ lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure th
 ---
 
 <p style="margin-bottom: 3rem;">
-  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithInternship.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
   <a class="btn" href="mailto:solomonsmithdev@gmail.com">Email me</a>
 </p>
 
 ## Summary
 
-CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Targeting **full-time AI/ML engineering roles starting January 2027**.
+CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Targeting **internships for Summer 2026** and **full-time AI/ML engineering roles starting January 2027**.
 
 ## Experience
 

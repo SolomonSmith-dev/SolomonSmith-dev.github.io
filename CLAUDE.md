@@ -83,12 +83,12 @@ Matrix terminal aesthetic: dimmed phosphor green on near-black, all monospace, w
 - `blog.md`: post index (layout: page, Liquid for-loop renders posts).
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
 - `404.html`: terminal "SIGNAL LOST" 404.
-- `assets/resume/SolomonSmithInternship.pdf`: current downloadable resume.
+- `assets/resume/SolomonSmithResume.pdf`: current downloadable resume.
 
 ## Key Content Rules
 - **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
 - No emojis on the rendered site unless explicitly requested.
-- Target language: "full-time AI/ML engineering roles starting January 2027" (not internships).
+- Target language: "internships for Summer 2026 and full-time AI/ML engineering roles starting January 2027".
 - GPA: 3.14 (confirmed). Dean's List Spring 2025, Dean's List Fall 2025.
 - Solomon writes blog posts himself. Do not generate blog posts unless explicitly asked.
 
