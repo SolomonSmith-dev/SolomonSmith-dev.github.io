@@ -6,6 +6,8 @@ description: "About Solomon Smith. CS senior at CSUSB, AI/ML engineer with a dec
 lede: "Chef turned engineer. CS senior at California State University, San Bernardino. AI/ML engineering and applied LLM systems."
 ---
 
+<img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Solomon Smith" style="width:120px;height:120px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1.5rem 2rem;">
+
 I spent over a decade in professional kitchens before this, working my way from dishwasher to Head Chef across high-volume operations. Long shifts, narrow margins for error, and constant team coordination taught me how to ship under pressure, diagnose what is breaking in real time, and refine a system until it holds. Those habits transfer directly.
 
 I am now a Computer Science senior at California State University, San Bernardino, focused on AI/ML engineering, backend systems, and applied LLM development. What I care about is the systems side of AI: RAG pipelines, multi-agent infrastructure, and the production hardening that turns a working notebook into something a team can run.
