@@ -44,6 +44,15 @@ social:
     - https://github.com/SolomonSmith-dev
     - https://linkedin.com/in/solomonsmithdev
 
+# Default og:image for all pages (jekyll-seo-tag picks up page.image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/headshot.jpg
+        alt: "Solomon Smith"
+
 # Exclude from processing
 exclude:
   - docs/
