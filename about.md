@@ -97,3 +97,4 @@ I graduate in December 2026 and am targeting **internships for Summer 2026** and
 - **Email:** [solomonsmithdev@gmail.com](mailto:solomonsmithdev@gmail.com)
 - **GitHub:** [SolomonSmith-dev](https://github.com/SolomonSmith-dev)
 - **LinkedIn:** [solomonsmithdev](https://linkedin.com/in/solomonsmithdev)
+- **Digital Card:** [solomonsmith.dev/card](https://solomonsmith.dev/card)
