@@ -92,7 +92,7 @@ My current stack centers on Python, FastAPI, and the Anthropic Claude API, with 
 
 ## What I am Looking For
 
-I graduate in December 2026 and am targeting **internships for Summer 2026** and **full-time AI/ML engineering roles starting January 2027**. Based in Montclair, CA. Open to remote or relocation.
+I graduate in December 2026 and am open to **Fall 2026 internships** and **full-time AI/ML engineering roles starting January 2027**. Based in Montclair, CA. Open to remote or relocation.
 
 ## Reach
 
