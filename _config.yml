@@ -1,5 +1,5 @@
 title: "Solomon Smith"
-description: "Solomon Smith. CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Seeking internships Summer 2026 and full-time roles January 2027."
+description: "AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. CS senior at CSUSB, open to Summer 2026 internships."
 url: "https://solomonsmith.dev"
 baseurl: ""
 lang: en
@@ -15,6 +15,9 @@ bio: "CS senior at CSUSB building LLM pipelines, RAG systems, and multi-agent in
 
 # Build settings
 theme: minima
+
+sass:
+  style: compressed
 
 minima:
   date_format: "%b %-d, %Y"
@@ -52,6 +55,8 @@ defaults:
       image:
         path: /assets/images/headshot.jpg
         alt: "Solomon Smith"
+        width: 410
+        height: 600
 
 # Exclude from processing
 exclude:
