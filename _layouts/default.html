@@ -7,6 +7,12 @@
 
   {% seo %}
   {% feed_meta %}
+  {% include structured-data.html %}
+
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+  <meta name="theme-color" content="#0A0E0A">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +53,7 @@
 
 <script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/js/easter-eggs.js' | relative_url }}"></script>
+{% include analytics.html %}
 
 </body>
 </html>
