@@ -141,6 +141,6 @@ lede: "Applied AI and ML systems, security tooling, and multi-agent backends. Ea
 
 </div>
 
-<p class="prose" style="margin-top: 3rem;">
+<p class="prose mt-lg">
   Project write-ups land on the <a href="{{ '/blog/' | relative_url }}">blog</a> as they ship. The full source tree lives on <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub</a>.
 </p>

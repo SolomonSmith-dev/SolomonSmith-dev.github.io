@@ -6,7 +6,7 @@ description: "Resume of Solomon Smith. CS senior at CSUSB and AI/ML engineer."
 lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure that puts them in production."
 ---
 
-<p style="margin-bottom: 3rem;">
+<p class="btn-row">
   <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
   <a class="btn" href="mailto:solomonsmithdev@gmail.com">Email me</a>
 </p>
@@ -178,6 +178,6 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 - Google IT Support Specialization
 - Google Cloud Computing Foundations Certificate
 
-<p style="margin-top: 2.5rem; opacity: 0.75;">
+<p class="footnote">
   For the formatted PDF version, use the <strong>Download PDF</strong> button at the top of this page.
 </p>

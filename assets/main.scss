@@ -81,6 +81,23 @@ button:focus-visible,
   outline-offset: 3px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--color-iron-2);
+  color: var(--color-cream);
+  border: 1px solid var(--color-cream);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {
@@ -802,6 +819,20 @@ main.shell {
 .amber { color: var(--color-amber); }
 .muted { color: var(--color-cream-muted); }
 
+.btn-row { margin-bottom: 3rem; }
+.footnote { margin-top: 2.5rem; opacity: 0.75; }
+.mt-lg { margin-top: 3rem; }
+
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  border: 1px solid var(--color-hairline);
+}
+
 /* ----- Section link + 404 (replaces inline styles) ---------------------- */
 
 .section-link {
@@ -814,6 +845,7 @@ main.shell {
 
 .section-link a { color: var(--color-cream-soft); }
 .section-link a:hover { color: var(--color-cream); }
+.section-link--post { margin-top: 4rem; }
 
 .post-meta-line {
   font-family: var(--font-mono);
