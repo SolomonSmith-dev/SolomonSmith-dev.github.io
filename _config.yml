@@ -37,7 +37,7 @@ header_pages:
 # SEO defaults
 twitter:
   username: solomonsmithdev
-  card: summary
+  card: summary_large_image
 
 # Search Console / Bing verification (jekyll-seo-tag reads these).
 # 1. Add https://solomonsmith.dev as a property in Google Search Console.
@@ -58,14 +58,17 @@ social:
     - https://github.com/SolomonSmith-dev
     - https://linkedin.com/in/solomonsmithdev
 
-# Default og:image for all pages (jekyll-seo-tag picks up page.image)
+# Default og:image for all pages (jekyll-seo-tag picks up page.image).
+# Branded 1200x630 banner for rich link previews (summary_large_image).
 defaults:
   - scope:
       path: ""
     values:
       image:
-        path: /assets/images/headshot.jpg
-        alt: "Solomon Smith"
+        path: /assets/images/og-image.png
+        alt: "Solomon Smith. AI/ML Engineer. LLM pipelines, RAG systems, and multi-agent infrastructure."
+        width: 1200
+        height: 630
 
 # Exclude from processing
 exclude:
