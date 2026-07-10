@@ -4,6 +4,8 @@ title: "Building My Portfolio Site"
 date: 2024-04-22 12:00:00 -0700
 categories: portfolio update
 description: "Notes from shipping the first version of my portfolio site. Jekyll, GitHub Pages, and the bugs I hit along the way."
+redirect_from:
+  - /portfolio/update/2024/04/22/first-post.html
 ---
 
 Today I shipped the first real version of my portfolio site. Hosted on GitHub Pages,
@@ -41,6 +43,6 @@ This post is the build log.
 
 - Rewrote all pages with real project content (TargetRecon CLI, Earendil, SOC Triage Copilot)
 - Built a custom dark Sass theme on top of Minima -- project cards, skills grid, sticky header
-- Started writing about the AI/ML work: see [Building a SOC Triage Copilot](/2026/04/30/building-soc-triage-copilot.html)
+- Started writing about the AI/ML work: see [Building a SOC Triage Copilot]({% post_url 2026-04-30-building-soc-triage-copilot %})
 
 First sprint done. Site is live. The work continues.
