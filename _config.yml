@@ -37,7 +37,7 @@ header_pages:
 # SEO defaults
 twitter:
   username: solomonsmithdev
-  card: summary
+  card: summary_large_image
 social:
   name: Solomon Smith
   links:
@@ -45,13 +45,14 @@ social:
     - https://linkedin.com/in/solomonsmithdev
 
 # Default og:image for all pages (jekyll-seo-tag picks up page.image)
+# Use the 1200x630 social card for link previews; headshot remains on /about and /card.
 defaults:
   - scope:
       path: ""
     values:
       image:
-        path: /assets/images/headshot.jpg
-        alt: "Solomon Smith"
+        path: /assets/images/og-default.png
+        alt: "Solomon Smith. AI/ML engineer. Internships Summer 2026. Full-time January 2027."
 
 # Exclude from processing
 exclude:

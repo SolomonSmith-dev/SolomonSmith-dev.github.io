@@ -4,22 +4,66 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A0E0A">
+  <meta name="color-scheme" content="dark">
 
   {% seo %}
   {% feed_meta %}
+
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  <link rel="alternate icon" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/og-default.png' | relative_url }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Solomon Smith",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "email": "{{ site.email }}",
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/headshot.jpg",
+    "jobTitle": "AI/ML Engineer",
+    "description": "{{ site.bio | escape }}",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "California State University, San Bernardino"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Montclair",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/{{ site.github_username }}",
+      "https://linkedin.com/in/{{ site.linkedin_username }}"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Large Language Models",
+      "Retrieval Augmented Generation",
+      "Python",
+      "FastAPI",
+      "Multi-agent systems"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
   <div class="shell site-header__inner">
     <a class="site-title" href="{{ '/' | relative_url }}">Solomon Smith</a>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Primary">
       <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>~/about</a>
       <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active"{% endif %}>~/projects</a>
       <a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' or page.url contains '/20' %}class="active"{% endif %}>~/writing</a>
@@ -28,19 +72,25 @@
   </div>
 </header>
 
-<main class="shell">
+<main id="main" class="shell">
   {{ content }}
 </main>
 
 <footer class="site-footer">
   <div class="shell site-footer__inner">
-    <p>Solomon Smith. AI/ML engineer. Internships Summer 2026. Full-time Jan 2027.</p>
+    <div class="site-footer__copy">
+      <p>Solomon Smith. AI/ML engineer. Open for internships Summer 2026 and full-time roles January 2027.</p>
+      <p class="site-footer__cta">
+        <a class="btn btn--primary" href="mailto:{{ site.email }}">Email me</a>
+        <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume PDF</a>
+      </p>
+    </div>
     <ul>
       <li><a href="mailto:{{ site.email }}">email</a></li>
       <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a></li>
       <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin</a></li>
       <li><a href="{{ '/card' | relative_url }}">card</a></li>
-      <li><button class="term-hint" id="term-hint-btn" title="open terminal">[/]</button></li>
+      <li><button class="term-hint" id="term-hint-btn" title="open terminal" type="button" aria-label="Open terminal">[/]</button></li>
     </ul>
   </div>
 </footer>

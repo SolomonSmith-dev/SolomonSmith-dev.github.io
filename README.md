@@ -1,26 +1,26 @@
-# SolomonSmith-dev.github.io
+# Solomon Smith Portfolio
 
-The source for **[solomonsmith-dev.github.io](https://solomonsmith-dev.github.io)**, my personal portfolio site.
+Source for **[solomonsmith.dev](https://solomonsmith.dev)** (GitHub Pages fallback: [solomonsmith-dev.github.io](https://solomonsmith-dev.github.io)).
 
-A Jekyll static site with custom SCSS, hand-written layouts, and content written in Markdown. No theme, no framework, no Tailwind. Deployed via GitHub Pages on every push to `main`.
+A Jekyll static site with custom SCSS, hand-written layouts, and content written in Markdown. Deployed via GitHub Pages on every push to `main`.
 
 ## Stack
 
 - **Jekyll** for static generation
-- **SCSS** for styling (no preprocessor frameworks)
-- **Liquid** templates for layouts and includes
+- **SCSS** for styling (standalone design system in `assets/main.scss`)
+- **Liquid** templates for layouts
 - **GitHub Pages** for hosting + automatic deploy
-- Custom CNAME for the github.io subdomain
+- Custom domain via `CNAME`
 
 ## Local development
 
-Requires Ruby 3.x and Bundler.
+Requires Ruby 3.x and Bundler. System Ruby 2.6 is incompatible with bundler 2.6.x.
 
 ```bash
 git clone https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io
 cd SolomonSmith-dev.github.io
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 Open `http://localhost:4000`.
@@ -29,17 +29,19 @@ Open `http://localhost:4000`.
 
 ```
 .
-├── _config.yml      # Jekyll config
+├── _config.yml      # Jekyll config + SEO defaults
 ├── _layouts/        # Page templates (home, page, post)
-├── _sass/           # SCSS partials
 ├── _posts/          # Blog posts
-├── assets/          # CSS, images, downloadable resume
+├── assets/          # CSS, JS, images, downloadable resume
+├── docs/            # Plans and specs (excluded from build)
 ├── index.md         # Landing page
 ├── about.md         # Bio
-├── projects.md      # Featured project listings
+├── projects.md      # Project listings
 ├── resume.md        # Web-rendered resume
-├── blog.md          # Blog index
-└── CNAME            # Custom domain config
+├── blog.md          # Writing index
+├── llms.txt         # AI-assistant summary
+├── robots.txt       # Crawler rules + sitemap
+└── CNAME            # Custom domain
 ```
 
 ## Contributing
@@ -49,4 +51,4 @@ Personal site. Issues are welcome (typo fixes, accessibility regressions, broken
 ## License
 
 Content (`*.md` files, blog posts): all rights reserved.
-Code (`_layouts`, `_sass`, `_includes`): MIT.
+Code (`_layouts`, `assets`, `_includes`): MIT.
