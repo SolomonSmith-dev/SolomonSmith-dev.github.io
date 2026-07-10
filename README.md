@@ -1,6 +1,6 @@
-# SolomonSmith-dev.github.io
+# solomonsmith.dev
 
-The source for **[solomonsmith-dev.github.io](https://solomonsmith-dev.github.io)**, my personal portfolio site.
+The source for **[solomonsmith.dev](https://solomonsmith.dev)**, my personal portfolio site.
 
 A Jekyll static site with custom SCSS, hand-written layouts, and content written in Markdown. No theme, no framework, no Tailwind. Deployed via GitHub Pages on every push to `main`.
 
@@ -10,7 +10,7 @@ A Jekyll static site with custom SCSS, hand-written layouts, and content written
 - **SCSS** for styling (no preprocessor frameworks)
 - **Liquid** templates for layouts and includes
 - **GitHub Pages** for hosting + automatic deploy
-- Custom CNAME for the github.io subdomain
+- Custom domain (`solomonsmith.dev`) via CNAME
 
 ## Local development
 
