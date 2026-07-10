@@ -4,6 +4,9 @@ title: "Building a SOC Triage Copilot: AI-Assisted Security Alert Triage"
 date: 2026-04-30 10:00:00 -0700
 categories: projects ai security
 description: "Architecture notes from building an AI-powered SOC triage system. FastAPI backend, ML alert classification, MITRE ATT&CK mapping, Next.js dashboard, and an append-only analyst override log."
+redirect_from:
+  - /projects/ai/security/2026/04/30/building-soc-triage-copilot.html
+  - /2026/04/30/building-soc-triage-copilot.html
 ---
 
 Security operations centers drown in alerts. Most are noise. The ones that matter

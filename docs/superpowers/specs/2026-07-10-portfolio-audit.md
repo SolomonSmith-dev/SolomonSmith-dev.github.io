@@ -35,10 +35,13 @@ This pass hardens the professional conversion path and SEO plumbing. Traffic gro
 ### Technical SEO (done or near-done)
 
 - [x] Favicon, OG card, Person schema, robots/llms
+- [x] Clean `/blog/:slug/` permalinks with redirects from old category URLs
+- [x] Apple touch icon + web manifest
+- [x] Optional Plausible analytics hook (`plausible_domain` in `_config.yml`)
 - [ ] Verify Google Search Console property for `solomonsmith.dev` and submit sitemap
 - [ ] Verify Bing Webmaster Tools
 - [ ] Confirm Cloudflare managed `robots.txt` is not over-blocking discovery you want (it currently blocks several AI training bots; search indexing remains allowed)
-- [ ] Add a square apple-touch-icon derived from the headshot if you care about iOS home-screen bookmarks
+- [ ] Uncomment/set `plausible_domain` after creating a Plausible site
 
 ### Content SEO (highest leverage for organic traffic)
 

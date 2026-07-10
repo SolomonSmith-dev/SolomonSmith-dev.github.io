@@ -1,0 +1,23 @@
+{
+  "name": "Solomon Smith",
+  "short_name": "Solomon",
+  "description": "AI/ML engineer portfolio. Fall 2026 internships. Full-time January 2027.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0A0E0A",
+  "theme_color": "#0A0E0A",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
