@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Solomon Smith">
+  <rect width="32" height="32" fill="#0A0E0A"/>
+  <rect x="1" y="1" width="30" height="30" fill="none" stroke="#00D936" stroke-width="1" opacity="0.35"/>
+  <text x="7" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700" fill="#00D936">&gt;_</text>
+</svg>

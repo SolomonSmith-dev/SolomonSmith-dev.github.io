@@ -69,6 +69,27 @@ a {
 
 /* ----- Accessibility ---------------------------------------------------- */
 
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--color-cream);
+  color: var(--color-iron);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-cream);
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+  outline: 2px solid var(--color-cream);
+  outline-offset: 2px;
+}
+
 :focus-visible {
   outline: 2px solid var(--color-cream);
   outline-offset: 2px;
@@ -248,13 +269,18 @@ main.shell {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.hero__actions .btn {
+  margin-right: 0;
 }
 
 .hero__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   letter-spacing: 0.14em;
@@ -767,6 +793,59 @@ main.shell {
   color: var(--color-cream);
 }
 
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.75rem 0 0;
+}
+
+.cta-row .btn { margin-right: 0; }
+
+.cta-row--top {
+  margin: 0 0 3rem;
+}
+
+.about-headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  border: 1px solid var(--color-hairline);
+}
+
+@media (max-width: 560px) {
+  .about-headshot {
+    float: none;
+    display: block;
+    margin: 0 0 1.5rem;
+  }
+}
+
+.resume-note {
+  margin-top: 2.5rem;
+  opacity: 0.75;
+}
+
+.projects-footer {
+  margin-top: 3rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-cream-soft);
+  max-width: 68ch;
+}
+
+.projects-footer a {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.projects-footer a:hover {
+  border-bottom-color: var(--color-amber);
+}
+
 /* ----- Footer ----------------------------------------------------------- */
 
 .site-footer {
@@ -778,9 +857,13 @@ main.shell {
 .site-footer__inner {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 1.5rem;
+}
+
+.site-footer__copy {
+  max-width: 48ch;
 }
 
 .site-footer p {
@@ -788,7 +871,17 @@ main.shell {
   font-size: 0.95rem;
   color: var(--color-cream-soft);
   margin: 0;
-  max-width: 48ch;
+}
+
+.site-footer__cta {
+  margin-top: 1.25rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-footer__cta .btn {
+  margin-right: 0;
 }
 
 .site-footer ul {
@@ -852,6 +945,8 @@ main.shell {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
+.section-link--back { margin-top: 4rem; }
 
 .section-link a { color: var(--color-cream-soft); }
 .section-link a:hover { color: var(--color-cream); }

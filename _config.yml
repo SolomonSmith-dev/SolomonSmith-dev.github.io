@@ -15,6 +15,8 @@ bio: "CS senior at CSUSB building LLM pipelines, RAG systems, and multi-agent in
 
 # Build settings
 theme: minima
+sass:
+  style: compressed
 
 minima:
   date_format: "%b %-d, %Y"
@@ -26,6 +28,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+# Optional: set to your Plausible site domain to enable privacy-friendly analytics.
+# Example: plausible_domain: "solomonsmith.dev"
+# plausible_domain: ""
 
 # Navigation links (paths must match each page's source path)
 header_pages:
@@ -37,7 +44,7 @@ header_pages:
 # SEO defaults
 twitter:
   username: solomonsmithdev
-  card: summary
+  card: summary_large_image
 social:
   name: Solomon Smith
   links:
@@ -45,13 +52,19 @@ social:
     - https://linkedin.com/in/solomonsmithdev
 
 # Default og:image for all pages (jekyll-seo-tag picks up page.image)
+# Use the 1200x630 social card for link previews; headshot remains on /about and /card.
 defaults:
   - scope:
       path: ""
     values:
       image:
-        path: /assets/images/headshot.jpg
-        alt: "Solomon Smith"
+        path: /assets/images/og-default.png
+        alt: "Solomon Smith. AI/ML engineer. Fall 2026 internships. Full-time January 2027."
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:slug/
 
 # Exclude from processing
 exclude:

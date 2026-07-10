@@ -149,6 +149,11 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 - Building LLM pipelines, RAG systems, and multi-agent infrastructure on my home server stack
 - Open to <strong>Fall 2026 internships</strong> and <strong>full-time AI/ML engineering roles starting January 2027</strong>
 - Strongest fit: RAG backend, AI platform/backend, and applied ML for production systems
-- Reach me at <a href="mailto:solomonsmithdev@gmail.com">solomonsmithdev@gmail.com</a>
+
+<p class="cta-row">
+  <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+  <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume PDF</a>
+  <a class="btn" href="{{ '/resume/' | relative_url }}">Full resume</a>
+</p>
 
 </div>

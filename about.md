@@ -6,7 +6,7 @@ description: "About Solomon Smith. CS senior at CSUSB, AI/ML engineer with a dec
 lede: "Chef turned engineer. CS senior at California State University, San Bernardino. AI/ML engineering and applied LLM systems."
 ---
 
-<img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Solomon Smith" style="width:120px;height:120px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1.5rem 2rem;">
+<img class="about-headshot" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Solomon Smith, AI/ML engineer" width="120" height="120" loading="lazy" decoding="async">
 
 I spent over a decade in professional kitchens before this, working my way from dishwasher to Head Chef across high-volume operations. Long shifts, narrow margins for error, and constant team coordination taught me how to ship under pressure, diagnose what is breaking in real time, and refine a system until it holds. Those habits transfer directly.
 
@@ -84,8 +84,8 @@ My current stack centers on Python, FastAPI, and the Anthropic Claude API, with 
     <p class="entry__meta">Expected December 2026</p>
   </div>
   <ul>
-    <li><strong>GPA:</strong> 3.14</li>
     <li><strong>Honors:</strong> Dean's List Spring 2025, Dean's List Fall 2025</li>
+    <li><strong>GPA:</strong> 3.14</li>
     <li><strong>Coursework:</strong> Machine Learning, Artificial Intelligence, Algorithms, Operating Systems, Computer Architecture, Statistics</li>
   </ul>
 </div>
@@ -93,6 +93,12 @@ My current stack centers on Python, FastAPI, and the Anthropic Claude API, with 
 ## What I am Looking For
 
 I graduate in December 2026 and am open to **Fall 2026 internships** and **full-time AI/ML engineering roles starting January 2027**. Based in Montclair, CA. Open to remote or relocation.
+
+<p class="cta-row">
+  <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+  <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume PDF</a>
+  <a class="btn" href="{{ '/projects/' | relative_url }}">See projects</a>
+</p>
 
 ## Reach
 

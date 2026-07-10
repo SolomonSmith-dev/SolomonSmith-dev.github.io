@@ -1,0 +1,30 @@
+# Solomon Smith
+
+> CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open to Fall 2026 internships and full-time AI/ML engineering roles starting January 2027.
+
+- Site: https://solomonsmith.dev
+- Email: solomonsmithdev@gmail.com
+- GitHub: https://github.com/SolomonSmith-dev
+- LinkedIn: https://linkedin.com/in/solomonsmithdev
+- Resume: https://solomonsmith.dev/resume/
+- Resume PDF: https://solomonsmith.dev/assets/resume/SolomonSmithResume.pdf
+
+## Focus
+
+Python, FastAPI, LangChain, Claude API, RAG (pgvector, ChromaDB, sentence-transformers), multi-agent orchestration, MCP, Docker, Linux.
+
+## Selected work
+
+- [soc-triage-ai](https://github.com/SolomonSmith-dev/soc-triage-ai): RAG-grounded SOC alert triage with MITRE ATT&CK mapping and reliability harness
+- [arda](https://github.com/SolomonSmith-dev/arda): Python LLM agents with LangChain, FastAPI, MCP, Redis
+- [phishguard](https://github.com/SolomonSmith-dev/phishguard): Multi-modal phishing URL detector (AUC 0.9943 on v0.2 holdout)
+- [claude-agents](https://github.com/SolomonSmith-dev/claude-agents): Local multi-agent orchestration backend
+- [DocMind](https://github.com/SolomonSmith-dev/DocMind): RAG document Q&A with prompt injection defense
+
+## Pages
+
+- [Home](https://solomonsmith.dev/): Portfolio overview and featured work
+- [About](https://solomonsmith.dev/about/): Background, experience, education
+- [Projects](https://solomonsmith.dev/projects/): Full project index
+- [Writing](https://solomonsmith.dev/blog/): Technical notes and build logs
+- [Resume](https://solomonsmith.dev/resume/): Full resume with PDF download
