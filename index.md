@@ -1,13 +1,24 @@
 ---
 layout: home
 title: "AI, ML and Software Engineering Portfolio"
-description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Seeking internships Summer 2026 and full-time roles January 2027."
+description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open to Fall 2026 internships and full-time roles starting January 2027."
 permalink: /
-hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwasher to head chef. Same discipline, new craft. Building LLM pipelines, RAG systems, and the backend that makes them production-worthy."
+hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwasher to head chef. Same discipline, new craft. Building production RAG systems and multi-agent backends, including evaluation harnesses that caught a 12% hallucination regression before release."
 ---
 
 <section class="section-marker">
   <span class="section-marker__roman">[01]</span>
+  <span class="section-marker__label">&gt; proof</span>
+</section>
+
+<ul class="proof-list">
+  <li><span class="proof-list__metric">200K+</span> legal documents ingested at 99%+ extraction accuracy</li>
+  <li><span class="proof-list__metric">4s &rarr; &lt;600ms</span> RAG query latency on a production legal corpus</li>
+  <li><span class="proof-list__metric">12%</span> hallucination regression caught and blocked before release</li>
+</ul>
+
+<section class="section-marker">
+  <span class="section-marker__roman">[02]</span>
   <span class="section-marker__label">&gt; stations</span>
 </section>
 
@@ -56,7 +67,7 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 </div>
 
 <section class="section-marker">
-  <span class="section-marker__roman">[02]</span>
+  <span class="section-marker__roman">[03]</span>
   <span class="section-marker__label">&gt; featured_work</span>
 </section>
 
@@ -127,7 +138,7 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 </p>
 
 <section class="section-marker">
-  <span class="section-marker__roman">[03]</span>
+  <span class="section-marker__roman">[04]</span>
   <span class="section-marker__label">&gt; currently</span>
 </section>
 
@@ -136,7 +147,8 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 - Finishing B.S. Computer Science at CSUSB, graduating <strong>December 2026</strong>
 - Most recent role: Software Engineering Intern at <strong>Recursa AI</strong>, shipping RAG over a legal corpus with an evaluation harness that caught a 12% hallucination regression before release
 - Building LLM pipelines, RAG systems, and multi-agent infrastructure on my home server stack
-- Targeting <strong>internships for Summer 2026</strong> and <strong>full-time AI/ML engineering roles starting January 2027</strong>
+- Open to <strong>Fall 2026 internships</strong> and <strong>full-time AI/ML engineering roles starting January 2027</strong>
+- Strongest fit: RAG backend, AI platform/backend, and applied ML for production systems
 
 <p class="cta-row">
   <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>

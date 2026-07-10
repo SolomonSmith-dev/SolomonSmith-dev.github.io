@@ -13,7 +13,7 @@ lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure th
 
 ## Summary
 
-CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Targeting **internships for Summer 2026** and **full-time AI/ML engineering roles starting January 2027**.
+CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Open to **Fall 2026 internships** and **full-time AI/ML engineering roles starting January 2027**.
 
 ## Experience
 

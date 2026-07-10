@@ -1,6 +1,6 @@
 # Solomon Smith
 
-> CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Seeking internships for Summer 2026 and full-time AI/ML engineering roles starting January 2027.
+> CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open to Fall 2026 internships and full-time AI/ML engineering roles starting January 2027.
 
 - Site: https://solomonsmith.dev
 - Email: solomonsmithdev@gmail.com

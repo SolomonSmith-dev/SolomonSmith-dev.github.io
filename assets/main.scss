@@ -290,6 +290,40 @@ main.shell {
 .hero__links a { color: var(--color-cream-soft); }
 .hero__links a:hover { color: var(--color-amber); }
 
+/* ----- Proof metrics ---------------------------------------------------- */
+
+.proof-list {
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.proof-list li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 11rem) 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--color-hairline);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  color: var(--color-cream-soft);
+}
+
+.proof-list__metric {
+  color: var(--color-cream);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 640px) {
+  .proof-list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
 /* ----- Status board ----------------------------------------------------- */
 
 .status-board { padding-top: 0.25rem; }

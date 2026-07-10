@@ -11,7 +11,7 @@ This pass hardens the professional conversion path and SEO plumbing. Traffic gro
 
 ## What is already working
 
-- Clear positioning: AI/ML, RAG, multi-agent systems, Summer 2026 internships / Jan 2027 full-time
+- Clear positioning: AI/ML, RAG, multi-agent systems, Fall 2026 internships / Jan 2027 full-time
 - Strong project proof: soc-triage-ai reliability harness, Recursa hallucination catch, phishguard AUC + LIMITATIONS.md honesty
 - Distinctive visual system that stands out in a sea of generic portfolios
 - jekyll-seo-tag, sitemap, RSS feed already wired
@@ -21,7 +21,7 @@ This pass hardens the professional conversion path and SEO plumbing. Traffic gro
 
 ## Changes shipped in this PR
 
-1. Primary hiring CTAs on home, about, projects, resume, and footer (`Hire me` / `Email me` / `Resume PDF`)
+1. Primary hiring CTAs on home, about, projects, resume, and footer (`View Resume` / `Email me` / `Resume PDF`)
 2. Person JSON-LD with skills, school, location, and social sameAs
 3. Site favicon (phosphor green SS monogram)
 4. 1200x630 Open Graph image + `summary_large_image` Twitter card
