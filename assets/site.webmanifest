@@ -1,0 +1,21 @@
+{
+  "name": "Solomon Smith \u00b7 AI/ML Engineer",
+  "short_name": "Solomon Smith",
+  "description": "AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0A0E0A",
+  "theme_color": "#0A0E0A",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
