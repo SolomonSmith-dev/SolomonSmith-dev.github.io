@@ -4,21 +4,18 @@
   // ── Console art ──────────────────────────────────────────────────────────────
   var G = "color:#00D936;font-family:monospace";
   var D = "color:#3FB85C;font-family:monospace";
-  var A = "color:#E8A05B;font-family:monospace";
   var S = "color:#5FE07F;font-family:monospace";
 
-  console.log("%c> SOLOMON SMITH // SYSTEM LOG", G);
+  console.log("%c> SOLOMON SMITH", G);
   console.log("%c--------------------------------------------", D);
-  console.log("%c  mise en place:  done.", D);
-  console.log("%c  formerly:       head chef -- dishwasher to exec kitchen, 10 yrs", D);
-  console.log("%c  now:            building LLM pipelines on a server named after middle-earth.", D);
+  console.log("%c  AI/ML engineer. CS senior at CSUSB.", D);
+  console.log("%c  Building LLM pipelines, RAG systems, and multi-agent infrastructure.", D);
   console.log("%c--------------------------------------------", D);
   console.log("%c  stack:   Python · FastAPI · LangChain · Claude API · RAG · MCP", S);
-  console.log("%c  arda:    online  [Earendil routing | Sauron executing | Balrog guarding]", A);
-  console.log("%c  status:  internships Summer 2026 / full-time AI/ML roles Jan 2027", G);
+  console.log("%c  status:  Fall 2026 internships / full-time AI/ML roles Jan 2027", G);
   console.log("%c--------------------------------------------", D);
   console.log("%c  contact: solomonsmithdev@gmail.com", S);
-  console.log("%c  hint:    press / anywhere to open the terminal", D);
+  console.log("%c  tip:     press / to open the optional terminal", D);
   console.log("%c--------------------------------------------", D);
 
   // ── Navigation routes ─────────────────────────────────────────────────────────
@@ -77,10 +74,10 @@
         "  env                  environment variables",
         "  man solomon          manual page",
         "  history              command history",
-        "  sudo hire-me         initiate offer sequence",
+        "  hire                 contact and availability",
         "  clear                clear terminal",
         "",
-        "  normies: type \"open about\" to see the full site.",
+        "  tip: type \"open about\" for the full site.",
       ].join("\n");
     },
 
@@ -94,7 +91,7 @@
         "  same mise en place. different kitchen.",
         "",
         "LOCATION:  Montclair, CA. remote or relocation.",
-        "AVAILABLE: Summer 2026 (internship) | January 2027 (full-time)",
+        "AVAILABLE: Fall 2026 (internship) | January 2027 (full-time)",
       ].join("\n");
     },
 
@@ -149,7 +146,7 @@
         "  CS senior at CSU San Bernardino. Over a decade in professional",
         "  kitchens before pivoting into engineering. Building LLM pipelines,",
         "  RAG systems, and multi-agent infrastructure.",
-        "  Targeting internships (Summer 2026) and full-time AI/ML roles (January 2027).",
+        "  Open to Fall 2026 internships and full-time AI/ML roles (January 2027).",
         "",
         "EXPERIENCE",
         "  Software Engineering Intern, Recursa AI        Dec 2025 - Mar 2026",
@@ -353,7 +350,7 @@
         "                                        STACK:   Python · FastAPI",
         "                                                 LangChain · RAG · MCP",
         "                                        CONTACT: solomonsmithdev@gmail.com",
-        "                                        STATUS:  intern Summer 2026",
+        "                                        STATUS:  Fall 2026 internship",
         "                                                 full-time Jan 2027",
         "",
       ].join("\n");
@@ -365,7 +362,7 @@
         "",
         "  USER=solomon",
         "  ROLE=ai-ml-engineer",
-        "  AVAILABLE=summer-2026-internship,jan-2027-fulltime",
+        "  AVAILABLE=fall-2026-internship,jan-2027-fulltime",
         "  LOCATION=montclair-ca",
         "  OPEN_TO=remote,relocation",
         "  CURRENT_BUILD=arda,soc-triage-ai,phishguard",
@@ -384,7 +381,7 @@
         "  solomon -- AI/ML engineer, former head chef",
         "",
         "SYNOPSIS",
-        "  solomon [--role ai-ml-engineer] [--available summer-2026 | jan-2027]",
+        "  solomon [--role ai-ml-engineer] [--available fall-2026 | jan-2027]",
         "          [--location montclair-ca] [--open-to remote,relocation]",
         "",
         "DESCRIPTION",
@@ -394,8 +391,8 @@
         "  systems, and multi-agent infrastructure.",
         "",
         "OPTIONS",
-        "  --hire        Strongly recommended.",
-        "  --available   Summer 2026 (internship). January 2027 (full-time).",
+        "  --hire        Recommended next step: email or LinkedIn.",
+        "  --available   Fall 2026 (internship). January 2027 (full-time).",
         "  --location    Montclair, CA.",
         "",
         "FILES",
@@ -413,20 +410,23 @@
       ].join("\n");
     },
 
-    "sudo hire-me": function () {
+    hire: function () {
       return [
-        "[sudo] password for solomon: ........",
-        "authenticating...",
+        "availability and contact",
         "",
-        "offer sequence initiated.",
+        "  email:       solomonsmithdev@gmail.com",
+        "  linkedin:    linkedin.com/in/solomonsmithdev",
+        "  resume:      /resume/",
+        "  available:   Fall 2026 (internship) or January 2027 (full-time)",
+        "  open to:     remote or relocation",
         "",
-        "  ACTION REQUIRED: human approval needed.",
-        "  contact:          solomonsmithdev@gmail.com",
-        "  available:        Summer 2026 (internship) or January 2027 (full-time)",
-        "",
-        "  note: the kitchen taught me that good service is invisible.",
-        "        the same is true of good systems.",
+        "  strongest fit: RAG backend, AI platform/backend,",
+        "  and applied ML for production systems.",
       ].join("\n");
+    },
+
+    "sudo hire-me": function () {
+      return CMDS.hire();
     },
 
   };
@@ -502,7 +502,7 @@
     });
     termOutput.textContent = [
       'type "help" for commands.  ESC to close.',
-      'normies: type "open about" to see the full site.',
+      'tip: type "open about" for the full site.',
       "",
     ].join("\n");
 
@@ -579,12 +579,8 @@
     if (HACK_PATTERNS.some(function (p) { return p.test(raw); })) {
       print([
         "",
-        "  [!!] BALROG DAEMON: INTRUSION DETECTED",
-        "",
-        "       YOU SHALL NOT PASS.",
-        "",
-        "  threat neutralized. incident logged.",
-        "  (this is a static Jekyll site. there is nothing to hack here.)",
+        "  blocked. this is a static portfolio site.",
+        "  try \"help\" for available commands, or \"open about\".",
         "",
       ].join("\n"));
       return;

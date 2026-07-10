@@ -8,6 +8,50 @@
   {% seo %}
   {% feed_meta %}
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}{{ site.baseurl }}/",
+        "name": "{{ site.title | escape }}",
+        "description": {{ site.description | jsonify }},
+        "publisher": { "@id": "{{ site.url }}/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "Solomon Smith",
+        "url": "{{ site.url }}{{ site.baseurl }}/",
+        "email": "{{ site.email }}",
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/images/headshot.jpg",
+        "jobTitle": "AI/ML Engineer",
+        "description": {{ site.bio | jsonify }},
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "California State University, San Bernardino"
+        },
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Large Language Models",
+          "RAG systems",
+          "Multi-agent systems",
+          "Python",
+          "FastAPI",
+          "Backend engineering"
+        ],
+        "sameAs": [
+          "https://github.com/{{ site.github_username }}",
+          "https://linkedin.com/in/{{ site.linkedin_username }}"
+        ]
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -34,7 +78,7 @@
 
 <footer class="site-footer">
   <div class="shell site-footer__inner">
-    <p>Solomon Smith. AI/ML engineer. Internships Summer 2026. Full-time Jan 2027.</p>
+    <p>Solomon Smith. AI/ML engineer. Fall 2026 internships. Full-time Jan 2027.</p>
     <ul>
       <li><a href="mailto:{{ site.email }}">email</a></li>
       <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a></li>
