@@ -1,0 +1,17 @@
+{%- comment -%}
+Opt-in analytics. Renders nothing until a value is set in _config.yml
+under `analytics.plausible_domain` or `analytics.ga4_id`.
+Plausible is preferred: privacy-friendly, cookieless, no consent banner needed.
+{%- endcomment -%}
+{%- if site.analytics.plausible_domain and site.analytics.plausible_domain != "" -%}
+<script defer data-domain="{{ site.analytics.plausible_domain }}" src="https://plausible.io/js/script.js"></script>
+{%- endif -%}
+{%- if site.analytics.ga4_id and site.analytics.ga4_id != "" -%}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.ga4_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.analytics.ga4_id }}');
+</script>
+{%- endif -%}

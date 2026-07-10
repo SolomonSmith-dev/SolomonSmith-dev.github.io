@@ -1,0 +1,57 @@
+{%- comment -%}
+Rich Person + WebSite structured data for search engines.
+Helps Google associate the domain with Solomon Smith as an entity
+(knowledge panel eligibility, name-search ranking, rich results).
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "Solomon Smith",
+      "givenName": "Solomon",
+      "familyName": "Smith",
+      "url": "{{ site.url }}/",
+      "image": "{{ '/assets/images/headshot.jpg' | absolute_url }}",
+      "email": "mailto:{{ site.email }}",
+      "jobTitle": "AI/ML Engineer",
+      "description": {{ site.description | jsonify }},
+      "knowsAbout": [
+        "Machine Learning",
+        "Large Language Models",
+        "Retrieval-Augmented Generation",
+        "Multi-Agent Systems",
+        "Python",
+        "FastAPI",
+        "Backend Engineering",
+        "MLOps"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "California State University, San Bernardino"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Montclair",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://github.com/{{ site.github_username }}",
+        "https://linkedin.com/in/{{ site.linkedin_username }}"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "publisher": { "@id": "{{ site.url }}/#person" },
+      "inLanguage": "{{ site.lang | default: 'en' }}"
+    }
+  ]
+}
+</script>

@@ -38,6 +38,20 @@ header_pages:
 twitter:
   username: solomonsmithdev
   card: summary
+
+# Search Console / Bing verification (jekyll-seo-tag reads these).
+# 1. Add https://solomonsmith.dev as a property in Google Search Console.
+# 2. Choose the "HTML tag" method, copy the content value, paste it below, uncomment.
+# 3. Deploy, verify, then submit https://solomonsmith.dev/sitemap.xml.
+# webmaster_verifications:
+#   google: "PASTE_GOOGLE_VERIFICATION_TOKEN"
+#   bing: "PASTE_BING_VERIFICATION_TOKEN"
+
+# Privacy-friendly analytics (opt-in). Nothing loads until a value is set.
+# For Plausible: set the domain. For GA4: set the measurement id (G-XXXXXXX).
+analytics:
+  plausible_domain: ""   # e.g. solomonsmith.dev
+  ga4_id: ""             # e.g. G-XXXXXXXXXX
 social:
   name: Solomon Smith
   links:
