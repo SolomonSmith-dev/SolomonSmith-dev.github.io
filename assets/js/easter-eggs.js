@@ -274,10 +274,25 @@
       return [
         "/home/solomon/writing/",
         "",
+        "  2026-07-10   soc-triage-ai-reliability-harness",
         "  2026-04-30   building-soc-triage-copilot",
         "  2024-04-22   first-post",
         "",
         'type "cat <slug>" to read the lede. "open blog" for the full site.',
+      ].join("\n");
+    },
+
+    "cat soc-triage-ai-reliability-harness": function () {
+      return [
+        "soc-triage-ai v1: From 43% to 100% on a Reliability Harness",
+        "2026-07-10",
+        "",
+        "  Security alert triage fails when a model sounds confident while",
+        "  being wrong. v1 ships RAG-grounded MITRE ATT&CK mapping with",
+        "  similarity gates, JSON schema validation, and a 7-case harness",
+        "  that moved from 43% to 100% after fixing corpus chunking.",
+        "",
+        'read it: type "open blog"',
       ].join("\n");
     },
 

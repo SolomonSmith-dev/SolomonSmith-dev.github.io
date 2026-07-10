@@ -89,6 +89,7 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
       <div class="course__links">
         <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">github</a>
         <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" target="_blank" rel="noopener">loom walkthrough</a>
+        <a href="{{ '/2026/07/10/soc-triage-ai-reliability-harness.html' | relative_url }}">teardown</a>
       </div>
     </div>
   </article>

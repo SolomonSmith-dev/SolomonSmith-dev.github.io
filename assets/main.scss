@@ -843,6 +843,40 @@ main.shell {
 .amber { color: var(--color-amber); }
 .muted { color: var(--color-cream-muted); }
 
+.headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+}
+
+@media (max-width: 640px) {
+  .headshot {
+    float: none;
+    display: block;
+    margin: 0 0 1.5rem;
+  }
+}
+
+.page-actions {
+  margin-bottom: 3rem;
+}
+
+.page-note {
+  margin-top: 2.5rem;
+  opacity: 0.75;
+}
+
+.prose-foot {
+  margin-top: 3rem;
+}
+
+.section-link--end {
+  margin-top: 4rem;
+}
+
 /* ----- Section link + 404 (replaces inline styles) ---------------------- */
 
 .section-link {

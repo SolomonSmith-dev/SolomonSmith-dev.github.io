@@ -24,6 +24,7 @@ lede: "Applied AI and ML systems, security tooling, and multi-agent backends. Ea
       <div class="course__links">
         <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">github</a>
         <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" target="_blank" rel="noopener">walkthrough</a>
+        <a href="{{ '/2026/07/10/soc-triage-ai-reliability-harness.html' | relative_url }}">teardown</a>
       </div>
     </div>
   </article>
@@ -141,6 +142,6 @@ lede: "Applied AI and ML systems, security tooling, and multi-agent backends. Ea
 
 </div>
 
-<p class="prose" style="margin-top: 3rem;">
+<p class="prose prose-foot">
   Project write-ups land on the <a href="{{ '/blog/' | relative_url }}">blog</a> as they ship. The full source tree lives on <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub</a>.
 </p>
