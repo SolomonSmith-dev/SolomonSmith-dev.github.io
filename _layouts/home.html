@@ -7,6 +7,10 @@ layout: default
   <div class="hero__primary">
     <h1 class="hero__name">Solomon<br><em>Smith.</em></h1>
     <p class="hero__lede">{{ page.hero_subtitle | default: "Chef turned engineer. Ten years on the line before this. Same discipline, new craft." }}</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download Resume</a>
+      <a class="btn" href="mailto:{{ site.email }}">Get In Touch</a>
+    </div>
     <div class="hero__links">
       <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a>
       <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin</a>

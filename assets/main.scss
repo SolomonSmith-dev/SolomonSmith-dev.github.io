@@ -244,6 +244,13 @@ main.shell {
   50.01%, 100% { opacity: 0; }
 }
 
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 .hero__links {
   display: flex;
   gap: 1.5rem;
