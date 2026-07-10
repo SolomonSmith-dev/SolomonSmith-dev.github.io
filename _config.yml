@@ -26,6 +26,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Navigation links (paths must match each page's source path)
 header_pages:
@@ -34,10 +35,13 @@ header_pages:
   - blog.md
   - resume.md
 
+# Clean blog URLs (old category-based URLs redirect via jekyll-redirect-from)
+permalink: /blog/:title/
+
 # SEO defaults
 twitter:
   username: solomonsmithdev
-  card: summary
+  card: summary_large_image
 social:
   name: Solomon Smith
   links:
@@ -50,8 +54,10 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/images/headshot.jpg
-        alt: "Solomon Smith"
+        path: /assets/images/og-banner.png
+        width: 1200
+        height: 630
+        alt: "Solomon Smith. AI/ML engineer. LLM pipelines, RAG systems, multi-agent infrastructure."
 
 # Exclude from processing
 exclude:
