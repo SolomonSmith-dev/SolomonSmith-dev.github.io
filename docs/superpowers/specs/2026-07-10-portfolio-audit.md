@@ -23,7 +23,7 @@ This pass hardens the professional conversion path and SEO plumbing. Traffic gro
 
 1. Primary hiring CTAs on home, about, projects, resume, and footer (`View Resume` / `Email me` / `Resume PDF`)
 2. Person JSON-LD with skills, school, location, and social sameAs
-3. Site favicon (phosphor green SS monogram)
+3. Site favicon (phosphor green terminal `>_` glyph)
 4. 1200x630 Open Graph image + `summary_large_image` Twitter card
 5. Skip-to-content link, theme-color, nav aria-label
 6. `robots.txt` and `llms.txt` for crawlers and AI assistants
