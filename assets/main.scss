@@ -693,6 +693,15 @@ main.shell {
 
 /* ----- CTA buttons ------------------------------------------------------ */
 
+.hero-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-cta .btn { margin-right: 0; }
+
 .btn {
   display: inline-block;
   padding: 0.7rem 1.4rem;

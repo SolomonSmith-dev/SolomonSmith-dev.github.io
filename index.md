@@ -140,3 +140,9 @@ hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwas
 - Reach me at <a href="mailto:solomonsmithdev@gmail.com">solomonsmithdev@gmail.com</a>
 
 </div>
+
+<p class="hero-cta">
+  <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=AI%2FML%20role%20for%20Solomon%20Smith">Get in touch</a>
+  <a class="btn" href="{{ '/resume/' | relative_url }}">View resume</a>
+  <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+</p>
