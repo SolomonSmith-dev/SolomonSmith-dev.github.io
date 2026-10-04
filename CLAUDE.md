@@ -58,7 +58,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 ## File Map
 - `index.md`: metrics strip (CourtRules verifier 7 tests, ARDA 425 tests, PhishGuard AUC 0.9943), Selected work (4 included cards), Experience timeline, Skills, Background split, Contact band.
 - `about.md`: positioning bio, How I work, Before engineering, What I am looking for, Education. Experience lives on the resume only.
-- `projects.md`: grouped cards (Applied AI systems, Agent infrastructure, Algorithms).
+- `projects.md`: grouped cards. LLM and ML systems (CourtRules, ARDA, SOC Triage AI, PhishGuard, DocMind) and Agent infrastructure (Sauron Stack). claude-agents and adversarial-search-csp were removed 2026-10-03 by Solomon; do not re-add.
 - `resume.md`: Summary, Experience, Technical Skills (.skills grid), Projects, Education, Certifications.
 - `blog.md`: post index (layout: page, Liquid for-loop renders posts).
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
@@ -82,11 +82,9 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
 2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 425 offline tests. Deployed 24/7.
 3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 34 tests.
-4. **claude-agents**: Local multi-agent orchestration backend. Node.js. Production.
-5. **DocMind**: RAG document Q&A with prompt injection defense. Active.
-6. **adversarial-search-csp**: Minimax, Negamax, Alpha-Beta + CSP solver. 21 pytest cases, CI-tested.
+4. **DocMind**: RAG document Q&A with prompt injection defense. Active.
 
-Sauron Stack (PM2-managed Debian server) appears on `projects.md` and `resume.md` but is not a GitHub pin.
+Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is not a GitHub pin.
 
 ## Work Experience (for resume accuracy)
 1. Founding Engineer, Recursa AI / CourtRules (Jul 2026 to present). Second engineer, two-person team.

@@ -19,7 +19,6 @@ Python, TypeScript, FastAPI, Next.js, PostgreSQL, Supabase, Anthropic SDK, LangG
 - [soc-triage-ai](https://github.com/SolomonSmith-dev/soc-triage-ai): RAG-grounded SOC alert triage with MITRE ATT&CK mapping and reliability harness
 - [arda](https://github.com/SolomonSmith-dev/arda): LangGraph orchestrator on Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server; 425 tests run offline
 - [phishguard](https://github.com/SolomonSmith-dev/phishguard): LightGBM phishing URL classifier (test AUC 0.9943, 1.54% FPR on Tranco top-5000) with documented dataset-leakage fixes
-- [claude-agents](https://github.com/SolomonSmith-dev/claude-agents): Local multi-agent orchestration backend
 - [DocMind](https://github.com/SolomonSmith-dev/DocMind): RAG document Q&A with prompt injection defense
 
 ## Pages
