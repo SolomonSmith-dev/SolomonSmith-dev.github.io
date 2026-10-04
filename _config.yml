@@ -1,5 +1,5 @@
 title: "Solomon Smith"
-description: "Solomon Smith. CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Graduating December 2026. Open to full-time AI/ML engineering roles starting January 2027."
+description: "Solomon Smith. Software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
 url: "https://solomonsmith.dev"
 baseurl: ""
 lang: en
@@ -11,7 +11,7 @@ author:
 email: "solomonsmithdev@gmail.com"
 github_username: "SolomonSmith-dev"
 linkedin_username: "solomonsmithdev"
-bio: "CS senior at CSUSB building LLM pipelines, RAG systems, and multi-agent infrastructure. Graduating December 2026. Open to full-time AI/ML engineering roles starting January 2027."
+bio: "Software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. Open to full-time AI/ML and backend engineering roles starting January 2027."
 
 # Build settings
 theme: minima
@@ -59,7 +59,7 @@ defaults:
     values:
       image:
         path: /assets/images/og-default.png
-        alt: "Solomon Smith. AI/ML engineer. Open to full-time roles from January 2027."
+        alt: "Solomon Smith. Software engineer. Open to full-time roles from January 2027."
   - scope:
       path: ""
       type: posts

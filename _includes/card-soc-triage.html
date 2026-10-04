@@ -1,0 +1,20 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title">SOC Triage AI</h3>
+    <span class="status">Shipped v1.0</span>
+  </div>
+  <p class="project__summary">RAG-grounded security alert triage that refuses out-of-scope alerts instead of guessing.</p>
+  <dl class="project__facts">
+    <dt>Built</dt>
+    <dd>Six-stage pipeline: regex observable extraction, sentence-transformer retrieval over a MITRE ATT&amp;CK corpus, a similarity guardrail, Claude generation constrained to retrieved context, and strict JSON schema validation.</dd>
+    <dt>Result</dt>
+    <dd>Raised the reliability harness from 43% to 100% (7 of 7) by reworking corpus chunking. Streamlit analyst UI with evidence panels and override tracking.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>ChromaDB</li><li>Streamlit</li></ul>
+    <div class="project__links">
+      <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" rel="noopener">Source</a>
+      <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" rel="noopener">Video walkthrough</a>
+    </div>
+  </div>
+</article>

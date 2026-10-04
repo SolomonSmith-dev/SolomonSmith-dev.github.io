@@ -435,11 +435,6 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 }
 .metric__label { display: block; margin-top: 0.375rem; font-size: var(--text-sm); color: var(--text-2); }
 
-.metrics__source {
-  margin-top: var(--space-1);
-  font-size: var(--text-xs);
-  color: var(--text-3);
-}
 
 @media (max-width: 720px) {
   .metrics { grid-template-columns: 1fr; }
@@ -615,7 +610,7 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: var(--space-4);
 }
 .skills__title {
@@ -630,7 +625,8 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 .skills ul { margin: 0; padding: 0; list-style: none; }
 .skills li { padding: 0.25rem 0; font-size: var(--text-sm); }
 
-@media (max-width: 860px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 960px) { .skills { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .skills { grid-template-columns: 1fr; gap: var(--space-3); } }
 
 /* ---------- Split block (background) ---------- */

@@ -4,22 +4,22 @@ title: "About"
 heading: "I build LLM systems that hold up in production."
 eyebrow: "About"
 permalink: /about/
-description: "About Solomon Smith: AI/ML engineer focused on RAG, LLM evaluation, and agent infrastructure. CS senior at CSU San Bernardino after ten years as a professional chef."
-lede: "AI/ML engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
+description: "About Solomon Smith: software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. CS senior at CSU San Bernardino after ten years as a professional chef."
+lede: "Software engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
 ---
 
 <img class="about-photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Portrait of Solomon Smith" width="410" height="600" loading="lazy" decoding="async">
 
-I work on the systems side of AI: retrieval pipelines, evaluation harnesses, and the agent infrastructure that runs on top of them. Getting a model to answer is the easy part. The work I care about is proving the answer is grounded, catching a regression before it ships, and keeping the service running after the demo.
+I build LLM-backed backend features that fail closed. Getting a model to answer is the easy part. The work I care about is proving the answer is grounded, refusing when it is not, and keeping the service running after the demo.
 
-At Recursa AI I built ingestion and RAG over a legal corpus of 200K+ documents and an evaluation harness scored against human-labeled answers. That harness caught a 12% hallucination regression after a model swap, and the release was blocked. My own projects follow the same pattern: soc-triage-ai refuses to answer when retrieval is weak, and phishguard publishes the leakage tests that killed its first version.
+I'm a founding engineer at Recursa AI / CourtRules, the second engineer on a two-person team. I shipped the judge assistant, a retrieval-grounded Q&A feature that renders a claim only when its quoted sentence appears verbatim in the filed court order. Seven unit tests on that verifier caught a bypass before release. My own projects follow the same pattern: SOC Triage AI refuses out-of-scope alerts, ARDA's 425-test suite runs with no API keys or network, and PhishGuard documents the dataset leakage I found and fixed.
 
 ## How I work
 
 <ul class="principles">
   <li><strong>Measure first.</strong> I set up an eval or a test before I start tuning, so I can tell whether a change actually helped.</li>
-  <li><strong>Find the real cause.</strong> soc-triage-ai's harness went from 43% to 100% because the problem was chunking, not the prompt.</li>
-  <li><strong>Write it down.</strong> Model cards, LIMITATIONS files, and runbooks, so the next person doesn't have to reverse-engineer my decisions.</li>
+  <li><strong>Find the real cause.</strong> SOC Triage AI's reliability harness went from 43% to 100% because the problem was corpus chunking, not the prompt.</li>
+  <li><strong>Write it down.</strong> READMEs, .env.example files, and LIMITATIONS.md, so the next person can run the code and understand my decisions without asking me.</li>
 </ul>
 
 ## Before engineering
@@ -28,7 +28,7 @@ I spent more than ten years in professional kitchens and worked my way from dish
 
 ## What I'm looking for
 
-Full-time AI/ML engineering roles starting January 2027, especially RAG and retrieval backends, LLM evaluation, or AI platform work. I'm based in Montclair, CA, and open to remote work or relocation.
+Full-time AI/ML and backend engineering roles starting January 2027, especially retrieval-grounded LLM features, LLM evaluation, or AI platform work. I'm based in Montclair, CA, and open to remote work or relocation.
 
 ## Education
 
@@ -38,7 +38,6 @@ Full-time AI/ML engineering roles starting January 2027, especially RAG and retr
     <p class="entry__meta">Expected December 2026</p>
   </div>
   <ul>
-    <li>Dean's List, Spring 2025 and Fall 2025</li>
     <li>Coursework: Machine Learning, Artificial Intelligence, Algorithms, Operating Systems, Computer Architecture, Statistics</li>
   </ul>
 </div>

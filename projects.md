@@ -6,58 +6,18 @@ heading: "Work"
 eyebrow: "Projects"
 permalink: /projects/
 description: "Projects by Solomon Smith: applied AI systems, LLM evaluation, security tooling, and the self-hosted infrastructure under them."
-lede: "Applied AI systems, the infrastructure that runs them, and coursework with tests behind it. Every entry links to its source where the source is public."
+lede: "Production LLM features, the services and infrastructure behind them, and coursework with tests. Every entry links to its source or live product where one is public."
 ---
 
 <div class="project-group">
-<h2 class="project-group__title">Applied AI systems</h2>
+<h2 class="project-group__title">LLM and ML systems</h2>
 <div class="projects">
 
-  <article class="project">
-    <div class="project__head">
-      <h3 class="project__title">soc-triage-ai</h3>
-      <span class="status status--live">Shipped v1.0</span>
-    </div>
-    <p class="project__summary">RAG-grounded security alert triage that maps alerts to MITRE ATT&amp;CK techniques and refuses to answer when the evidence is weak.</p>
-    <dl class="project__facts">
-      <dt>Problem</dt>
-      <dd>In a security context, a confident wrong answer from an LLM is worse than no answer.</dd>
-      <dt>Built</dt>
-      <dd>Retrieval over ATT&amp;CK, strict JSON schema validation, and a guardrail that rejects low-similarity inputs. Streamlit UI with evidence panels and analyst overrides.</dd>
-      <dt>Result</dt>
-      <dd>Reliability harness went from 43% to 100% (7 cases) after I traced the failures to corpus chunking, not prompt design.</dd>
-      <dt>Next</dt>
-      <dd>v2 platform rewrite in progress on a feature branch (FastAPI, PostgreSQL, Next.js).</dd>
-    </dl>
-    <div class="project__foot">
-      <ul class="stack"><li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>ChromaDB</li><li>Streamlit</li><li>pytest</li></ul>
-      <div class="project__links">
-        <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" rel="noopener">Source</a>
-        <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" rel="noopener">Video walkthrough</a>
-        <a href="{{ '/blog/building-soc-triage-copilot/' | relative_url }}">Build notes</a>
-      </div>
-    </div>
-  </article>
+  {% include card-courtrules.html %}
+  {% include card-arda.html %}
+  {% include card-soc-triage.html %}
 
-  <article class="project">
-    <div class="project__head">
-      <h3 class="project__title">phishguard</h3>
-      <span class="status">v0.2 in development</span>
-    </div>
-    <p class="project__summary">Multi-modal phishing URL detector that fuses three independent models, with its failures documented in the repo.</p>
-    <dl class="project__facts">
-      <dt>Built</dt>
-      <dd>URL-feature GBDT, HTML DistilBERT, and page-screenshot EfficientNet, fused by a calibrated logistic meta-learner. Served with FastAPI and ONNX.</dd>
-      <dt>Result</dt>
-      <dd>AUC 0.9943 on the v0.2 holdout.</dd>
-      <dt>Rigor</dt>
-      <dd>Leakage tests retired v0.1. LIMITATIONS.md records what they found.</dd>
-    </dl>
-    <div class="project__foot">
-      <ul class="stack"><li>Python</li><li>PyTorch</li><li>LightGBM</li><li>ONNX</li><li>FastAPI</li></ul>
-      <div class="project__links"><a href="https://github.com/SolomonSmith-dev/phishguard" rel="noopener">Source</a></div>
-    </div>
-  </article>
+  {% include card-phishguard.html %}
 
   <article class="project">
     <div class="project__head">
@@ -77,21 +37,7 @@ lede: "Applied AI systems, the infrastructure that runs them, and coursework wit
     </div>
   </article>
 
-  <article class="project">
-    <div class="project__head">
-      <h3 class="project__title">arda</h3>
-      <span class="status status--live">Active</span>
-    </div>
-    <p class="project__summary">Self-hosted LLM agent platform for long-running workflows with persistent state.</p>
-    <dl class="project__facts">
-      <dt>Built</dt>
-      <dd>LangChain agents with tool use, memory, and multi-agent planning behind a FastAPI orchestrator, an MCP server, and a Redis-backed task queue.</dd>
-    </dl>
-    <div class="project__foot">
-      <ul class="stack"><li>Python</li><li>FastAPI</li><li>LangChain</li><li>MCP</li><li>Redis</li></ul>
-      <div class="project__links"><a href="https://github.com/SolomonSmith-dev/arda" rel="noopener">Source</a></div>
-    </div>
-  </article>
+  
 
 </div>
 </div>

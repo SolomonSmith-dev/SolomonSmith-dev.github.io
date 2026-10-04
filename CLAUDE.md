@@ -56,7 +56,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 **Accessibility**: global `:focus-visible` ring, skip link, `aria-current` nav, reduced-motion kills the single hero fade-in.
 
 ## File Map
-- `index.md`: metrics strip, Selected work (3 cards), Experience timeline, Skills, Background split, Contact band.
+- `index.md`: metrics strip (CourtRules verifier 7 tests, ARDA 425 tests, PhishGuard AUC 0.9943), Selected work (4 included cards), Experience timeline, Skills, Background split, Contact band.
 - `about.md`: positioning bio, How I work, Before engineering, What I am looking for, Education. Experience lives on the resume only.
 - `projects.md`: grouped cards (Applied AI systems, Agent infrastructure, Algorithms).
 - `resume.md`: Summary, Experience, Technical Skills (.skills grid), Projects, Education, Certifications.
@@ -68,15 +68,20 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 ## Key Content Rules
 - **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
 - No emojis on the rendered site unless explicitly requested.
-- Target language: "Graduating December 2026. Open to full-time AI/ML engineering roles starting January 2027." (Fall 2026 internships dropped 2026-10-03.)
-- GPA: 3.14 (confirmed). Dean's List Spring 2025, Dean's List Fall 2025.
+- Target language: "Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027." No internship language.
+- **No GPA and no Dean's List anywhere on the site.** Do not add either back without Solomon's explicit confirmation.
+- **Source of truth for experience, project facts, metrics, and skills:** the newest master resume in `~/Projects/swe-job-hunt/OUTPUTS/resumes/` (currently `2026-09-28_master_newgrad_resume.md`). `resume.md` mirrors it exactly. Every number on the site must appear in that file.
+- **There was no Recursa internship (Dec 2025 to Mar 2026).** Never reintroduce it or its metrics: 200K documents, 99% extraction, 4s to 600ms, 12% hallucination regression, 70% fewer incidents.
+- RideSplits is "Full-Stack Developer (contract)". No percentages for that role.
+- ARDA uses LangGraph, not LangChain. LangChain, Milvus, Django, React, R, Stripe, and Socket.IO are not skills on this site.
+- Skills live once in `_includes/skills.html` (used by `index.md` and `resume.md`) and must match the master resume's Skills section.
 - Solomon writes blog posts himself. Do not generate blog posts unless explicitly asked.
 
 ## Active Projects (for portfolio accuracy, aligned to GitHub pin slate)
 
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
-2. **arda**: Python LLM agents with LangChain. FastAPI + MCP + Redis. Active.
-3. **phishguard**: Multi-modal phishing URL detector. v0.2 in development.
+2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 425 offline tests. Deployed 24/7.
+3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 34 tests.
 4. **claude-agents**: Local multi-agent orchestration backend. Node.js. Production.
 5. **DocMind**: RAG document Q&A with prompt injection defense. Active.
 6. **adversarial-search-csp**: Minimax, Negamax, Alpha-Beta + CSP solver. 21 pytest cases, CI-tested.
@@ -84,17 +89,16 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 Sauron Stack (PM2-managed Debian server) appears on `projects.md` and `resume.md` but is not a GitHub pin.
 
 ## Work Experience (for resume accuracy)
-1. Software Engineering Intern, Recursa AI (Dec 2025 to Mar 2026)
-2. Full-Stack Developer Intern, RideSplits (Jun 2025 to Sep 2025)
-3. Student Administrative Assistant, OSRI, CSUSB (Feb 2026 to present)
-4. IT Student Assistant, Cañada College (Jun 2023 to May 2025)
-5. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager)
+1. Founding Engineer, Recursa AI / CourtRules (Jul 2026 to present). Second engineer, two-person team.
+2. Full-Stack Developer (contract), RideSplits (Jun 2025 to Sep 2025).
+3. IT Student Assistant, Cañada College (Jun 2023 to May 2025). Dates only, no bullets.
+4. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager).
 
 ## Common Tasks
-- **Add a project**: edit `projects.md` (add a `.project` card) and consider updating the 3 cards in `index.md` "Selected work".
-- **Update resume**: edit `resume.md`. Mirror the one-line summaries in the `index.md` timeline.
+- **Add a project**: project cards shown on both pages live in `_includes/card-*.html`. Add one there (or inline in `projects.md` if projects-only) and include it where needed.
+- **Update resume**: mirror the new master resume into `resume.md`, then update the `index.md` timeline, the `_includes/card-*.html` facts, and the hero metrics.
 - **Change target language**: update `availability` front matter and the contact band in `index.md`, `about.md` "What I am looking for", `_config.yml` description, bio and og alt, `llms.txt`, `site.webmanifest`.
-- **Add a skill**: edit the `.skills` grid in `index.md` and `resume.md`.
+- **Add a skill**: only if it is on the master resume. Edit `_includes/skills.html`.
 - **Recolor or retype**: edit the `:root` CSS variables at the top of `assets/main.scss`. Token-driven; one change cascades.
 - **Update resume PDF**: replace `assets/resume/SolomonSmithResume.pdf` (same filename; linked from header-adjacent CTAs, footer, home, resume).
 

@@ -2,6 +2,8 @@
 
 Date: 2026-10-03
 Branch: `redesign/editorial-2026`
+Content corrected 2026-10-03 against the master resume (`swe-job-hunt/OUTPUTS/resumes/2026-09-28_master_newgrad_resume.md`): the Recursa internship and its metrics were removed and replaced by Founding Engineer, Jul 2026 to present.
+
 Decisions (Solomon, 2026-10-03): full departure from the Matrix theme; light and dark modes; availability is full-time from January 2027 only; no case-study pages this round (they come with the resume, portfolio and LinkedIn cleanup).
 
 ## 1. Current portfolio audit
@@ -20,13 +22,13 @@ Decisions (Solomon, 2026-10-03): full departure from the Matrix theme; light and
 
 ## 2. Positioning
 
-AI/ML engineer who builds the retrieval and evaluation layers that decide whether an LLM answer can be trusted. Evidence: the Recursa eval harness (blocked a 12% regression), the soc-triage-ai guardrail plus harness (43% to 100%), phishguard's leakage tests. Differentiator: ten years running professional kitchens.
+Software engineer building LLM-backed backend features that fail closed. Evidence: the CourtRules citation verifier (7 tests, caught a bypass before release), ARDA's 425 offline tests, SOC Triage AI's harness (43% to 100%), PhishGuard's leakage fixes (test AUC 0.9943). Differentiator: ten years running professional kitchens.
 
-Targets: full-time AI/ML engineering from January 2027. RAG and retrieval backends, LLM evaluation, AI platform and backend work.
+Targets: full-time AI/ML and backend engineering from January 2027. RAG and retrieval backends, LLM evaluation, AI platform and backend work.
 
 ## 3. Visitor journey
 
-5 seconds: name, role, value statement, availability. 30 seconds: three metrics, three project cards. 2 minutes: experience timeline, skills, About. Exit: email, resume PDF or LinkedIn from the hero, header, contact band and footer.
+5 seconds: name, role, value statement, availability. 30 seconds: three metrics, four project cards. 2 minutes: experience timeline, skills, About. Exit: email, resume PDF or LinkedIn from the hero, header, contact band and footer.
 
 ## 4. Sitemap
 
@@ -60,7 +62,7 @@ Live in `index.md`, `projects.md`, `about.md`. All copy is rewritten from existi
 
 ## 11. Case-study template (deferred)
 
-Context, Problem, Role, Approach, Solution, Result, Reflection. Ship one page per project at `/projects/<slug>/` once the resume and LinkedIn cleanup locks the facts. Candidates: soc-triage-ai, phishguard, Sauron Stack. The Recursa write-up needs employer clearance.
+Context, Problem, Role, Approach, Solution, Result, Reflection. Ship one page per project at `/projects/<slug>/` once the resume and LinkedIn cleanup locks the facts. Candidates: CourtRules judge assistant (needs employer clearance), ARDA, PhishGuard, SOC Triage AI.
 
 ## 12. Mobile
 
@@ -80,12 +82,12 @@ One 500ms fade-up on the hero. 150ms hover color and border transitions. Nothing
 
 ## 16. Blueprint
 
-See the branch. Home: hero, metrics, Selected work (soc-triage-ai, phishguard, arda), Experience, Skills, Background, Contact.
+See the branch. Home: hero, metrics, Selected work (CourtRules, ARDA, PhishGuard, SOC Triage AI), Experience, Skills, Background, Contact.
 
 ## 17. Priorities after merge
 
 1. Done in this branch: new OG image (1200x630) and favicon set (SVG, 32px, 180px).
-2. Resolve the skills mismatch between home and resume: resume lists Milvus, Django, React, R, Stripe and Socket.IO, home does not. Keep only what you can defend in an interview.
+2. Done: skills now come from one include that matches the master resume.
 3. Case-study pages (section 11).
 4. Rewrite or retire the 2024 "first post".
 5. Search Console and analytics (open items from the 2026-07-10 audit).
