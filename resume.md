@@ -3,23 +3,26 @@ layout: page
 title: "Resume"
 permalink: /resume/
 description: "Resume of Solomon Smith. CS senior at CSUSB and AI/ML engineer."
-lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure that puts them in production."
+eyebrow: "Resume"
+heading: "Solomon Smith"
+wide: true
+lede: "AI/ML engineer. RAG, LLM evaluation, and the backend infrastructure that puts them in production."
 ---
 
-<p class="cta-row cta-row--top">
-  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
-  <a class="btn" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
-</p>
+<div class="btn-row">
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download PDF</a>
+  <a class="btn" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+</div>
 
 ## Summary
 
-CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Open to **Fall 2026 internships** and **full-time AI/ML engineering roles starting January 2027**.
+CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Graduating December 2026. Open to **full-time AI/ML engineering roles starting January 2027**.
 
 ## Experience
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Software Engineering Intern, Recursa AI (courtrules.app)</p>
+    <p class="entry__title">Software Engineering Intern <span class="entry__org">&middot; Recursa AI (courtrules.app)</span></p>
     <p class="entry__meta">Dec 2025 to Mar 2026 &middot; Remote</p>
   </div>
   <ul>
@@ -32,7 +35,7 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Full-Stack Developer Intern, RideSplits</p>
+    <p class="entry__title">Full-Stack Developer Intern <span class="entry__org">&middot; RideSplits</span></p>
     <p class="entry__meta">Jun 2025 to Sep 2025 &middot; San Bernardino, CA</p>
   </div>
   <ul>
@@ -46,7 +49,7 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Student Administrative Assistant, Office of Student Research and Innovation, CSUSB</p>
+    <p class="entry__title">Student Administrative Assistant <span class="entry__org">&middot; Office of Student Research and Innovation, CSUSB</span></p>
     <p class="entry__meta">Feb 2026 to present &middot; San Bernardino, CA</p>
   </div>
   <ul>
@@ -58,7 +61,7 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">IT Student Assistant, Cañada College</p>
+    <p class="entry__title">IT Student Assistant <span class="entry__org">&middot; Cañada College</span></p>
     <p class="entry__meta">Jun 2023 to May 2025 &middot; Redwood City, CA</p>
   </div>
   <ul>
@@ -80,28 +83,28 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 ## Technical Skills
 
-<div class="stations">
-  <div class="station">
-    <p class="station__name">Languages</p>
-    <ul class="station__list">
+<div class="skills">
+  <div>
+    <h3 class="skills__title">Languages</h3>
+    <ul>
       <li>Python</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Bash</li><li>R</li>
     </ul>
   </div>
-  <div class="station">
-    <p class="station__name">AI / ML</p>
-    <ul class="station__list">
+  <div>
+    <h3 class="skills__title">AI / ML</h3>
+    <ul>
       <li>LangChain</li><li>Claude API</li><li>RAG, pgvector, Milvus</li><li>sentence-transformers</li><li>scikit-learn, PyTorch</li><li>Multi-agent orchestration, MCP</li>
     </ul>
   </div>
-  <div class="station">
-    <p class="station__name">Backend &amp; Data</p>
-    <ul class="station__list">
+  <div>
+    <h3 class="skills__title">Backend &amp; Data</h3>
+    <ul>
       <li>FastAPI, Express, Django</li><li>Node.js, React</li><li>PostgreSQL, MySQL, Redis</li><li>Firebase, Supabase</li><li>REST APIs, Stripe, Socket.IO</li>
     </ul>
   </div>
-  <div class="station">
-    <p class="station__name">Infra &amp; Cloud</p>
-    <ul class="station__list">
+  <div>
+    <h3 class="skills__title">Infra &amp; Cloud</h3>
+    <ul>
       <li>Docker, Linux, systemd</li><li>PM2, Nginx, Tailscale</li><li>GitHub Actions</li><li>GCP, AWS (S3, EC2)</li>
     </ul>
   </div>
@@ -149,7 +152,7 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">B.S. Computer Science, California State University, San Bernardino</p>
+    <p class="entry__title">B.S. Computer Science <span class="entry__org">&middot; California State University, San Bernardino</span></p>
     <p class="entry__meta">Jul 2024 to Dec 2026 (Expected)</p>
   </div>
   <ul>
@@ -161,14 +164,14 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Computer Science, Skyline College</p>
+    <p class="entry__title">Computer Science <span class="entry__org">&middot; Skyline College</span></p>
     <p class="entry__meta">Aug 2022 to Jun 2024</p>
   </div>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Computer Science, Butte College</p>
+    <p class="entry__title">Computer Science <span class="entry__org">&middot; Butte College</span></p>
     <p class="entry__meta">2020 to 2022</p>
   </div>
 </div>
@@ -178,6 +181,7 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 - Google IT Support Specialization
 - Google Cloud Computing Foundations Certificate
 
-<p class="resume-note">
-  For the formatted PDF version, use the <strong>Download PDF</strong> button at the top of this page.
-</p>
+<div class="btn-row" style="margin-top: 2rem">
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download PDF</a>
+  <a class="btn" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+</div>
