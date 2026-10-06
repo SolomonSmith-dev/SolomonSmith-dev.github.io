@@ -1,151 +1,77 @@
 ---
 layout: page
+wide: true
 title: "Projects"
+heading: "Work"
+eyebrow: "Projects"
 permalink: /projects/
-description: "Projects by Solomon Smith. Applied AI and ML systems, security tooling, multi-agent backends, and the infrastructure under them."
-lede: "Applied AI and ML systems, security tooling, and multi-agent backends. Each entry links to source where available."
+description: "Projects by Solomon Smith: applied AI systems, LLM evaluation, security tooling, and the self-hosted infrastructure under them."
+lede: "Production LLM features and the services and infrastructure behind them. Every entry links to its source or live product where one is public."
 ---
 
-<div class="course-list">
+<div class="project-group">
+<h2 class="project-group__title">LLM and ML systems</h2>
+<div class="projects">
 
-  <article class="course">
-    <span class="course__num">01</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">soc-triage-ai</a></h3>
-        <span class="course__status">Shipped &middot; v1.0</span>
-      </div>
-      <p class="course__desc">
-        RAG-grounded security alert triage. Maps alerts to MITRE ATT&amp;CK techniques with strict JSON schema validation. Guardrail logic refuses low-similarity inputs to prevent confident wrong-answer failures. 100% pass rate across a 7-case reliability harness. Streamlit UI with evidence panels and analyst overrides. v2 platform rewrite in progress on a feature branch (FastAPI, PostgreSQL, Next.js).
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>ChromaDB</li><li>Streamlit</li><li>pytest</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">github</a>
-        <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" target="_blank" rel="noopener">walkthrough</a>
-      </div>
+  {% include card-courtrules.html %}
+  {% include card-arda.html %}
+  {% include card-soc-triage.html %}
+
+  {% include card-phishguard.html %}
+
+  <article class="project">
+    <div class="project__head">
+      <h3 class="project__title">DocMind</h3>
+      <span class="status status--live">Active</span>
+    </div>
+    <p class="project__summary">Document Q&amp;A over uploaded PDFs, with page-level citations and defenses against prompt injection.</p>
+    <dl class="project__facts">
+      <dt>Built</dt>
+      <dd>Retrieval with page-level citations, magic-byte PDF validation, rate-limited upload and ask endpoints, and structured JSON logs with request IDs.</dd>
+      <dt>Resilience</dt>
+      <dd>Keeps working in a degraded mode when the local LLM is unavailable.</dd>
+    </dl>
+    <div class="project__foot">
+      <ul class="stack"><li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>sentence-transformers</li><li>Ollama</li></ul>
+      <div class="project__links"><a href="https://github.com/SolomonSmith-dev/DocMind" rel="noopener">Source</a></div>
     </div>
   </article>
 
-  <article class="course">
-    <span class="course__num">02</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/arda" target="_blank" rel="noopener">arda</a></h3>
-        <span class="course__status">Active</span>
-      </div>
-      <p class="course__desc">
-        Python LLM agents with LangChain. Tool use, memory, and multi-agent planning. FastAPI orchestrator with an MCP server and a Redis-backed task queue. Designed for self-hosted, long-running agent workflows with persistent state.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>FastAPI</li><li>LangChain</li><li>MCP</li><li>Redis</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/arda" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
+  
 
-  <article class="course">
-    <span class="course__num">03</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/phishguard" target="_blank" rel="noopener">phishguard</a></h3>
-        <span class="course__status">v0.2 in development</span>
-      </div>
-      <p class="course__desc">
-        Multi-modal phishing URL detector. Three independent models (URL feature GBDT, HTML DistilBERT, page-screenshot EfficientNet) fused via a calibrated logistic meta-learner. AUC 0.9943 on the v0.2 holdout. Honest LIMITATIONS.md documents the leakage tests that killed v0.1.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>PyTorch</li><li>LightGBM</li><li>ONNX</li><li>FastAPI</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/phishguard" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
+</div>
+</div>
 
-  <article class="course">
-    <span class="course__num">04</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/claude-agents" target="_blank" rel="noopener">claude-agents</a></h3>
-        <span class="course__status">Production</span>
-      </div>
-      <p class="course__desc">
-        Local multi-agent orchestration backend. Express, BullMQ, Redis, and SQLite. Runs Claude SDK agents on self-hosted hardware with tool use and persistent state. Includes a command allowlist security layer and audit logging.
-      </p>
-      <ul class="course__stack">
-        <li>Node.js</li><li>Express</li><li>BullMQ</li><li>Redis</li><li>SQLite</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/claude-agents" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
+<div class="project-group">
+<h2 class="project-group__title">Agent infrastructure</h2>
+<div class="projects">
 
-  <article class="course">
-    <span class="course__num">05</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/DocMind" target="_blank" rel="noopener">DocMind</a></h3>
-        <span class="course__status">Active</span>
-      </div>
-      <p class="course__desc">
-        RAG document Q&amp;A with page-level citations and prompt injection defense. Magic-byte PDF validation, rate-limited upload and ask endpoints, structured JSON logging with request IDs, and graceful degradation when the local LLM is unavailable.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>sentence-transformers</li><li>Ollama</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/DocMind" target="_blank" rel="noopener">github</a>
-      </div>
+  <article class="project">
+    <div class="project__head">
+      <h3 class="project__title">Sauron Stack</h3>
+      <span class="status status--live">Self-hosted</span>
     </div>
-  </article>
-
-  <article class="course">
-    <span class="course__num">06</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/adversarial-search-csp" target="_blank" rel="noopener">adversarial-search-csp</a></h3>
-        <span class="course__status">Shipped &middot; v1.0</span>
-      </div>
-      <p class="course__desc">
-        Minimax, Negamax, and Alpha-Beta pruning on large-board Tic-Tac-Toe with a CSP backtracking solver for knight placement and vehicle scheduling. 21 pytest cases, CI-tested.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>pygame</li><li>numpy</li><li>pytest</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/adversarial-search-csp" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="course">
-    <span class="course__num">07</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title">Multi-Agent AI System &middot; Sauron Stack</h3>
-        <span class="course__status">Self-hosted</span>
-      </div>
-      <p class="course__desc">
-        Production multi-agent system on a Debian home server. PM2-managed services: router (Earendil), executor (Sauron), orchestrator (Morgoth), and a security daemon (Balrog). Redis-backed memory store with 24/7 uptime over a Tailscale mesh. Diagnosed and resolved a 401 crash-loop cascade and a native-module ABI mismatch live.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>Node.js</li><li>Claude API</li><li>Redis</li><li>PM2</li><li>Tailscale</li><li>Docker</li>
-      </ul>
+    <p class="project__summary">A multi-agent system that runs around the clock on my Debian home server.</p>
+    <dl class="project__facts">
+      <dt>Built</dt>
+      <dd>PM2-managed services: a router, an executor, an orchestrator, and a security daemon. They share a Redis-backed memory store over a Tailscale mesh.</dd>
+      <dt>Incidents</dt>
+      <dd>Traced a 401 crash-loop cascade to rate-limit headers and fixed it with exponential backoff and request queuing. Resolved a native-module ABI mismatch by rebuilding under Node v24.</dd>
+    </dl>
+    <div class="project__foot">
+      <ul class="stack"><li>Python</li><li>Node.js</li><li>Claude API</li><li>Redis</li><li>PM2</li><li>Tailscale</li><li>Docker</li></ul>
+      <div class="project__links"><span class="status">Private</span></div>
     </div>
   </article>
 
 </div>
+</div>
 
-<p class="projects-footer">
-  Project write-ups land on the <a href="{{ '/blog/' | relative_url }}">blog</a> as they ship. The full source tree lives on <a href="https://github.com/SolomonSmith-dev" target="_blank" rel="noopener">GitHub</a>.
-</p>
-
-<p class="cta-row">
-  <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Discuss a role</a>
-  <a class="btn" href="{{ '/resume/' | relative_url }}">View resume</a>
-</p>
+<section class="contact" aria-labelledby="contact-title">
+  <h2 class="contact__title" id="contact-title">Want to see one of these up close?</h2>
+  <p class="contact__body">I'm happy to walk through the architecture, the tradeoffs, or the bugs behind any of these projects.</p>
+  <div class="btn-row">
+    <a class="btn btn--primary" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+    <a class="btn" href="https://github.com/{{ site.github_username }}" rel="noopener">GitHub profile</a>
+  </div>
+</section>

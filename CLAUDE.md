@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What This Is
-Personal portfolio site for Solomon Smith. Jekyll + GitHub Pages with a Matrix terminal aesthetic.
+Personal portfolio site for Solomon Smith. Jekyll + GitHub Pages, editorial design with light and dark themes.
 Live at: https://solomonsmith.dev (CNAME in repo root; falls back to https://solomonsmith-dev.github.io)
 
 ## Owner
@@ -24,99 +24,81 @@ Pages CI triggers on every push to `main` (30-60s build). Local build requires H
 ## Stack
 - Jekyll 4.4.x on GitHub Pages.
 - `assets/main.scss` is the single, standalone stylesheet. It does NOT import Minima. Minima is still declared as the gem `theme` but all layouts and styles are fully overridden.
-- Plugins: jekyll-feed, jekyll-seo-tag, jekyll-sitemap.
-- Fonts: JetBrains Mono only, loaded from Google Fonts in `_layouts/default.html`.
+- Plugins: jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-redirect-from.
+- Fonts (Google Fonts, loaded in `_layouts/default.html`): Newsreader (display serif), IBM Plex Sans (body), IBM Plex Mono (labels, stack tags, data only).
+- No site JS beyond two inline snippets in `default.html`: a pre-paint theme loader and the theme toggle. `/card` is a separate Vite build with its own assets; it is not styled by `main.scss`.
 
 ## Architecture
 
 ### The only stylesheet that matters
-`assets/main.scss` (~930 lines) is the entire design system. Every CSS custom property, layout primitive, and component lives here. Do not look elsewhere for styles.
+`assets/main.scss` is the entire design system: tokens on `:root`, dark palette via a `dark-palette` mixin applied under `prefers-color-scheme: dark` (unless `data-theme="light"`) and under `:root[data-theme="dark"]`.
 
 ### `_sass/minima/` is dead weight
-`_sass/minima/custom-variables.scss` and `_sass/minima/custom-styles.scss` exist as leftover Minima override scaffolding. They are **not imported anywhere** and have no effect on the rendered site. Do not edit them; they are inert.
-
-### `assets/js/rain.js`
-Self-contained vanilla-JS canvas module. Wired with `defer` in `_layouts/default.html`. Renders low-opacity katakana rain at `z-index: -1`. Guards: self-disables under `prefers-reduced-motion: reduce`, pauses via Page Visibility API, throttled to ~18 fps, debounced resize. Site is fully functional with JS off.
+Not imported anywhere. Do not edit.
 
 ### Layout inheritance chain
 All layouts extend `default.html`:
-- `default.html`: HTML shell, sticky header with active-nav state, footer, Google Fonts `<link>`, `rain.js` `<script defer>`.
-- `home.html` extends default: hero + status board on `/`, recent-posts list at bottom.
-- `page.html` extends default: `.intro` (heading + lede) + `.prose` body wrapper.
-- `post.html` extends default: post title, date, prose body.
+- `default.html`: HTML shell, sticky header (Work / About / Resume / Writing + theme toggle + Contact), footer, JSON-LD.
+- `home.html`: hero (name + title, value statement, CTAs, availability line, headshot). Front matter `hero_lede` and `availability` in `index.md` feed it.
+- `page.html`: `.intro` (optional `eyebrow`, `heading` overrides `title` for the H1, `lede`) + `.prose`. `wide: true` lets components span the container.
+- `post.html`: date, title, description, prose, back link.
 
 ### `docs/` -- plans and specs, excluded from build
-`docs/superpowers/plans/` and `docs/superpowers/specs/` hold design plans and specs. `docs/` is in `_config.yml` exclude list and will not deploy.
+`docs/superpowers/specs/` holds design specs. Current: `2026-10-03-editorial-redesign.md`.
 
-## Design System
-Matrix terminal aesthetic: dimmed phosphor green on near-black, all monospace, with a subtle ambient digital-rain canvas behind content.
+## Design System (editorial, Oct 2026)
+Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no `>` glyphs, no `~/` nav.
 
-**Token naming caveat:** token NAMES are retained from the prior editorial system to avoid a mass rename. The VALUES are the terminal palette. `--color-cream*` names now hold phosphor-green tiers. Read the value, not the name.
+**Palette** (light / dark): bg `#F7F6F2` / `#111210`, surface `#FFFFFF` / `#181A17`, text `#161614` / `#ECEBE5`, secondary `#55554F` / `#B0AFA7`, border `#E2DFD6` / `#2B2D29`, accent `#1E5B47` / `#8BCFB2`, live dot `#23935F` / `#4CC38A`. One accent only.
 
-**Palette (in `assets/main.scss` as CSS custom properties):**
-- `--color-iron: #0A0E0A` (near-black page background), `--color-iron-2: #0F140F` (panels/code)
-- `--color-cream: #00D936` (primary text: dimmed phosphor)
-- `--color-cream-soft / muted / faint`: `#5FE07F` / `#3FB85C` / `#2E9E48` (green tiers, WCAG AA on near-black)
-- `--color-amber: #E8A05B` (demoted -- live/active status LED only, never decorative)
-- `--color-hairline: rgba(0, 217, 54, 0.22)` (green dividers)
+**Components**: `.btn` / `.btn--primary` (pill), `.section` + `.section__head`, `.metrics`, `.project` cards with `.project__facts` dl (Problem / Built / Result rows: only rows backed by real facts), `.stack` tags, `.status` (`--live` adds dot), `.timeline` (compact experience), `.entry` (full resume rows), `.skills` grid, `.split`, `.contact` band, `.principles`.
 
-**Typography:** JetBrains Mono everywhere. Hierarchy by weight (700 display, 500 headings, 400 body) and size, not family.
-
-**Accessibility:** global `:focus-visible` ring (green, 2px), `@media (prefers-reduced-motion: reduce)` disables smooth scroll, transitions, cursor blink, and rain.
-
-**Layout primitives** (all in `assets/main.scss`):
-- `.hero`: asymmetric 1.6fr / 1fr grid; `.hero__lede` has a CSS blinking cursor
-- `.status-board`: mono right-rail with FOCUS / BUILDING / OPEN FOR / BASED IN blocks
-- `.section-marker`: bracketed index like `[01]` left, `> label` right, hairline below
-- `.course-list` / `.course`: numbered project entries, hairline dividers, amber corner-bracket on hover
-- `.stations`: skills grid with 1px gap over hairline background + outer border
-- `.entry`: experience / education rows on about.md and resume.md
-- `.prose`: markdown content wrapper used by page.html
-- `.btn` / `.btn--primary`: mono uppercase CTAs with leading `>` glyph
-- `.section-link`, `.post-meta-line`, `.page-404*`: utility classes replacing former inline styles
+**Accessibility**: global `:focus-visible` ring, skip link, `aria-current` nav, reduced-motion kills the single hero fade-in.
 
 ## File Map
-- `index.md`: hero (via layout), Stations + Featured Work + Currently sections.
-- `about.md`: bio, "What I Build", Experience entries, Education, Reach.
-- `projects.md`: full project list aligned to GitHub pin slate + Sauron Stack.
-- `resume.md`: Summary, Experience, Technical Skills (.stations grid), Projects, Education, Certifications.
+- `index.md`: metrics strip (CourtRules verifier 7 tests, ARDA 425 tests, PhishGuard AUC 0.9943), Selected work (4 included cards), Experience timeline, Skills, Background split, Contact band.
+- `about.md`: positioning bio, How I work, Before engineering, What I am looking for, Education. Experience lives on the resume only.
+- `projects.md`: grouped cards. LLM and ML systems (CourtRules, ARDA, SOC Triage AI, PhishGuard, DocMind) and Agent infrastructure (Sauron Stack). claude-agents and adversarial-search-csp were removed 2026-10-03 by Solomon; do not re-add.
+- `resume.md`: Summary, Experience, Technical Skills (.skills grid), Projects, Education, Certifications.
 - `blog.md`: post index (layout: page, Liquid for-loop renders posts).
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
-- `404.html`: terminal "SIGNAL LOST" 404.
+- `404.html`: "Off the menu." 404.
 - `assets/resume/SolomonSmithResume.pdf`: current downloadable resume.
 
 ## Key Content Rules
 - **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
 - No emojis on the rendered site unless explicitly requested.
-- Target language: "Fall 2026 internships and full-time AI/ML engineering roles starting January 2027".
-- GPA: 3.14 (confirmed). Dean's List Spring 2025, Dean's List Fall 2025.
+- Target language: "Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027." No internship language.
+- **No GPA and no Dean's List anywhere on the site.** Do not add either back without Solomon's explicit confirmation.
+- **Source of truth for experience, project facts, metrics, and skills:** the newest master resume in `~/Projects/swe-job-hunt/OUTPUTS/resumes/` (currently `2026-09-28_master_newgrad_resume.md`). `resume.md` mirrors it exactly. Every number on the site must appear in that file.
+- **There was no Recursa internship (Dec 2025 to Mar 2026).** Never reintroduce it or its metrics: 200K documents, 99% extraction, 4s to 600ms, 12% hallucination regression, 70% fewer incidents.
+- RideSplits is "Full-Stack Developer (contract)". No percentages for that role.
+- ARDA uses LangGraph, not LangChain. LangChain, Milvus, Django, React, R, Stripe, and Socket.IO are not skills on this site.
+- Skills live once in `_includes/skills.html` (used by `index.md` and `resume.md`) and must match the master resume's Skills section.
 - Solomon writes blog posts himself. Do not generate blog posts unless explicitly asked.
 
 ## Active Projects (for portfolio accuracy, aligned to GitHub pin slate)
 
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
-2. **arda**: Python LLM agents with LangChain. FastAPI + MCP + Redis. Active.
-3. **phishguard**: Multi-modal phishing URL detector. v0.2 in development.
-4. **claude-agents**: Local multi-agent orchestration backend. Node.js. Production.
-5. **DocMind**: RAG document Q&A with prompt injection defense. Active.
-6. **adversarial-search-csp**: Minimax, Negamax, Alpha-Beta + CSP solver. 21 pytest cases, CI-tested.
+2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 425 offline tests. Deployed 24/7.
+3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 34 tests.
+4. **DocMind**: RAG document Q&A with prompt injection defense. Active.
 
-Sauron Stack (PM2-managed Debian server) appears on `projects.md` and `resume.md` but is not a GitHub pin.
+Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is not a GitHub pin.
 
 ## Work Experience (for resume accuracy)
-1. Software Engineering Intern, Recursa AI (Dec 2025 to Mar 2026)
-2. Full-Stack Developer Intern, RideSplits (Jun 2025 to Sep 2025)
-3. Student Administrative Assistant, OSRI, CSUSB (Feb 2026 to present)
-4. IT Student Assistant, Cañada College (Jun 2023 to May 2025)
-5. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager)
+1. Founding Engineer, Recursa AI / CourtRules (Jul 2026 to present). Second engineer, two-person team.
+2. Full-Stack Developer (contract), RideSplits (Jun 2025 to Sep 2025).
+3. IT Student Assistant, Cañada College (Jun 2023 to May 2025). Dates only, no bullets.
+4. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager).
 
 ## Common Tasks
-- **Add a project**: edit `projects.md` (add a `.course` entry) and consider updating the top 3 in `index.md` "Featured Work".
-- **Update resume**: edit `resume.md`. Mirror key changes to `about.md` Experience section.
-- **Change target language**: update `index.md` Currently section, `about.md` "What I am Looking For", `_config.yml` description.
-- **Add a `.station` skill**: edit the `.stations` grid in `index.md`, `about.md`, and `resume.md` (all three for consistency).
+- **Add a project**: project cards shown on both pages live in `_includes/card-*.html`. Add one there (or inline in `projects.md` if projects-only) and include it where needed.
+- **Update resume**: mirror the new master resume into `resume.md`, then update the `index.md` timeline, the `_includes/card-*.html` facts, and the hero metrics.
+- **Change target language**: update `availability` front matter and the contact band in `index.md`, `about.md` "What I am looking for", `_config.yml` description, bio and og alt, `llms.txt`, `site.webmanifest`.
+- **Add a skill**: only if it is on the master resume. Edit `_includes/skills.html`.
 - **Recolor or retype**: edit the `:root` CSS variables at the top of `assets/main.scss`. Token-driven; one change cascades.
-- **Update resume PDF**: drop new PDF into `assets/resume/`, update the href in `resume.md` line 9.
+- **Update resume PDF**: replace `assets/resume/SolomonSmithResume.pdf` (same filename; linked from header-adjacent CTAs, footer, home, resume).
 
 ## Build Notes
 - Local build: `bundle exec jekyll serve --livereload`. Pages CI: every push to `main` triggers `pages-build-deployment`.

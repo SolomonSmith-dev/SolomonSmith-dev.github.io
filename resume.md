@@ -1,147 +1,86 @@
 ---
 layout: page
 title: "Resume"
+eyebrow: "Resume"
+heading: "Solomon Smith"
+wide: true
 permalink: /resume/
-description: "Resume of Solomon Smith. CS senior at CSUSB and AI/ML engineer."
-lede: "AI/ML engineering, applied LLM systems, and the backend infrastructure that puts them in production."
+description: "Resume of Solomon Smith. Software engineer building LLM-backed backend features that fail closed. B.S. Computer Science, CSU San Bernardino, December 2026."
+lede: "Software engineer. LLM-backed backend features that fail closed, and the tests that prove it."
 ---
 
-<p class="cta-row cta-row--top">
-  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
-  <a class="btn" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
-</p>
+<div class="btn-row">
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download PDF</a>
+  <a class="btn" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+</div>
 
 ## Summary
 
-CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwasher to Head Chef) before pivoting into engineering. Now building LLM pipelines, RAG systems, and multi-agent infrastructure. Strong foundation in Python, C++, and systems thinking. Open to **Fall 2026 internships** and **full-time AI/ML engineering roles starting January 2027**.
+Software engineer building LLM-backed backend features that fail closed. Shipped a production retrieval-grounded assistant with a citation-verification layer at a legal-data startup; built a multi-agent FastAPI service with a 400+ test suite that runs offline. Python, TypeScript, Postgres, FastAPI, Next.js. B.S. Computer Science, Dec 2026. Seeking **AI/ML or backend engineering roles, January 2027**.
 
 ## Experience
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Software Engineering Intern, Recursa AI (courtrules.app)</p>
-    <p class="entry__meta">Dec 2025 to Mar 2026 &middot; Remote</p>
+    <p class="entry__title">Founding Engineer <span class="entry__org">&middot; Recursa AI / CourtRules (courtrules.app)</span></p>
+    <p class="entry__meta">Jul 2026 to present &middot; Remote</p>
   </div>
+  <p class="entry__meta">Second engineer, two-person team. Legal-data platform covering filing rules for 1,653 judges.</p>
   <ul>
-    <li>Built distributed scraping pipeline ingesting court rules across 50+ U.S. jurisdictions; retry, backoff, and deduplication layers handling 200K+ documents at 99%+ extraction accuracy.</li>
-    <li>Shipped RAG system over normalized legal corpus using vector embeddings and hybrid keyword search; reduced query latency from 4s to under 600ms.</li>
-    <li>Designed evaluation harness scoring legal-text answer accuracy against human-labeled ground truth; caught a 12% hallucination regression after a model swap and blocked the release.</li>
-    <li>Authored Python data pipelines (Postgres, S3, scheduled jobs) and CI checks for schema drift; reduced production data incidents by 70%.</li>
+    <li>Shipped the product's retrieval-grounded Q&amp;A feature on judge pages: fetches filed court orders from object storage, extracts text per page, grounds the model in that text, and streams verified answers as NDJSON (TypeScript, Next.js, Supabase).</li>
+    <li>Designed the answer path to fail closed: a claim renders only if its quoted sentence appears verbatim in the source; 7 unit tests on the verifier caught a bypass where an invented quote passed on a plausible source index, fixed before release.</li>
+    <li>Built query analytics that classify user questions into the product's 14-type rule taxonomy and a Postgres view ranking unanswered questions to separate data gaps from retrieval failures (service-write-only RLS).</li>
+    <li>Added iCal and CSV court-calendar exports with RFC 5545 line folding, RFC 4180 quoting, a CSV formula-injection guard (CWE-1236), and schema.org Dataset markup; 35 tests.</li>
+    <li>Authored the repository's first README and .env.example and automated the shared-package build so a fresh clone runs without manual steps. 4 merged PRs, 42 commits into an 800-commit codebase.</li>
+    <li>Judge pages carry 57% of site pageviews (PostHog, 90 days).</li>
   </ul>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Full-Stack Developer Intern, RideSplits</p>
+    <p class="entry__title">Full-Stack Developer (contract) <span class="entry__org">&middot; RideSplits</span></p>
     <p class="entry__meta">Jun 2025 to Sep 2025 &middot; San Bernardino, CA</p>
   </div>
+  <p class="entry__meta">Early-stage logistics startup.</p>
   <ul>
-    <li>Migrated 100% of authentication flows from JWT to Firebase Auth across multiple user roles; reduced login-related bugs by 60%.</li>
-    <li>Designed secure multi-screen document upload pipeline with validation and size limits, enabling ID verification for 50+ users.</li>
-    <li>Integrated Stripe Connect for driver onboarding, payments, and webhook-based transaction tracking.</li>
-    <li>Designed and executed MySQL schema migrations; implemented real-time sync infrastructure with Socket.IO.</li>
-    <li>Developed RESTful APIs supporting user authentication, profiles, rides, and real-time features.</li>
+    <li>Migrated authentication from custom JWT to Firebase Auth across rider and driver roles and implemented role-based access rules for Firestore and Storage.</li>
+    <li>Built a multi-step ID-verification upload flow with client-side validation, file-type and size limits, and documented the security rules for the team.</li>
+  </ul>
+</div>
+
+## Projects
+
+<div class="entry">
+  <div class="entry__head">
+    <p class="entry__title"><a href="https://github.com/SolomonSmith-dev/arda">ARDA</a> <span class="entry__org">&middot; multi-agent service on FastAPI</span></p>
+    <p class="entry__meta">Python &middot; LangGraph &middot; LlamaIndex &middot; Redis &middot; MCP</p>
+  </div>
+  <ul>
+    <li>Built a LangGraph orchestrator on native Anthropic tool_use with a Redis-backed executor, LlamaIndex RAG, and an MCP server, exposed through 17 documented routes on one FastAPI surface.</li>
+    <li>Designed a mock LLM and embedder layer so the full 425-test suite runs with no API keys or network in 13 seconds; CI gates on ruff, mypy, and pytest. 41 test files, roughly 6,300 lines of tests against 7,800 of source.</li>
+    <li>Deployed and operate it 24/7 on a self-hosted Debian server under PM2 over a Tailscale mesh; hardened startup to fail closed on a missing API key.</li>
   </ul>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">Student Administrative Assistant, Office of Student Research and Innovation, CSUSB</p>
-    <p class="entry__meta">Feb 2026 to present &middot; San Bernardino, CA</p>
+    <p class="entry__title"><a href="https://github.com/SolomonSmith-dev/phishguard">PhishGuard</a> <span class="entry__org">&middot; phishing URL classifier</span></p>
+    <p class="entry__meta">Python &middot; LightGBM &middot; FastAPI &middot; ONNX Runtime</p>
   </div>
   <ul>
-    <li>Supporting operational coordination for university-wide student research and innovation initiatives.</li>
-    <li>Onboarding, documentation management, and research compliance tracking.</li>
-    <li>Workflow optimization and event logistics for research workshops and innovation programs.</li>
+    <li>Trained a LightGBM URL classifier to test AUC 0.9943 with a 1.54% false-positive rate on Tranco top-5000 domains; served via FastAPI with ONNX Runtime.</li>
+    <li>Found and fixed label-polarity and distribution leakage in the PhiUSIIL dataset (100% https://www on legit rows), added leakage tests to pre-commit, and documented the methodology in LIMITATIONS.md; 34 tests.</li>
   </ul>
 </div>
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">IT Student Assistant, Cañada College</p>
-    <p class="entry__meta">Jun 2023 to May 2025 &middot; Redwood City, CA</p>
+    <p class="entry__title"><a href="https://github.com/SolomonSmith-dev/soc-triage-ai">SOC Triage AI</a> <span class="entry__org">&middot; RAG-grounded alert triage</span></p>
+    <p class="entry__meta">Python &middot; Claude API &middot; sentence-transformers &middot; Streamlit</p>
   </div>
   <ul>
-    <li>Improved system reliability by 20% through troubleshooting hardware, software, and networking for 100+ institutional users.</li>
-    <li>Resolved 90% of technical support requests within 24 hours; maintained Linux, Windows, and macOS lab systems.</li>
-    <li>Standardized laboratory software environments and documented system configurations to eliminate setup inconsistencies.</li>
-  </ul>
-</div>
-
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">Culinary Leadership: Head Chef, Chef de Cuisine, Kitchen Manager</p>
-    <p class="entry__meta">10+ years &middot; Various</p>
-  </div>
-  <ul>
-    <li>Progressed from dishwasher to Head Chef across multiple high-volume operations. The same discipline, precision, ownership, and recovery under pressure, now applied to production systems.</li>
-  </ul>
-</div>
-
-## Technical Skills
-
-<div class="stations">
-  <div class="station">
-    <p class="station__name">Languages</p>
-    <ul class="station__list">
-      <li>Python</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Bash</li><li>R</li>
-    </ul>
-  </div>
-  <div class="station">
-    <p class="station__name">AI / ML</p>
-    <ul class="station__list">
-      <li>LangChain</li><li>Claude API</li><li>RAG, pgvector, Milvus</li><li>sentence-transformers</li><li>scikit-learn, PyTorch</li><li>Multi-agent orchestration, MCP</li>
-    </ul>
-  </div>
-  <div class="station">
-    <p class="station__name">Backend &amp; Data</p>
-    <ul class="station__list">
-      <li>FastAPI, Express, Django</li><li>Node.js, React</li><li>PostgreSQL, MySQL, Redis</li><li>Firebase, Supabase</li><li>REST APIs, Stripe, Socket.IO</li>
-    </ul>
-  </div>
-  <div class="station">
-    <p class="station__name">Infra &amp; Cloud</p>
-    <ul class="station__list">
-      <li>Docker, Linux, systemd</li><li>PM2, Nginx, Tailscale</li><li>GitHub Actions</li><li>GCP, AWS (S3, EC2)</li>
-    </ul>
-  </div>
-</div>
-
-## Selected Projects
-
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">soc-triage-ai &middot; RAG-grounded security alert triage</p>
-    <p class="entry__meta">Python &middot; Claude API &middot; sentence-transformers &middot; Streamlit &middot; pytest</p>
-  </div>
-  <ul>
-    <li>Built RAG-grounded security alert triage system mapping alerts to MITRE ATT&amp;CK techniques with strict JSON schema validation; 100% pass rate across a 7-case reliability harness.</li>
-    <li>Engineered guardrail logic that refuses to triage low-similarity alerts and validates LLM output structurally, preventing fabrication and confident wrong-answer failures in security contexts.</li>
-    <li>Improved harness pass rate from 43% to 100% by diagnosing the root cause as corpus chunking rather than prompt design; documented full reflection in a model card.</li>
-  </ul>
-</div>
-
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">Multi-Agent AI System (Sauron Stack)</p>
-    <p class="entry__meta">Python &middot; Node.js &middot; Redis &middot; PM2 &middot; Claude API &middot; Tailscale &middot; Docker</p>
-  </div>
-  <ul>
-    <li>Built production multi-agent system on Debian server with PM2-managed services: router (Earendil), executor (Sauron), orchestrator (Morgoth), security daemon (Balrog); 24/7 uptime over Tailscale mesh.</li>
-    <li>Diagnosed 401 crash-loop cascade in executor by tracing rate-limit headers; implemented exponential backoff and request queuing to restore stability.</li>
-    <li>Resolved Node/native module ABI mismatch by rebuilding under Node v24, unblocking Redis-backed memory store across distributed agents.</li>
-  </ul>
-</div>
-
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">Adversarial Search and Intelligent Agents</p>
-    <p class="entry__meta">Python &middot; pygame &middot; numpy &middot; pytest</p>
-  </div>
-  <ul>
-    <li>Implemented Minimax with alpha-beta pruning for a 5x5 Tic-Tac-Toe agent at depth 4 with sub-500ms latency across 1,000+ game states; center-and-corner heuristic cut effective search space by ~40%.</li>
-    <li>Solved Constraint Satisfaction Problems for 5 vehicles and 20+ constraints using backtracking with arc-consistency, achieving 100% conflict-free assignment.</li>
-    <li>21-case pytest suite and GitHub Actions CI verify GameStatus, minimax/negamax behavior, and CSP solution validity.</li>
+    <li>Built a six-stage pipeline: regex observable extraction, sentence-transformer retrieval over a MITRE ATT&amp;CK corpus, a similarity guardrail that refuses out-of-scope alerts, Claude generation constrained to retrieved context, and strict JSON schema validation.</li>
+    <li>Raised the reliability harness from 43% to 100% (7 of 7) by reworking corpus chunking; shipped a Streamlit analyst UI with evidence panels and override tracking.</li>
   </ul>
 </div>
 
@@ -149,35 +88,16 @@ CS senior at CSU San Bernardino. Over a decade in professional kitchens (dishwas
 
 <div class="entry">
   <div class="entry__head">
-    <p class="entry__title">B.S. Computer Science, California State University, San Bernardino</p>
-    <p class="entry__meta">Jul 2024 to Dec 2026 (Expected)</p>
-  </div>
-  <ul>
-    <li><strong>Honors:</strong> Dean's List Spring 2025, Dean's List Fall 2025</li>
-    <li><strong>GPA:</strong> 3.14</li>
-    <li><strong>Coursework:</strong> Machine Learning, Artificial Intelligence, Algorithms, Operating Systems, Computer Architecture, Statistics</li>
-  </ul>
-</div>
-
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">Computer Science, Skyline College</p>
-    <p class="entry__meta">Aug 2022 to Jun 2024</p>
+    <p class="entry__title">B.S. Computer Science <span class="entry__org">&middot; California State University, San Bernardino</span></p>
+    <p class="entry__meta">Dec 2026</p>
   </div>
 </div>
 
-<div class="entry">
-  <div class="entry__head">
-    <p class="entry__title">Computer Science, Butte College</p>
-    <p class="entry__meta">2020 to 2022</p>
-  </div>
+## Skills
+
+{% include skills.html %}
+
+<div class="btn-row" style="margin-top: 2rem">
+  <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download PDF</a>
+  <a class="btn" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
 </div>
-
-## Certifications
-
-- Google IT Support Specialization
-- Google Cloud Computing Foundations Certificate
-
-<p class="resume-note">
-  For the formatted PDF version, use the <strong>Download PDF</strong> button at the top of this page.
-</p>

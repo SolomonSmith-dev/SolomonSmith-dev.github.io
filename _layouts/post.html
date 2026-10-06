@@ -4,15 +4,16 @@ layout: default
 
 <article class="post">
   <header class="intro">
+    <p class="post-meta-line"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></p>
     <h1 class="page-heading">{{ page.title }}</h1>
-    <p class="page-lede post-meta-line">{{ page.date | date: "%B %-d, %Y" }}</p>
+    {%- if page.description -%}
+    <p class="page-lede">{{ page.description }}</p>
+    {%- endif -%}
   </header>
 
   <div class="prose">
     {{ content }}
   </div>
 
-  <p class="section-link section-link--back">
-    <a href="{{ '/blog/' | relative_url }}">cd ../writing &larr;</a>
-  </p>
+  <p class="back-link"><a href="{{ '/blog/' | relative_url }}">&larr; All writing</a></p>
 </article>

@@ -1,0 +1,19 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title">ARDA</h3>
+    <span class="status status--live">Deployed</span>
+  </div>
+  <p class="project__summary">Multi-agent service on one FastAPI surface, running 24/7 on my own Debian server.</p>
+  <dl class="project__facts">
+    <dt>Built</dt>
+    <dd>LangGraph orchestrator on native Anthropic tool_use, a Redis-backed executor, LlamaIndex RAG, and an MCP server, exposed through 17 documented routes.</dd>
+    <dt>Tested</dt>
+    <dd>A mock LLM and embedder layer lets the full 425-test suite run with no API keys or network in 13 seconds. CI gates on ruff, mypy, and pytest.</dd>
+    <dt>Operated</dt>
+    <dd>Runs under PM2 over a Tailscale mesh. Startup fails closed on a missing API key.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>Python</li><li>FastAPI</li><li>LangGraph</li><li>LlamaIndex</li><li>Redis</li><li>MCP</li></ul>
+    <div class="project__links"><a href="https://github.com/SolomonSmith-dev/arda" rel="noopener">Source</a></div>
+  </div>
+</article>

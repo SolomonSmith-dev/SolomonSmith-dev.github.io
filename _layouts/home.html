@@ -2,72 +2,21 @@
 layout: default
 ---
 
-{%- if page.url == "/" -%}
-<section class="hero">
-  <div class="hero__primary">
-    <h1 class="hero__name">Solomon<br><em>Smith.</em></h1>
-    <p class="hero__lede">{{ page.hero_subtitle | default: "Chef turned engineer. Ten years on the line before this. Same discipline, new craft." }}</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">View Resume</a>
-      <a class="btn" href="{{ '/projects/' | relative_url }}">See Projects</a>
-      <a class="btn" href="mailto:{{ site.email }}">Email</a>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__copy">
+    <h1 id="hero-title">
+      <span class="hero__name">Solomon Smith &middot; Software Engineer</span>
+      <span class="hero__title">I build LLM features that <em>fail closed</em>.</span>
+    </h1>
+    <p class="hero__lede">{{ page.hero_lede }}</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="#work">View selected work</a>
+      <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download resume</a>
+      <a class="btn" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
     </div>
-    <div class="hero__links">
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">github</a>
-      <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">linkedin</a>
-      <a href="mailto:{{ site.email }}">email</a>
-    </div>
+    <p class="availability">{{ page.availability }}</p>
   </div>
-
-  <aside class="status-board">
-    <div class="status-board__block">
-      <p class="status-board__label">Focus</p>
-      <p class="status-board__value">AI / ML <span class="accent">·</span> Backend <span class="accent">·</span> LLM Systems</p>
-    </div>
-
-    <div class="status-board__block">
-      <p class="status-board__label">Building</p>
-      <ul class="status-board__list">
-        <li><span>soc-triage-ai</span><span class="tag">v1.0</span></li>
-        <li><span>arda</span><span class="tag">active</span></li>
-        <li><span>phishguard</span><span class="tag">v0.2</span></li>
-      </ul>
-    </div>
-
-    <div class="status-board__block">
-      <p class="status-board__label">Open For</p>
-      <p class="status-board__value">Fall 2026 internships<br>Full-time AI/ML Jan 2027</p>
-    </div>
-
-    <div class="status-board__block">
-      <p class="status-board__label">Based In</p>
-      <p class="status-board__value">Montclair, CA. Remote or relocation.</p>
-    </div>
-  </aside>
+  <img class="hero__photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Portrait of Solomon Smith" width="410" height="600" decoding="async" fetchpriority="high">
 </section>
-{%- endif -%}
 
 {{ content }}
-
-{%- if page.url == "/" and site.posts.size > 0 -%}
-<section class="section-marker">
-  <span class="section-marker__roman">[05]</span>
-  <span class="section-marker__label">&gt; writing</span>
-</section>
-
-<ul class="post-list">
-  {%- for post in site.posts limit: 3 -%}
-  <li>
-    <p class="post-list__meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-    {%- if post.excerpt -%}
-    <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-    {%- endif -%}
-  </li>
-  {%- endfor -%}
-</ul>
-
-<p class="section-link">
-  <a href="{{ '/blog/' | relative_url }}">cd ../writing &rarr;</a>
-</p>
-{%- endif -%}

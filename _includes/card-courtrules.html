@@ -1,0 +1,19 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title">CourtRules judge assistant</h3>
+    <span class="status status--live">Production</span>
+  </div>
+  <p class="project__summary">Ask a filing question on a judge's page and get an answer quoted from that judge's own filed orders. Built as a founding engineer at Recursa AI.</p>
+  <dl class="project__facts">
+    <dt>Problem</dt>
+    <dd>Grounding a model in source text does not stop it from inventing a confident quote.</dd>
+    <dt>Built</dt>
+    <dd>Fetches filed court orders from object storage, extracts text per page, grounds the model in that text, and streams verified answers as NDJSON.</dd>
+    <dt>Result</dt>
+    <dd>Fails closed: a claim renders only if its quoted sentence appears verbatim in the source. 7 unit tests on the verifier caught a bypass, an invented quote passing on a plausible source index, before release.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>TypeScript</li><li>Next.js</li><li>Supabase</li><li>NDJSON streaming</li></ul>
+    <div class="project__links"><a href="https://courtrules.app" rel="noopener">Live product</a></div>
+  </div>
+</article>

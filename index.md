@@ -1,159 +1,93 @@
 ---
 layout: home
-title: "AI, ML and Software Engineering Portfolio"
-description: "Solomon Smith, CS senior at CSU San Bernardino. AI/ML engineer building LLM pipelines, RAG systems, and multi-agent infrastructure. Open to Fall 2026 internships and full-time roles starting January 2027."
+title: "Software Engineer"
+description: "Solomon Smith, software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. B.S. Computer Science, CSU San Bernardino, December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
 permalink: /
-hero_subtitle: "Chef turned engineer. Ten years on the line before this, dishwasher to head chef. Same discipline, new craft. Building production RAG systems and multi-agent backends, including evaluation harnesses that caught a 12% hallucination regression before release."
+hero_lede: "As a founding engineer at Recursa AI / CourtRules, I shipped a retrieval-grounded assistant that shows a claim only when its quoted sentence appears verbatim in the filed court order. Before engineering, I spent ten years running professional kitchens."
+availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/ML and backend engineering roles from January 2027."
 ---
 
-<section class="section-marker">
-  <span class="section-marker__roman">[01]</span>
-  <span class="section-marker__label">&gt; proof</span>
-</section>
-
-<ul class="proof-list">
-  <li><span class="proof-list__metric">200K+</span> legal documents ingested at 99%+ extraction accuracy</li>
-  <li><span class="proof-list__metric">4s &rarr; &lt;600ms</span> RAG query latency on a production legal corpus</li>
-  <li><span class="proof-list__metric">12%</span> hallucination regression caught and blocked before release</li>
+<ul class="metrics" aria-label="Selected results">
+  <li class="metric"><span class="metric__value">7 tests</span><span class="metric__label">on the CourtRules citation verifier caught a quote-forgery bypass before release</span></li>
+  <li class="metric"><span class="metric__value">425</span><span class="metric__label">ARDA tests that run offline, with no API keys or network, in 13 seconds</span></li>
+  <li class="metric"><span class="metric__value">0.9943</span><span class="metric__label">test AUC on the PhishGuard URL classifier, 1.54% false positives on Tranco top-5000</span></li>
 </ul>
 
-<section class="section-marker">
-  <span class="section-marker__roman">[02]</span>
-  <span class="section-marker__label">&gt; stations</span>
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="section__head">
+    <h2 class="section__title" id="work-title">Selected work</h2>
+    <a class="text-link" href="{{ '/projects/' | relative_url }}">All projects</a>
+  </div>
+
+  <div class="projects">
+{% include card-courtrules.html %}
+{% include card-arda.html %}
+{% include card-phishguard.html %}
+{% include card-soc-triage.html %}
+  </div>
 </section>
 
-<div class="stations">
-  <div class="station">
-    <p class="station__name">Languages</p>
-    <ul class="station__list">
-      <li>Python</li>
-      <li>TypeScript</li>
-      <li>JavaScript</li>
-      <li>C++</li>
-      <li>SQL</li>
-      <li>Bash</li>
-    </ul>
+<section class="section" aria-labelledby="exp-title">
+  <div class="section__head">
+    <h2 class="section__title" id="exp-title">Experience</h2>
+    <a class="text-link" href="{{ '/resume/' | relative_url }}">Full resume</a>
   </div>
-  <div class="station">
-    <p class="station__name">AI / ML</p>
-    <ul class="station__list">
-      <li>LangChain</li>
-      <li>Claude API</li>
-      <li>RAG, pgvector, ChromaDB</li>
-      <li>sentence-transformers</li>
-      <li>PyTorch, scikit-learn</li>
-      <li>Multi-agent orchestration, MCP</li>
-    </ul>
-  </div>
-  <div class="station">
-    <p class="station__name">Backend</p>
-    <ul class="station__list">
-      <li>FastAPI</li>
-      <li>Express, Node.js</li>
-      <li>PostgreSQL, MySQL, Redis</li>
-      <li>Firebase, Supabase</li>
-      <li>REST APIs</li>
-    </ul>
-  </div>
-  <div class="station">
-    <p class="station__name">Infra</p>
-    <ul class="station__list">
-      <li>Docker, Linux, systemd</li>
-      <li>PM2, Tailscale, Nginx</li>
-      <li>GitHub Actions</li>
-      <li>GCP, AWS</li>
-    </ul>
-  </div>
-</div>
 
-<section class="section-marker">
-  <span class="section-marker__roman">[03]</span>
-  <span class="section-marker__label">&gt; featured_work</span>
+  <ol class="timeline">
+    <li class="timeline__item">
+      <p class="timeline__date">Jul 2026 to present</p>
+      <div>
+        <p><span class="timeline__role">Founding Engineer</span> <span class="timeline__org">&middot; Recursa AI / CourtRules</span></p>
+        <p class="timeline__note">Second engineer on a two-person team. Shipped the retrieval-grounded judge assistant, query analytics that separate data gaps from retrieval failures, and iCal and CSV court-calendar exports.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <p class="timeline__date">Jun 2025 to Sep 2025</p>
+      <div>
+        <p><span class="timeline__role">Full-Stack Developer (contract)</span> <span class="timeline__org">&middot; RideSplits</span></p>
+        <p class="timeline__note">Migrated authentication from custom JWT to Firebase Auth across rider and driver roles, with role-based access rules for Firestore and Storage.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <p class="timeline__date">Jun 2023 to May 2025</p>
+      <div>
+        <p><span class="timeline__role">IT Student Assistant</span> <span class="timeline__org">&middot; Ca&ntilde;ada College</span></p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <p class="timeline__date">10+ years</p>
+      <div>
+        <p><span class="timeline__role">Head Chef, Chef de Cuisine, Kitchen Manager</span> <span class="timeline__org">&middot; High-volume restaurants</span></p>
+        <p class="timeline__note">Dishwasher to Head Chef. Ran teams and service under pressure with no room for error.</p>
+      </div>
+    </li>
+  </ol>
 </section>
 
-<div class="course-list">
-
-  <article class="course">
-    <span class="course__num">01</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">soc-triage-ai</a></h3>
-        <span class="course__status">Shipped &middot; v1.0</span>
-      </div>
-      <p class="course__desc">
-        RAG-grounded security alert triage. Maps alerts to MITRE ATT&amp;CK techniques with strict JSON schema validation. Guardrail logic refuses low-similarity inputs to prevent confident wrong-answer failures. 100% pass rate across a 7-case reliability harness. Streamlit UI with evidence panels and analyst overrides.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>Claude API</li><li>sentence-transformers</li><li>ChromaDB</li><li>Streamlit</li><li>pytest</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/soc-triage-ai" target="_blank" rel="noopener">github</a>
-        <a href="https://www.loom.com/share/5ae859759c7e4036a5c73b251164e3e9" target="_blank" rel="noopener">loom walkthrough</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="course">
-    <span class="course__num">02</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/arda" target="_blank" rel="noopener">arda</a></h3>
-        <span class="course__status">Active</span>
-      </div>
-      <p class="course__desc">
-        Python LLM agents with LangChain. Tool use, memory, and multi-agent planning. FastAPI orchestrator with an MCP server and a Redis-backed task queue. Designed for self-hosted, long-running agent workflows with persistent state.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>FastAPI</li><li>LangChain</li><li>MCP</li><li>Redis</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/arda" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
-
-  <article class="course">
-    <span class="course__num">03</span>
-    <div class="course__body">
-      <div class="course__head">
-        <h3 class="course__title"><a href="https://github.com/SolomonSmith-dev/phishguard" target="_blank" rel="noopener">phishguard</a></h3>
-        <span class="course__status">v0.2 in development</span>
-      </div>
-      <p class="course__desc">
-        Multi-modal phishing URL detector. Three independent models (URL feature GBDT, HTML DistilBERT, page-screenshot EfficientNet) fused via a calibrated logistic meta-learner. AUC 0.9943 on the v0.2 holdout. Honest LIMITATIONS.md documents the leakage tests that killed v0.1.
-      </p>
-      <ul class="course__stack">
-        <li>Python</li><li>PyTorch</li><li>LightGBM</li><li>ONNX</li><li>FastAPI</li>
-      </ul>
-      <div class="course__links">
-        <a href="https://github.com/SolomonSmith-dev/phishguard" target="_blank" rel="noopener">github</a>
-      </div>
-    </div>
-  </article>
-
-</div>
-
-<p class="section-link">
-  <a href="{{ '/projects/' | relative_url }}">cd ../projects &rarr;</a>
-</p>
-
-<section class="section-marker">
-  <span class="section-marker__roman">[04]</span>
-  <span class="section-marker__label">&gt; currently</span>
+<section class="section" aria-labelledby="skills-title">
+  <div class="section__head">
+    <h2 class="section__title" id="skills-title">Skills</h2>
+  </div>
+  {% include skills.html %}
 </section>
 
-<div class="prose">
+<section class="section" aria-labelledby="bg-title">
+  <div class="split">
+    <h2 class="split__lead" id="bg-title">Ten years in professional kitchens taught me how to run a system under pressure.</h2>
+    <div class="split__body">
+      <p>I worked my way from dishwasher to Head Chef in high-volume restaurants. Service runs on preparation, clear handoffs, and catching problems before they reach the guest.</p>
+      <p>I apply the same habits to software. I measure before I ship, I find the root cause when something breaks, and I write things down so the next person can keep it running. <a href="{{ '/about/' | relative_url }}">More about me</a>.</p>
+    </div>
+  </div>
+</section>
 
-- Finishing B.S. Computer Science at CSUSB, graduating <strong>December 2026</strong>
-- Most recent role: Software Engineering Intern at <strong>Recursa AI</strong>, shipping RAG over a legal corpus with an evaluation harness that caught a 12% hallucination regression before release
-- Building LLM pipelines, RAG systems, and multi-agent infrastructure on my home server stack
-- Open to <strong>Fall 2026 internships</strong> and <strong>full-time AI/ML engineering roles starting January 2027</strong>
-- Strongest fit: RAG backend, AI platform/backend, and applied ML for production systems
-
-<p class="cta-row">
-  <a class="btn btn--primary" href="mailto:solomonsmithdev@gmail.com?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
-  <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume PDF</a>
-  <a class="btn" href="{{ '/resume/' | relative_url }}">Full resume</a>
-</p>
-
-</div>
+<section class="contact" aria-labelledby="contact-title">
+  <h2 class="contact__title" id="contact-title">Hiring for an AI/ML or backend role?</h2>
+  <p class="contact__body">I'm available full-time from January 2027, based in Montclair, CA, and open to remote work or relocation. Email reaches me fastest.</p>
+  <div class="btn-row">
+    <a class="btn btn--primary" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
+    <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download resume</a>
+    <a class="btn" href="https://linkedin.com/in/{{ site.linkedin_username }}" rel="noopener">LinkedIn</a>
+  </div>
+  <p class="contact__email">{{ site.email }}</p>
+</section>

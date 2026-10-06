@@ -1,0 +1,19 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title">PhishGuard</h3>
+    <span class="status">Active</span>
+  </div>
+  <p class="project__summary">Phishing URL classifier, with the dataset leakage I found documented in the repo.</p>
+  <dl class="project__facts">
+    <dt>Built</dt>
+    <dd>LightGBM URL classifier served via FastAPI with ONNX Runtime.</dd>
+    <dt>Result</dt>
+    <dd>Test AUC 0.9943 with a 1.54% false-positive rate on Tranco top-5000 domains.</dd>
+    <dt>Rigor</dt>
+    <dd>Found and fixed label-polarity and distribution leakage in the PhiUSIIL dataset (100% https://www on legit rows). Leakage tests run in pre-commit and the method is written up in LIMITATIONS.md. 34 tests.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>Python</li><li>LightGBM</li><li>ONNX Runtime</li><li>FastAPI</li></ul>
+    <div class="project__links"><a href="https://github.com/SolomonSmith-dev/phishguard" rel="noopener">Source</a></div>
+  </div>
+</article>
