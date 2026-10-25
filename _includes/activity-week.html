@@ -1,0 +1,38 @@
+{%- comment -%}
+  One week of GitHub activity from scripts/activity.py. Pass week=<object>.
+  Every value is from the GitHub API; do not hand-edit the data files.
+{%- endcomment -%}
+{%- assign w = include.week -%}
+{%- assign t = w.totals -%}
+{%- if t.repos == 0 -%}
+<p class="activity__empty">No GitHub activity this week.</p>
+{%- else -%}
+<p class="activity__totals">{{ t.commits }} commit{% if t.commits != 1 %}s{% endif %} &middot; {{ t.prs }} merged PR{% if t.prs != 1 %}s{% endif %} &middot; {{ t.releases }} release{% if t.releases != 1 %}s{% endif %} &middot; {{ t.repos }} repo{% if t.repos != 1 %}s{% endif %}{% if t.new_repos > 0 %} ({{ t.new_repos }} new){% endif %}</p>
+<ol class="timeline activity">
+  {%- for r in w.repos %}
+  <li class="timeline__item">
+    <p class="activity__repo">{% if r.url %}<a href="{{ r.url }}">{{ r.name | escape }}</a>{% else %}{{ r.name | escape }}{% endif %}{% if r.new %} <span class="status">New</span>{% endif %}</p>
+    <div>
+      <p class="activity__counts">{{ r.commits }} commit{% if r.commits != 1 %}s{% endif %}{% if r.prs.size > 0 %} &middot; {{ r.prs.size }} merged PR{% if r.prs.size != 1 %}s{% endif %}{% endif %}{% if r.releases.size > 0 %} &middot; {{ r.releases.size }} release{% if r.releases.size != 1 %}s{% endif %}{% endif %}</p>
+      {%- if r.commit_messages.size > 0 or r.prs.size > 0 or r.releases.size > 0 %}
+      <ul class="activity__items">
+        {%- for rel in r.releases %}<li>Released <a href="{{ rel.url }}">{{ rel.name | escape }}</a></li>{% endfor %}
+        {%- for pr in r.prs limit: 5 %}<li>Merged {% if r.url %}<a href="{{ pr.url }}">#{{ pr.number }}</a>{% else %}#{{ pr.number }}{% endif %}: {{ pr.title | escape }}</li>{% endfor %}
+        {%- if r.prs.size > 5 %}<li>and {{ r.prs.size | minus: 5 }} more merged PRs</li>{% endif %}
+        {%- for m in r.commit_messages %}<li>{{ m | escape }}</li>{% endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </li>
+  {%- endfor %}
+  {%- if w.private %}
+  {%- assign p = w.private %}
+  <li class="timeline__item">
+    <p class="activity__repo">Private work</p>
+    <div>
+      <p class="activity__counts">{{ p.repos }} repo{% if p.repos != 1 %}s{% endif %} &middot; {{ p.commits }} commit{% if p.commits != 1 %}s{% endif %}{% if p.prs > 0 %} &middot; {{ p.prs }} merged PR{% if p.prs != 1 %}s{% endif %}{% endif %}{% if p.releases > 0 %} &middot; {{ p.releases }} release{% if p.releases != 1 %}s{% endif %}{% endif %}{% if p.new_repos > 0 %} &middot; {{ p.new_repos }} new{% endif %}</p>
+    </div>
+  </li>
+  {%- endif %}
+</ol>
+{%- endif -%}

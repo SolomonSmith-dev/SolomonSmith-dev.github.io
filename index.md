@@ -27,6 +27,17 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
   </div>
 </section>
 
+{%- if site.data.activity %}
+<section class="section" id="activity" aria-labelledby="activity-title">
+  <div class="section__head">
+    <h2 class="section__title" id="activity-title">Last week on GitHub</h2>
+    <a class="text-link" href="{{ '/log/' | relative_url }}">Full log</a>
+  </div>
+  <p class="activity__range">{{ site.data.activity.week_start | date: "%b %-d" }} to {{ site.data.activity.week_end | date: "%b %-d, %Y" }}</p>
+{% include activity-week.html week=site.data.activity %}
+</section>
+{%- endif %}
+
 <section class="section" aria-labelledby="exp-title">
   <div class="section__head">
     <h2 class="section__title" id="exp-title">Experience</h2>
