@@ -69,6 +69,7 @@ defaults:
 # Exclude from processing
 exclude:
   - docs/
+  - scripts/
   - CLAUDE.md
   - .sass-cache/
   - .jekyll-cache/

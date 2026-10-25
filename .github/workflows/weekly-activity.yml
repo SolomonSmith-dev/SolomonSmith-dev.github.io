@@ -1,0 +1,57 @@
+name: Weekly activity
+
+# Rebuilds _data/activity.json and _data/activity_log.json from the GitHub API
+# and commits them to the branch it runs on. Only those two files are touched.
+on:
+  schedule:
+    - cron: "0 15 * * 1" # Monday 15:00 UTC: 08:00 PDT, 07:00 PST
+  workflow_dispatch:
+    inputs:
+      week_start:
+        description: "Monday to rebuild (YYYY-MM-DD). Blank = last full week."
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: weekly-activity
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build activity data
+        id: build
+        env:
+          # Fine-grained PAT (read-only) adds private repos as totals. Falls back to public only.
+          GH_TOKEN: ${{ secrets.ACTIVITY_TOKEN || github.token }}
+          WEEK_START: ${{ inputs.week_start }}
+        run: python3 scripts/activity.py ${WEEK_START:+--week-start "$WEEK_START"}
+
+      - name: Commit data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WEEK: ${{ steps.build.outputs.week_start }}
+        run: |
+          git add _data/activity.json _data/activity_log.json
+          if git diff --cached --quiet; then
+            echo "No change for week of $WEEK"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Weekly activity: week of $WEEK"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+          if [ "$GITHUB_REF_NAME" = main ]; then
+            gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent \
+              || echo "Pages build request failed; the push should still trigger one"
+          fi

@@ -1,0 +1,383 @@
+[
+  {
+    "week_start": "2026-10-12",
+    "week_end": "2026-10-18",
+    "repos": [
+      {
+        "name": "neetcode-submissions",
+        "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [
+          "Add: python-variable-naming - submission-0"
+        ],
+        "prs": [],
+        "releases": []
+      }
+    ],
+    "private": {
+      "repos": 2,
+      "commits": 24,
+      "prs": 3,
+      "releases": 0,
+      "new_repos": 0
+    },
+    "totals": {
+      "repos": 3,
+      "commits": 25,
+      "prs": 3,
+      "releases": 0,
+      "new_repos": 0
+    }
+  },
+  {
+    "week_start": "2026-10-05",
+    "week_end": "2026-10-11",
+    "repos": [
+      {
+        "name": "arda",
+        "url": "https://github.com/SolomonSmith-dev/arda",
+        "new": false,
+        "commits": 15,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 93,
+            "title": "feat(finrod): persist the index so restarts stop wiping memory",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/93"
+          },
+          {
+            "number": 94,
+            "title": "feat(rumil): daily GitHub activity audit to Telegram (#66)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/94"
+          },
+          {
+            "number": 95,
+            "title": "chore: triage branches and issues, move ARDA_SCOPE",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/95"
+          },
+          {
+            "number": 96,
+            "title": "feat(evals): routing and retrieval eval harness",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/96"
+          },
+          {
+            "number": 97,
+            "title": "feat(demo): safe public demo mode, web page, deploy runbook",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/97"
+          },
+          {
+            "number": 98,
+            "title": "docs: recruiter README with eval-backed results",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/98"
+          },
+          {
+            "number": 99,
+            "title": "feat(earendil): allowlisted commands, no shell",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/99"
+          },
+          {
+            "number": 100,
+            "title": "feat(demo): read-only Tom Bombadil persona",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/100"
+          },
+          {
+            "number": 101,
+            "title": "docs: live eval checklist",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/101"
+          },
+          {
+            "number": 102,
+            "title": "feat(factory): v1 agent development pipeline",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/102"
+          },
+          {
+            "number": 103,
+            "title": "factory: F-3 spec and acceptance tests",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/103"
+          },
+          {
+            "number": 105,
+            "title": "task/backlog crew port",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/105"
+          },
+          {
+            "number": 106,
+            "title": "docs(factory): backlog rows for open R\u00famil gaps (#68, #70)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/106"
+          },
+          {
+            "number": 107,
+            "title": "feat(judge): judge layer, lessons capture, eval cases (F-10)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/107"
+          },
+          {
+            "number": 108,
+            "title": "ci: add Open Code Review action (Haiku, Anthropic direct)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/108"
+          },
+          {
+            "number": 109,
+            "title": "ci: pin open-code-review to SHA, add timeout and concurrency",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/109"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "soc-triage-ai",
+        "url": "https://github.com/SolomonSmith-dev/soc-triage-ai",
+        "new": false,
+        "commits": 8,
+        "commit_messages": [
+          "wip: evaluation additions and client injection test"
+        ],
+        "prs": [
+          {
+            "number": 1,
+            "title": "v2 Platform Migration: SOC Triage Copilot",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/1"
+          },
+          {
+            "number": 3,
+            "title": "chore: scope v2 (ship core, defer the rest)",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/3"
+          },
+          {
+            "number": 4,
+            "title": "feat: 100-case harness with record/replay and measured retrieval",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/4"
+          },
+          {
+            "number": 5,
+            "title": "feat: public demo mode and Hugging Face Space deploy kit",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/5"
+          },
+          {
+            "number": 6,
+            "title": "docs: portfolio README with generated results",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/6"
+          },
+          {
+            "number": 7,
+            "title": "fix(harness): preflight the API key, never write results from a partial run",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/7"
+          },
+          {
+            "number": 8,
+            "title": "Record live 100-case run, baseline, and model card results",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/8"
+          },
+          {
+            "number": 9,
+            "title": "Stage 5: fail toward review on model failure, ground technique IDs (safety change)",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/9"
+          },
+          {
+            "number": 10,
+            "title": "Stage 5: fail toward review on model failure, ground technique IDs (to main)",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/10"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "chef-rag",
+        "url": "https://github.com/SolomonSmith-dev/chef-rag",
+        "new": false,
+        "commits": 5,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 3,
+            "title": "feat: corpus fetch + ingest pipeline (phase 1)",
+            "url": "https://github.com/SolomonSmith-dev/chef-rag/pull/3"
+          },
+          {
+            "number": 4,
+            "title": "feat: hybrid retrieval, rerank, CLI (phase 2)",
+            "url": "https://github.com/SolomonSmith-dev/chef-rag/pull/4"
+          },
+          {
+            "number": 5,
+            "title": "feat: generation, tracing, eval harness (phase 3)",
+            "url": "https://github.com/SolomonSmith-dev/chef-rag/pull/5"
+          },
+          {
+            "number": 6,
+            "title": "feat: demo service, HF Space kit, README (phase 4)",
+            "url": "https://github.com/SolomonSmith-dev/chef-rag/pull/6"
+          },
+          {
+            "number": 7,
+            "title": "feat: eval --limit, test trace isolation, Mac checklist",
+            "url": "https://github.com/SolomonSmith-dev/chef-rag/pull/7"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "Profile README: add merged clerk-fetchers PR",
+          "Profile README: current role and verified project claims"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "Resume PDF: Oct 6 AI/Backend version"
+        ],
+        "prs": [
+          {
+            "number": 5,
+            "title": "Redesign portfolio: editorial system with light and dark themes",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/5"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "neetcode-submissions",
+        "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [
+          "Add: duplicate-integer - submission-1"
+        ],
+        "prs": [],
+        "releases": []
+      }
+    ],
+    "private": {
+      "repos": 12,
+      "commits": 224,
+      "prs": 34,
+      "releases": 0,
+      "new_repos": 8
+    },
+    "totals": {
+      "repos": 18,
+      "commits": 257,
+      "prs": 65,
+      "releases": 0,
+      "new_repos": 8
+    }
+  },
+  {
+    "week_start": "2026-09-28",
+    "week_end": "2026-10-04",
+    "repos": [
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 3,
+        "commit_messages": [
+          "Remove claude-agents and adversarial-search-csp from projects",
+          "Correct portfolio content against the master resume",
+          "Redesign portfolio: editorial system with light and dark themes"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "adversarial-search-csp",
+        "url": "https://github.com/SolomonSmith-dev/adversarial-search-csp",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 4,
+            "title": "Add headless CLI for Tic-Tac-Toe and refactor game drivers",
+            "url": "https://github.com/SolomonSmith-dev/adversarial-search-csp/pull/4"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": {
+      "repos": 5,
+      "commits": 48,
+      "prs": 11,
+      "releases": 0,
+      "new_repos": 2
+    },
+    "totals": {
+      "repos": 7,
+      "commits": 52,
+      "prs": 12,
+      "releases": 0,
+      "new_repos": 2
+    }
+  },
+  {
+    "week_start": "2026-09-21",
+    "week_end": "2026-09-27",
+    "repos": [
+      {
+        "name": "neetcode-submissions",
+        "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+        "new": false,
+        "commits": 8,
+        "commit_messages": [
+          "Add: python-variable-declaration - submission-0",
+          "Add: python-comments - submission-0",
+          "Add: python-code-errors - submission-1",
+          "Add: python-code-errors - submission-0",
+          "Add: python-printing-text - submission-0"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "arda",
+        "url": "https://github.com/SolomonSmith-dev/arda",
+        "new": false,
+        "commits": 6,
+        "commit_messages": [
+          "docs: gotchas line",
+          "chore: remove ai-memory marker, tool retired 2026-09-27",
+          "feat(rumil): daily GitHub activity audit, delivered to Telegram (closes #66, #67, #68, #69, #70)",
+          "feat(finrod): persist the index to disk so a restart no longer wipes it"
+        ],
+        "prs": [
+          {
+            "number": 91,
+            "title": "fix: five open bugs (#77 #78 #79 #80 #90)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/91"
+          },
+          {
+            "number": 92,
+            "title": "fix(demo): make the demo script survive a fresh clone on a Mac",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/92"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": {
+      "repos": 5,
+      "commits": 50,
+      "prs": 1,
+      "releases": 0,
+      "new_repos": 1
+    },
+    "totals": {
+      "repos": 7,
+      "commits": 64,
+      "prs": 3,
+      "releases": 0,
+      "new_repos": 1
+    }
+  }
+]

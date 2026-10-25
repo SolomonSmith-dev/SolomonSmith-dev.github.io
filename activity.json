@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /activity.json
+sitemap: false
+---
+{{ site.data.activity | jsonify }}

@@ -809,3 +809,31 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
   body { background: #fff; color: #000; }
   .project, .entry { break-inside: avoid; }
 }
+
+/* ---------- Weekly GitHub activity (home + /log/) ---------- */
+
+.activity__range,
+.activity__totals { font-size: var(--text-sm); color: var(--text-2); }
+.activity__range { margin-bottom: 0.25rem; color: var(--text-3); }
+.activity__totals { margin-bottom: var(--space-3); }
+.activity__repo { font-family: var(--font-mono); font-size: var(--text-sm); overflow-wrap: anywhere; }
+.activity__counts { font-weight: 600; font-size: var(--text-sm); }
+.activity__items { margin: 0.375rem 0 0; padding-left: 1.125rem; font-size: var(--text-sm); color: var(--text-2); }
+.activity__items li + li { margin-top: 0.25rem; }
+.activity__items li::marker { color: var(--text-3); }
+.activity__empty,
+.activity__source { font-size: var(--text-sm); color: var(--text-3); }
+.activity__source { margin-top: var(--space-6); }
+
+.log-week + .log-week { margin-top: var(--space-8); }
+.log-week__title {
+  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 500;
+}
+.log-week__note { margin-bottom: var(--space-2); }
+.prose .activity { padding-left: 0; }
+.prose .activity > li + li { margin-top: 0; }
