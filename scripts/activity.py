@@ -116,7 +116,9 @@ def repo_activity(repo, user, since, until, token):
 def build_week(week_start, config, token):
     tz = ZoneInfo(config["timezone"])
     since = datetime.combine(week_start, time(), tz).astimezone(timezone.utc)
-    until = since + timedelta(days=7)
+    # Resolve each local Monday separately so DST weeks can span 167 or 169 hours.
+    week_end = week_start + timedelta(days=7)
+    until = datetime.combine(week_end, time(), tz).astimezone(timezone.utc)
     user = config["user"]
     named = set(config.get("private_named", []))
     exclude = set(config.get("exclude", []))
