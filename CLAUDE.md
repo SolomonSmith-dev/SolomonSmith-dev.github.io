@@ -63,6 +63,9 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 - `blog.md`: post index (layout: page, Liquid for-loop renders posts).
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
 - `404.html`: "Off the menu." 404.
+- `log.md` (`/log/`): weekly activity log, newest first, from `_data/activity_log.json` plus Solomon's notes in `_data/log_notes.yml` (keyed by the week's Monday).
+- `_includes/activity-week.html`: renders one week; used by the home "Last week on GitHub" section and `/log/`.
+- `activity.json` (`/activity.json`): the latest week, published for the profile README workflow.
 - `assets/resume/SolomonSmithResume.pdf`: current downloadable resume.
 
 ## Key Content Rules
@@ -70,7 +73,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 - No emojis on the rendered site unless explicitly requested.
 - Target language: "Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027." No internship language.
 - **No GPA and no Dean's List anywhere on the site.** Do not add either back without Solomon's explicit confirmation.
-- **Source of truth for experience, project facts, metrics, and skills:** the newest master resume in `~/Projects/swe-job-hunt/OUTPUTS/resumes/` (currently `2026-09-28_master_newgrad_resume.md`). `resume.md` mirrors it exactly. Every number on the site must appear in that file.
+- **Source of truth for experience, project facts, metrics, and skills:** the newest master resume in `~/Projects/swe-job-hunt/OUTPUTS/resumes/` (currently `2026-09-28_master_newgrad_resume.md`). `resume.md` mirrors it exactly. Every number on the site must appear in that file. Exception: the weekly GitHub activity block (home) and `/log/` show API counts that are exempt from this rule (Solomon, 2026-10-25).
 - **There was no Recursa internship (Dec 2025 to Mar 2026).** Never reintroduce it or its metrics: 200K documents, 99% extraction, 4s to 600ms, 12% hallucination regression, 70% fewer incidents.
 - RideSplits is "Full-Stack Developer (contract)". No percentages for that role.
 - ARDA uses LangGraph, not LangChain. LangChain, Milvus, Django, React, R, Stripe, and Socket.IO are not skills on this site.
@@ -99,6 +102,12 @@ Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is no
 - **Add a skill**: only if it is on the master resume. Edit `_includes/skills.html`.
 - **Recolor or retype**: edit the `:root` CSS variables at the top of `assets/main.scss`. Token-driven; one change cascades.
 - **Update resume PDF**: replace `assets/resume/SolomonSmithResume.pdf` (same filename; linked from header-adjacent CTAs, footer, home, resume).
+
+## Weekly Activity
+- `.github/workflows/weekly-activity.yml` runs Monday 15:00 UTC (and on workflow_dispatch with an optional `week_start`). It runs `scripts/activity.py` and commits only `_data/activity.json` and `_data/activity_log.json` straight to `main` (standing approval for those bot commits only), then requests a Pages build.
+- Never hand-edit those two JSON files. Rerun the workflow for a week instead; it upserts by `week_start`.
+- Token: `ACTIVITY_TOKEN` secret (fine-grained PAT, read-only Metadata, Contents, Pull requests on all repos) adds private repos; without it the run is public only. Private repos are totals only unless listed in `.github/activity-config.json` `private_named`. The script refuses to write if an anonymized repo name appears as a listed repo or link.
+- Commits are counted on default branches, authored by SolomonSmith-dev. Forks are skipped.
 
 ## Build Notes
 - Local build: `bundle exec jekyll serve --livereload`. Pages CI: every push to `main` triggers `pages-build-deployment`.
