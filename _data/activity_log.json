@@ -1,5 +1,183 @@
 [
   {
+    "week_start": "2026-10-26",
+    "week_end": "2026-11-01",
+    "repos": [
+      {
+        "name": "neetcode-submissions",
+        "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+        "new": false,
+        "commits": 34,
+        "commit_messages": [
+          "Add: python-for-loops-reverse - submission-0",
+          "Add: python-for-loops-step - submission-0",
+          "Add: python-for-loops-start - submission-0",
+          "Add: python-for-loops - submission-0",
+          "Add: python-while-loops-multiples - submission-0"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "sentinel",
+        "url": "https://github.com/SolomonSmith-dev/sentinel",
+        "new": false,
+        "commits": 22,
+        "commit_messages": [
+          "Exclude verified Access resource IDs from secret findings",
+          "Refresh dashboard screenshots using synthetic preview data",
+          "Record verified private deployment and security remediation",
+          "Enforce telemetry authentication for every request method",
+          "Preserve queued uploads across authentication proxy failures"
+        ],
+        "prs": [
+          {
+            "number": 1,
+            "title": "fix(security): privatize telemetry and harden sensor deployment",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/1"
+          },
+          {
+            "number": 2,
+            "title": "Hourly rollups for the 24 h panels",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/2"
+          },
+          {
+            "number": 3,
+            "title": "Refresh row counts hourly, not every 5 minutes",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/3"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "agentic-engineering-os",
+        "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os",
+        "new": false,
+        "commits": 13,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 26,
+            "title": "Build-order step 13: eval harness, ten Harbor-shaped tasks, baselines, report",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/26"
+          },
+          {
+            "number": 28,
+            "title": "Build-order step 14: BOOTSTRAP, SECURITY, THREAT_MODEL and schema-generated spec docs",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/28"
+          },
+          {
+            "number": 33,
+            "title": "Claude runs: srt denies the protected paths inside the target repository",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/33"
+          },
+          {
+            "number": 35,
+            "title": "Add focus hook, trace --focus, and approved role lessons",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/35"
+          },
+          {
+            "number": 36,
+            "title": "Architecture: time box as it happened, eval first pass, stand-in dogfood plan",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/36"
+          },
+          {
+            "number": 37,
+            "title": "Orchestrator and inspect commands write no bytecode (fixes the calc-add eval flake)",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/37"
+          },
+          {
+            "number": 38,
+            "title": "Orchestrator checks keep tool caches inside the sandbox (uv run failed under srt)",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/38"
+          },
+          {
+            "number": 39,
+            "title": "Issue 19 scope item: _pr uses ensure_run_branch (agent-written, run 20261029-193546-a9ff1e)",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/39"
+          },
+          {
+            "number": 40,
+            "title": "DISCOVERY gate: an errored reproduction command blocks instead of counting as reproduced",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/40"
+          },
+          {
+            "number": 41,
+            "title": "Installed tool finds its own canonical files and registry",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/41"
+          },
+          {
+            "number": 42,
+            "title": "Sandbox: tracked .env templates stay readable so test runners can collect",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/42"
+          },
+          {
+            "number": 43,
+            "title": "Deny ~/.codex to every sandboxed run, whatever the runtime",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/43"
+          },
+          {
+            "number": 44,
+            "title": "Design and plan: agent-team as Numenor's engine",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/44"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "Fix weekly activity boundaries across DST transitions"
+        ],
+        "prs": [
+          {
+            "number": 7,
+            "title": "Weekly GitHub activity on the homepage and a /log/ page",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/7"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "arda",
+        "url": "https://github.com/SolomonSmith-dev/arda",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [
+          "gitignore: agent-team runtime state"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 3,
+            "title": "Weekly activity block in the profile README",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev/pull/3"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": null,
+    "totals": {
+      "repos": 6,
+      "commits": 73,
+      "prs": 18,
+      "releases": 0,
+      "new_repos": 0
+    }
+  },
+  {
     "week_start": "2026-10-12",
     "week_end": "2026-10-18",
     "repos": [
