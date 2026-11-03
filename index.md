@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "Software Engineer"
-description: "Solomon Smith, software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. B.S. Computer Science, CSU San Bernardino, December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
+title: "AI/Backend Engineer"
+description: "Solomon Smith, AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. B.S. Computer Science, CSU San Bernardino, December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
 permalink: /
 hero_lede: "As a founding engineer at Recursa AI / CourtRules, I shipped a retrieval-grounded assistant that shows a claim only when its quoted sentence appears verbatim in the filed court order. Before engineering, I spent ten years running professional kitchens."
 availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/ML and backend engineering roles from January 2027."

@@ -346,11 +346,11 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 
 .hero__title {
   display: block;
-  max-width: 20ch;
+  max-width: 30ch;
   font-family: var(--font-display);
-  font-size: var(--text-3xl);
+  font-size: var(--text-2xl);
   font-weight: 400;
-  line-height: 1.08;
+  line-height: 1.15;
   letter-spacing: -0.02em;
 }
 .hero__title em { font-style: italic; color: var(--accent); }

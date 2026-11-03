@@ -39,7 +39,7 @@ Not imported anywhere. Do not edit.
 ### Layout inheritance chain
 All layouts extend `default.html`:
 - `default.html`: HTML shell, sticky header (Work / About / Resume / Writing + theme toggle + Contact), footer, JSON-LD.
-- `home.html`: hero (name + title, value statement, CTAs, availability line, headshot). Front matter `hero_lede` and `availability` in `index.md` feed it.
+- `home.html`: hero (name + title "AI/Backend Engineer", the one-line thesis as the display heading, CTAs, availability line, headshot). Front matter `hero_lede` and `availability` in `index.md` feed it.
 - `page.html`: `.intro` (optional `eyebrow`, `heading` overrides `title` for the H1, `lede`) + `.prose`. `wide: true` lets components span the container.
 - `post.html`: date, title, description, prose, back link.
 

@@ -5,8 +5,8 @@ eyebrow: "Resume"
 heading: "Solomon Smith"
 wide: true
 permalink: /resume/
-description: "Resume of Solomon Smith. Software engineer building LLM-backed backend features that fail closed. B.S. Computer Science, CSU San Bernardino, December 2026."
-lede: "Software engineer. LLM-backed backend features that fail closed, and the tests that prove it."
+description: "Resume of Solomon Smith, AI/Backend Engineer. LLM-backed features that refuse correctly, with the tests that prove it. B.S. Computer Science, CSU San Bernardino, December 2026."
+lede: "AI/Backend Engineer. LLM-backed features for products where a confident wrong answer costs more than no answer, and the tests that prove they refuse correctly."
 ---
 
 <div class="btn-row">

@@ -4,21 +4,21 @@ title: "About"
 heading: "I build LLM systems that hold up in production."
 eyebrow: "About"
 permalink: /about/
-description: "About Solomon Smith: software engineer building LLM-backed backend features that fail closed. Founding Engineer at Recursa AI / CourtRules. CS senior at CSU San Bernardino after ten years as a professional chef."
-lede: "Software engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
+description: "About Solomon Smith, AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. CS senior at CSU San Bernardino after ten years as a professional chef."
+lede: "AI/Backend Engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
 ---
 
 <img class="about-photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Portrait of Solomon Smith" width="410" height="600" loading="lazy" decoding="async">
 
-I build LLM-backed backend features that fail closed. Getting a model to answer is the easy part. The work I care about is proving the answer is grounded, refusing when it is not, and keeping the service running after the demo.
+I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Getting a model to answer is the easy part. The work I care about is proving the answer is grounded, refusing when it is not, and keeping the service running after the demo.
 
-I'm a founding engineer at Recursa AI / CourtRules, the second engineer on a two-person team. I shipped the judge assistant, a retrieval-grounded Q&A feature that renders a claim only when its quoted sentence appears verbatim in the filed court order. Seven unit tests on that verifier caught a bypass before release. My own projects follow the same pattern: SOC Triage AI refuses out-of-scope alerts, ARDA's 425-test suite runs with no API keys or network, and PhishGuard documents the dataset leakage I found and fixed.
+I'm a founding engineer at Recursa AI / CourtRules, the second engineer on a two-person team. I shipped the judge assistant, a retrieval-grounded Q&A feature that renders a claim only when its quoted sentence appears verbatim in the filed court order. Its tests caught a bypass, an invented quote passing on a plausible source index, before release. My own projects follow the same pattern: SOC Triage AI refuses out-of-scope alerts, ARDA's 577 passing tests run with no API keys or network, and PhishGuard documents the dataset leakage I found and fixed.
 
 ## How I work
 
 <ul class="principles">
   <li><strong>Measure first.</strong> I set up an eval or a test before I start tuning, so I can tell whether a change actually helped.</li>
-  <li><strong>Find the real cause.</strong> SOC Triage AI's reliability harness went from 43% to 100% because the problem was corpus chunking, not the prompt.</li>
+  <li><strong>Find the real cause.</strong> SOC Triage AI's reliability harness went from 3 of 7 to 7 of 7 cases because the problem was corpus chunking, not the prompt.</li>
   <li><strong>Write it down.</strong> READMEs, .env.example files, and LIMITATIONS.md, so the next person can run the code and understand my decisions without asking me.</li>
 </ul>
 
