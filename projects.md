@@ -14,6 +14,7 @@ lede: "Production LLM features and the services and infrastructure behind them. 
 <div class="projects">
 
   {% include card-courtrules.html %}
+  {% include card-sentinel.html %}
   {% include card-arda.html %}
   {% include card-soc-triage.html %}
 

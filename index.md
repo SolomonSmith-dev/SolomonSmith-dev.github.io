@@ -21,6 +21,7 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
 
   <div class="projects">
 {% include card-courtrules.html %}
+{% include card-sentinel.html %}
 {% include card-arda.html %}
 {% include card-phishguard.html %}
 {% include card-soc-triage.html %}

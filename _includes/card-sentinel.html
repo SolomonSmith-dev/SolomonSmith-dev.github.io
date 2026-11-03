@@ -1,0 +1,19 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title">Sentinel</h3>
+    <span class="status">Active</span>
+  </div>
+  <p class="project__summary">A security monitor for my own home network, built so no IP, MAC or payload leaves the house.</p>
+  <dl class="project__facts">
+    <dt>Problem</dt>
+    <dd>I self-host DNS, media and services on a Debian server and wanted to watch that network with a tool I control, not a cloud one.</dd>
+    <dt>Built</dt>
+    <dd>A C++17 libpcap sensor and Suricata feed a Python shipper that runs detection rules and an isolation-forest anomaly score, then ships anonymized one-minute rollups to a Cloudflare Worker and D1 behind a public dashboard.</dd>
+    <dt>Rigor</dt>
+    <dd>Capture memory is bounded and tested by exact pcap replays. ML loading survives an old CPU that crashes numpy. Ingest is idempotent and rejects any batch containing an IP or MAC. The public dashboard shows labeled synthetic data until the home sensor reports.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>C++</li><li>libpcap</li><li>Python</li><li>scikit-learn</li><li>Suricata</li><li>TypeScript</li><li>Cloudflare Workers</li><li>D1</li><li>React</li></ul>
+    <div class="project__links"><a href="https://sentinel.solomonsmith.dev" rel="noopener">Live dashboard</a><a href="https://github.com/SolomonSmith-dev/sentinel" rel="noopener">Source</a></div>
+  </div>
+</article>

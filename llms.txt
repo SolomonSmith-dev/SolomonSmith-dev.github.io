@@ -16,6 +16,7 @@ Python, TypeScript, FastAPI, Next.js, PostgreSQL, Supabase, Anthropic SDK, LangG
 ## Selected work
 
 - [CourtRules judge assistant](https://courtrules.app): retrieval-grounded Q&A over filed court orders; every quoted claim is verified verbatim before it renders
+- [sentinel](https://github.com/SolomonSmith-dev/sentinel): home-network security monitor (C++ libpcap sensor, Suricata, isolation-forest anomaly score, Cloudflare Workers + D1); live dashboard at https://sentinel.solomonsmith.dev shows labeled synthetic data until the home sensor reports
 - [soc-triage-ai](https://github.com/SolomonSmith-dev/soc-triage-ai): RAG-grounded SOC alert triage with MITRE ATT&CK mapping and reliability harness
 - [arda](https://github.com/SolomonSmith-dev/arda): LangGraph orchestrator on Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server; 425 tests run offline
 - [phishguard](https://github.com/SolomonSmith-dev/phishguard): LightGBM phishing URL classifier (test AUC 0.9943, 1.54% FPR on Tranco top-5000) with documented dataset-leakage fixes
