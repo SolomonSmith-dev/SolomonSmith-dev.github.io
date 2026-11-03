@@ -75,7 +75,7 @@ lede: "AI/Backend Engineer. LLM-backed features for products where a confident w
   </div>
   <ul>
     <li>Built a LangGraph orchestrator on native Anthropic tool_use with a Redis-backed executor, LlamaIndex RAG, and an MCP server behind 17 documented FastAPI routes.</li>
-    <li>Designed a mock LLM and embedder layer so the 425-test suite runs offline in 13 seconds; runs 24/7 on a self-hosted Debian server.</li>
+    <li>Designed a mock LLM and embedder layer so the 577-test suite runs offline in under 15 seconds; runs 24/7 on a self-hosted Debian server.</li>
   </ul>
 </div>
 
