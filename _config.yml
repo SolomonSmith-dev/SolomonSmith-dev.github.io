@@ -52,7 +52,7 @@ social:
     - https://linkedin.com/in/solomonsmithdev
 
 # Default og:image for all pages (jekyll-seo-tag picks up page.image)
-# Use the 1200x630 social card for link previews; headshot remains on /about and /card.
+# Use the 1200x630 social card for link previews; headshot remains on /about.
 defaults:
   - scope:
       path: ""
