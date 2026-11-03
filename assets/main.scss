@@ -623,12 +623,14 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 .entry ul { margin: var(--space-2) 0 0; padding-left: 1.125rem; }
 .entry li { margin-bottom: 0.5rem; color: var(--text-2); }
 .entry li::marker { color: var(--text-3); }
+.resume-tagline { font-weight: 500; }
+.resume-contact { font-size: var(--text-sm); color: var(--text-2); }
 
 /* ---------- Skills ---------- */
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-4);
 }
 .skills__title {
