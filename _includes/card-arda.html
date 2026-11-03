@@ -1,19 +1,19 @@
 <article class="project">
   <div class="project__head">
-    <h3 class="project__title">ARDA</h3>
+    <h3 class="project__title"><a href="{{ '/projects/arda/' | relative_url }}">ARDA</a></h3>
     <span class="status status--live">Deployed</span>
   </div>
-  <p class="project__summary">Multi-agent service on one FastAPI surface, running 24/7 on my own Debian server.</p>
+  <p class="project__summary">A Claude orchestrator in front of a shell, with numbers on where the routing fails. Multi-agent service on one FastAPI surface, running 24/7 on my own Debian server.</p>
   <dl class="project__facts">
     <dt>Built</dt>
-    <dd>LangGraph orchestrator on native Anthropic tool_use, a Redis-backed executor, LlamaIndex RAG, and an MCP server, exposed through 17 documented routes.</dd>
+    <dd>LangGraph orchestrator on native Anthropic tool_use, a Redis-backed shell executor, LlamaIndex RAG, and an MCP server: 7 agents behind 17 HTTP routes and 4 MCP tools.</dd>
     <dt>Tested</dt>
-    <dd>A mock LLM and embedder layer lets the full 425-test suite run with no API keys or network in 13 seconds. CI gates on ruff, mypy, and pytest.</dd>
-    <dt>Operated</dt>
-    <dd>Runs under PM2 over a Tailscale mesh. Startup fails closed on a missing API key.</dd>
+    <dd>577 of 582 tests pass with no API keys or network in 29 seconds (5 skips need a real key). CI runs ruff, mypy, pytest, and the mock evals twice, failing on drift from the committed baseline.</dd>
+    <dt>Measured</dt>
+    <dd>A labelled eval set with 16 injection cases shows the offline router leaking 12. Demo mode closes the gap structurally: shell refused at the router, in the agent and in the worker, with every route swept against the OpenAPI schema.</dd>
   </dl>
   <div class="project__foot">
     <ul class="stack"><li>Python</li><li>FastAPI</li><li>LangGraph</li><li>LlamaIndex</li><li>Redis</li><li>MCP</li></ul>
-    <div class="project__links"><a href="https://github.com/SolomonSmith-dev/arda" rel="noopener">Source</a></div>
+    <div class="project__links"><a href="{{ '/projects/arda/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/arda" rel="noopener">Source</a></div>
   </div>
 </article>

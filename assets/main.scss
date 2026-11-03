@@ -547,6 +547,24 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 }
 
 .project__links { display: flex; gap: var(--space-2); font-size: var(--text-sm); }
+.project__title a { color: inherit; text-decoration: none; }
+.project__title a:hover, .project__title a:focus-visible { text-decoration: underline; text-decoration-thickness: 1px; }
+
+/* Project detail pages (_projects/, layout: project) */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: 0;
+}
+.project-figure { margin: var(--space-4) 0 0; max-width: 40rem; }
+.project-figure img { border: 1px solid var(--border); }
+.project-figure figcaption { margin-top: var(--space-1); font-size: var(--text-sm); color: var(--text-3); }
+.evidence { max-width: 48rem; }
+.evidence th:first-child, .evidence td:first-child { font-family: var(--font-display); font-size: var(--text-lg); }
+.evidence td:first-child { min-width: 9rem; }
+.evidence td code { white-space: normal; }
 
 @media (max-width: 600px) {
   .project { padding: var(--space-3) var(--space-2); }

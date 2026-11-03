@@ -15,12 +15,15 @@ Python, TypeScript, FastAPI, Next.js, PostgreSQL, Supabase, Anthropic SDK, LangG
 
 ## Selected work
 
-- [CourtRules judge assistant](https://courtrules.app): retrieval-grounded Q&A over filed court orders; every quoted claim is verified verbatim before it renders
-- [sentinel](https://github.com/SolomonSmith-dev/sentinel): home-network security monitor (C++ libpcap sensor, Suricata, isolation-forest anomaly score, Cloudflare Workers + D1); live dashboard at https://sentinel.solomonsmith.dev shows labeled synthetic data until the home sensor reports
-- [soc-triage-ai](https://github.com/SolomonSmith-dev/soc-triage-ai): RAG-grounded SOC alert triage with MITRE ATT&CK mapping and reliability harness
-- [arda](https://github.com/SolomonSmith-dev/arda): LangGraph orchestrator on Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server; 425 tests run offline
-- [phishguard](https://github.com/SolomonSmith-dev/phishguard): LightGBM phishing URL classifier (test AUC 0.9943, 1.54% FPR on Tranco top-5000) with documented dataset-leakage fixes
-- [DocMind](https://github.com/SolomonSmith-dev/DocMind): RAG document Q&A with prompt injection defense
+Each project has a page at https://solomonsmith.dev/projects/<slug>/ with what it does, why it is hard, and the command or file that reproduces every number.
+
+- [CourtRules judge assistant](https://solomonsmith.dev/projects/courtrules/): retrieval-grounded Q&A over filed court orders on a platform covering 1,653 judges; every quoted claim is verified verbatim before it renders. Product: https://courtrules.app
+- [arda](https://solomonsmith.dev/projects/arda/): LangGraph orchestrator on Anthropic tool_use, Redis shell executor, LlamaIndex RAG, MCP server; 577 tests pass offline, labelled injection evals. Source: https://github.com/SolomonSmith-dev/arda
+- [soc-triage-ai](https://solomonsmith.dev/projects/soc-triage-ai/): RAG-grounded SOC alert triage with MITRE ATT&CK mapping, a fixed refusal path and a 100-case harness replayed in CI. Source: https://github.com/SolomonSmith-dev/soc-triage-ai
+- [sentinel](https://solomonsmith.dev/projects/sentinel/): home-network security monitor (C++ libpcap sensor, Suricata, isolation-forest anomaly score, Cloudflare Workers + D1); 119 vitest, 197 pytest, 4 ctest; private dashboard. Source: https://github.com/SolomonSmith-dev/sentinel
+- [phishguard](https://solomonsmith.dev/projects/phishguard/): LightGBM phishing URL classifier (test AUC 0.9943, 1.54% FPR on Tranco top-5,000) with the PhiUSIIL dataset leakage found, fixed and locked by tests. Source: https://github.com/SolomonSmith-dev/phishguard
+- [agentic-engineering-os](https://solomonsmith.dev/projects/agentic-engineering-os/): Claude Code workers in sandboxed worktrees, every tool call recorded, draft PR only after an independent reviewer approves; 524 tests. Source: https://github.com/SolomonSmith-dev/agentic-engineering-os
+- [DocMind](https://solomonsmith.dev/projects/docmind/): local RAG document Q&A with page-level citations and prompt-injection filtering; 113 tests. Source: https://github.com/SolomonSmith-dev/DocMind
 
 ## Pages
 

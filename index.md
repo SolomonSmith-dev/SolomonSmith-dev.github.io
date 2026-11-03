@@ -8,9 +8,9 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
 ---
 
 <ul class="metrics" aria-label="Selected results">
-  <li class="metric"><span class="metric__value">7 tests</span><span class="metric__label">on the CourtRules citation verifier caught a quote-forgery bypass before release</span></li>
-  <li class="metric"><span class="metric__value">425</span><span class="metric__label">ARDA tests that run offline, with no API keys or network, in 13 seconds</span></li>
-  <li class="metric"><span class="metric__value">0.9943</span><span class="metric__label">test AUC on the PhishGuard URL classifier, 1.54% false positives on Tranco top-5000</span></li>
+  <li class="metric"><span class="metric__value">1,653 judges</span><span class="metric__label">covered by CourtRules, where my fail-closed citation verifier gates every answer on judge pages</span></li>
+  <li class="metric"><span class="metric__value">577</span><span class="metric__label">ARDA tests that pass offline, with no API keys or network, in 29 seconds</span></li>
+  <li class="metric"><span class="metric__value">0.9943</span><span class="metric__label">test AUC on the PhishGuard URL classifier, 1.54% false positives on Tranco top-5,000</span></li>
 </ul>
 
 <section class="section" id="work" aria-labelledby="work-title">
@@ -21,10 +21,9 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
 
   <div class="projects">
 {% include card-courtrules.html %}
-{% include card-sentinel.html %}
 {% include card-arda.html %}
-{% include card-phishguard.html %}
 {% include card-soc-triage.html %}
+{% include card-sentinel.html %}
   </div>
 </section>
 

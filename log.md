@@ -2,9 +2,9 @@
 layout: page
 title: "Log"
 permalink: /log/
-description: "A weekly log of what Solomon Smith is building, generated from GitHub activity every Monday."
+description: "A weekly log of what Solomon Smith is building, generated from GitHub activity by scripts/activity.py."
 eyebrow: "Log"
-lede: "What I worked on, week by week. Activity is pulled from the GitHub API every Monday. Notes are mine."
+lede: "What I worked on, week by week. Activity counts come from the GitHub API through scripts/activity.py. Notes are mine."
 ---
 
 {%- for w in site.data.activity_log %}

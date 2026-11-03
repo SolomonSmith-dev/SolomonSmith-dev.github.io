@@ -1,0 +1,34 @@
+---
+layout: page
+---
+{%- comment -%}
+  One project page. Front matter: title, heading (hero line), lede (what it does),
+  status, live (true adds the dot), stack (list), links (list of label + url),
+  image, image_alt, image_width, image_height, image_caption, order.
+  The Evidence table is written in the page body so each number sits next to
+  the command or file that reproduces it.
+{%- endcomment -%}
+<div class="project-meta">
+  {%- if page.status %}<span class="status{% if page.live %} status--live{% endif %}">{{ page.status }}</span>{% endif %}
+  {%- if page.stack %}<ul class="stack" aria-label="Stack">{% for s in page.stack %}<li>{{ s }}</li>{% endfor %}</ul>{% endif %}
+</div>
+
+{%- if page.image %}
+<figure class="project-figure">
+  <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="{{ page.image_width }}" height="{{ page.image_height }}" loading="lazy" decoding="async">
+  {%- if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+</figure>
+{%- endif %}
+
+{{ content }}
+
+{%- if page.links %}
+<h2 id="links">Links</h2>
+<div class="btn-row">
+  {%- for l in page.links %}
+  <a class="btn{% if forloop.first %} btn--primary{% endif %}" href="{{ l.url }}" rel="noopener">{{ l.label }}</a>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+<p><a class="text-link" href="{{ '/projects/' | relative_url }}">All projects</a></p>

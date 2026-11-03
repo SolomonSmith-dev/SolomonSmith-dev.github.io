@@ -65,6 +65,18 @@ defaults:
       type: posts
     values:
       permalink: /blog/:slug/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      wide: true
+
+# Project pages: one file per project in _projects/, served at /projects/<slug>/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # Exclude from processing
 exclude:

@@ -1,0 +1,19 @@
+<article class="project">
+  <div class="project__head">
+    <h3 class="project__title"><a href="{{ '/projects/agentic-engineering-os/' | relative_url }}">agentic-engineering-os</a></h3>
+    <span class="status">v0.1.0</span>
+  </div>
+  <p class="project__summary">Claude Code workers in sandboxed git worktrees, every tool call recorded in SQLite, and a draft PR only after an independent reviewer approves the diff.</p>
+  <dl class="project__facts">
+    <dt>Problem</dt>
+    <dd>An agent's word is a claim, not evidence.</dd>
+    <dt>Built</dt>
+    <dd>The orchestrator re-runs the reproduction before the fix, runs the tests itself at the reviewed commit, and hands the reviewer the plan, the diff and the test output, never the implementer's transcript. git push and gh never leave the orchestrator's process.</dd>
+    <dt>Tested</dt>
+    <dd>524 tests, run in CI on Ubuntu and macOS under the real sandbox runtime. 14 of 15 build steps merged, one PR per step. No paid eval has been run yet.</dd>
+  </dl>
+  <div class="project__foot">
+    <ul class="stack"><li>Python</li><li>Typer</li><li>SQLite</li><li>Claude Code</li><li>srt sandbox</li></ul>
+    <div class="project__links"><a href="{{ '/projects/agentic-engineering-os/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/agentic-engineering-os" rel="noopener">Source</a></div>
+  </div>
+</article>

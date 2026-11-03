@@ -41,6 +41,7 @@ All layouts extend `default.html`:
 - `default.html`: HTML shell, sticky header (Work / About / Resume / Writing + theme toggle + Contact), footer, JSON-LD.
 - `home.html`: hero (name + title "AI/Backend Engineer", the one-line thesis as the display heading, CTAs, availability line, headshot). Front matter `hero_lede` and `availability` in `index.md` feed it.
 - `page.html`: `.intro` (optional `eyebrow`, `heading` overrides `title` for the H1, `lede`) + `.prose`. `wide: true` lets components span the container.
+- `project.html`: extends `page.html` for the `_projects/` collection. Front matter: `heading` (hero line), `lede` (what it does), `status`, `live`, `stack`, `links`, optional `image` fields. Body sections: What it does, Why it is hard, Evidence (a table with `{: .evidence}` whose rows pair each number with the command or file that reproduces it).
 - `post.html`: date, title, description, prose, back link.
 
 ### `docs/` -- plans and specs, excluded from build
@@ -56,9 +57,10 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 **Accessibility**: global `:focus-visible` ring, skip link, `aria-current` nav, reduced-motion kills the single hero fade-in.
 
 ## File Map
-- `index.md`: metrics strip (CourtRules verifier 7 tests, ARDA 425 tests, PhishGuard AUC 0.9943), Selected work (4 included cards), Experience timeline, Skills, Background split, Contact band.
+- `index.md`: metrics strip (CourtRules 1,653 judges, ARDA 577 tests, PhishGuard AUC 0.9943), Selected work (CourtRules, ARDA, SOC Triage AI, Sentinel), Last week on GitHub, Experience timeline, Skills, Background split, Contact band.
 - `about.md`: positioning bio, How I work, Before engineering, What I am looking for, Education. Experience lives on the resume only.
-- `projects.md`: grouped cards. LLM and ML systems (CourtRules, ARDA, SOC Triage AI, PhishGuard, DocMind) and Agent infrastructure (Sauron Stack). claude-agents and adversarial-search-csp were removed 2026-10-03 by Solomon; do not re-add.
+- `projects.md`: seven cards in order: CourtRules, ARDA, SOC Triage AI, Sentinel, PhishGuard, agentic-engineering-os, DocMind. Each card title links to its `/projects/<slug>/` page. claude-agents, adversarial-search-csp (removed 2026-10-03) and the Sauron Stack card (folded into ARDA 2026-11-03) are gone; do not re-add.
+- `_projects/<slug>.md`: one page per project at `/projects/<slug>/`, 150 to 300 words, numbers only from that repo's README (CourtRules: the resume). Screenshots live in `assets/img/projects/` and are copied only from images the README already references.
 - `resume.md`: Summary, Experience, Technical Skills (.skills grid), Projects, Education, Certifications.
 - `blog.md`: post index (layout: page, Liquid for-loop renders posts).
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
@@ -83,11 +85,14 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 ## Active Projects (for portfolio accuracy, aligned to GitHub pin slate)
 
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
-2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 425 offline tests. Deployed 24/7.
-3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 34 tests.
-4. **DocMind**: RAG document Q&A with prompt injection defense. Active.
+2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 577 of 582 tests pass offline. Deployed 24/7.
+3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 35 test functions, 1 xfail. ONNX Runtime is scaffolded only (README), so the site does not list it as the serving layer.
+4. **DocMind**: RAG document Q&A with prompt injection defense. 113 tests. Active.
 
-Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is not a GitHub pin.
+5. **sentinel**: home-network monitor. 119 vitest, 197 pytest, 4 ctest. Dashboard is private (Cloudflare Access).
+6. **agentic-engineering-os**: `agent-team` orchestrator. 524 tests, 14 of 15 build steps merged.
+
+Sauron Stack no longer has its own card; it is ARDA's deployment.
 
 ## Work Experience (for resume accuracy)
 1. Founding Engineer, Recursa AI / CourtRules (Jul 2026 to present). Second engineer, two-person team.
@@ -96,7 +101,7 @@ Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is no
 4. Culinary Leadership, 10+ years (Head Chef, Chef de Cuisine, Kitchen Manager).
 
 ## Common Tasks
-- **Add a project**: project cards shown on both pages live in `_includes/card-*.html`. Add one there (or inline in `projects.md` if projects-only) and include it where needed.
+- **Add a project**: write `_projects/<slug>.md` (see `project.html` fields), add `_includes/card-<slug>.html` with the title linking to `/projects/<slug>/`, and include the card in `projects.md` (and `index.md` if it is selected work).
 - **Update resume**: mirror the new master resume into `resume.md`, then update the `index.md` timeline, the `_includes/card-*.html` facts, and the hero metrics.
 - **Change target language**: update `availability` front matter and the contact band in `index.md`, `about.md` "What I am looking for", `_config.yml` description, bio and og alt, `llms.txt`, `site.webmanifest`.
 - **Add a skill**: only if it is on the master resume. Edit `_includes/skills.html`.
