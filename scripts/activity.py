@@ -28,6 +28,7 @@ LATEST = ROOT / "_data" / "activity.json"
 LOG = ROOT / "_data" / "activity_log.json"
 API = "https://api.github.com"
 MAX_MESSAGES = 5
+USER_AGENT = "solomonsmith-dev-weekly-activity (+https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io)"
 
 
 def get(path, token):
@@ -39,6 +40,8 @@ def get(path, token):
             "Accept": "application/vnd.github+json",
             "Authorization": f"Bearer {token}",
             "X-GitHub-Api-Version": "2022-11-28",
+            # Default "Python-urllib" is rejected by some edges (Cloudflare 403).
+            "User-Agent": USER_AGENT,
         })
         with urllib.request.urlopen(req, timeout=30) as resp:
             body = json.load(resp)
@@ -61,13 +64,23 @@ def last_full_week(tz):
 
 
 def list_repos(user, token):
-    """Owned, non-fork repos. A PAT for the user also returns private ones."""
+    """Owned, non-fork repos. A PAT for the user also returns private ones.
+
+    The workflow's default GITHUB_TOKEN is an app token: /user answers 403
+    ("Resource not accessible by integration"), so fall back to public repos.
+    """
     try:
         if get("/user", token).get("login") == user:
             repos = get("/user/repos?affiliation=owner&per_page=100", token)
         else:
             raise PermissionError
-    except (urllib.error.HTTPError, PermissionError):
+    except urllib.error.HTTPError as err:
+        if err.code not in (401, 403):
+            raise
+        print("no user token: public repos only", file=sys.stderr)
+        repos = get(f"/users/{user}/repos?type=owner&per_page=100", token)
+    except PermissionError:
+        print("token is not for the configured user: public repos only", file=sys.stderr)
         repos = get(f"/users/{user}/repos?type=owner&per_page=100", token)
     return [r for r in repos if r["owner"]["login"] == user and not r["fork"]]
 
