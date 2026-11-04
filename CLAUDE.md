@@ -27,7 +27,7 @@ Pages CI triggers on every push to `main` (30-60s build). Local build requires H
 - `assets/main.scss` is the single, standalone stylesheet. It does NOT import Minima. Minima is still declared as the gem `theme` but all layouts and styles are fully overridden.
 - Plugins: jekyll-feed, jekyll-seo-tag, jekyll-sitemap, jekyll-redirect-from.
 - Fonts (Google Fonts, loaded in `_layouts/default.html`): Newsreader (display serif), IBM Plex Sans (body), IBM Plex Mono (labels, stack tags, data only).
-- No site JS beyond two inline snippets in `default.html`: a pre-paint theme loader and the theme toggle. `/card` is a separate Vite build with its own assets; it is not styled by `main.scss`.
+- No site JS beyond two inline snippets in `default.html`: a pre-paint theme loader and the theme toggle. `/card/` is only a redirect to https://card.solomonsmith.dev (the business-card repo, hosted on Cloudflare).
 
 ## Architecture
 
