@@ -5,6 +5,8 @@
   </div>
   <p class="project__summary">Upload a PDF, ask a question, get an answer that names the page it came from. Runs locally on Ollama and ChromaDB with no API key.</p>
   <dl class="project__facts">
+    <dt>Problem</dt>
+    <dd>Retrieved PDF text is attacker-controlled context. A RAG demo that skips injection filtering and page-level citations cannot be checked.</dd>
     <dt>Built</dt>
     <dd>Page-level citations carried from PyMuPDF through ChromaDB to the response, prompt-injection filtering on retrieved chunks, HS256 JWT auth, rate-limited upload and ask endpoints, and a confidence score with a low-confidence flag.</dd>
     <dt>Tested</dt>

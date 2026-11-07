@@ -19,3 +19,9 @@ Result: success in ~0.3s → `_site/`
 ## Note
 
 `vendor/` and `_site/` are gitignored; not committed.
+
+## Walkthrough screenshots (local `_site` on :8766)
+
+- `docs/hire-ready/audit/hire-hero-ctas.webp` -- Email-first hero + header Resume/Contact
+- `docs/hire-ready/audit/hire-soc-problem-row.webp` -- SOC Triage Problem row
+- `docs/hire-ready/audit/hire-phishguard-serving.webp` -- PhishGuard FastAPI serving; ONNX not production serving

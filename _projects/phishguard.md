@@ -2,7 +2,7 @@
 title: "PhishGuard"
 eyebrow: "Project &middot; PhishGuard"
 heading: "A phishing URL classifier I had to break before I could trust it."
-lede: "A LightGBM URL classifier exported to ONNX and served through FastAPI. The public dataset's labels were upside down and every legitimate URL in it began with https://www. The model that ships is the one that still passes the leakage tests after those shortcuts were removed."
+lede: "A LightGBM URL classifier served through FastAPI. The public dataset's labels were upside down and every legitimate URL in it began with https://www. The model that ships is the one that still passes the leakage tests after those shortcuts were removed."
 description: "PhishGuard by Solomon Smith: LightGBM phishing URL classifier, test AUC 0.9943 and 1.54% false positives on Tranco top-5,000, with the PhiUSIIL dataset leakage found, fixed and locked by regression tests."
 order: 5
 status: "Active"
@@ -31,7 +31,8 @@ The fixes are code and tests, not a footnote. Label polarity is normalized in th
 | 1.54% false positives on Tranco top-5,000 at threshold 0.7 | `reports/evaluation_v0_2.md`; 2.52% at 0.5, 0.90% at 0.9. Tranco was never trained on |
 | Top feature gain 27.16% (`subdomain_depth`), top-3 57.9% | `reports/url_baseline_v0_2.txt` |
 | 35 test functions, 1 xfail on purpose | `grep -c "^def test_" tests/*.py`; run with `make test` |
-| ONNX serving: `POST /predict` runs the model in `onnxruntime.InferenceSession`, max diff vs the native booster 8.9e-8 over 23,537 test URLs | `src/phishguard/serving/url_onnx.py`, `reports/url_onnx_2026-11-03.md`, `tests/test_onnx_serving.py` |
 {: .evidence}
+
+ONNX Runtime export is scaffolded in-repo with parity tests; the public write-up treats FastAPI + the LightGBM booster as the serving path, not ONNX as production serving.
 
 The leakage tests run as a pre-commit hook on every commit (planting an inverted label makes the commit fail) and again in GitHub Actions CI. The before-and-after write-up is `LIMITATIONS.md`.
