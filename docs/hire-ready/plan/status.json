@@ -1,5 +1,5 @@
 {
-  "active_gate": "DI-19 launch / merge + C10 live verify",
+  "active_gate": null,
   "tasks": {
     "T01": {"status": "complete", "steps_done": 20},
     "T02": {"status": "complete", "steps_done": 20},
@@ -19,7 +19,7 @@
     "T16": {"status": "complete", "steps_done": 20},
     "T17": {"status": "complete", "steps_done": 20},
     "T18": {"status": "complete", "steps_done": 20},
-    "T19": {"status": "in_progress", "steps_done": 14},
+    "T19": {"status": "complete", "steps_done": 20},
     "T20": {"status": "complete", "steps_done": 20}
   },
   "completion_subtasks": {
@@ -32,7 +32,7 @@
     "C07": "met",
     "C08": "met_local_lighthouse",
     "C09": "met",
-    "C10": "pending"
+    "C10": "met"
   },
-  "notes": "DI-01..DI-20 locked keep-current. Awaiting CI then merge for C10 live verify."
+  "notes": "Hire-ready program complete. Live verified on solomonsmith.dev after Pages build. Residual: run scripts/sync-resume.sh offline when MATERIALS is available."
 }

@@ -3,10 +3,10 @@
 | Requirement | Status | Evidence |
 | --- | --- | --- |
 | 20 tasks × 20 steps | **met** | `plan/T01.md`..`T20.md`, `master-plan.json` |
-| 10 completion subtasks | **partial** | C01–C09 met/met_in_repo; C10 pending live |
+| 10 completion subtasks | **met** | C01–C10 below |
 | Decision interviews | **met** | DI-01..DI-20 locked keep-current |
-| Polished portfolio | **met in branch** | CTAs, cards, a11y, Lighthouse |
-| Live verification | **pending** | needs merge + `audit/launch.md` |
+| Polished portfolio | **met** | live CTAs, cards, a11y; local Lighthouse |
+| Live verification | **met** | `audit/launch.md` 19/19 on solomonsmith.dev |
 
 ## Completion subtasks
 
@@ -19,9 +19,9 @@
 | C05 | **met** | `audit/project-evidence.md` |
 | C06 | **met_in_repo_fidelity** | `audit/resume-sync.md` (MATERIALS residual) |
 | C07 | **met** | `audit/contact-path.md` |
-| C08 | **met_local** | `audit/lighthouse/` (live recheck after merge) |
+| C08 | **met_local** | `audit/lighthouse/` (live content verified in C10) |
 | C09 | **met** | `outreach/email-cold.md`, `linkedin-blurb.md` |
-| C10 | **pending** | `audit/launch.md` |
+| C10 | **met** | `audit/launch.md` live 19/19 |
 
 ## Lighthouse (local mobile)
 
@@ -31,8 +31,7 @@
 | projects | 100 | 100 | 100 | 100 |
 | resume | 100 | 100 | 100 | 100 |
 
-## Remaining for goal complete
+## Residual (non-blocking)
 
-1. Merge PR #12 after CI
-2. Verify https://solomonsmith.dev against `audit/launch.md` (C10)
-3. Optional offline: Solomon runs `scripts/sync-resume.sh` when MATERIALS is available
+- Solomon can run `scripts/sync-resume.sh` when MATERIALS is available
+- Weekly loop: `docs/hire-ready/maintenance.md`
