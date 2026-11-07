@@ -1,0 +1,22 @@
+{
+  "id": "DI-01",
+  "title": "Positioning lock for hire-ready portfolio",
+  "status": "provisional",
+  "owner": "Solomon Smith",
+  "updated_at": "2026-11-07",
+  "rule": "Provisional defaults mirror the live site thesis so hire-conversion work can proceed. Solomon should lock or revise.",
+  "answers": {
+    "q1_title": "AI/Backend Engineer (keep)",
+    "q2_audience": "Hiring managers at product companies",
+    "q3_geography": "Keep Montclair + remote/relocation",
+    "q4_selected_work_top": ["CourtRules", "ARDA", "SOC Triage AI", "Sentinel"],
+    "q5_cta_order": "Email, Resume PDF, View work",
+    "q6_tone": "Calm and confident (current tone)",
+    "q7_home_skim": "Keep all current sections",
+    "q8_writing": "Index only, no new posts",
+    "q9_recursa_title": "Keep Founding Engineer",
+    "q10_first_build": "Hero + contact conversion first"
+  },
+  "confirmation_prompt": "Reply LOCK DI-1 to freeze, or send corrections.",
+  "note": "CTA order changed from prior Work-first hero to Email-first for hire conversion under this provisional answer."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "DI-03",
+  "title": "Hero conversion",
+  "status": "provisional",
+  "owner": "Solomon Smith",
+  "questions": [
+    {
+      "q": "Approve proceeding with Hero conversion?",
+      "answer": null
+    },
+    {
+      "q": "Any constraints for this gate?",
+      "answer": null
+    },
+    {
+      "q": "Definition of done for this gate?",
+      "answer": null
+    }
+  ],
+  "answers": {
+    "cta_order": "Email, Resume, View work",
+    "approve": "yes_provisional_DI01"
+  },
+  "note": "Provisional under DI-01 keep-current + hire conversion."
+}

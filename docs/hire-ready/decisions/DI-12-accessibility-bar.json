@@ -1,0 +1,25 @@
+{
+  "id": "DI-12",
+  "title": "Accessibility bar",
+  "status": "provisional",
+  "owner": "Solomon Smith",
+  "questions": [
+    {
+      "q": "Approve proceeding with Accessibility bar?",
+      "answer": null
+    },
+    {
+      "q": "Any constraints for this gate?",
+      "answer": null
+    },
+    {
+      "q": "Definition of done for this gate?",
+      "answer": null
+    }
+  ],
+  "answers": {
+    "theme_toggle_aria": "shipped",
+    "axe": "pending"
+  },
+  "note": "Provisional under DI-01 keep-current + hire conversion."
+}

@@ -1,0 +1,185 @@
+{
+  "rule": "Decision interviews always before moving forward",
+  "interviews": [
+    {
+      "id": "DI-01",
+      "title": "Positioning lock",
+      "file": "DI-01-positioning.json",
+      "status": "provisional",
+      "blocks": [
+        "T01"
+      ]
+    },
+    {
+      "id": "DI-02",
+      "title": "Gate map",
+      "file": "DI-02-gate-map.json",
+      "status": "provisional",
+      "blocks": [
+        "T02"
+      ]
+    },
+    {
+      "id": "DI-03",
+      "title": "Hero conversion",
+      "file": "DI-03-hero-conversion.json",
+      "status": "provisional",
+      "blocks": [
+        "T03"
+      ]
+    },
+    {
+      "id": "DI-04",
+      "title": "Selected work order",
+      "file": "DI-04-selected-work-order.json",
+      "status": "open",
+      "blocks": [
+        "T04"
+      ]
+    },
+    {
+      "id": "DI-05",
+      "title": "Project evidence bar",
+      "file": "DI-05-project-evidence-bar.json",
+      "status": "open",
+      "blocks": [
+        "T05"
+      ]
+    },
+    {
+      "id": "DI-06",
+      "title": "Resume sync",
+      "file": "DI-06-resume-sync.json",
+      "status": "open",
+      "blocks": [
+        "T06"
+      ]
+    },
+    {
+      "id": "DI-07",
+      "title": "About narrative",
+      "file": "DI-07-about-narrative.json",
+      "status": "open",
+      "blocks": [
+        "T07"
+      ]
+    },
+    {
+      "id": "DI-08",
+      "title": "Contact CTAs",
+      "file": "DI-08-contact-ctas.json",
+      "status": "provisional",
+      "blocks": [
+        "T08"
+      ]
+    },
+    {
+      "id": "DI-09",
+      "title": "Skills truth",
+      "file": "DI-09-skills-truth.json",
+      "status": "open",
+      "blocks": [
+        "T09"
+      ]
+    },
+    {
+      "id": "DI-10",
+      "title": "SEO/social",
+      "file": "DI-10-seo-social.json",
+      "status": "open",
+      "blocks": [
+        "T10"
+      ]
+    },
+    {
+      "id": "DI-11",
+      "title": "Performance bar",
+      "file": "DI-11-performance-bar.json",
+      "status": "open",
+      "blocks": [
+        "T11"
+      ]
+    },
+    {
+      "id": "DI-12",
+      "title": "Accessibility bar",
+      "file": "DI-12-accessibility-bar.json",
+      "status": "provisional",
+      "blocks": [
+        "T12"
+      ]
+    },
+    {
+      "id": "DI-13",
+      "title": "Demo proof",
+      "file": "DI-13-demo-proof.json",
+      "status": "open",
+      "blocks": [
+        "T13"
+      ]
+    },
+    {
+      "id": "DI-14",
+      "title": "GitHub pin alignment",
+      "file": "DI-14-github-pin-alignment.json",
+      "status": "open",
+      "blocks": [
+        "T14"
+      ]
+    },
+    {
+      "id": "DI-15",
+      "title": "Writing priority",
+      "file": "DI-15-writing-priority.json",
+      "status": "open",
+      "blocks": [
+        "T15"
+      ]
+    },
+    {
+      "id": "DI-16",
+      "title": "Link QA",
+      "file": "DI-16-link-qa.json",
+      "status": "open",
+      "blocks": [
+        "T16"
+      ]
+    },
+    {
+      "id": "DI-17",
+      "title": "90s skim path",
+      "file": "DI-17-90s-skim-path.json",
+      "status": "open",
+      "blocks": [
+        "T17"
+      ]
+    },
+    {
+      "id": "DI-18",
+      "title": "Outreach kit",
+      "file": "DI-18-outreach-kit.json",
+      "status": "open",
+      "blocks": [
+        "T18"
+      ]
+    },
+    {
+      "id": "DI-19",
+      "title": "Launch",
+      "file": "DI-19-launch.json",
+      "status": "open",
+      "blocks": [
+        "T19"
+      ]
+    },
+    {
+      "id": "DI-20",
+      "title": "Maintenance",
+      "file": "DI-20-maintenance.json",
+      "status": "open",
+      "blocks": [
+        "T20"
+      ]
+    }
+  ]
+}

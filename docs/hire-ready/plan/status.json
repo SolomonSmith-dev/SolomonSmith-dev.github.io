@@ -1,0 +1,98 @@
+{
+  "active_gate": "DI-01 (provisional; awaiting Solomon lock)",
+  "tasks": {
+    "T01": {
+      "status": "in_progress",
+      "steps_done": 16
+    },
+    "T02": {
+      "status": "in_progress",
+      "steps_done": 18
+    },
+    "T03": {
+      "status": "in_progress",
+      "steps_done": 14
+    },
+    "T04": {
+      "status": "in_progress",
+      "steps_done": 10
+    },
+    "T05": {
+      "status": "in_progress",
+      "steps_done": 12
+    },
+    "T06": {
+      "status": "in_progress",
+      "steps_done": 12
+    },
+    "T07": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T08": {
+      "status": "in_progress",
+      "steps_done": 14
+    },
+    "T09": {
+      "status": "in_progress",
+      "steps_done": 14
+    },
+    "T10": {
+      "status": "in_progress",
+      "steps_done": 10
+    },
+    "T11": {
+      "status": "in_progress",
+      "steps_done": 12
+    },
+    "T12": {
+      "status": "in_progress",
+      "steps_done": 14
+    },
+    "T13": {
+      "status": "in_progress",
+      "steps_done": 10
+    },
+    "T14": {
+      "status": "in_progress",
+      "steps_done": 10
+    },
+    "T15": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T16": {
+      "status": "in_progress",
+      "steps_done": 16
+    },
+    "T17": {
+      "status": "in_progress",
+      "steps_done": 12
+    },
+    "T18": {
+      "status": "in_progress",
+      "steps_done": 12
+    },
+    "T19": {
+      "status": "in_progress",
+      "steps_done": 8
+    },
+    "T20": {
+      "status": "in_progress",
+      "steps_done": 10
+    }
+  },
+  "completion_subtasks": {
+    "C01": "pending",
+    "C02": "partial",
+    "C03": "in_progress",
+    "C04": "pending",
+    "C05": "met_audit",
+    "C06": "blocked_no_MATERIALS_in_vm",
+    "C07": "met_in_branch",
+    "C08": "partial_build_verified",
+    "C09": "draft_provisional",
+    "C10": "pending"
+  },
+  "notes": "Local jekyll build verifies Email-first CTAs. Await Solomon LOCK DI-1 + merge for live."
+}
