@@ -1,0 +1,22 @@
+{
+  "id": "DI-02",
+  "title": "Gate map",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "questions": [
+    {
+      "q": "Approve proceeding with Gate map?",
+      "answer": null
+    },
+    {
+      "q": "Any constraints for this gate?",
+      "answer": null
+    },
+    {
+      "q": "Definition of done for this gate?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "note": "Required before completing the matching task."
+}

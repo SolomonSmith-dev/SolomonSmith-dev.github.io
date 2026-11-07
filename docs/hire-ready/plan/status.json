@@ -1,0 +1,97 @@
+{
+  "active_gate": "DI-01",
+  "tasks": {
+    "T01": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T02": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T03": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T04": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T05": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T06": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T07": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T08": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T09": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T10": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T11": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T12": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T13": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T14": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T15": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T16": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T17": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T18": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T19": {
+      "status": "pending",
+      "steps_done": 0
+    },
+    "T20": {
+      "status": "pending",
+      "steps_done": 0
+    }
+  },
+  "completion_subtasks": {
+    "C01": "pending",
+    "C02": "pending",
+    "C03": "pending",
+    "C04": "pending",
+    "C05": "pending",
+    "C06": "pending",
+    "C07": "pending",
+    "C08": "pending",
+    "C09": "pending",
+    "C10": "pending"
+  }
+}
