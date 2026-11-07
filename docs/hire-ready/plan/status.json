@@ -22,8 +22,8 @@
       "steps_done": 12
     },
     "T06": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 12
     },
     "T07": {
       "status": "pending",
@@ -34,8 +34,8 @@
       "steps_done": 14
     },
     "T09": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 14
     },
     "T10": {
       "status": "in_progress",
@@ -43,19 +43,19 @@
     },
     "T11": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 12
     },
     "T12": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 14
     },
     "T13": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     },
     "T14": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     },
     "T15": {
       "status": "pending",
@@ -63,7 +63,7 @@
     },
     "T16": {
       "status": "in_progress",
-      "steps_done": 14
+      "steps_done": 16
     },
     "T17": {
       "status": "in_progress",
@@ -74,12 +74,12 @@
       "steps_done": 12
     },
     "T19": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 8
     },
     "T20": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     }
   },
   "completion_subtasks": {
@@ -87,12 +87,12 @@
     "C02": "partial",
     "C03": "in_progress",
     "C04": "pending",
-    "C05": "pending",
-    "C06": "pending",
+    "C05": "met_audit",
+    "C06": "blocked_no_MATERIALS_in_vm",
     "C07": "met_in_branch",
-    "C08": "pending",
+    "C08": "partial_build_verified",
     "C09": "draft_provisional",
     "C10": "pending"
   },
-  "notes": "Hero Email-first + header Resume shipped under provisional DI-01. Solomon should LOCK DI-1."
+  "notes": "Local jekyll build verifies Email-first CTAs. Await Solomon LOCK DI-1 + merge for live."
 }
