@@ -257,7 +257,8 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
     overflow-x: auto;
   }
   .site-nav__actions { margin-left: auto; }
-  .site-nav__actions .btn--sm { display: none; }
+  /* Keep Contact reachable on small screens; drop secondary Resume to save width. */
+  .site-nav__actions .btn--sm:not(.btn--primary) { display: none; }
 }
 .site-nav__links, .site-nav__actions { display: flex; align-items: center; gap: var(--space-3); }
 .site-nav__actions { gap: var(--space-1); }
