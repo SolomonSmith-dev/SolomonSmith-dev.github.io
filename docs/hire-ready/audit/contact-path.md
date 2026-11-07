@@ -8,7 +8,8 @@ From home hero:
 3. Tertiary **View selected work**
 
 From every page header:
-- **Resume** PDF button
+- Nav **Resume** → `/resume/` page
+- Action **Resume PDF** → downloadable PDF
 - **Contact** email button
 
 Footer still has Email / GitHub / LinkedIn / Resume PDF.

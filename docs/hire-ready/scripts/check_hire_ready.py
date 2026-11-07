@@ -71,10 +71,14 @@ def main() -> int:
         ok("hero CTA Email → Resume → Work")
 
     header = (ROOT / "_layouts" / "default.html").read_text()
-    if "Resume</a>" not in header or "Contact</a>" not in header:
-        err("header missing Resume/Contact")
+    if "/resume/" not in header or "Resume PDF" not in header or "Contact</a>" not in header:
+        err("header missing Resume page nav, Resume PDF action, or Contact")
     else:
-        ok("header Resume + Contact")
+        ok("header Resume page + Resume PDF + Contact")
+    if re.search(r'btn btn--sm"[^>]*>Resume</a>', header):
+        err("header PDF action still labeled Resume (collides with nav)")
+    if 'aria-pressed' in header:
+        err("theme toggle still sets aria-pressed alongside action aria-label")
 
     # Constraints grep on content surfaces
     paths = list((ROOT / "_projects").glob("*.md")) + [

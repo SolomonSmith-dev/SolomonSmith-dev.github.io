@@ -14,7 +14,8 @@
 ## Post-merge live verify (https://solomonsmith.dev)
 
 - [ ] Home hero CTA order: Email me → Download resume → View selected work
-- [ ] Mobile header shows Contact
+- [ ] Header nav Resume → `/resume/`; action Resume PDF → PDF; Contact visible on mobile
+- [ ] Theme toggle has action aria-label only (no aria-pressed conflict)
 - [ ] CourtRules / ARDA / SOC / Sentinel selected work present
 - [ ] Resume PDF downloads
 - [ ] PhishGuard project page does not claim ONNX as production serving
