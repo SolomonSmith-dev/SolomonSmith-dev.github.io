@@ -1,7 +1,7 @@
 {
   "id": "DI-03",
   "title": "Hero conversion",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,9 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "cta_order": "Email, Resume, View work",
+    "approve": "yes_provisional_DI01"
+  },
+  "note": "Provisional under DI-01 keep-current + hire conversion."
 }

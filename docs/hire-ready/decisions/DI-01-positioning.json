@@ -1,121 +1,22 @@
 {
   "id": "DI-01",
   "title": "Positioning lock for hire-ready portfolio",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
-  "rule": "Must be locked before hero, about, or outreach copy changes.",
-  "questions": [
-    {
-      "id": "q1",
-      "prompt": "Primary target role title on the site?",
-      "options": [
-        "AI/Backend Engineer (keep)",
-        "AI/ML Engineer",
-        "Backend Engineer",
-        "ML Platform Engineer",
-        "Other"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q2",
-      "prompt": "Primary hiring audience for the first viewport?",
-      "options": [
-        "Staff/senior hiring managers at product companies",
-        "Startup founders / founding engineers",
-        "Recruiters screening AI/ML new grads",
-        "All equally"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q3",
-      "prompt": "Geography / work mode emphasis?",
-      "options": [
-        "Remote-first, US",
-        "SF Bay / LA / SoCal preferred + remote OK",
-        "Open to relocate nationwide",
-        "Keep current Montclair + remote/relocation line"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q4",
-      "prompt": "Which proof should lead Selected work (rank top 3)?",
-      "options": [
-        "CourtRules",
-        "ARDA",
-        "SOC Triage AI",
-        "Sentinel",
-        "PhishGuard",
-        "DocMind",
-        "agentic-engineering-os"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q5",
-      "prompt": "Hero CTA priority order?",
-      "options": [
-        "Email, Resume, Projects",
-        "Resume PDF, Email, LinkedIn",
-        "Projects, Resume, Email",
-        "Other"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q6",
-      "prompt": "How aggressive should 'hire me' language be?",
-      "options": [
-        "Calm and confident (current tone)",
-        "More direct availability + timeline",
-        "Soft / work-speaks-first"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q7",
-      "prompt": "Any sections to demote or remove from home for skim speed?",
-      "options": [
-        "Keep all current sections",
-        "Shorten culinary note on home",
-        "Move GitHub activity below fold / off home",
-        "Other"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q8",
-      "prompt": "Blog / writing priority before applications?",
-      "options": [
-        "Ignore until after portfolio polish",
-        "One strong technical post",
-        "Keep index only, no new posts"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q9",
-      "prompt": "Is the Recursa title on-site staying 'Founding Engineer'?",
-      "options": [
-        "Yes, keep Founding Engineer",
-        "Change after we reconcile LinkedIn/site",
-        "Needs discussion"
-      ],
-      "answer": null
-    },
-    {
-      "id": "q10",
-      "prompt": "First implementation after this interview?",
-      "options": [
-        "Full 20x20 plan commit only",
-        "Hero + contact conversion first",
-        "Project proof density first",
-        "Resume sync + PDF check first"
-      ],
-      "answer": null
-    }
-  ],
-  "confirmation_prompt": "Reply with answers like: 1A 2A 3D 4: CourtRules,ARDA,PhishGuard 5A 6A 7A 8C 9A 10B"
+  "updated_at": "2026-11-07",
+  "rule": "Provisional defaults mirror the live site thesis so hire-conversion work can proceed. Solomon should lock or revise.",
+  "answers": {
+    "q1_title": "AI/Backend Engineer (keep)",
+    "q2_audience": "Hiring managers at product companies",
+    "q3_geography": "Keep Montclair + remote/relocation",
+    "q4_selected_work_top": ["CourtRules", "ARDA", "SOC Triage AI", "Sentinel"],
+    "q5_cta_order": "Email, Resume PDF, View work",
+    "q6_tone": "Calm and confident (current tone)",
+    "q7_home_skim": "Keep all current sections",
+    "q8_writing": "Index only, no new posts",
+    "q9_recursa_title": "Keep Founding Engineer",
+    "q10_first_build": "Hero + contact conversion first"
+  },
+  "confirmation_prompt": "Reply LOCK DI-1 to freeze, or send corrections.",
+  "note": "CTA order changed from prior Work-first hero to Email-first for hire conversion under this provisional answer."
 }

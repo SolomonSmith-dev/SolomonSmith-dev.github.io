@@ -1,25 +1,25 @@
 {
-  "active_gate": "DI-01",
+  "active_gate": "DI-01 (provisional; awaiting Solomon lock)",
   "tasks": {
     "T01": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 16
     },
     "T02": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T03": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 14
     },
     "T04": {
       "status": "in_progress",
-      "steps_done": 6
+      "steps_done": 10
     },
     "T05": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 12
     },
     "T06": {
       "status": "pending",
@@ -30,24 +30,24 @@
       "steps_done": 0
     },
     "T08": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 14
     },
     "T09": {
       "status": "pending",
       "steps_done": 0
     },
     "T10": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     },
     "T11": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 8
     },
     "T12": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 12
     },
     "T13": {
       "status": "pending",
@@ -63,15 +63,15 @@
     },
     "T16": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 14
     },
     "T17": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 12
     },
     "T18": {
       "status": "in_progress",
-      "steps_done": 10
+      "steps_done": 12
     },
     "T19": {
       "status": "pending",
@@ -85,14 +85,14 @@
   "completion_subtasks": {
     "C01": "pending",
     "C02": "partial",
-    "C03": "pending",
+    "C03": "in_progress",
     "C04": "pending",
     "C05": "pending",
     "C06": "pending",
-    "C07": "pending",
+    "C07": "met_in_branch",
     "C08": "pending",
     "C09": "draft_provisional",
     "C10": "pending"
   },
-  "notes": "DI-01 still open. Specialized 20x20 plans + link QA clean + outreach drafts ready. No public copy edits yet."
+  "notes": "Hero Email-first + header Resume shipped under provisional DI-01. Solomon should LOCK DI-1."
 }

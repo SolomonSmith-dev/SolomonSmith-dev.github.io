@@ -1,7 +1,7 @@
 {
   "id": "DI-12",
   "title": "Accessibility bar",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,9 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "theme_toggle_aria": "shipped",
+    "axe": "pending"
+  },
+  "note": "Provisional under DI-01 keep-current + hire conversion."
 }

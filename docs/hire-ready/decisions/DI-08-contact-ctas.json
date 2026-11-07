@@ -1,7 +1,7 @@
 {
   "id": "DI-08",
   "title": "Contact CTAs",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,9 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "header_resume_btn": "yes",
+    "home_email_primary": "yes"
+  },
+  "note": "Provisional under DI-01 keep-current + hire conversion."
 }

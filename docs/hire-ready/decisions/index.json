@@ -5,7 +5,7 @@
       "id": "DI-01",
       "title": "Positioning lock",
       "file": "DI-01-positioning.json",
-      "status": "open",
+      "status": "provisional",
       "blocks": [
         "T01"
       ]
@@ -23,7 +23,7 @@
       "id": "DI-03",
       "title": "Hero conversion",
       "file": "DI-03-hero-conversion.json",
-      "status": "open",
+      "status": "provisional",
       "blocks": [
         "T03"
       ]
@@ -68,7 +68,7 @@
       "id": "DI-08",
       "title": "Contact CTAs",
       "file": "DI-08-contact-ctas.json",
-      "status": "open",
+      "status": "provisional",
       "blocks": [
         "T08"
       ]
@@ -104,7 +104,7 @@
       "id": "DI-12",
       "title": "Accessibility bar",
       "file": "DI-12-accessibility-bar.json",
-      "status": "open",
+      "status": "provisional",
       "blocks": [
         "T12"
       ]

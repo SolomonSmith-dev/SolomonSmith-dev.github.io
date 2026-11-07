@@ -5,6 +5,8 @@
   </div>
   <p class="project__summary">RAG-grounded security alert triage that refuses out-of-scope alerts instead of guessing.</p>
   <dl class="project__facts">
+    <dt>Problem</dt>
+    <dd>A SOC tool that makes up a triage is worse than one that says manual review. The failure path is the product.</dd>
     <dt>Built</dt>
     <dd>Six-stage pipeline: regex observable extraction, sentence-transformer retrieval over an 11-document MITRE ATT&amp;CK corpus, a similarity guardrail at 0.20, Claude generation held to retrieved context, and strict JSON schema validation.</dd>
     <dt>Measured</dt>
