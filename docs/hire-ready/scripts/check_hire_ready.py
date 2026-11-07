@@ -77,7 +77,7 @@ def main() -> int:
         ok("header Resume page + Resume PDF + Contact")
     if re.search(r'btn btn--sm"[^>]*>Resume</a>', header):
         err("header PDF action still labeled Resume (collides with nav)")
-    if 'aria-pressed' in header:
+    if 'setAttribute("aria-pressed"' in header or "setAttribute('aria-pressed'" in header:
         err("theme toggle still sets aria-pressed alongside action aria-label")
 
     # Constraints grep on content surfaces

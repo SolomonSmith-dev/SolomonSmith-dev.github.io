@@ -139,9 +139,6 @@
     }
     function syncToggle() {
       var mode = current();
-      // Action label only: pairing aria-pressed with a next-action label
-      // announced conflicting state (e.g. "Switch to light theme, pressed").
-      btn.removeAttribute("aria-pressed");
       btn.setAttribute("aria-label", mode === "dark" ? "Switch to light theme" : "Switch to dark theme");
     }
     syncToggle();
