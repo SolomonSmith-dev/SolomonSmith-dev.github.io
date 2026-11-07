@@ -193,7 +193,7 @@ async function boot() {
   try {
     const data = await loadSite();
     renderStats(data.stats);
-    if (page === "home" || page === "findings") renderFindings(data.findings || []);
+    if (page === "home" || page === "findings" || page === "case") renderFindings(data.findings || []);
     if (page === "vendors") renderVendors(data.vendors);
     if (page === "methods") {
       renderDecisions(data.decisions);

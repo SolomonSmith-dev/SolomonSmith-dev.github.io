@@ -1,0 +1,12 @@
+{
+  "id": "FIND-009",
+  "title": "Canvas (Instructure) is the campus LMS with SAML login",
+  "claim_grade": "Documented",
+  "severity": "S1",
+  "likelihood": "L3",
+  "summary": "CSUSB publishes Canvas resources and links to https://csusb.instructure.com/login/saml. Course activity, grades-adjacent workflows, and learning-app launches concentrate here -- a primary student-data plane for the investigation.",
+  "evidence_ids": ["SRC-www-csusb-edu-canvas-fe4f6ffe"],
+  "student_action": "Include Canvas in every self-audit; review installed course apps before launching them.",
+  "school_action": "Publish Canvas data categories, retention, and approved learning-app inventory with DPAs.",
+  "status": "open"
+}

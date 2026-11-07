@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-its-security-identity-acce-1861db83",
+  "title": "DUO MFA Requirements",
+  "type": "policy",
+  "url": "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+  "final_url": "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+  "retrieved_at": "2026-11-07T12:55:24Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "1861db83b3426fa6604ef798cc96e9471c10dd1ecaed8c4798616f7f4f42d894",
+  "bytes": 155393,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

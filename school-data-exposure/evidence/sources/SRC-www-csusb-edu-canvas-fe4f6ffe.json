@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-canvas-fe4f6ffe",
+  "title": "CSUSB Canvas",
+  "type": "policy",
+  "url": "https://www.csusb.edu/canvas",
+  "final_url": "https://www.csusb.edu/canvas",
+  "retrieved_at": "2026-11-07T12:55:38Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "fe4f6ffecb7375d92c9bb9cc98c659e49e714594334df27882c66a44456e14e1",
+  "bytes": 89001,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

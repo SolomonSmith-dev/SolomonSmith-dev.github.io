@@ -1,7 +1,7 @@
 {
   "id": "DI-03",
   "title": "Gate Map",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T02"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Approve gate map as mandatory?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Allow provisional forward moves?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Who locks interviews?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "gate_map_mandatory": "yes",
+    "provisional_forward_for_research": "yes",
+    "lock_owner": "Solomon"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Research may proceed on provisional; launch/publish still needs locked DIs.",
+  "provisional_at": "2026-11-07"
 }

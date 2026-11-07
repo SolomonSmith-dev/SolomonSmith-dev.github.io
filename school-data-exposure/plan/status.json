@@ -2,35 +2,35 @@
   "tasks": {
     "T01": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 16
     },
     "T02": {
       "status": "in_progress",
-      "steps_done": 14
+      "steps_done": 18
     },
     "T03": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 14
     },
     "T04": {
       "status": "in_progress",
-      "steps_done": 4
+      "steps_done": 14
     },
     "T05": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T06": {
       "status": "in_progress",
-      "steps_done": 6
+      "steps_done": 16
     },
     "T07": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 16
     },
     "T08": {
       "status": "in_progress",
-      "steps_done": 5
+      "steps_done": 12
     },
     "T09": {
       "status": "pending",
@@ -46,31 +46,31 @@
     },
     "T12": {
       "status": "in_progress",
-      "steps_done": 15
+      "steps_done": 18
     },
     "T13": {
       "status": "in_progress",
-      "steps_done": 10
+      "steps_done": 16
     },
     "T14": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 12
     },
     "T15": {
       "status": "in_progress",
-      "steps_done": 14
+      "steps_done": 16
     },
     "T16": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 12
     },
     "T17": {
       "status": "in_progress",
-      "steps_done": 10
+      "steps_done": 12
     },
     "T18": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 8
     },
     "T19": {
       "status": "pending",
@@ -84,15 +84,15 @@
   "completion_subtasks": {
     "C01": "pending",
     "C02": "pending",
-    "C03": "in_progress",
-    "C04": "pending",
-    "C05": "pending",
-    "C06": "in_progress",
+    "C03": "met_threshold_pending_DI_lock",
+    "C04": "in_progress",
+    "C05": "in_progress",
+    "C06": "met_threshold_pending_DI_lock",
     "C07": "in_progress",
     "C08": "pending",
     "C09": "pending",
     "C10": "pending"
   },
   "active_gate": "DI-1",
-  "notes": "DI-01 provisional. Plan+site+corpus scaffolded. Awaiting Solomon DI-01 confirmation before locking target and advancing gated publishes."
+  "notes": "Public evidence deepened (Canvas/GA/Respondus/Turnitin). DI-01..08 provisional for research; launch DIs still open."
 }

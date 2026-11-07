@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7",
+  "title": "CSUSB Canvas Learning Apps",
+  "type": "vendor",
+  "url": "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+  "final_url": "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+  "retrieved_at": "2026-11-07T12:55:48Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "cb6e66b78129d545fc819ca2fea2059e598b6e20bd5ef13df7d2b8203398cffb",
+  "bytes": 95080,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

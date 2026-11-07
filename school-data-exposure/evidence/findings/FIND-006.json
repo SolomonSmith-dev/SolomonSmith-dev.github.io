@@ -1,0 +1,12 @@
+{
+  "id": "FIND-006",
+  "title": "Public website uses Google Analytics and discloses cookies / clear gifs",
+  "claim_grade": "Documented",
+  "severity": "S2",
+  "likelihood": "L3",
+  "summary": "CSUSB's Privacy and Security Notice states the Sites use Google Analytics and use cookies, clear gifs, and log files for remembering information, monitoring effectiveness, and related purposes. Clear gifs are described as tracking usage patterns anonymously and email open behavior. This is first-party public admission of cross-request tracking on the public web surface.",
+  "evidence_ids": ["SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"],
+  "student_action": "Use browser tracker controls on csusb.edu; compare LMS/SIS third parties in a separate own-account audit.",
+  "school_action": "Publish a current cookie/tracker table and whether analytics applies inside authenticated portals.",
+  "status": "open"
+}

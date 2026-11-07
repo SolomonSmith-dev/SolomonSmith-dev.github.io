@@ -1,23 +1,31 @@
 {
-  "version": "0.1-provisional",
+  "version": "0.2-provisional",
   "decision_gate": "DI-08",
   "nodes": [
     {"id": "student", "label": "Student", "type": "user"},
-    {"id": "browser", "label": "Browser session", "type": "client"},
-    {"id": "web", "label": "csusb.edu public web", "type": "campus"},
-    {"id": "its", "label": "ITS services", "type": "campus"},
-    {"id": "registrar", "label": "Registrar / records", "type": "campus"},
-    {"id": "library", "label": "Library", "type": "campus"},
-    {"id": "lms", "label": "LMS (TBD product)", "type": "vendor"},
-    {"id": "vendors", "label": "Other EdTech vendors", "type": "vendor"}
+    {"id": "browser", "label": "Browser", "type": "client"},
+    {"id": "web", "label": "csusb.edu Sites", "type": "campus"},
+    {"id": "ga", "label": "Google Analytics", "type": "vendor"},
+    {"id": "mycoyote", "label": "myCoyote", "type": "campus"},
+    {"id": "duo", "label": "DUO MFA", "type": "vendor"},
+    {"id": "canvas", "label": "Canvas / Instructure", "type": "vendor"},
+    {"id": "turnitin", "label": "Turnitin", "type": "vendor"},
+    {"id": "respondus", "label": "Respondus Monitor", "type": "vendor"},
+    {"id": "zoom", "label": "Zoom", "type": "vendor"},
+    {"id": "registrar", "label": "Registrar", "type": "campus"},
+    {"id": "onecard", "label": "OneCard", "type": "campus"}
   ],
   "edges": [
     {"from": "student", "to": "browser", "type": "auth", "confidence": "Verified", "evidence_ids": []},
-    {"from": "browser", "to": "web", "type": "http", "confidence": "Documented", "evidence_ids": ["public-web"]},
-    {"from": "web", "to": "its", "type": "link", "confidence": "Documented", "evidence_ids": []},
-    {"from": "web", "to": "registrar", "type": "link", "confidence": "Documented", "evidence_ids": []},
-    {"from": "web", "to": "library", "type": "link", "confidence": "Documented", "evidence_ids": []},
-    {"from": "browser", "to": "lms", "type": "auth", "confidence": "Alleged", "evidence_ids": []},
-    {"from": "lms", "to": "vendors", "type": "analytics", "confidence": "Alleged", "evidence_ids": []}
+    {"from": "browser", "to": "web", "type": "http", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"]},
+    {"from": "web", "to": "ga", "type": "analytics", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"]},
+    {"from": "browser", "to": "mycoyote", "type": "auth", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-its-support-technology-sup-9a96819c"]},
+    {"from": "mycoyote", "to": "duo", "type": "auth", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-its-security-identity-acce-1861db83"]},
+    {"from": "browser", "to": "canvas", "type": "auth", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-canvas-fe4f6ffe"]},
+    {"from": "canvas", "to": "turnitin", "type": "learning_app", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"]},
+    {"from": "canvas", "to": "respondus", "type": "proctoring", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"]},
+    {"from": "canvas", "to": "zoom", "type": "collaboration", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"]},
+    {"from": "web", "to": "registrar", "type": "link", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-registrar-aa8cb2f2"]},
+    {"from": "mycoyote", "to": "onecard", "type": "link", "confidence": "Documented", "evidence_ids": ["SRC-www-csusb-edu-its-support-technology-sup-afe514a0"]}
   ]
 }

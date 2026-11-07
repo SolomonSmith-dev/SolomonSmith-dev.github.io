@@ -1,7 +1,7 @@
 {
   "id": "DI-07",
   "title": "Vendor Naming",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T06"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Name inferred vendors or only documented?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Include CDNs/adtech if observed?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Publish subprocessors lists?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "inferred_only": "keep_Alleged",
+    "include_adtech_if_observed": "yes_if_Documented",
+    "publish_subprocessors": "when_public"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Vendor list updated from public pages; not launch-frozen.",
+  "provisional_at": "2026-11-07"
 }

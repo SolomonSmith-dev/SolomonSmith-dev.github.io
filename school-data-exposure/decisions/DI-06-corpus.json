@@ -1,7 +1,7 @@
 {
   "id": "DI-06",
   "title": "Corpus Scope",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T05"
@@ -9,18 +9,26 @@
   "questions": [
     {
       "q": "Which domains are in corpus scope?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Archive.org mirrors allowed?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Refresh cadence?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "domains": [
+      "www.csusb.edu",
+      "csusb.instructure.com login page link only"
+    ],
+    "archive_org": "allowed_as_secondary",
+    "refresh": "on_each_major_finding_update"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Corpus expanding from public CSUSB pages.",
+  "provisional_at": "2026-11-07"
 }

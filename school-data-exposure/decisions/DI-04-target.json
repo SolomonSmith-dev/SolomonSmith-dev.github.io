@@ -1,7 +1,7 @@
 {
   "id": "DI-04",
   "title": "Target Confirmation",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T03"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Confirm CSUSB as sole v1 target?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Include district continuing-ed portals?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Any systems explicitly out of scope?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "target": "CSUSB",
+    "include_continuing_ed": "no_for_v1",
+    "out_of_scope": "employee_HR_systems_except_as_mentioned_in_public_notices"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Matches DI-01 provisional target.",
+  "provisional_at": "2026-11-07"
 }

@@ -1,0 +1,12 @@
+{
+  "id": "FIND-010",
+  "title": "Canvas Learning Apps catalog includes Turnitin and Respondus LockDown Browser/Monitor webcam proctoring",
+  "claim_grade": "Documented",
+  "severity": "S3",
+  "likelihood": "L3",
+  "summary": "The public Canvas Learning Apps page describes Turnitin (integrity/plagiarism/grading) and Respondus LockDown Browser and Monitor, which locks the test environment and uses the student's webcam for auto-proctoring. Webcam proctoring is a high-sensitivity surveillance capability sitting inside the LMS app ecosystem.",
+  "evidence_ids": ["SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"],
+  "student_action": "Before a proctored exam, demand written notice of what is recorded, retained, and who can review it.",
+  "school_action": "Require course-level notice, retention limits, and alternatives when biometric/webcam monitoring is used.",
+  "status": "open"
+}

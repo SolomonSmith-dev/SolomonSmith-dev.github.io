@@ -1,7 +1,7 @@
 {
   "id": "DI-09",
   "title": "Legal Framing",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T08"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "How strongly to phrase legal gaps?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Include CPRA templates in v1?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Disclaimer wording OK?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "legal_gap_tone": "structural_opacity_not_criminal_accusation",
+    "include_cpra_templates_v1": "yes_draft_only",
+    "disclaimer_ok": "yes_not_legal_advice"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Provisional from docs/legal-brief.md; Solomon lock required before assertive public legal claims.",
+  "provisional_at": "2026-11-07"
 }

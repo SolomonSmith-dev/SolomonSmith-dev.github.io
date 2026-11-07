@@ -1,0 +1,15 @@
+{
+  "id": "FIND-007",
+  "title": "Privacy Notice scope excludes employee HR data and may not cover LMS vendor ecosystems clearly",
+  "claim_grade": "Documented",
+  "severity": "S2",
+  "likelihood": "L3",
+  "summary": "The Privacy and Security Notice applies to www.csusb.edu and other Sites that link to the Notice. It explicitly does not apply to information collected about workers as part of employment. Students reading only this Notice can reasonably miss that Canvas, myCoyote, and learning-app vendors operate under separate regimes -- a policy-theater risk relative to the lived student stack.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7",
+    "SRC-www-csusb-edu-canvas-fe4f6ffe"
+  ],
+  "student_action": "Treat the web Privacy Notice as incomplete for course/LMS data; also read FERPA/records policies and Canvas app notices.",
+  "school_action": "Link authenticated-system privacy addenda from myCoyote and Canvas login pages.",
+  "status": "open"
+}

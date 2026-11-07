@@ -1,7 +1,7 @@
 {
   "id": "DI-08",
   "title": "Map Publish",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T07"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Publish inferred edges with labels?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Interactive map required for v1?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Color encoding for confidence?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "publish_inferred_labeled": "yes",
+    "interactive_required_v1": "yes",
+    "confidence_colors": "green_documented_gold_alleged"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Map v0.2 with documented Canvas/GA edges.",
+  "provisional_at": "2026-11-07"
 }

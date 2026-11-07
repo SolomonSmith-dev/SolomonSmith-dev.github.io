@@ -17,6 +17,45 @@
       "claim_use": "Documented source candidate"
     },
     {
+      "id": "SRC-www-csusb-edu-canvas-fe4f6ffe",
+      "title": "CSUSB Canvas",
+      "type": "policy",
+      "url": "https://www.csusb.edu/canvas",
+      "final_url": "https://www.csusb.edu/canvas",
+      "retrieved_at": "2026-11-07T12:55:38Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "fe4f6ffecb7375d92c9bb9cc98c659e49e714594334df27882c66a44456e14e1",
+      "bytes": 89001,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7",
+      "title": "CSUSB Canvas Learning Apps",
+      "type": "vendor",
+      "url": "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+      "final_url": "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+      "retrieved_at": "2026-11-07T12:55:48Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "cb6e66b78129d545fc819ca2fea2059e598b6e20bd5ef13df7d2b8203398cffb",
+      "bytes": 95080,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-canvas-learn-canvas-f69134b3",
+      "title": "Learn Canvas",
+      "type": "policy",
+      "url": "https://www.csusb.edu/canvas/learn-canvas",
+      "final_url": "https://www.csusb.edu/canvas/learn-canvas",
+      "retrieved_at": "2026-11-07T12:55:48Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "f69134b3dc6c608fedcc4f4dae5d7eb8c8bba35205055793c76c2cbd9b5e96c9",
+      "bytes": 88879,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
       "id": "SRC-www-csusb-edu-its-9ecfcbb7",
       "title": "CSUSB Information Technology Services",
       "type": "policy",
@@ -30,6 +69,19 @@
       "claim_use": "Documented source candidate"
     },
     {
+      "id": "SRC-www-csusb-edu-its-security-identity-acce-1861db83",
+      "title": "DUO MFA Requirements",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+      "final_url": "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+      "retrieved_at": "2026-11-07T12:55:24Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "1861db83b3426fa6604ef798cc96e9471c10dd1ecaed8c4798616f7f4f42d894",
+      "bytes": 155393,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
       "id": "SRC-www-csusb-edu-its-services-efb31b69",
       "title": "CSUSB ITS Services",
       "type": "policy",
@@ -39,6 +91,71 @@
       "content_type": "text/html; charset=UTF-8",
       "sha256": "efb31b690010fce756f05ea495c1cf696e9c78f07abcbb14b980516ff600066a",
       "bytes": 151730,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-services-portal-and-mo-a6336b2f",
+      "title": "Portal and Mobile App",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/services/portal-and-mobile-app",
+      "final_url": "https://www.csusb.edu/its/services/portal-and-mobile-app",
+      "retrieved_at": "2026-11-07T12:55:23Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "a6336b2f1109329e63e4e479a12f3d3c803c4103d043ea639b75394ceebc64e4",
+      "bytes": 154644,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-support-technology-sup-9a96819c",
+      "title": "About myCoyote",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/support/technology-support/about-mycoyote",
+      "final_url": "https://www.csusb.edu/its/support/technology-support/about-mycoyote",
+      "retrieved_at": "2026-11-07T12:55:23Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "9a96819c06a985be3a0573fdee7efd2b93dca51ab0db10b8962e6bc89faeade1",
+      "bytes": 152251,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-support-technology-sup-afe514a0",
+      "title": "Coyote OneCard",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/support/technology-support/coyote-onecard",
+      "final_url": "https://www.csusb.edu/its/support/technology-support/coyote-onecard",
+      "retrieved_at": "2026-11-07T12:55:25Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "afe514a00faa0bcf405dbb0f01f1f50e83ebfc100c786144ff5065af3284eac5",
+      "bytes": 159388,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-support-technology-sup-b1c8923c",
+      "title": "Wireless Network WiFi",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/support/technology-support/wireless-network-wifi-access-csusb",
+      "final_url": "https://www.csusb.edu/its/support/technology-support/wireless-network-wifi-access-csusb",
+      "retrieved_at": "2026-11-07T12:55:25Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "b1c8923cc1ff5bd34a35f3742925fcf0509679554a565794a00c696ebefb6f27",
+      "bytes": 155090,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-support-technology-sup-c341cc19",
+      "title": "DUO MFA setup guide",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/support/technology-support/duo-multi-factor-authentication-set-step-step-guide",
+      "final_url": "https://www.csusb.edu/its/support/technology-support/duo-multi-factor-authentication-set-step-step-guide",
+      "retrieved_at": "2026-11-07T12:55:26Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "c341cc198775528cb82b521072232e0bc443723c6cdb02ff3a9add26771b00a3",
+      "bytes": 154957,
       "notes": "",
       "claim_use": "Documented source candidate"
     },
@@ -205,13 +322,193 @@
       "student_action": "Use the ITS services list when filling the self-audit toolkit system inventory.",
       "school_action": "Annotate each service with data categories and vendor names.",
       "status": "open"
+    },
+    {
+      "id": "FIND-006",
+      "title": "Public website uses Google Analytics and discloses cookies / clear gifs",
+      "claim_grade": "Documented",
+      "severity": "S2",
+      "likelihood": "L3",
+      "summary": "CSUSB's Privacy and Security Notice states the Sites use Google Analytics and use cookies, clear gifs, and log files for remembering information, monitoring effectiveness, and related purposes. Clear gifs are described as tracking usage patterns anonymously and email open behavior. This is first-party public admission of cross-request tracking on the public web surface.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
+      ],
+      "student_action": "Use browser tracker controls on csusb.edu; compare LMS/SIS third parties in a separate own-account audit.",
+      "school_action": "Publish a current cookie/tracker table and whether analytics applies inside authenticated portals.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-007",
+      "title": "Privacy Notice scope excludes employee HR data and may not cover LMS vendor ecosystems clearly",
+      "claim_grade": "Documented",
+      "severity": "S2",
+      "likelihood": "L3",
+      "summary": "The Privacy and Security Notice applies to www.csusb.edu and other Sites that link to the Notice. It explicitly does not apply to information collected about workers as part of employment. Students reading only this Notice can reasonably miss that Canvas, myCoyote, and learning-app vendors operate under separate regimes -- a policy-theater risk relative to the lived student stack.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7",
+        "SRC-www-csusb-edu-canvas-fe4f6ffe"
+      ],
+      "student_action": "Treat the web Privacy Notice as incomplete for course/LMS data; also read FERPA/records policies and Canvas app notices.",
+      "school_action": "Link authenticated-system privacy addenda from myCoyote and Canvas login pages.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-008",
+      "title": "University discloses sharing personal data with vendors including education management and marketing",
+      "claim_grade": "Documented",
+      "severity": "S3",
+      "likelihood": "L3",
+      "summary": "The Privacy and Security Notice states the University engages processors for purposes such as marketing, application processing, financial aid or payment processing, education management, and web hosting, and may share personal data with government agencies as required. Vendor categories are named; a student-facing processor inventory is not.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
+      ],
+      "student_action": "Request the current processor list via records request after DI-12.",
+      "school_action": "Publish named processors, purposes, and retention beside the Notice.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-009",
+      "title": "Canvas (Instructure) is the campus LMS with SAML login",
+      "claim_grade": "Documented",
+      "severity": "S1",
+      "likelihood": "L3",
+      "summary": "CSUSB publishes Canvas resources and links to https://csusb.instructure.com/login/saml. Course activity, grades-adjacent workflows, and learning-app launches concentrate here -- a primary student-data plane for the investigation.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-canvas-fe4f6ffe"
+      ],
+      "student_action": "Include Canvas in every self-audit; review installed course apps before launching them.",
+      "school_action": "Publish Canvas data categories, retention, and approved learning-app inventory with DPAs.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-010",
+      "title": "Canvas Learning Apps catalog includes Turnitin and Respondus LockDown Browser/Monitor webcam proctoring",
+      "claim_grade": "Documented",
+      "severity": "S3",
+      "likelihood": "L3",
+      "summary": "The public Canvas Learning Apps page describes Turnitin (integrity/plagiarism/grading) and Respondus LockDown Browser and Monitor, which locks the test environment and uses the student's webcam for auto-proctoring. Webcam proctoring is a high-sensitivity surveillance capability sitting inside the LMS app ecosystem.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+      ],
+      "student_action": "Before a proctored exam, demand written notice of what is recorded, retained, and who can review it.",
+      "school_action": "Require course-level notice, retention limits, and alternatives when biometric/webcam monitoring is used.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-011",
+      "title": "Identity stack publicly includes myCoyote portal and DUO multi-factor authentication",
+      "claim_grade": "Documented",
+      "severity": "S1",
+      "likelihood": "L3",
+      "summary": "ITS publishes About myCoyote, portal/mobile app guides, and DUO MFA requirements/setup. Campus identity therefore binds students across portal services under MFA -- increasing both security and cross-system linkage of activity.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-its-support-technology-sup-9a96819c",
+        "SRC-www-csusb-edu-its-services-portal-and-mo-a6336b2f",
+        "SRC-www-csusb-edu-its-security-identity-acce-1861db83"
+      ],
+      "student_action": "Map which apps appear under myCoyote after login (own account) and note unexpected third parties.",
+      "school_action": "Publish the SSO attribute release matrix for major apps.",
+      "status": "open"
     }
   ],
   "vendors": {
-    "version": "0.1-provisional",
+    "version": "0.2-provisional",
     "decision_gate": "DI-07",
-    "note": "Vendors listed only when publicly referenced or commonly disclosed on CSU campuses. Naming of inferred-only vendors stays Alleged until DI-07.",
+    "note": "Vendors/systems named only from public CSUSB pages. DI-07 still required before treating inventory as launch-frozen.",
     "vendors": [
+      {
+        "id": "V-GA",
+        "name": "Google Analytics",
+        "class": "analytics",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/about-csusb/privacy-and-security-notice"
+        ],
+        "notes": "Named in Privacy and Security Notice for Sites analytics."
+      },
+      {
+        "id": "V-CANVAS",
+        "name": "Instructure Canvas",
+        "class": "lms",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/canvas",
+          "https://csusb.instructure.com/login/saml"
+        ],
+        "notes": "Campus LMS; SAML login hosted on instructure.com."
+      },
+      {
+        "id": "V-TURNITIN",
+        "name": "Turnitin",
+        "class": "integrity",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"
+        ],
+        "notes": "Listed on Canvas Learning Apps for integrity/plagiarism/grading."
+      },
+      {
+        "id": "V-RESPONDUS",
+        "name": "Respondus LockDown Browser and Monitor",
+        "class": "proctoring",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"
+        ],
+        "notes": "Webcam auto-proctoring capability described on public learning-apps page."
+      },
+      {
+        "id": "V-ZOOM",
+        "name": "Zoom",
+        "class": "collaboration",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+          "https://csusb.zoom.us/j/9095377677"
+        ],
+        "notes": "Listed among Canvas learning apps; also used in ITS support context."
+      },
+      {
+        "id": "V-DUO",
+        "name": "DUO Multi-Factor Authentication",
+        "class": "identity",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements"
+        ],
+        "notes": "Campus MFA requirement and setup guides are public."
+      },
+      {
+        "id": "V-MYCOYOTE",
+        "name": "myCoyote portal / mobile app",
+        "class": "sis_portal",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/its/support/technology-support/about-mycoyote",
+          "https://www.csusb.edu/its/services/portal-and-mobile-app"
+        ],
+        "notes": "Primary student portal surface per ITS docs."
+      },
+      {
+        "id": "V-ONECARD",
+        "name": "Coyote OneCard",
+        "class": "campus_card",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/its/support/technology-support/coyote-onecard"
+        ],
+        "notes": "Campus card system documented by ITS."
+      },
+      {
+        "id": "V-WIFI",
+        "name": "Campus Wireless Network (WiFi)",
+        "class": "network",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/its/support/technology-support/wireless-network-wifi-access-csusb"
+        ],
+        "notes": "Public WiFi access documentation; telemetry details pending own-account/network policy review."
+      },
       {
         "id": "V-ITS",
         "name": "CSUSB Information Technology Services",
@@ -220,7 +517,7 @@
         "sources": [
           "https://www.csusb.edu/its"
         ],
-        "notes": "Campus IT operator for accounts and services directory."
+        "notes": "Campus IT operator."
       },
       {
         "id": "V-REG",
@@ -228,33 +525,14 @@
         "class": "sis_records",
         "confidence": "Documented",
         "sources": [
-          "https://www.csusb.edu/registrar",
-          "https://www.csusb.edu/policies/university-policy-and-procedures-student-records-administration"
+          "https://www.csusb.edu/registrar"
         ],
-        "notes": "Custodian surface for student records administration policy."
-      },
-      {
-        "id": "V-LIB",
-        "name": "CSUSB Library systems",
-        "class": "library",
-        "confidence": "Documented",
-        "sources": [
-          "https://www.csusb.edu/library"
-        ],
-        "notes": "Public library portal; vendor subprocessors TBD from public docs / own-account audit."
-      },
-      {
-        "id": "V-LMS",
-        "name": "Learning management system (campus LMS)",
-        "class": "lms",
-        "confidence": "Alleged",
-        "sources": [],
-        "notes": "Specific LMS product name deferred until public login/IT page or DI-07 lock. Do not invent."
+        "notes": "Records administration surface."
       }
     ]
   },
   "graph": {
-    "version": "0.1-provisional",
+    "version": "0.2-provisional",
     "decision_gate": "DI-08",
     "nodes": [
       {
@@ -264,38 +542,58 @@
       },
       {
         "id": "browser",
-        "label": "Browser session",
+        "label": "Browser",
         "type": "client"
       },
       {
         "id": "web",
-        "label": "csusb.edu public web",
+        "label": "csusb.edu Sites",
         "type": "campus"
       },
       {
-        "id": "its",
-        "label": "ITS services",
+        "id": "ga",
+        "label": "Google Analytics",
+        "type": "vendor"
+      },
+      {
+        "id": "mycoyote",
+        "label": "myCoyote",
         "type": "campus"
+      },
+      {
+        "id": "duo",
+        "label": "DUO MFA",
+        "type": "vendor"
+      },
+      {
+        "id": "canvas",
+        "label": "Canvas / Instructure",
+        "type": "vendor"
+      },
+      {
+        "id": "turnitin",
+        "label": "Turnitin",
+        "type": "vendor"
+      },
+      {
+        "id": "respondus",
+        "label": "Respondus Monitor",
+        "type": "vendor"
+      },
+      {
+        "id": "zoom",
+        "label": "Zoom",
+        "type": "vendor"
       },
       {
         "id": "registrar",
-        "label": "Registrar / records",
+        "label": "Registrar",
         "type": "campus"
       },
       {
-        "id": "library",
-        "label": "Library",
+        "id": "onecard",
+        "label": "OneCard",
         "type": "campus"
-      },
-      {
-        "id": "lms",
-        "label": "LMS (TBD product)",
-        "type": "vendor"
-      },
-      {
-        "id": "vendors",
-        "label": "Other EdTech vendors",
-        "type": "vendor"
       }
     ],
     "edges": [
@@ -312,43 +610,89 @@
         "type": "http",
         "confidence": "Documented",
         "evidence_ids": [
-          "public-web"
+          "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
         ]
       },
       {
         "from": "web",
-        "to": "its",
-        "type": "link",
+        "to": "ga",
+        "type": "analytics",
         "confidence": "Documented",
-        "evidence_ids": []
+        "evidence_ids": [
+          "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
+        ]
+      },
+      {
+        "from": "browser",
+        "to": "mycoyote",
+        "type": "auth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-its-support-technology-sup-9a96819c"
+        ]
+      },
+      {
+        "from": "mycoyote",
+        "to": "duo",
+        "type": "auth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-its-security-identity-acce-1861db83"
+        ]
+      },
+      {
+        "from": "browser",
+        "to": "canvas",
+        "type": "auth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-canvas-fe4f6ffe"
+        ]
+      },
+      {
+        "from": "canvas",
+        "to": "turnitin",
+        "type": "learning_app",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+        ]
+      },
+      {
+        "from": "canvas",
+        "to": "respondus",
+        "type": "proctoring",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+        ]
+      },
+      {
+        "from": "canvas",
+        "to": "zoom",
+        "type": "collaboration",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+        ]
       },
       {
         "from": "web",
         "to": "registrar",
         "type": "link",
         "confidence": "Documented",
-        "evidence_ids": []
+        "evidence_ids": [
+          "SRC-www-csusb-edu-registrar-aa8cb2f2"
+        ]
       },
       {
-        "from": "web",
-        "to": "library",
+        "from": "mycoyote",
+        "to": "onecard",
         "type": "link",
         "confidence": "Documented",
-        "evidence_ids": []
-      },
-      {
-        "from": "browser",
-        "to": "lms",
-        "type": "auth",
-        "confidence": "Alleged",
-        "evidence_ids": []
-      },
-      {
-        "from": "lms",
-        "to": "vendors",
-        "type": "analytics",
-        "confidence": "Alleged",
-        "evidence_ids": []
+        "evidence_ids": [
+          "SRC-www-csusb-edu-its-support-technology-sup-afe514a0"
+        ]
       }
     ]
   },
@@ -372,7 +716,7 @@
         "blocks": [
           "T01"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-03",
@@ -381,7 +725,7 @@
         "blocks": [
           "T02"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-04",
@@ -390,7 +734,7 @@
         "blocks": [
           "T03"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-05",
@@ -399,7 +743,7 @@
         "blocks": [
           "T04"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-06",
@@ -408,7 +752,7 @@
         "blocks": [
           "T05"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-07",
@@ -417,7 +761,7 @@
         "blocks": [
           "T06"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-08",
@@ -426,7 +770,7 @@
         "blocks": [
           "T07"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-09",
@@ -435,7 +779,7 @@
         "blocks": [
           "T08"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-10",
@@ -552,36 +896,36 @@
   "status": {
     "tasks": {
       "T01": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 16
       },
       "T02": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 18
       },
       "T03": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 14
       },
       "T04": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 14
       },
       "T05": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 18
       },
       "T06": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 16
       },
       "T07": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 16
       },
       "T08": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 12
       },
       "T09": {
         "status": "pending",
@@ -596,32 +940,32 @@
         "steps_done": 0
       },
       "T12": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 18
       },
       "T13": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 16
       },
       "T14": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 12
       },
       "T15": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 16
       },
       "T16": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 12
       },
       "T17": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 12
       },
       "T18": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 8
       },
       "T19": {
         "status": "pending",
@@ -635,17 +979,17 @@
     "completion_subtasks": {
       "C01": "pending",
       "C02": "pending",
-      "C03": "pending",
-      "C04": "pending",
-      "C05": "pending",
-      "C06": "pending",
-      "C07": "pending",
+      "C03": "met_threshold_pending_DI_lock",
+      "C04": "in_progress",
+      "C05": "in_progress",
+      "C06": "met_threshold_pending_DI_lock",
+      "C07": "in_progress",
       "C08": "pending",
       "C09": "pending",
       "C10": "pending"
     },
     "active_gate": "DI-1",
-    "notes": "DI-1 provisional defaults applied; confirmation required before public naming lock"
+    "notes": "Public evidence deepened (Canvas/GA/Respondus/Turnitin). DI-01..08 provisional for research; launch DIs still open."
   },
   "completion_subtasks": [
     {
@@ -739,10 +1083,10 @@
     }
   ],
   "stats": {
-    "sources": 10,
-    "findings": 5,
-    "vendors": 4,
+    "sources": 19,
+    "findings": 11,
+    "vendors": 11,
     "decision_interviews": 21,
-    "documented_findings": 5
+    "documented_findings": 11
   }
 }

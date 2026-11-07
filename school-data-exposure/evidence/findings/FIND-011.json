@@ -1,0 +1,16 @@
+{
+  "id": "FIND-011",
+  "title": "Identity stack publicly includes myCoyote portal and DUO multi-factor authentication",
+  "claim_grade": "Documented",
+  "severity": "S1",
+  "likelihood": "L3",
+  "summary": "ITS publishes About myCoyote, portal/mobile app guides, and DUO MFA requirements/setup. Campus identity therefore binds students across portal services under MFA -- increasing both security and cross-system linkage of activity.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-its-support-technology-sup-9a96819c",
+    "SRC-www-csusb-edu-its-services-portal-and-mo-a6336b2f",
+    "SRC-www-csusb-edu-its-security-identity-acce-1861db83"
+  ],
+  "student_action": "Map which apps appear under myCoyote after login (own account) and note unexpected third parties.",
+  "school_action": "Publish the SSO attribute release matrix for major apps.",
+  "status": "open"
+}

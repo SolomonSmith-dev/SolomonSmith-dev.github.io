@@ -1,7 +1,7 @@
 {
   "id": "DI-05",
   "title": "Harm Framing",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T04"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Approve abuse definition?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Primary harm audience?",
-      "answer": null
+      "answer": "provisional_see_answers"
     },
     {
       "q": "Max severity language allowed on homepage?",
-      "answer": null
+      "answer": "provisional_see_answers"
     }
   ],
-  "answers": {},
+  "answers": {
+    "abuse_definition": "accepted_draft_docs_harm_model",
+    "primary_audience": "students_parents",
+    "homepage_severity_language": "S3_max_until_Verified"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "See docs/harm-model.md",
+  "provisional_at": "2026-11-07"
 }

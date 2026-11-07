@@ -1,0 +1,12 @@
+{
+  "id": "FIND-008",
+  "title": "University discloses sharing personal data with vendors including education management and marketing",
+  "claim_grade": "Documented",
+  "severity": "S3",
+  "likelihood": "L3",
+  "summary": "The Privacy and Security Notice states the University engages processors for purposes such as marketing, application processing, financial aid or payment processing, education management, and web hosting, and may share personal data with government agencies as required. Vendor categories are named; a student-facing processor inventory is not.",
+  "evidence_ids": ["SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"],
+  "student_action": "Request the current processor list via records request after DI-12.",
+  "school_action": "Publish named processors, purposes, and retention beside the Notice.",
+  "status": "open"
+}
