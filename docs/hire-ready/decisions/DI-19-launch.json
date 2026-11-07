@@ -1,7 +1,7 @@
 {
   "id": "DI-19",
   "title": "Launch",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,9 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "merge_pr_12": "yes_after_ci",
+    "live_verify": "required"
+  },
+  "note": "Merge hire-ready PR after CI; then verify solomonsmith.dev CTAs."
 }

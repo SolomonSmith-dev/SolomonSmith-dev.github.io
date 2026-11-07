@@ -5,7 +5,7 @@
       "id": "DI-01",
       "title": "Positioning lock",
       "file": "DI-01-positioning.json",
-      "status": "provisional",
+      "status": "locked",
       "blocks": [
         "T01"
       ]
@@ -167,7 +167,7 @@
       "id": "DI-19",
       "title": "Launch",
       "file": "DI-19-launch.json",
-      "status": "open",
+      "status": "provisional",
       "blocks": [
         "T19"
       ]

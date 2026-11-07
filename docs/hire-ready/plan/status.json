@@ -1,5 +1,5 @@
 {
-  "active_gate": "DI-01 (provisional; awaiting Solomon lock)",
+  "active_gate": "DI-19 launch / merge",
   "tasks": {
     "T01": {
       "status": "in_progress",
@@ -83,7 +83,7 @@
     }
   },
   "completion_subtasks": {
-    "C01": "pending",
+    "C01": "met_locked_keep_current",
     "C02": "partial_provisional_majority",
     "C03": "in_progress",
     "C04": "pending",
@@ -94,5 +94,5 @@
     "C09": "draft_provisional",
     "C10": "pending"
   },
-  "notes": "Lighthouse mobile: home 90/100/100/100; projects+resume 100s. Merge+LOCK DI-1 still required for live C10."
+  "notes": "DI-01 locked to keep-current. Awaiting CI then merge for live verify."
 }
