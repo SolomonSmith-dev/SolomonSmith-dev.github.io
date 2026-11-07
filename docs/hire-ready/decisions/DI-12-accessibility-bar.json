@@ -18,8 +18,10 @@
     }
   ],
   "answers": {
-    "theme_toggle_aria": "shipped",
-    "axe": "pending"
+    "home_a11y": 100,
+    "projects_a11y": 100,
+    "resume_a11y": 100,
+    "heading_order_fixed": "yes"
   },
-  "note": "Provisional under DI-01 keep-current + hire conversion."
+  "note": "Lighthouse a11y 100 after projects H2 fix."
 }

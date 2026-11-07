@@ -90,9 +90,9 @@
     "C05": "met_audit",
     "C06": "blocked_no_MATERIALS_in_vm",
     "C07": "met_in_branch",
-    "C08": "partial_build_verified",
+    "C08": "met_local_lighthouse",
     "C09": "draft_provisional",
     "C10": "pending"
   },
-  "notes": "check_hire_ready.py: 0 errors. Only hard blockers: Solomon LOCK DI-1, MATERIALS sync, merge/live."
+  "notes": "Lighthouse mobile: home 90/100/100/100; projects+resume 100s. Merge+LOCK DI-1 still required for live C10."
 }

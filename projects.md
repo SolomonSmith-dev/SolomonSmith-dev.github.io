@@ -9,6 +9,7 @@ description: "Projects by Solomon Smith: applied AI systems, LLM evaluation, sec
 lede: "Production LLM features and the services and infrastructure behind them. Every number on these cards is reproduced by a command in that project's README, or comes from my resume where the code is private. Every entry links to its source or live product."
 ---
 
+<h2 class="visually-hidden">All projects</h2>
 <div class="projects">
   {% include card-courtrules.html %}
   {% include card-arda.html %}

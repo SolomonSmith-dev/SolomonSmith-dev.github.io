@@ -18,9 +18,11 @@
     }
   ],
   "answers": {
-    "headshot_47kb": "ok",
-    "no_new_weight": "ok"
+    "home_perf": 90,
+    "projects_perf": 100,
+    "resume_perf": 100,
+    "bar": ">=90"
   },
-  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "note": "Lighthouse mobile local build.",
   "updated_at": "2026-11-07"
 }

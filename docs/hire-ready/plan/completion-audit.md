@@ -2,23 +2,22 @@
 
 | Requirement | Status | Evidence |
 | --- | --- | --- |
-| 20 tasks × 20 steps | **met** | specialized plan/T01–T20 |
-| 10 completion subtasks | **partial execution** | structure met; C01 not Solomon-locked; C06 needs MATERIALS |
-| Decision interviews | **partial** | DI-01/02/03/08/12 provisional |
-| Polished portfolio | **partial** | branch built+verified; not live until merge |
-| Live verification | **partial** | old live OK; new CTAs verified in `_site` build |
+| 20 tasks × 20 steps | **met** | plan/ |
+| 10 completion subtasks | **partial** | C08 met locally; C01 provisional; C06/C10 blocked |
+| Decision interviews | **partial** | Most provisional; DI-06/19/20 open/blocked |
+| Polished portfolio | **met in branch** | CTAs, cards, a11y, Lighthouse |
+| Live verification | **blocked** | needs merge to main |
 
-## Subtasks
+## Lighthouse (local mobile)
 
-| ID | Status |
-| --- | --- |
-| C01 | provisional |
-| C02 | partial |
-| C03 | met in `_site` build (Email-first) |
-| C04 | strong |
-| C05 | met (audit) |
-| C06 | blocked in VM (no MATERIALS) |
-| C07 | met in branch/build |
-| C08 | partial (build OK; Lighthouse pending) |
-| C09 | draft |
-| C10 | blocked on merge + lock |
+| Page | Perf | A11y | BP | SEO |
+| --- | --- | --- | --- | --- |
+| home | 90 | 100 | 100 | 100 |
+| projects | 100 | 100 | 100 | 100 |
+| resume | 100 | 100 | 100 | 100 |
+
+## Remaining for goal complete
+
+1. Solomon `LOCK DI-1`
+2. Run resume sync where MATERIALS exists (C06)
+3. Merge PR #12 and verify https://solomonsmith.dev (C10)
