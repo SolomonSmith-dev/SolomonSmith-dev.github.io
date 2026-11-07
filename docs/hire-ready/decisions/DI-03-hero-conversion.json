@@ -1,25 +1,29 @@
 {
   "id": "DI-03",
   "title": "Hero conversion",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Hero conversion?",
-      "answer": null
+      "answer": "yes"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "Hero Email-first; mobile Contact CTA visible"
     }
   ],
   "answers": {
     "cta_order": "Email, Resume, View work",
-    "approve": "yes_provisional_DI01"
+    "approve": "yes",
+    "definition_of_done": "Hero Email-first; mobile Contact CTA visible"
   },
-  "note": "Provisional under DI-01 keep-current + hire conversion."
+  "note": "Provisional under DI-01 keep-current + hire conversion.",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

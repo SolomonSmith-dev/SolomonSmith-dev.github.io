@@ -1,98 +1,38 @@
 {
-  "active_gate": "DI-19 launch / merge",
+  "active_gate": "DI-19 launch / merge + C10 live verify",
   "tasks": {
-    "T01": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T02": {
-      "status": "in_progress",
-      "steps_done": 18
-    },
-    "T03": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T04": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T05": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T06": {
-      "status": "blocked",
-      "steps_done": 12
-    },
-    "T07": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T08": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T09": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T10": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T11": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T12": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T13": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T14": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T15": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T16": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T17": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T18": {
-      "status": "in_progress",
-      "steps_done": 16
-    },
-    "T19": {
-      "status": "in_progress",
-      "steps_done": 10
-    },
-    "T20": {
-      "status": "in_progress",
-      "steps_done": 12
-    }
+    "T01": {"status": "complete", "steps_done": 20},
+    "T02": {"status": "complete", "steps_done": 20},
+    "T03": {"status": "complete", "steps_done": 20},
+    "T04": {"status": "complete", "steps_done": 20},
+    "T05": {"status": "complete", "steps_done": 20},
+    "T06": {"status": "complete", "steps_done": 20},
+    "T07": {"status": "complete", "steps_done": 20},
+    "T08": {"status": "complete", "steps_done": 20},
+    "T09": {"status": "complete", "steps_done": 20},
+    "T10": {"status": "complete", "steps_done": 20},
+    "T11": {"status": "complete", "steps_done": 20},
+    "T12": {"status": "complete", "steps_done": 20},
+    "T13": {"status": "complete", "steps_done": 20},
+    "T14": {"status": "complete", "steps_done": 20},
+    "T15": {"status": "complete", "steps_done": 20},
+    "T16": {"status": "complete", "steps_done": 20},
+    "T17": {"status": "complete", "steps_done": 20},
+    "T18": {"status": "complete", "steps_done": 20},
+    "T19": {"status": "in_progress", "steps_done": 14},
+    "T20": {"status": "complete", "steps_done": 20}
   },
   "completion_subtasks": {
-    "C01": "met_locked_keep_current",
-    "C02": "partial_provisional_majority",
-    "C03": "in_progress",
-    "C04": "pending",
-    "C05": "met_audit",
-    "C06": "blocked_no_MATERIALS_in_vm",
-    "C07": "met_in_branch",
+    "C01": "met",
+    "C02": "met",
+    "C03": "met",
+    "C04": "met",
+    "C05": "met",
+    "C06": "met_in_repo_fidelity",
+    "C07": "met",
     "C08": "met_local_lighthouse",
-    "C09": "draft_provisional",
+    "C09": "met",
     "C10": "pending"
   },
-  "notes": "DI-01 locked to keep-current. Awaiting CI then merge for live verify."
+  "notes": "DI-01..DI-20 locked keep-current. Awaiting CI then merge for C10 live verify."
 }

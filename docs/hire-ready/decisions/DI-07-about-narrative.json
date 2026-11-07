@@ -1,26 +1,32 @@
 {
   "id": "DI-07",
   "title": "About narrative",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with About narrative?",
-      "answer": null
+      "answer": "yes_keep_current"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "No internship language; Looking-for matches Jan 2027 full-time"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "about.md narrative hire-manager ready"
     }
   ],
   "answers": {
     "keep_current_about": "yes",
     "cta_row": "email_resume_linkedin",
-    "no_gpa": "yes"
+    "no_gpa": "yes",
+    "approve": "yes_keep_current",
+    "constraints": "No internship language; Looking-for matches Jan 2027 full-time",
+    "definition_of_done": "about.md narrative hire-manager ready"
   },
-  "note": "About already hire-aligned; no copy change this pass."
+  "note": "About already hire-aligned; no copy change this pass.",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

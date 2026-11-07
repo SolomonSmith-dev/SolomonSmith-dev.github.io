@@ -1,28 +1,33 @@
 {
   "id": "DI-11",
   "title": "Performance bar",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Performance bar?",
-      "answer": null
+      "answer": "yes"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "Local Lighthouse artifacts under audit/lighthouse/"
     }
   ],
   "answers": {
     "home_perf": 90,
     "projects_perf": 100,
     "resume_perf": 100,
-    "bar": ">=90"
+    "bar": "mobile home perf >=90; a11y/bp/seo 100 on audited pages",
+    "approve": "yes",
+    "definition_of_done": "Local Lighthouse artifacts under audit/lighthouse/"
   },
   "note": "Lighthouse mobile local build.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

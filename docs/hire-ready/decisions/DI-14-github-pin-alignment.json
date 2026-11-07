@@ -1,25 +1,30 @@
 {
   "id": "DI-14",
   "title": "GitHub pin alignment",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with GitHub pin alignment?",
-      "answer": null
+      "answer": "yes_keep_current"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "pins.md aligns with CLAUDE active projects slate"
     }
   ],
   "answers": {
-    "manual_pin_reco_written": "yes"
+    "manual_pin_reco_written": "yes",
+    "approve": "yes_keep_current",
+    "definition_of_done": "pins.md aligns with CLAUDE active projects slate"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

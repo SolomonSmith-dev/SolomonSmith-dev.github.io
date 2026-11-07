@@ -1,26 +1,32 @@
 {
   "id": "DI-17",
   "title": "90s skim path",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with 90s skim path?",
-      "answer": null
+      "answer": "yes"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "skim-90s.md + screenshot evidence"
     }
   ],
   "answers": {
     "path_drafted": "yes",
-    "cta_supports_path": "yes"
+    "cta_supports_path": "yes",
+    "approve": "yes",
+    "path": "hero \u2192 metrics \u2192 CourtRules \u2192 ARDA \u2192 contact",
+    "definition_of_done": "skim-90s.md + screenshot evidence"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

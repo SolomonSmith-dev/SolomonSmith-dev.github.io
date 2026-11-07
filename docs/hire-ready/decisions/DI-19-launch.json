@@ -1,25 +1,30 @@
 {
   "id": "DI-19",
   "title": "Launch",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Launch?",
-      "answer": null
+      "answer": "yes_after_ci"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "PR merged to main; launch.md green on solomonsmith.dev"
     }
   ],
   "answers": {
     "merge_pr_12": "yes_after_ci",
-    "live_verify": "required"
+    "live_verify": "required",
+    "approve": "yes_after_ci",
+    "definition_of_done": "PR merged to main; launch.md green on solomonsmith.dev"
   },
-  "note": "Merge hire-ready PR after CI; then verify solomonsmith.dev CTAs."
+  "note": "Merge hire-ready PR after CI; then verify solomonsmith.dev CTAs.",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

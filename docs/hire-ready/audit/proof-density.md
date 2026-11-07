@@ -24,7 +24,7 @@
 ## card-docmind.html
 
 - Title: DocMind
-- Fact rows: ['Built', 'Tested']
+- Fact rows: ['Problem', 'Built', 'Tested']
 - Summary: True
 - Links: 3
 
@@ -45,6 +45,12 @@
 ## card-soc-triage.html
 
 - Title: SOC Triage AI
-- Fact rows: ['Built', 'Measured']
+- Fact rows: ['Problem', 'Built', 'Measured']
 - Summary: True
 - Links: 4
+
+## C04 selected work
+
+Top four on home: CourtRules, ARDA, SOC Triage AI, Sentinel. Each has >=2 sourced fact rows.
+
+**C04 status: met**

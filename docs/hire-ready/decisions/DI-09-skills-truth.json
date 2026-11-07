@@ -1,26 +1,32 @@
 {
   "id": "DI-09",
   "title": "Skills truth",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Skills truth?",
-      "answer": null
+      "answer": "yes_keep_current"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "LangGraph not LangChain; no Milvus/Django/React/R/Stripe/Socket.IO"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "skills.html matches resume SKILLS; regenerate only via sync"
     }
   ],
   "answers": {
     "banned_skills_clean": "yes",
-    "langgraph_present": "yes"
+    "langgraph_present": "yes",
+    "approve": "yes_keep_current",
+    "constraints": "LangGraph not LangChain; no Milvus/Django/React/R/Stripe/Socket.IO",
+    "definition_of_done": "skills.html matches resume SKILLS; regenerate only via sync"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

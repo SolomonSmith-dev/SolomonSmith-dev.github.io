@@ -1,6 +1,6 @@
-# LinkedIn About blurb draft (provisional)
+# LinkedIn About blurb draft
 
-**Status:** provisional until DI-01 + DI-18  
+**Status:** locked under DI-18  
 Align to site thesis; do not paste GPA or internship language.
 
 AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly.

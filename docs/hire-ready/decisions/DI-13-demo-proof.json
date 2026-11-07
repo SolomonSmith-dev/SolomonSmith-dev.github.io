@@ -1,26 +1,32 @@
 {
   "id": "DI-13",
   "title": "Demo proof",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Demo proof?",
-      "answer": null
+      "answer": "yes_keep_current"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "Screenshots only from README-referenced images"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "demo-proof.md inventory recorded"
     }
   ],
   "answers": {
     "top_selected_have_visuals": "arda_soc",
-    "courtrules_live_link": "yes"
+    "courtrules_live_link": "yes",
+    "approve": "yes_keep_current",
+    "constraints": "Screenshots only from README-referenced images",
+    "definition_of_done": "demo-proof.md inventory recorded"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

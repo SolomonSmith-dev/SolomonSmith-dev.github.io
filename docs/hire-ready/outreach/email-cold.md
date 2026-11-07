@@ -1,6 +1,6 @@
 # Cold email draft (provisional)
 
-**Status:** provisional until DI-01 + DI-18  
+**Status:** locked under DI-18  
 **Rule:** only site-backed facts
 
 Subject: AI/Backend engineer open Jan 2027 -- CourtRules / ARDA

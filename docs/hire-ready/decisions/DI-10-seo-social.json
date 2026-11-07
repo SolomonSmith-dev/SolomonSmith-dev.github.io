@@ -1,26 +1,31 @@
 {
   "id": "DI-10",
   "title": "SEO/social",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with SEO/social?",
-      "answer": null
+      "answer": "yes_keep_current"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "_config.yml/llms.txt/og match locked thesis"
     }
   ],
   "answers": {
     "aligned_with_positioning": "yes",
-    "no_copy_change_needed": "yes"
+    "no_copy_change_needed": "yes",
+    "approve": "yes_keep_current",
+    "definition_of_done": "_config.yml/llms.txt/og match locked thesis"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

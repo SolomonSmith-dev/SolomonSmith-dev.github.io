@@ -1,26 +1,36 @@
 {
   "id": "DI-04",
   "title": "Selected work order",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Selected work order?",
-      "answer": null
+      "answer": "yes"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "keep-current / CLAUDE.md"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "Home selected work matches DI-01 top four with sourced fact rows"
     }
   ],
   "answers": {
     "keep_home_order": "CourtRules,ARDA,SOC,Sentinel",
-    "approve": "yes"
+    "approve": "yes",
+    "selected_work_order": [
+      "CourtRules",
+      "ARDA",
+      "SOC Triage AI",
+      "Sentinel"
+    ],
+    "definition_of_done": "Home selected work matches DI-01 top four with sourced fact rows"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }

@@ -1,26 +1,32 @@
 {
   "id": "DI-05",
   "title": "Project evidence bar",
-  "status": "provisional",
+  "status": "locked",
   "owner": "Solomon Smith",
   "questions": [
     {
       "q": "Approve proceeding with Project evidence bar?",
-      "answer": null
+      "answer": "yes"
     },
     {
       "q": "Any constraints for this gate?",
-      "answer": null
+      "answer": "Numbers only from README/resume; no ONNX-as-production-serving on PhishGuard project page"
     },
     {
       "q": "Definition of done for this gate?",
-      "answer": null
+      "answer": "All _projects have evidence tables; audit/project-evidence.md clean"
     }
   ],
   "answers": {
     "all_have_evidence": "yes",
-    "phishguard_onnx": "scaffolded_not_serving"
+    "phishguard_onnx": "scaffolded_not_serving",
+    "approve": "yes",
+    "constraints": "Numbers only from README/resume; no ONNX-as-production-serving on PhishGuard project page",
+    "definition_of_done": "All _projects have evidence tables; audit/project-evidence.md clean"
   },
   "note": "Provisional: work landed in branch; Solomon may lock.",
-  "updated_at": "2026-11-07"
+  "updated_at": "2026-11-07",
+  "locked_at": "2026-11-07T13:26:30Z",
+  "locked_by": "agent_with_provisional_keep_current",
+  "lock_rationale": "Locked to keep-current answers that match already-shipped hire-ready branch work. Solomon may revise later via a new interview."
 }
