@@ -1,0 +1,9 @@
+# Never commit raw session captures
+*.har
+*.har.gz
+evidence/raw/
+**/cookies*.json
+**/*token*
+**/*secret*
+.DS_Store
+web/data/site.json.bak

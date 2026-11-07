@@ -1,0 +1,26 @@
+{
+  "id": "DI-11",
+  "title": "Identity Publish",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T10"
+  ],
+  "questions": [
+    {
+      "q": "Publish SSO hop diagram?",
+      "answer": null
+    },
+    {
+      "q": "Discuss SAML attributes generally?",
+      "answer": null
+    },
+    {
+      "q": "Any identity findings blocked?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

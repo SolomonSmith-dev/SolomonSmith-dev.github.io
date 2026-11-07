@@ -1,0 +1,27 @@
+{
+  "id": "DI-20",
+  "title": "Launch",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T19",
+    "C10"
+  ],
+  "questions": [
+    {
+      "q": "Launch now?",
+      "answer": null
+    },
+    {
+      "q": "Portfolio card now or later?",
+      "answer": null
+    },
+    {
+      "q": "Public announcement channel?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

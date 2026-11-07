@@ -1,0 +1,26 @@
+{
+  "id": "DI-15",
+  "title": "Narrative",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T14"
+  ],
+  "questions": [
+    {
+      "q": "Narrative tone confirm?",
+      "answer": null
+    },
+    {
+      "q": "Executive summary length?",
+      "answer": null
+    },
+    {
+      "q": "Name individuals (no)?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

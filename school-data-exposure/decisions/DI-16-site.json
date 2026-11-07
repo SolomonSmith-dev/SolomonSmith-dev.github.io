@@ -1,0 +1,26 @@
+{
+  "id": "DI-16",
+  "title": "Site Launch Shape",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T15"
+  ],
+  "questions": [
+    {
+      "q": "Approve IA?",
+      "answer": null
+    },
+    {
+      "q": "Host path preference?",
+      "answer": null
+    },
+    {
+      "q": "Dark mode default?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

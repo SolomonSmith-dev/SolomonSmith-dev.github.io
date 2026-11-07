@@ -1,0 +1,26 @@
+{
+  "id": "DI-21",
+  "title": "Expansion",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T20"
+  ],
+  "questions": [
+    {
+      "q": "Next school target?",
+      "answer": null
+    },
+    {
+      "q": "Open contributions?",
+      "answer": null
+    },
+    {
+      "q": "Success metric?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

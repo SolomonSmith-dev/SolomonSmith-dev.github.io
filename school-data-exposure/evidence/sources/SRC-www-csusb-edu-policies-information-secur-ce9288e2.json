@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-policies-information-secur-ce9288e2",
+  "title": "CSUSB Information Security Policies",
+  "type": "policy",
+  "url": "https://www.csusb.edu/policies/information-security",
+  "final_url": "https://www.csusb.edu/policies/information-security",
+  "retrieved_at": "2026-11-07T12:50:30Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "ce9288e2fec0a3ff11fdbded868bb3766851fba6e5412e05cc683b6e02493977",
+  "bytes": 84721,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

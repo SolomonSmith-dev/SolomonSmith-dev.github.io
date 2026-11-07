@@ -1,0 +1,14 @@
+{
+  "id": "FIND-003",
+  "title": "Student records administration policy is a separate public control document",
+  "claim_grade": "Documented",
+  "severity": "S1",
+  "likelihood": "L3",
+  "summary": "A distinct Student Records Administration policy exists alongside FERPA. Fragmented policy surfaces increase the risk that students only see marketing privacy language and miss records controls.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-policies-university-policy-2393e730"
+  ],
+  "student_action": "Locate both FERPA and student-records policies before signing third-party education app prompts.",
+  "school_action": "Cross-link records, FERPA, and privacy notice pages from login and LMS footers.",
+  "status": "open"
+}

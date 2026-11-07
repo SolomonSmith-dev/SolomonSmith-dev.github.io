@@ -1,0 +1,26 @@
+{
+  "id": "DI-04",
+  "title": "Target Confirmation",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T03"
+  ],
+  "questions": [
+    {
+      "q": "Confirm CSUSB as sole v1 target?",
+      "answer": null
+    },
+    {
+      "q": "Include district continuing-ed portals?",
+      "answer": null
+    },
+    {
+      "q": "Any systems explicitly out of scope?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

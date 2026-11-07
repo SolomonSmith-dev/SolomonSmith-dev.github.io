@@ -1,0 +1,26 @@
+{
+  "id": "DI-09",
+  "title": "Legal Framing",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T08"
+  ],
+  "questions": [
+    {
+      "q": "How strongly to phrase legal gaps?",
+      "answer": null
+    },
+    {
+      "q": "Include CPRA templates in v1?",
+      "answer": null
+    },
+    {
+      "q": "Disclaimer wording OK?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

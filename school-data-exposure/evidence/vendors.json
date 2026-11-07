@@ -1,0 +1,39 @@
+{
+  "version": "0.1-provisional",
+  "decision_gate": "DI-07",
+  "note": "Vendors listed only when publicly referenced or commonly disclosed on CSU campuses. Naming of inferred-only vendors stays Alleged until DI-07.",
+  "vendors": [
+    {
+      "id": "V-ITS",
+      "name": "CSUSB Information Technology Services",
+      "class": "campus_it",
+      "confidence": "Documented",
+      "sources": ["https://www.csusb.edu/its"],
+      "notes": "Campus IT operator for accounts and services directory."
+    },
+    {
+      "id": "V-REG",
+      "name": "CSUSB Registrar / Student Records",
+      "class": "sis_records",
+      "confidence": "Documented",
+      "sources": ["https://www.csusb.edu/registrar", "https://www.csusb.edu/policies/university-policy-and-procedures-student-records-administration"],
+      "notes": "Custodian surface for student records administration policy."
+    },
+    {
+      "id": "V-LIB",
+      "name": "CSUSB Library systems",
+      "class": "library",
+      "confidence": "Documented",
+      "sources": ["https://www.csusb.edu/library"],
+      "notes": "Public library portal; vendor subprocessors TBD from public docs / own-account audit."
+    },
+    {
+      "id": "V-LMS",
+      "name": "Learning management system (campus LMS)",
+      "class": "lms",
+      "confidence": "Alleged",
+      "sources": [],
+      "notes": "Specific LMS product name deferred until public login/IT page or DI-07 lock. Do not invent."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "rule": "Decision interviews always before moving forward past a major gate.",
+  "interviews": [
+    {"id": "DI-01", "title": "Scope Lock", "file": "DI-01-scope-lock.json", "blocks": ["T03", "public naming lock"], "status": "provisional"},
+    {"id": "DI-02", "title": "Legal Charter", "file": "DI-02-legal-charter.json", "blocks": ["T01"], "status": "open"},
+    {"id": "DI-03", "title": "Gate Map", "file": "DI-03-gate-map.json", "blocks": ["T02"], "status": "open"},
+    {"id": "DI-04", "title": "Target Confirmation", "file": "DI-04-target.json", "blocks": ["T03"], "status": "open"},
+    {"id": "DI-05", "title": "Harm Framing", "file": "DI-05-harm.json", "blocks": ["T04"], "status": "open"},
+    {"id": "DI-06", "title": "Corpus Scope", "file": "DI-06-corpus.json", "blocks": ["T05"], "status": "open"},
+    {"id": "DI-07", "title": "Vendor Naming", "file": "DI-07-vendors.json", "blocks": ["T06"], "status": "open"},
+    {"id": "DI-08", "title": "Map Publish", "file": "DI-08-map.json", "blocks": ["T07"], "status": "open"},
+    {"id": "DI-09", "title": "Legal Framing", "file": "DI-09-legal-framing.json", "blocks": ["T08"], "status": "open"},
+    {"id": "DI-10", "title": "Own-Account Audit", "file": "DI-10-own-account.json", "blocks": ["T09"], "status": "open"},
+    {"id": "DI-11", "title": "Identity Publish", "file": "DI-11-identity.json", "blocks": ["T10"], "status": "open"},
+    {"id": "DI-12", "title": "Request Send", "file": "DI-12-requests.json", "blocks": ["T11"], "status": "open"},
+    {"id": "DI-13", "title": "Pipeline Freeze", "file": "DI-13-pipeline.json", "blocks": ["T12"], "status": "open"},
+    {"id": "DI-14", "title": "Finding Bar", "file": "DI-14-findings.json", "blocks": ["T13"], "status": "open"},
+    {"id": "DI-15", "title": "Narrative", "file": "DI-15-narrative.json", "blocks": ["T14"], "status": "open"},
+    {"id": "DI-16", "title": "Site Launch Shape", "file": "DI-16-site.json", "blocks": ["T15"], "status": "open"},
+    {"id": "DI-17", "title": "Map UX", "file": "DI-17-map-ux.json", "blocks": ["T16"], "status": "open"},
+    {"id": "DI-18", "title": "Toolkit Scope", "file": "DI-18-toolkit.json", "blocks": ["T17"], "status": "open"},
+    {"id": "DI-19", "title": "Publish Gate", "file": "DI-19-publish.json", "blocks": ["T18", "C08"], "status": "open"},
+    {"id": "DI-20", "title": "Launch", "file": "DI-20-launch.json", "blocks": ["T19", "C10"], "status": "open"},
+    {"id": "DI-21", "title": "Expansion", "file": "DI-21-expansion.json", "blocks": ["T20"], "status": "open"}
+  ]
+}

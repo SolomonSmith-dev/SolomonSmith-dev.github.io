@@ -1,0 +1,14 @@
+{
+  "id": "FIND-001",
+  "title": "Campus publishes a Privacy and Security Notice as the public tracking baseline",
+  "claim_grade": "Documented",
+  "severity": "S1",
+  "likelihood": "L3",
+  "summary": "CSUSB publishes a Privacy and Security Notice describing how the public website handles information. This is the baseline against which portal and vendor behavior should be compared; gaps between notice language and LMS/SIS practice are in-scope for later findings.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
+  ],
+  "student_action": "Read the Privacy and Security Notice, then compare cookie and third-party requests on login portals using the self-audit toolkit.",
+  "school_action": "Keep the notice synchronized with actual LMS, SIS, and vendor tracking.",
+  "status": "open"
+}

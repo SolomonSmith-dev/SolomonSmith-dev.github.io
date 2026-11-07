@@ -1,0 +1,14 @@
+{
+  "id": "FIND-002",
+  "title": "FERPA policy is published as a campus policy page",
+  "claim_grade": "Documented",
+  "severity": "S0",
+  "likelihood": "L3",
+  "summary": "CSUSB publishes a Family Educational Rights and Privacy Act policy page. Presence of policy is not proof of operational compliance; it is the stated rights baseline for the case file.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-policies-family-educationa-19175d4f"
+  ],
+  "student_action": "Read FERPA rights on the campus policy page and note how to request records.",
+  "school_action": "Ensure LMS/vendor practices are consistent with published FERPA policy.",
+  "status": "open"
+}

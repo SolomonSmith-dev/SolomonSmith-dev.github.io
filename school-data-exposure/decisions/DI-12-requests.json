@@ -1,0 +1,26 @@
+{
+  "id": "DI-12",
+  "title": "Request Send",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T11"
+  ],
+  "questions": [
+    {
+      "q": "Send CPRA requests now or defer?",
+      "answer": null
+    },
+    {
+      "q": "Which request pack first?",
+      "answer": null
+    },
+    {
+      "q": "Publish request text?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

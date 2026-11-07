@@ -1,0 +1,26 @@
+{
+  "id": "DI-07",
+  "title": "Vendor Naming",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T06"
+  ],
+  "questions": [
+    {
+      "q": "Name inferred vendors or only documented?",
+      "answer": null
+    },
+    {
+      "q": "Include CDNs/adtech if observed?",
+      "answer": null
+    },
+    {
+      "q": "Publish subprocessors lists?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

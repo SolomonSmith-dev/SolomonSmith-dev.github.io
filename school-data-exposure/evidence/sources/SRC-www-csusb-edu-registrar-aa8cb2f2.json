@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-registrar-aa8cb2f2",
+  "title": "CSUSB Registrar",
+  "type": "policy",
+  "url": "https://www.csusb.edu/registrar",
+  "final_url": "https://www.csusb.edu/registrar",
+  "retrieved_at": "2026-11-07T12:50:30Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "aa8cb2f22c09c59371f5e120742fcca628656b482a8d8b4797f8ce2c738f595b",
+  "bytes": 127555,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

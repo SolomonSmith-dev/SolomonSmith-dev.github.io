@@ -1,0 +1,26 @@
+{
+  "id": "DI-06",
+  "title": "Corpus Scope",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T05"
+  ],
+  "questions": [
+    {
+      "q": "Which domains are in corpus scope?",
+      "answer": null
+    },
+    {
+      "q": "Archive.org mirrors allowed?",
+      "answer": null
+    },
+    {
+      "q": "Refresh cadence?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

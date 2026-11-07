@@ -1,0 +1,26 @@
+{
+  "id": "DI-10",
+  "title": "Own-Account Audit",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T09"
+  ],
+  "questions": [
+    {
+      "q": "Approve own-account capture method?",
+      "answer": null
+    },
+    {
+      "q": "Which portals to audit first?",
+      "answer": null
+    },
+    {
+      "q": "Publish redacted HAR summaries?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

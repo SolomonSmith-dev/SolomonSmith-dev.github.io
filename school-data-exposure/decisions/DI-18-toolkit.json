@@ -1,0 +1,26 @@
+{
+  "id": "DI-18",
+  "title": "Toolkit Scope",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T17"
+  ],
+  "questions": [
+    {
+      "q": "Toolkit for any school or CSUSB-only examples?",
+      "answer": null
+    },
+    {
+      "q": "Include phone scripts?",
+      "answer": null
+    },
+    {
+      "q": "License?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

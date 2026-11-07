@@ -1,0 +1,56 @@
+{
+  "id": "DI-01",
+  "title": "Scope Lock",
+  "status": "provisional",
+  "owner": "Solomon Smith",
+  "asked_at": "2026-11-07",
+  "locked_at": null,
+  "rule": "Must be locked before public school naming is treated as final and before T03 completion.",
+  "answers": {
+    "1_target": {
+      "value": "CSUSB",
+      "provisional": true,
+      "options": ["CSUSB", "prior community college", "K-12", "broader CSU"]
+    },
+    "2_thesis": {
+      "value": "Vendors + LMS/campus systems collect and share student data beyond clear educational necessity; policy theater vs practice",
+      "provisional": true
+    },
+    "3_evidence": {
+      "value": "public_docs_plus_own_account",
+      "provisional": true
+    },
+    "4_legal": {
+      "value": "public_source_and_own_account_audit_only",
+      "provisional": true
+    },
+    "5_deliverable": {
+      "value": "standalone_site_plus_evidence_pipeline_plus_portfolio_page",
+      "provisional": true
+    },
+    "6_tone": {
+      "value": "technical_audit_with_journalistic_receipts",
+      "provisional": true
+    },
+    "7_audience": {
+      "value": "students_parents_primary",
+      "provisional": true
+    },
+    "8_constraints": {
+      "no_unauthorized_access": true,
+      "no_doxxing": true,
+      "name_vendors_if_public": true,
+      "name_school_publicly": true,
+      "provisional": true
+    },
+    "9_complete_means": {
+      "value": "working_product_for_one_school_then_reusable_framework",
+      "provisional": true
+    },
+    "10_next": {
+      "value": "full_plan_then_evidence_intake",
+      "provisional": true
+    }
+  },
+  "confirmation_prompt": "Reply CONFIRM DI-1 or send corrected answers to lock."
+}

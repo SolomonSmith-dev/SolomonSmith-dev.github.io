@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-policies-111ff89a",
+  "title": "CSUSB Policies index",
+  "type": "policy",
+  "url": "https://www.csusb.edu/policies",
+  "final_url": "https://www.csusb.edu/policies",
+  "retrieved_at": "2026-11-07T12:50:17Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "111ff89ac396068d48ccde5908fbec7e4b588af89442d03b66b0ca80849fab61",
+  "bytes": 116674,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

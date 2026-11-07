@@ -1,0 +1,748 @@
+{
+  "project": "school-data-exposure",
+  "target_provisional": "CSUSB",
+  "disclaimer": "Not legal advice. Public-source research plus optional own-account audit only. No unauthorized access.",
+  "sources": [
+    {
+      "id": "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7",
+      "title": "CSUSB Privacy and Security Notice",
+      "type": "policy",
+      "url": "https://www.csusb.edu/about-csusb/privacy-and-security-notice",
+      "final_url": "https://www.csusb.edu/about-csusb/privacy-and-security-notice",
+      "retrieved_at": "2026-11-07T12:50:35Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "afc6f4d73b7910c35fdb03a87325ce47784c41890d4d803d16f689698cac3931",
+      "bytes": 121445,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-9ecfcbb7",
+      "title": "CSUSB Information Technology Services",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its",
+      "final_url": "https://www.csusb.edu/its",
+      "retrieved_at": "2026-11-07T12:50:17Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "9ecfcbb7e7b30cc9a05711c2141888a5c6a4f453a490335c01748f13e897e04d",
+      "bytes": 159466,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-its-services-efb31b69",
+      "title": "CSUSB ITS Services",
+      "type": "policy",
+      "url": "https://www.csusb.edu/its/services",
+      "final_url": "https://www.csusb.edu/its/services",
+      "retrieved_at": "2026-11-07T12:50:30Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "efb31b690010fce756f05ea495c1cf696e9c78f07abcbb14b980516ff600066a",
+      "bytes": 151730,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-library-317fddd7",
+      "title": "CSUSB Library",
+      "type": "other",
+      "url": "https://www.csusb.edu/library",
+      "final_url": "https://www.csusb.edu/library",
+      "retrieved_at": "2026-11-07T12:50:30Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "317fddd74916d2f0c2b19ba17816ff4e0ebfda7929d2c04fc056b06310941d1b",
+      "bytes": 130676,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-policies-111ff89a",
+      "title": "CSUSB Policies index",
+      "type": "policy",
+      "url": "https://www.csusb.edu/policies",
+      "final_url": "https://www.csusb.edu/policies",
+      "retrieved_at": "2026-11-07T12:50:17Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "111ff89ac396068d48ccde5908fbec7e4b588af89442d03b66b0ca80849fab61",
+      "bytes": 116674,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-policies-family-educationa-19175d4f",
+      "title": "CSUSB FERPA policy page",
+      "type": "policy",
+      "url": "https://www.csusb.edu/policies/family-educational-rights-and-privacy-act-1974",
+      "final_url": "https://www.csusb.edu/policies/family-educational-rights-and-privacy-act-1974",
+      "retrieved_at": "2026-11-07T12:50:34Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "19175d4ffd9ac74e3805ac1702f46e87a637740c4c9de43eb66a67b8f1acde7e",
+      "bytes": 87639,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-policies-information-secur-ce9288e2",
+      "title": "CSUSB Information Security Policies",
+      "type": "policy",
+      "url": "https://www.csusb.edu/policies/information-security",
+      "final_url": "https://www.csusb.edu/policies/information-security",
+      "retrieved_at": "2026-11-07T12:50:30Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "ce9288e2fec0a3ff11fdbded868bb3766851fba6e5412e05cc683b6e02493977",
+      "bytes": 84721,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-policies-university-policy-2393e730",
+      "title": "CSUSB Student Records Administration policy",
+      "type": "policy",
+      "url": "https://www.csusb.edu/policies/university-policy-and-procedures-student-records-administration",
+      "final_url": "https://www.csusb.edu/policies/university-policy-and-procedures-student-records-administration",
+      "retrieved_at": "2026-11-07T12:50:34Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "2393e7304928c8e9d2320bf872574cd77d7cce74afc21851f4725e235b9eab6c",
+      "bytes": 105615,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-registrar-aa8cb2f2",
+      "title": "CSUSB Registrar",
+      "type": "policy",
+      "url": "https://www.csusb.edu/registrar",
+      "final_url": "https://www.csusb.edu/registrar",
+      "retrieved_at": "2026-11-07T12:50:30Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "aa8cb2f22c09c59371f5e120742fcca628656b482a8d8b4797f8ce2c738f595b",
+      "bytes": 127555,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-csusb-edu-student-affairs-b09dc492",
+      "title": "CSUSB Student Affairs",
+      "type": "policy",
+      "url": "https://www.csusb.edu/student-affairs",
+      "final_url": "https://www.csusb.edu/student-affairs",
+      "retrieved_at": "2026-11-07T12:50:19Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "b09dc492070b1ea1bd50287b19a169293fe1dbd66312bc54aace333edab4c4cd",
+      "bytes": 133690,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "title": "Campus publishes a Privacy and Security Notice as the public tracking baseline",
+      "claim_grade": "Documented",
+      "severity": "S1",
+      "likelihood": "L3",
+      "summary": "CSUSB publishes a Privacy and Security Notice describing how the public website handles information. This is the baseline against which portal and vendor behavior should be compared; gaps between notice language and LMS/SIS practice are in-scope for later findings.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7"
+      ],
+      "student_action": "Read the Privacy and Security Notice, then compare cookie and third-party requests on login portals using the self-audit toolkit.",
+      "school_action": "Keep the notice synchronized with actual LMS, SIS, and vendor tracking.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-002",
+      "title": "FERPA policy is published as a campus policy page",
+      "claim_grade": "Documented",
+      "severity": "S0",
+      "likelihood": "L3",
+      "summary": "CSUSB publishes a Family Educational Rights and Privacy Act policy page. Presence of policy is not proof of operational compliance; it is the stated rights baseline for the case file.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-policies-family-educationa-19175d4f"
+      ],
+      "student_action": "Read FERPA rights on the campus policy page and note how to request records.",
+      "school_action": "Ensure LMS/vendor practices are consistent with published FERPA policy.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-003",
+      "title": "Student records administration policy is a separate public control document",
+      "claim_grade": "Documented",
+      "severity": "S1",
+      "likelihood": "L3",
+      "summary": "A distinct Student Records Administration policy exists alongside FERPA. Fragmented policy surfaces increase the risk that students only see marketing privacy language and miss records controls.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-policies-university-policy-2393e730"
+      ],
+      "student_action": "Locate both FERPA and student-records policies before signing third-party education app prompts.",
+      "school_action": "Cross-link records, FERPA, and privacy notice pages from login and LMS footers.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-004",
+      "title": "Information Security policies are published but product/vendor inventory is not obvious from the landing page",
+      "claim_grade": "Documented",
+      "severity": "S2",
+      "likelihood": "L2",
+      "summary": "The information-security policies index is public, yet a clear student-facing inventory of EdTech vendors and data categories is not apparent from the landing page alone. Opacity about processors is an abuse-risk signal even when security policy text exists.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-policies-information-secur-ce9288e2",
+        "SRC-www-csusb-edu-its-9ecfcbb7"
+      ],
+      "student_action": "Ask ITS/registrar which vendors receive directory or education-record data for each portal you use.",
+      "school_action": "Publish a maintained student-data processor list with purposes and retention.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-005",
+      "title": "Public ITS services directory is a starting map for data-holding systems",
+      "claim_grade": "Documented",
+      "severity": "S0",
+      "likelihood": "L3",
+      "summary": "ITS publishes a services directory that helps enumerate systems that may process student data. This supports the project inventory task without unauthorized probing.",
+      "evidence_ids": [
+        "SRC-www-csusb-edu-its-services-efb31b69"
+      ],
+      "student_action": "Use the ITS services list when filling the self-audit toolkit system inventory.",
+      "school_action": "Annotate each service with data categories and vendor names.",
+      "status": "open"
+    }
+  ],
+  "vendors": {
+    "version": "0.1-provisional",
+    "decision_gate": "DI-07",
+    "note": "Vendors listed only when publicly referenced or commonly disclosed on CSU campuses. Naming of inferred-only vendors stays Alleged until DI-07.",
+    "vendors": [
+      {
+        "id": "V-ITS",
+        "name": "CSUSB Information Technology Services",
+        "class": "campus_it",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/its"
+        ],
+        "notes": "Campus IT operator for accounts and services directory."
+      },
+      {
+        "id": "V-REG",
+        "name": "CSUSB Registrar / Student Records",
+        "class": "sis_records",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/registrar",
+          "https://www.csusb.edu/policies/university-policy-and-procedures-student-records-administration"
+        ],
+        "notes": "Custodian surface for student records administration policy."
+      },
+      {
+        "id": "V-LIB",
+        "name": "CSUSB Library systems",
+        "class": "library",
+        "confidence": "Documented",
+        "sources": [
+          "https://www.csusb.edu/library"
+        ],
+        "notes": "Public library portal; vendor subprocessors TBD from public docs / own-account audit."
+      },
+      {
+        "id": "V-LMS",
+        "name": "Learning management system (campus LMS)",
+        "class": "lms",
+        "confidence": "Alleged",
+        "sources": [],
+        "notes": "Specific LMS product name deferred until public login/IT page or DI-07 lock. Do not invent."
+      }
+    ]
+  },
+  "graph": {
+    "version": "0.1-provisional",
+    "decision_gate": "DI-08",
+    "nodes": [
+      {
+        "id": "student",
+        "label": "Student",
+        "type": "user"
+      },
+      {
+        "id": "browser",
+        "label": "Browser session",
+        "type": "client"
+      },
+      {
+        "id": "web",
+        "label": "csusb.edu public web",
+        "type": "campus"
+      },
+      {
+        "id": "its",
+        "label": "ITS services",
+        "type": "campus"
+      },
+      {
+        "id": "registrar",
+        "label": "Registrar / records",
+        "type": "campus"
+      },
+      {
+        "id": "library",
+        "label": "Library",
+        "type": "campus"
+      },
+      {
+        "id": "lms",
+        "label": "LMS (TBD product)",
+        "type": "vendor"
+      },
+      {
+        "id": "vendors",
+        "label": "Other EdTech vendors",
+        "type": "vendor"
+      }
+    ],
+    "edges": [
+      {
+        "from": "student",
+        "to": "browser",
+        "type": "auth",
+        "confidence": "Verified",
+        "evidence_ids": []
+      },
+      {
+        "from": "browser",
+        "to": "web",
+        "type": "http",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "public-web"
+        ]
+      },
+      {
+        "from": "web",
+        "to": "its",
+        "type": "link",
+        "confidence": "Documented",
+        "evidence_ids": []
+      },
+      {
+        "from": "web",
+        "to": "registrar",
+        "type": "link",
+        "confidence": "Documented",
+        "evidence_ids": []
+      },
+      {
+        "from": "web",
+        "to": "library",
+        "type": "link",
+        "confidence": "Documented",
+        "evidence_ids": []
+      },
+      {
+        "from": "browser",
+        "to": "lms",
+        "type": "auth",
+        "confidence": "Alleged",
+        "evidence_ids": []
+      },
+      {
+        "from": "lms",
+        "to": "vendors",
+        "type": "analytics",
+        "confidence": "Alleged",
+        "evidence_ids": []
+      }
+    ]
+  },
+  "decisions": {
+    "rule": "Decision interviews always before moving forward past a major gate.",
+    "interviews": [
+      {
+        "id": "DI-01",
+        "title": "Scope Lock",
+        "file": "DI-01-scope-lock.json",
+        "blocks": [
+          "T03",
+          "public naming lock"
+        ],
+        "status": "provisional"
+      },
+      {
+        "id": "DI-02",
+        "title": "Legal Charter",
+        "file": "DI-02-legal-charter.json",
+        "blocks": [
+          "T01"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-03",
+        "title": "Gate Map",
+        "file": "DI-03-gate-map.json",
+        "blocks": [
+          "T02"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-04",
+        "title": "Target Confirmation",
+        "file": "DI-04-target.json",
+        "blocks": [
+          "T03"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-05",
+        "title": "Harm Framing",
+        "file": "DI-05-harm.json",
+        "blocks": [
+          "T04"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-06",
+        "title": "Corpus Scope",
+        "file": "DI-06-corpus.json",
+        "blocks": [
+          "T05"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-07",
+        "title": "Vendor Naming",
+        "file": "DI-07-vendors.json",
+        "blocks": [
+          "T06"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-08",
+        "title": "Map Publish",
+        "file": "DI-08-map.json",
+        "blocks": [
+          "T07"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-09",
+        "title": "Legal Framing",
+        "file": "DI-09-legal-framing.json",
+        "blocks": [
+          "T08"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-10",
+        "title": "Own-Account Audit",
+        "file": "DI-10-own-account.json",
+        "blocks": [
+          "T09"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-11",
+        "title": "Identity Publish",
+        "file": "DI-11-identity.json",
+        "blocks": [
+          "T10"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-12",
+        "title": "Request Send",
+        "file": "DI-12-requests.json",
+        "blocks": [
+          "T11"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-13",
+        "title": "Pipeline Freeze",
+        "file": "DI-13-pipeline.json",
+        "blocks": [
+          "T12"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-14",
+        "title": "Finding Bar",
+        "file": "DI-14-findings.json",
+        "blocks": [
+          "T13"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-15",
+        "title": "Narrative",
+        "file": "DI-15-narrative.json",
+        "blocks": [
+          "T14"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-16",
+        "title": "Site Launch Shape",
+        "file": "DI-16-site.json",
+        "blocks": [
+          "T15"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-17",
+        "title": "Map UX",
+        "file": "DI-17-map-ux.json",
+        "blocks": [
+          "T16"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-18",
+        "title": "Toolkit Scope",
+        "file": "DI-18-toolkit.json",
+        "blocks": [
+          "T17"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-19",
+        "title": "Publish Gate",
+        "file": "DI-19-publish.json",
+        "blocks": [
+          "T18",
+          "C08"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-20",
+        "title": "Launch",
+        "file": "DI-20-launch.json",
+        "blocks": [
+          "T19",
+          "C10"
+        ],
+        "status": "open"
+      },
+      {
+        "id": "DI-21",
+        "title": "Expansion",
+        "file": "DI-21-expansion.json",
+        "blocks": [
+          "T20"
+        ],
+        "status": "open"
+      }
+    ]
+  },
+  "status": {
+    "tasks": {
+      "T01": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T02": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T03": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T04": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T05": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T06": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T07": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T08": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T09": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T10": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T11": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T12": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T13": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T14": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T15": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T16": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T17": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T18": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T19": {
+        "status": "pending",
+        "steps_done": 0
+      },
+      "T20": {
+        "status": "pending",
+        "steps_done": 0
+      }
+    },
+    "completion_subtasks": {
+      "C01": "pending",
+      "C02": "pending",
+      "C03": "pending",
+      "C04": "pending",
+      "C05": "pending",
+      "C06": "pending",
+      "C07": "pending",
+      "C08": "pending",
+      "C09": "pending",
+      "C10": "pending"
+    },
+    "active_gate": "DI-1",
+    "notes": "DI-1 provisional defaults applied; confirmation required before public naming lock"
+  },
+  "completion_subtasks": [
+    {
+      "id": "C01",
+      "title": "Legal charter locked",
+      "requires": [
+        "T01",
+        "DI-2"
+      ],
+      "done_when": "decisions/DI-02-legal-charter.json status=locked and charter.md exists"
+    },
+    {
+      "id": "C02",
+      "title": "All decision interviews recorded through current gate",
+      "requires": [
+        "T02"
+      ],
+      "done_when": "scripts/validate_decisions.py exits 0 for required DIs"
+    },
+    {
+      "id": "C03",
+      "title": "Public policy corpus ingested",
+      "requires": [
+        "T05",
+        "T12"
+      ],
+      "done_when": ">= 8 evidence/sources records with hashes"
+    },
+    {
+      "id": "C04",
+      "title": "Vendor inventory publishable",
+      "requires": [
+        "T06",
+        "DI-7"
+      ],
+      "done_when": "vendor map JSON lists classified vendors with sources"
+    },
+    {
+      "id": "C05",
+      "title": "Data-flow map with confirmed edges",
+      "requires": [
+        "T07",
+        "DI-8"
+      ],
+      "done_when": "graph JSON has confirmed edges citing evidence IDs"
+    },
+    {
+      "id": "C06",
+      "title": "Minimum verified findings set",
+      "requires": [
+        "T13",
+        "DI-14"
+      ],
+      "done_when": ">= 5 findings at Documented or Verified with citations"
+    },
+    {
+      "id": "C07",
+      "title": "Public site builds and serves",
+      "requires": [
+        "T15",
+        "T16"
+      ],
+      "done_when": "web/index.html serves locally; core routes present"
+    },
+    {
+      "id": "C08",
+      "title": "Redaction and secrets QA passed",
+      "requires": [
+        "T18",
+        "DI-19"
+      ],
+      "done_when": "verification report shows zero secrets and redaction checklist complete"
+    },
+    {
+      "id": "C09",
+      "title": "Student toolkit shipped",
+      "requires": [
+        "T17",
+        "DI-18"
+      ],
+      "done_when": "toolkit checklists + request templates linked from site"
+    },
+    {
+      "id": "C10",
+      "title": "Launch-ready demo with decision log",
+      "requires": [
+        "T19",
+        "DI-20"
+      ],
+      "done_when": "v1.0 tag or release candidate + methods page shows full decision log"
+    }
+  ],
+  "stats": {
+    "sources": 10,
+    "findings": 5,
+    "vendors": 4,
+    "decision_interviews": 21,
+    "documented_findings": 5
+  }
+}

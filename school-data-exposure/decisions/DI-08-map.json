@@ -1,0 +1,26 @@
+{
+  "id": "DI-08",
+  "title": "Map Publish",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T07"
+  ],
+  "questions": [
+    {
+      "q": "Publish inferred edges with labels?",
+      "answer": null
+    },
+    {
+      "q": "Interactive map required for v1?",
+      "answer": null
+    },
+    {
+      "q": "Color encoding for confidence?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

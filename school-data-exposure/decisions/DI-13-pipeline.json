@@ -1,0 +1,26 @@
+{
+  "id": "DI-13",
+  "title": "Pipeline Freeze",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T12"
+  ],
+  "questions": [
+    {
+      "q": "Freeze evidence schema v0.1?",
+      "answer": null
+    },
+    {
+      "q": "Require sha256 always?",
+      "answer": null
+    },
+    {
+      "q": "Allow PDF binary storage?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

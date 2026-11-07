@@ -1,0 +1,26 @@
+{
+  "id": "DI-03",
+  "title": "Gate Map",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T02"
+  ],
+  "questions": [
+    {
+      "q": "Approve gate map as mandatory?",
+      "answer": null
+    },
+    {
+      "q": "Allow provisional forward moves?",
+      "answer": null
+    },
+    {
+      "q": "Who locks interviews?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

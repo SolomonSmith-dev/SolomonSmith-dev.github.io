@@ -1,0 +1,26 @@
+{
+  "id": "DI-05",
+  "title": "Harm Framing",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T04"
+  ],
+  "questions": [
+    {
+      "q": "Approve abuse definition?",
+      "answer": null
+    },
+    {
+      "q": "Primary harm audience?",
+      "answer": null
+    },
+    {
+      "q": "Max severity language allowed on homepage?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

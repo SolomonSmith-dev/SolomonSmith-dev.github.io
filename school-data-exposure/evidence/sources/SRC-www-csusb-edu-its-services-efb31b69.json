@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-its-services-efb31b69",
+  "title": "CSUSB ITS Services",
+  "type": "policy",
+  "url": "https://www.csusb.edu/its/services",
+  "final_url": "https://www.csusb.edu/its/services",
+  "retrieved_at": "2026-11-07T12:50:30Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "efb31b690010fce756f05ea495c1cf696e9c78f07abcbb14b980516ff600066a",
+  "bytes": 151730,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

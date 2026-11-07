@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-csusb-edu-student-affairs-b09dc492",
+  "title": "CSUSB Student Affairs",
+  "type": "policy",
+  "url": "https://www.csusb.edu/student-affairs",
+  "final_url": "https://www.csusb.edu/student-affairs",
+  "retrieved_at": "2026-11-07T12:50:19Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "b09dc492070b1ea1bd50287b19a169293fe1dbd66312bc54aace333edab4c4cd",
+  "bytes": 133690,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

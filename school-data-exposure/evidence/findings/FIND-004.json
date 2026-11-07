@@ -1,0 +1,15 @@
+{
+  "id": "FIND-004",
+  "title": "Information Security policies are published but product/vendor inventory is not obvious from the landing page",
+  "claim_grade": "Documented",
+  "severity": "S2",
+  "likelihood": "L2",
+  "summary": "The information-security policies index is public, yet a clear student-facing inventory of EdTech vendors and data categories is not apparent from the landing page alone. Opacity about processors is an abuse-risk signal even when security policy text exists.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-policies-information-secur-ce9288e2",
+    "SRC-www-csusb-edu-its-9ecfcbb7"
+  ],
+  "student_action": "Ask ITS/registrar which vendors receive directory or education-record data for each portal you use.",
+  "school_action": "Publish a maintained student-data processor list with purposes and retention.",
+  "status": "open"
+}

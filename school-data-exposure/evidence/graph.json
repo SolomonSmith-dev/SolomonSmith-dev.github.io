@@ -1,0 +1,23 @@
+{
+  "version": "0.1-provisional",
+  "decision_gate": "DI-08",
+  "nodes": [
+    {"id": "student", "label": "Student", "type": "user"},
+    {"id": "browser", "label": "Browser session", "type": "client"},
+    {"id": "web", "label": "csusb.edu public web", "type": "campus"},
+    {"id": "its", "label": "ITS services", "type": "campus"},
+    {"id": "registrar", "label": "Registrar / records", "type": "campus"},
+    {"id": "library", "label": "Library", "type": "campus"},
+    {"id": "lms", "label": "LMS (TBD product)", "type": "vendor"},
+    {"id": "vendors", "label": "Other EdTech vendors", "type": "vendor"}
+  ],
+  "edges": [
+    {"from": "student", "to": "browser", "type": "auth", "confidence": "Verified", "evidence_ids": []},
+    {"from": "browser", "to": "web", "type": "http", "confidence": "Documented", "evidence_ids": ["public-web"]},
+    {"from": "web", "to": "its", "type": "link", "confidence": "Documented", "evidence_ids": []},
+    {"from": "web", "to": "registrar", "type": "link", "confidence": "Documented", "evidence_ids": []},
+    {"from": "web", "to": "library", "type": "link", "confidence": "Documented", "evidence_ids": []},
+    {"from": "browser", "to": "lms", "type": "auth", "confidence": "Alleged", "evidence_ids": []},
+    {"from": "lms", "to": "vendors", "type": "analytics", "confidence": "Alleged", "evidence_ids": []}
+  ]
+}

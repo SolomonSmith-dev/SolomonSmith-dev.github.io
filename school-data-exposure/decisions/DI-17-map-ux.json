@@ -1,0 +1,26 @@
+{
+  "id": "DI-17",
+  "title": "Map UX",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T16"
+  ],
+  "questions": [
+    {
+      "q": "Map library/approach?",
+      "answer": null
+    },
+    {
+      "q": "Deep links required?",
+      "answer": null
+    },
+    {
+      "q": "No-JS fallback required?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "FIND-005",
+  "title": "Public ITS services directory is a starting map for data-holding systems",
+  "claim_grade": "Documented",
+  "severity": "S0",
+  "likelihood": "L3",
+  "summary": "ITS publishes a services directory that helps enumerate systems that may process student data. This supports the project inventory task without unauthorized probing.",
+  "evidence_ids": [
+    "SRC-www-csusb-edu-its-services-efb31b69"
+  ],
+  "student_action": "Use the ITS services list when filling the self-audit toolkit system inventory.",
+  "school_action": "Annotate each service with data categories and vendor names.",
+  "status": "open"
+}

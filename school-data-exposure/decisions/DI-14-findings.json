@@ -1,0 +1,26 @@
+{
+  "id": "DI-14",
+  "title": "Finding Bar",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T13"
+  ],
+  "questions": [
+    {
+      "q": "Minimum claim grade to publish?",
+      "answer": null
+    },
+    {
+      "q": "Minimum findings for launch?",
+      "answer": null
+    },
+    {
+      "q": "Challenge SLA days?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}

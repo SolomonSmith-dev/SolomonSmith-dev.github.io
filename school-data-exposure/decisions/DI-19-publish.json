@@ -1,0 +1,27 @@
+{
+  "id": "DI-19",
+  "title": "Publish Gate",
+  "status": "open",
+  "owner": "Solomon Smith",
+  "blocks": [
+    "T18",
+    "C08"
+  ],
+  "questions": [
+    {
+      "q": "Publish gate checklist complete?",
+      "answer": null
+    },
+    {
+      "q": "Any findings to withhold?",
+      "answer": null
+    },
+    {
+      "q": "Rollback owner?",
+      "answer": null
+    }
+  ],
+  "answers": {},
+  "locked_at": null,
+  "note": "Decision interview required before completing blocked tasks."
+}
