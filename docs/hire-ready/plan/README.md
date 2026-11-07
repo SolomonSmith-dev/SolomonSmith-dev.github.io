@@ -18,31 +18,31 @@ Decision interviews always before moving forward.
 
 ### C04: Top 4 project cards proof-dense
 
-- Done when: each card has Problem/Built/Result with sourced facts
+- Done when: each selected card has sourced fact rows
 
 ### C05: All project pages evidence-clean
 
-- Done when: no unsourced numbers; evidence tables present
+- Done when: audit/project-evidence.md clean
 
 ### C06: Resume PDF + page synced
 
-- Done when: sync script output or verified match to canonical
+- Done when: audit/resume-sync.md verified
 
 ### C07: Contact path <2 clicks from home
 
-- Done when: CTA audit screenshot
+- Done when: audit/contact-path.md
 
-### C08: Live Lighthouse/a11y bar met
+### C08: Live perf/a11y bar met
 
-- Done when: recorded scores for home + projects
+- Done when: audit/perf.md and audit/a11y.md
 
 ### C09: Outreach kit ready
 
-- Done when: email + LinkedIn blurb files exist
+- Done when: docs/hire-ready/outreach/ files exist
 
 ### C10: Live site hire-ready verified
 
-- Done when: solomonsmith.dev matches accepted PR; checklist green
+- Done when: audit/launch.md green on solomonsmith.dev
 
 ## 20 tasks
 

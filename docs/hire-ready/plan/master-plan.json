@@ -2,15 +2,6 @@
   "project": "hire-ready-portfolio",
   "objective": "Complete professional personal portfolio to get hired ASAP",
   "rule": "Decision interviews always before moving forward past a major gate",
-  "constraints_from_site": [
-    "No em dashes",
-    "No GPA / Dean's List",
-    "No internship language on site",
-    "Target: full-time AI/ML + backend from January 2027",
-    "Numbers only from resume or project READMEs",
-    "No Recursa internship metrics",
-    "ARDA uses LangGraph not LangChain"
-  ],
   "tasks": [
     {
       "id": "T01",
@@ -21,103 +12,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Freeze target role, geography, and one-line thesis.",
-          "exit_criteria": "Artifact or status update proves step 1 for T01"
+          "action": "Collect current title/thesis lines from index.md, about.md, _config.yml, llms.txt",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T01"
+          "action": "List competing title options (AI/Backend vs AI/ML vs Backend)",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T01"
+          "action": "Draft audience ranking (HM vs founder vs recruiter)",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-01 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T01"
+          "action": "Run DI-01 positioning interview and record answers",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T01"
+          "action": "Lock geography/work-mode sentence",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T01"
+          "action": "Lock hero thesis sentence (no em dash)",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T01"
+          "action": "Lock availability line for January 2027 full-time",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T01"
+          "action": "Write positioning.md as source of truth",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T01"
+          "action": "Diff positioning.md against live home hero",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T01"
+          "action": "Flag LinkedIn reconciliation items separately (non-blocking)",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T01"
+          "action": "Confirm no internship language in locked copy",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T01"
+          "action": "Confirm no GPA language anywhere proposed",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T01"
+          "action": "Map locked thesis to OG description and site.webmanifest",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T01"
+          "action": "Map locked thesis to contact band headline",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T01"
+          "action": "Create acceptance checklist for later tasks using locked lines",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T01"
+          "action": "Update plan/status.json for T01 progress",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T01"
+          "action": "Require Solomon lock status=locked on DI-01",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T01"
+          "action": "Commit positioning artifacts only (no public HTML yet if not approved)",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T01"
+          "action": "Announce unlocked downstream tasks T03/T07/T18",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T01 complete only after DI-01 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T01"
+          "action": "Mark T01 complete only when DI-01 is locked",
+          "exit_criteria": "Evidence in repo or decision log for T01 step 20"
         }
       ]
     },
@@ -130,103 +121,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Require recorded interviews before major site moves.",
-          "exit_criteria": "Artifact or status update proves step 1 for T02"
+          "action": "Enumerate gates DI-01..DI-20 and blocked tasks",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T02"
+          "action": "Define interview JSON schema (status/questions/answers)",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T02"
+          "action": "Write docs/hire-ready/decisions/index.json",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-02 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T02"
+          "action": "Implement validate_decisions.py",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T02"
+          "action": "Add README rule: no forward move without gate record",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T02"
+          "action": "Run DI-02 on whether provisional research is allowed",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T02"
+          "action": "Document who can lock (Solomon only)",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T02"
+          "action": "Add status values: open/provisional/locked/blocked",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T02"
+          "action": "Wire status.json active_gate field",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T02"
+          "action": "Create failure examples for missing interviews",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T02"
+          "action": "Add checklist to PR template notes for hire-ready PRs",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T02"
+          "action": "Verify DI files exist for all 20 gates",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T02"
+          "action": "Smoke-test validator exit codes",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T02"
+          "action": "Record DI-02 answers",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T02"
+          "action": "Lock DI-02",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T02"
+          "action": "Update completion subtask C02 tracking",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T02"
+          "action": "Commit tooling",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T02"
+          "action": "Push branch",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T02"
+          "action": "Reference validator in plan README",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T02 complete only after DI-02 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T02"
+          "action": "Mark T02 complete after DI-02 lock",
+          "exit_criteria": "Evidence in repo or decision log for T02 step 20"
         }
       ]
     },
@@ -239,103 +230,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Make the home hero hire-first in under 5 seconds.",
-          "exit_criteria": "Artifact or status update proves step 1 for T03"
+          "action": "Screenshot current home hero desktop+mobile",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T03"
+          "action": "Time a cold skim: title, thesis, CTAs, availability",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T03"
+          "action": "List CTA buttons currently in hero/header",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-03 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T03"
+          "action": "Run DI-03 with DI-01-locked CTA order",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T03"
+          "action": "Rewrite hero_lede if needed from positioning.md",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T03"
+          "action": "Rewrite availability line if needed",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T03"
+          "action": "Reorder primary CTAs per DI-01",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T03"
+          "action": "Ensure contact email is one click from hero path",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T03"
+          "action": "Trim competing first-viewport chrome",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T03"
+          "action": "Keep brand/name as hero-level signal per design rules",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T03"
+          "action": "Preserve editorial tokens (no purple/cream redesign)",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T03"
+          "action": "Self-check no em dashes",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T03"
+          "action": "Mobile layout check for CTA wrapping",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T03"
+          "action": "Capture after screenshots",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T03"
+          "action": "Write audit/hero-before-after.md",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T03"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T03"
+          "action": "Commit index front matter + layout only as needed",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T03"
+          "action": "Push and note PR",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T03"
+          "action": "Skim-test with DI-17 script draft",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T03 complete only after DI-03 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T03"
+          "action": "Mark T03 complete after DI-03 lock",
+          "exit_criteria": "Evidence in repo or decision log for T03 step 20"
         }
       ]
     },
@@ -348,103 +339,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Put the strongest employer-facing proof above the fold.",
-          "exit_criteria": "Artifact or status update proves step 1 for T04"
+          "action": "Inventory home Selected work includes",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T04"
+          "action": "Inventory all project cards facts rows",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T04"
+          "action": "Score each project for hire signal (prod, evals, novelty)",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-04 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T04"
+          "action": "Run DI-04 for top-4 order",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T04"
+          "action": "Reorder index.md includes to match",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T04"
+          "action": "Ensure each selected card has Problem/Built/Result or equivalent",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T04"
+          "action": "Remove weak facts; keep only sourced rows",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T04"
+          "action": "Align card titles to case-study links",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T04"
+          "action": "Verify live/product links open",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T04"
+          "action": "Cross-check numbers vs resume/README sources list",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T04"
+          "action": "Update projects.md order if DI-04 says so",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T04"
+          "action": "Mobile card density check",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T04"
+          "action": "Capture screenshots of Selected work",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T04"
+          "action": "Write audit/selected-work.md",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T04"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T04"
+          "action": "Commit card order changes",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T04"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T04"
+          "action": "Hiring-manager skim of top 4 only",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T04"
+          "action": "Adjust if skim fails",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T04 complete only after DI-04 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T04"
+          "action": "Mark T04 complete after DI-04 lock",
+          "exit_criteria": "Evidence in repo or decision log for T04 step 20"
         }
       ]
     },
@@ -457,103 +448,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Every project page cites README/resume-backed numbers only.",
-          "exit_criteria": "Artifact or status update proves step 1 for T05"
+          "action": "List all _projects/*.md pages",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T05"
+          "action": "Extract every numeric claim per page",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T05"
+          "action": "Map each number to source (README or resume)",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-05 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T05"
+          "action": "Flag unsourced or stale numbers",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T05"
+          "action": "Run DI-05 evidence bar",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T05"
+          "action": "Add/repair {: .evidence} tables where missing",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T05"
+          "action": "Normalize What/Why/Evidence section structure",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T05"
+          "action": "Ensure stack/front matter accurate",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T05"
+          "action": "Ensure status/live fields accurate",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T05"
+          "action": "Remove any GPA/internship language if found",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T05"
+          "action": "Confirm ARDA says LangGraph not LangChain",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T05"
+          "action": "Confirm PhishGuard AUC 0.9943 wording matches source",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T05"
+          "action": "Confirm CourtRules numbers match resume rules",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T05"
+          "action": "Build pages or markdown-proofread",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T05"
+          "action": "Write audit/project-evidence.md",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T05"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T05"
+          "action": "Commit project page fixes",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T05"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T05"
+          "action": "Spot-check 3 pages live after merge plan",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T05 complete only after DI-05 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T05"
+          "action": "Mark T05 complete after DI-05 lock",
+          "exit_criteria": "Evidence in repo or decision log for T05 step 20"
         }
       ]
     },
@@ -566,103 +557,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Resume surfaces match canonical MATERIALS without hand edits.",
-          "exit_criteria": "Artifact or status update proves step 1 for T06"
+          "action": "Locate scripts/sync-resume.sh and document inputs",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T06"
+          "action": "Note if canonical MATERIALS path exists in this environment",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T06"
+          "action": "Diff resume.md body markers vs last sync expectations",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-06 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T06"
+          "action": "Verify assets/resume/SolomonSmithResume.pdf exists",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T06"
+          "action": "Check header/footer resume links",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T06"
+          "action": "Run DI-06 on sync approach (run script vs verify-only here)",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T06"
+          "action": "If MATERIALS unavailable, record manual verification checklist",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T06"
+          "action": "Ensure phone number remains off the page",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T06"
+          "action": "Ensure timeline on index matches resume roles",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T06"
+          "action": "Ensure RideSplits title is Full-Stack Developer (contract)",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T06"
+          "action": "Ensure no Recursa internship metrics",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T06"
+          "action": "Confirm skills include is generated not hand-edited",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T06"
+          "action": "Update audit/resume-sync.md",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T06"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T06"
+          "action": "Commit only if sync outputs change",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T06"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T06"
+          "action": "Download PDF from live after deploy plan",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T06"
+          "action": "Hash/compare PDF when possible",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T06"
+          "action": "Record residual risks",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T06 complete only after DI-06 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T06"
+          "action": "Mark T06 complete after DI-06 lock",
+          "exit_criteria": "Evidence in repo or decision log for T06 step 20"
         }
       ]
     },
@@ -675,103 +666,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: About sells judgment, not biography filler.",
-          "exit_criteria": "Artifact or status update proves step 1 for T07"
+          "action": "Read about.md end-to-end",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T07"
+          "action": "Map each paragraph to hire signal",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T07"
+          "action": "Run DI-07 narrative interview",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-07 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T07"
+          "action": "Apply positioning.md title/lede",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T07"
+          "action": "Tighten How I work bullets if needed",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T07"
+          "action": "Keep culinary section; optionally shorten per DI-01",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T07"
+          "action": " sharpen What I'm looking for using locked geography",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T07"
+          "action": "Keep Education without GPA",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T07"
+          "action": "Ensure CTA row: email, resume, LinkedIn",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T07"
+          "action": "No em dashes pass",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T07"
+          "action": "Mobile photo + prose flow check",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T07"
+          "action": "Screenshot about hero",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T07"
+          "action": "Write audit/about.md",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T07"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T07"
+          "action": "Commit about.md changes",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T07"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T07"
+          "action": "Skim as hiring manager",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T07"
+          "action": "Adjust once",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T07"
+          "action": "Confirm links",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T07 complete only after DI-07 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T07"
+          "action": "Mark T07 complete after DI-07 lock",
+          "exit_criteria": "Evidence in repo or decision log for T07 step 20"
         }
       ]
     },
@@ -784,103 +775,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Email/LinkedIn/resume CTAs are impossible to miss.",
-          "exit_criteria": "Artifact or status update proves step 1 for T08"
+          "action": "Inventory all contact CTAs sitewide",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T08"
+          "action": "Click-test mailto subject lines",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T08"
+          "action": "Click-test LinkedIn URL",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-08 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T08"
+          "action": "Click-test resume page and PDF",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T08"
+          "action": "Run DI-08",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T08"
+          "action": "Ensure home contact band matches DI-01 tone",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T08"
+          "action": "Ensure projects contact band consistent",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T08"
+          "action": "Ensure footer contact links",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T08"
+          "action": "Reduce duplicate competing CTAs if noisy",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T08"
+          "action": "Verify email is solomonsmithdev@gmail.com from config",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T08"
+          "action": "Mobile sticky header does not hide CTAs",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T08"
+          "action": "Capture contact path GIF/notes",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T08"
+          "action": "Write audit/contact-path.md",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T08"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T08"
+          "action": "Commit CTA tweaks",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T08"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T08"
+          "action": "Stopwatch test: home to email compose <2 clicks",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T08"
+          "action": "Fix failures",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T08"
+          "action": "Retest",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T08 complete only after DI-08 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T08"
+          "action": "Mark T08 complete after DI-08 lock",
+          "exit_criteria": "Evidence in repo or decision log for T08 step 20"
         }
       ]
     },
@@ -893,103 +884,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Skills match resume SKILLS; no banned stacks.",
-          "exit_criteria": "Artifact or status update proves step 1 for T09"
+          "action": "Read _includes/skills.html",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T09"
+          "action": "List banned skills from CLAUDE.md",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T09"
+          "action": "Scan stack tags on all cards for banned items",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-09 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T09"
+          "action": "Run DI-09",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T09"
+          "action": "Plan sync-resume if MATERIALS available",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T09"
+          "action": "Remove any LangChain/Milvus/Django/React/R/Stripe/Socket.IO if present",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T09"
+          "action": "Ensure ARDA card says LangGraph",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T09"
+          "action": "Align home skills section with resume",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T09"
+          "action": "Check project stack tags for honesty",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T09"
+          "action": "Write audit/skills.md",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T09"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T09"
+          "action": "Commit fixes",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T09"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T09"
+          "action": "Grep site for banned skill strings",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T09"
+          "action": "Fix leftovers",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T09"
+          "action": "Document sync ownership going forward",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T09"
+          "action": "Verify no hand-edit warning violated",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T09"
+          "action": "Retest grep clean",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T09"
+          "action": "Note residual",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T09 complete only after DI-09 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T09"
+          "action": "Mark T09 complete after DI-09 lock",
+          "exit_criteria": "Evidence in repo or decision log for T09 step 20"
         }
       ]
     },
@@ -1002,103 +993,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Search and link previews sell the same hire thesis.",
-          "exit_criteria": "Artifact or status update proves step 1 for T10"
+          "action": "Read _config.yml description/bio/og",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T10"
+          "action": "Read llms.txt and site.webmanifest",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T10"
+          "action": "Diff against positioning.md",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-10 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T10"
+          "action": "Run DI-10",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T10"
+          "action": "Update description strings to locked thesis",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T10"
+          "action": "Update og alt text",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T10"
+          "action": "Update llms.txt hire lines",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T10"
+          "action": "Update webmanifest name/description if needed",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T10"
+          "action": "Check titles on home/about/projects/resume",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T10"
+          "action": "Verify robots.txt allows indexing",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T10"
+          "action": "Verify CNAME/custom domain intact",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T10"
+          "action": "Write audit/seo.md",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T10"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T10"
+          "action": "Commit SEO copy",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T10"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T10"
+          "action": "Fetch live meta after deploy plan",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T10"
+          "action": "Validate Twitter/OG tags in HTML",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T10"
+          "action": "Fix mismatches",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T10"
+          "action": "Retest",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T10 complete only after DI-10 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T10"
+          "action": "Mark T10 complete after DI-10 lock",
+          "exit_criteria": "Evidence in repo or decision log for T10 step 20"
         }
       ]
     },
@@ -1111,103 +1102,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Home/projects/resume feel instant on mid phones.",
-          "exit_criteria": "Artifact or status update proves step 1 for T11"
+          "action": "Record current transfer sizes for home CSS/fonts/images",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T11"
+          "action": "Check headshot dimensions/loading attributes",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T11"
+          "action": "Run DI-11 performance bar targets",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-11 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T11"
+          "action": "Identify font loading strategy in default layout",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T11"
+          "action": "Defer noncritical weight if any",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T11"
+          "action": "Ensure images use width/height and lazy where appropriate",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T11"
+          "action": "Avoid layout shift in hero",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T11"
+          "action": "Measure with lighthouse CLI or equivalent if available",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T11"
+          "action": "Document scores in audit/perf.md",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T11"
+          "action": "Fix worst offender only (one lever)",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T11"
+          "action": "Remeasure",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T11"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T11"
+          "action": "Commit perf fixes",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T11"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T11"
+          "action": "Re-check mobile home",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T11"
+          "action": "Re-check projects",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T11"
+          "action": "Re-check resume",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T11"
+          "action": "Note CDN/Pages limits",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T11"
+          "action": "Accept or iterate once more",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T11 complete only after DI-11 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T11"
+          "action": "Mark T11 complete after DI-11 lock",
+          "exit_criteria": "Evidence in repo or decision log for T11 step 20"
         }
       ]
     },
@@ -1220,103 +1211,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Keyboard, contrast, skip link, aria-current all solid.",
-          "exit_criteria": "Artifact or status update proves step 1 for T12"
+          "action": "Confirm skip link in default layout",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T12"
+          "action": "Tab through header nav",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T12"
+          "action": "Check aria-current on active nav",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-12 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T12"
+          "action": "Check focus-visible rings in CSS",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T12"
+          "action": "Run DI-12",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T12"
+          "action": "Fix any missing button names/labels",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T12"
+          "action": "Check metrics list semantics",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T12"
+          "action": "Check project fact dl structure",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T12"
+          "action": "Reduced-motion respect for hero",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T12"
+          "action": "Color contrast spot-check accent on dark/light",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T12"
+          "action": "Write audit/a11y.md",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T12"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T12"
+          "action": "Commit a11y fixes",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T12"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T12"
+          "action": "Retest keyboard path",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T12"
+          "action": "Fix regressions",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T12"
+          "action": "Document known residual issues",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T12"
+          "action": "Optional axe run if available",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T12"
+          "action": "Attach evidence",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T12 complete only after DI-12 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T12"
+          "action": "Mark T12 complete after DI-12 lock",
+          "exit_criteria": "Evidence in repo or decision log for T12 step 20"
         }
       ]
     },
@@ -1329,103 +1320,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Top projects have visual or Loom proof where allowed.",
-          "exit_criteria": "Artifact or status update proves step 1 for T13"
+          "action": "List projects with existing assets/img/projects images",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T13"
+          "action": "Identify gaps for top-4",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T13"
+          "action": "Run DI-13 on what can be shown (CourtRules may be private)",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-13 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T13"
+          "action": "Copy only README-referenced screenshots per CLAUDE.md",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T13"
+          "action": "Add images to case studies with captions",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T13"
+          "action": "Link Loom for SOC Triage if available",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T13"
+          "action": "Avoid inventing UI mockups",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T13"
+          "action": "Optimize image weight",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T13"
+          "action": "Alt text for each image",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T13"
+          "action": "Write audit/demo-proof.md",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T13"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T13"
+          "action": "Commit assets + markdown",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T13"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T13"
+          "action": "Verify images render locally/live plan",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T13"
+          "action": "Mobile image overflow check",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T13"
+          "action": "Fix",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T13"
+          "action": "Confirm licenses/privacy OK",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T13"
+          "action": "Update cards if proof links needed",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T13"
+          "action": "Final skim",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T13 complete only after DI-13 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T13"
+          "action": "Mark T13 complete after DI-13 lock",
+          "exit_criteria": "Evidence in repo or decision log for T13 step 20"
         }
       ]
     },
@@ -1438,103 +1429,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Pins and site cards tell one coherent story.",
-          "exit_criteria": "Artifact or status update proves step 1 for T14"
+          "action": "Fetch public pins for SolomonSmith-dev if API allows",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T14"
+          "action": "Compare to Active Projects in CLAUDE.md",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T14"
+          "action": "Compare to projects.md order",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-14 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T14"
+          "action": "Run DI-14",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T14"
+          "action": "Propose pin changes (manual on GitHub) if needed",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T14"
+          "action": "Ensure site does not advertise removed projects",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T14"
+          "action": "Ensure Sauron Stack remains folded into ARDA",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T14"
+          "action": "Update docs only unless DI allows site edits",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T14"
+          "action": "Write audit/pins.md",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T14"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T14"
+          "action": "Commit doc updates",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T14"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T14"
+          "action": "Checklist for Solomon to update pins in UI",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T14"
+          "action": "Verify repo links on cards",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T14"
+          "action": "Fix broken GitHub links",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T14"
+          "action": "Retest",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T14"
+          "action": "Record pin screenshot after Solomon updates",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T14"
+          "action": "Align README of site if needed",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T14"
+          "action": "Final consistency grep",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T14 complete only after DI-14 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T14"
+          "action": "Mark T14 complete after DI-14 lock",
+          "exit_criteria": "Evidence in repo or decision log for T14 step 20"
         }
       ]
     },
@@ -1547,103 +1538,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Blog/index either helps hiring or stays minimal honestly.",
-          "exit_criteria": "Artifact or status update proves step 1 for T15"
+          "action": "Read blog.md and _posts/",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T15"
+          "action": "Count posts and recency",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T15"
+          "action": "Run DI-15 (ignore vs one post vs index only)",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-15 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T15"
+          "action": "If ignore: leave posts untouched",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T15"
+          "action": "If index only: tighten blog.md lede for hiring",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T15"
+          "action": "Never generate posts unless Solomon asks",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T15"
+          "action": "Ensure nav Writing link still honest",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T15"
+          "action": "Write audit/writing.md",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T15"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T15"
+          "action": "Commit only approved copy",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T15"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T15"
+          "action": "Check /blog/ live plan",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T15"
+          "action": "No empty-state embarrassment",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T15"
+          "action": "Optional: link best README as writing proxy",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T15"
+          "action": "Confirm CLAUDE rule respected",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T15"
+          "action": "Skim nav",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T15"
+          "action": "Fix",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T15"
+          "action": "Document decision",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T15"
+          "action": "Residual notes",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T15 complete only after DI-15 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T15"
+          "action": "Mark T15 complete after DI-15 lock",
+          "exit_criteria": "Evidence in repo or decision log for T15 step 20"
         }
       ]
     },
@@ -1656,103 +1647,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: No dead CTAs; /card/ and resume PDF resolve.",
-          "exit_criteria": "Artifact or status update proves step 1 for T16"
+          "action": "Crawl internal links from home/about/projects/resume",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T16"
+          "action": "Check /card/ redirect target",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T16"
+          "action": "Check resume PDF HTTP status",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-16 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T16"
+          "action": "Check each project live/source link",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T16"
+          "action": "Run DI-16 on failure policy",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T16"
+          "action": "Fix broken internal links",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T16"
+          "action": "Fix or remove dead external links",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T16"
+          "action": "Verify 404 page copy still on-brand",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T16"
+          "action": "Write audit/link-qa.md with status table",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T16"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T16"
+          "action": "Commit fixes",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T16"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T16"
+          "action": "Re-crawl",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T16"
+          "action": "Ensure courtrules.app still 200 or note",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T16"
+          "action": "Ensure GitHub repos resolve",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T16"
+          "action": "Fix leftovers",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T16"
+          "action": "Automate script if useful",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T16"
+          "action": "Commit script",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T16"
+          "action": "Final crawl clean",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T16 complete only after DI-16 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T16"
+          "action": "Mark T16 complete after DI-16 lock",
+          "exit_criteria": "Evidence in repo or decision log for T16 step 20"
         }
       ]
     },
@@ -1765,103 +1756,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Document and verify a 90s hiring-manager path.",
-          "exit_criteria": "Artifact or status update proves step 1 for T17"
+          "action": "Draft 90s path: Home hero \u2192 metrics \u2192 top project \u2192 about \u2192 contact",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T17"
+          "action": "Run DI-17 to approve path",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T17"
+          "action": "Stopwatch walkthrough on live site",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-17 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T17"
+          "action": "Note friction points",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T17"
+          "action": "Propose minimal fixes (gated by other DIs)",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T17"
+          "action": "Write docs/hire-ready/audit/skim-90s.md",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T17"
+          "action": "Add expected spoken pitch lines from site facts only",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T17"
+          "action": "Ensure path uses locked positioning",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T17"
+          "action": "Record second stopwatch after fixes",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T17"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T17"
+          "action": "Commit audit doc",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T17"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T17"
+          "action": "Optional short screen recording artifact",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T17"
+          "action": "Store under docs/hire-ready/audit/",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T17"
+          "action": "Confirm path works mobile",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T17"
+          "action": "Adjust order notes",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T17"
+          "action": "Share path in PR body",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T17"
+          "action": "Retest once",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T17"
+          "action": "Accept timing <=90s or document miss",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T17 complete only after DI-17 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T17"
+          "action": "Mark T17 complete after DI-17 lock",
+          "exit_criteria": "Evidence in repo or decision log for T17 step 20"
         }
       ]
     },
@@ -1874,103 +1865,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Reusable outreach copy sourced only from site numbers.",
-          "exit_criteria": "Artifact or status update proves step 1 for T18"
+          "action": "Extract approved metrics from home/cards",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T18"
+          "action": "Run DI-18 tone interview",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T18"
+          "action": "Draft cold email (short) using CourtRules/ARDA/PhishGuard facts",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-18 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T18"
+          "action": "Draft LinkedIn About snippet matching site thesis",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T18"
+          "action": "Draft 2 follow-up lines",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T18"
+          "action": "No unsourced claims",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T18"
+          "action": "No em dashes",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T18"
+          "action": "No GPA",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T18"
+          "action": "Save under docs/hire-ready/outreach/",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T18"
+          "action": "Cross-link from README",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T18"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T18"
+          "action": "Commit outreach kit",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T18"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T18"
+          "action": "Self-review as recruiter",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T18"
+          "action": "Tighten once",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T18"
+          "action": "Confirm email CTA matches mailto",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T18"
+          "action": "Optional: calendar availability line",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T18"
+          "action": "Mark kit provisional until DI-01 locked if needed",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T18"
+          "action": "Final read",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T18 complete only after DI-18 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T18"
+          "action": "Mark T18 complete after DI-18 lock",
+          "exit_criteria": "Evidence in repo or decision log for T18 step 20"
         }
       ]
     },
@@ -1983,103 +1974,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: main build green; live site matches branch intent.",
-          "exit_criteria": "Artifact or status update proves step 1 for T19"
+          "action": "Assemble launch checklist from C01-C10",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T19"
+          "action": "Run DI-19 launch interview",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T19"
+          "action": "Ensure PR is merge-ready",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-19 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T19"
+          "action": "Confirm Pages build after merge plan",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T19"
+          "action": "Hit live URLs for home/projects/about/resume",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T19"
+          "action": "Compare live hero to intended copy",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T19"
+          "action": "Verify PDF download",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T19"
+          "action": "Verify theme toggle still works",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T19"
+          "action": "Write audit/launch.md",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T19"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T19"
+          "action": "Tag residual follow-ups as T20",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T19"
+          "action": "Confirm CNAME intact",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T19"
+          "action": "Confirm no accidental school-data content",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T19"
+          "action": "Confirm no em dashes introduced",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T19"
+          "action": "Final grep banned skills",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T19"
+          "action": "Final grep internship language",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T19"
+          "action": "Sign off checklist",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T19"
+          "action": "Merge only after Solomon approval",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T19"
+          "action": "Post-merge live verify",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T19 complete only after DI-19 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T19"
+          "action": "Mark T19 complete after DI-19 lock + live verify",
+          "exit_criteria": "Evidence in repo or decision log for T19 step 20"
         }
       ]
     },
@@ -2092,103 +2083,103 @@
       "steps": [
         {
           "step": 1,
-          "action": "Restate goal: Activity, resume sync, and proof stay current.",
-          "exit_criteria": "Artifact or status update proves step 1 for T20"
+          "action": "Document weekly-activity workflow already in repo",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 1"
         },
         {
           "step": 2,
-          "action": "List current repo files that own this outcome",
-          "exit_criteria": "Artifact or status update proves step 2 for T20"
+          "action": "Run DI-20 on cadence",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 2"
         },
         {
           "step": 3,
-          "action": "Capture baseline screenshots or metrics",
-          "exit_criteria": "Artifact or status update proves step 3 for T20"
+          "action": "Add maintenance checklist markdown",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 3"
         },
         {
           "step": 4,
-          "action": "Complete decision interview DI-20 before implementing",
-          "exit_criteria": "Artifact or status update proves step 4 for T20"
+          "action": "Include resume sync reminder",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 4"
         },
         {
           "step": 5,
-          "action": "Write acceptance criteria checklist",
-          "exit_criteria": "Artifact or status update proves step 5 for T20"
+          "action": "Include pin slate check",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 5"
         },
         {
           "step": 6,
-          "action": "Inventory CLAUDE.md constraints that apply",
-          "exit_criteria": "Artifact or status update proves step 6 for T20"
+          "action": "Include link crawl reminder",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 6"
         },
         {
           "step": 7,
-          "action": "Draft the smallest change set",
-          "exit_criteria": "Artifact or status update proves step 7 for T20"
+          "action": "Include metrics freshness check",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 7"
         },
         {
           "step": 8,
-          "action": "Implement change set on feature branch",
-          "exit_criteria": "Artifact or status update proves step 8 for T20"
+          "action": "Avoid hand-editing activity JSON",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 8"
         },
         {
           "step": 9,
-          "action": "Self-review for em dashes, GPA, internship language, banned skills",
-          "exit_criteria": "Artifact or status update proves step 9 for T20"
+          "action": "Write audit/maintenance.md",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 9"
         },
         {
           "step": 10,
-          "action": "Cross-check every number against README/resume sources",
-          "exit_criteria": "Artifact or status update proves step 10 for T20"
+          "action": "Update status.json",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 10"
         },
         {
           "step": 11,
-          "action": "Update related surfaces (home/about/projects/resume) for consistency",
-          "exit_criteria": "Artifact or status update proves step 11 for T20"
+          "action": "Commit checklist",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 11"
         },
         {
           "step": 12,
-          "action": "Build or smoke-check locally if feasible",
-          "exit_criteria": "Artifact or status update proves step 12 for T20"
+          "action": "Push",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 12"
         },
         {
           "step": 13,
-          "action": "Mobile pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 13 for T20"
+          "action": "Optional calendar reminder notes for Solomon",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 13"
         },
         {
           "step": 14,
-          "action": "Accessibility pass for this surface",
-          "exit_criteria": "Artifact or status update proves step 14 for T20"
+          "action": "Verify activity section renders",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 14"
         },
         {
           "step": 15,
-          "action": "Record before/after evidence in docs/hire-ready/audit/",
-          "exit_criteria": "Artifact or status update proves step 15 for T20"
+          "action": "Note token requirements ACTIVITY_TOKEN",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 15"
         },
         {
           "step": 16,
-          "action": "Update plan/status.json steps_done",
-          "exit_criteria": "Artifact or status update proves step 16 for T20"
+          "action": "Confirm log page healthy",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 16"
         },
         {
           "step": 17,
-          "action": "Peer/self hiring-manager skim of the changed path",
-          "exit_criteria": "Artifact or status update proves step 17 for T20"
+          "action": "Residual backlog list",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 17"
         },
         {
           "step": 18,
-          "action": "Commit with descriptive message (no em dashes)",
-          "exit_criteria": "Artifact or status update proves step 18 for T20"
+          "action": "Hand off ownership",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 18"
         },
         {
           "step": 19,
-          "action": "Push and refresh PR notes",
-          "exit_criteria": "Artifact or status update proves step 19 for T20"
+          "action": "Confirm C10 still green",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 19"
         },
         {
           "step": 20,
-          "action": "Mark T20 complete only after DI-20 is locked",
-          "exit_criteria": "Artifact or status update proves step 20 for T20"
+          "action": "Mark T20 complete after DI-20 lock",
+          "exit_criteria": "Evidence in repo or decision log for T20 step 20"
         }
       ]
     }
@@ -2212,37 +2203,37 @@
     {
       "id": "C04",
       "title": "Top 4 project cards proof-dense",
-      "done_when": "each card has Problem/Built/Result with sourced facts"
+      "done_when": "each selected card has sourced fact rows"
     },
     {
       "id": "C05",
       "title": "All project pages evidence-clean",
-      "done_when": "no unsourced numbers; evidence tables present"
+      "done_when": "audit/project-evidence.md clean"
     },
     {
       "id": "C06",
       "title": "Resume PDF + page synced",
-      "done_when": "sync script output or verified match to canonical"
+      "done_when": "audit/resume-sync.md verified"
     },
     {
       "id": "C07",
       "title": "Contact path <2 clicks from home",
-      "done_when": "CTA audit screenshot"
+      "done_when": "audit/contact-path.md"
     },
     {
       "id": "C08",
-      "title": "Live Lighthouse/a11y bar met",
-      "done_when": "recorded scores for home + projects"
+      "title": "Live perf/a11y bar met",
+      "done_when": "audit/perf.md and audit/a11y.md"
     },
     {
       "id": "C09",
       "title": "Outreach kit ready",
-      "done_when": "email + LinkedIn blurb files exist"
+      "done_when": "docs/hire-ready/outreach/ files exist"
     },
     {
       "id": "C10",
       "title": "Live site hire-ready verified",
-      "done_when": "solomonsmith.dev matches accepted PR; checklist green"
+      "done_when": "audit/launch.md green on solomonsmith.dev"
     }
   ]
 }

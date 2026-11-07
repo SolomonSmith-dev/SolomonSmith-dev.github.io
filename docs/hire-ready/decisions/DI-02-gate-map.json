@@ -1,7 +1,7 @@
 {
   "id": "DI-02",
   "title": "Gate map",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,11 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "approve_gate_system": "yes",
+    "provisional_audits_allowed": "yes_without_public_copy_edits",
+    "lock_owner": "Solomon"
+  },
+  "note": "Tooling landed; Solomon should lock DI-02. Public copy still blocked on DI-01.",
+  "updated_at": "2026-11-07"
 }

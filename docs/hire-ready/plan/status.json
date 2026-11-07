@@ -2,20 +2,20 @@
   "active_gate": "DI-01",
   "tasks": {
     "T01": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 8
     },
     "T02": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 16
     },
     "T03": {
       "status": "pending",
       "steps_done": 0
     },
     "T04": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 6
     },
     "T05": {
       "status": "pending",
@@ -62,16 +62,16 @@
       "steps_done": 0
     },
     "T16": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 12
     },
     "T17": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 8
     },
     "T18": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     },
     "T19": {
       "status": "pending",
@@ -84,14 +84,15 @@
   },
   "completion_subtasks": {
     "C01": "pending",
-    "C02": "pending",
+    "C02": "partial",
     "C03": "pending",
     "C04": "pending",
     "C05": "pending",
     "C06": "pending",
     "C07": "pending",
     "C08": "pending",
-    "C09": "pending",
+    "C09": "draft_provisional",
     "C10": "pending"
-  }
+  },
+  "notes": "DI-01 still open. Specialized 20x20 plans + link QA clean + outreach drafts ready. No public copy edits yet."
 }

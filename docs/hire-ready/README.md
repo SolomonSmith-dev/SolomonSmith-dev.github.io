@@ -24,3 +24,18 @@ Goal: make https://solomonsmith.dev convert hiring managers ASAP for full-time A
 ```bash
 python3 docs/hire-ready/scripts/generate_plan.py
 ```
+
+## Tooling
+
+```bash
+python3 docs/hire-ready/scripts/generate_plan.py
+python3 docs/hire-ready/scripts/validate_decisions.py --require DI-01
+python3 docs/hire-ready/scripts/link_qa.py
+```
+
+## Provisional artifacts (no public site edits yet)
+
+- `audit/link-qa.md` -- live links currently clean
+- `audit/proof-density.md` -- all 7 cards have fact rows
+- `audit/skim-90s.md` -- employer path draft
+- `outreach/` -- cold email + LinkedIn blurb drafts
