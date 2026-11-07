@@ -1,7 +1,7 @@
 {
   "id": "DI-15",
   "title": "Narrative",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T14"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Narrative tone confirm?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Executive summary length?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Name individuals (no)?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "tone": "technical_audit_receipts",
+    "exec_summary_length": "short",
+    "name_individuals": "no"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Case file draft published under provisional.",
+  "updated_at": "2026-11-07"
 }

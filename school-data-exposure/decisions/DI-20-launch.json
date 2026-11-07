@@ -1,7 +1,7 @@
 {
   "id": "DI-20",
   "title": "Launch",
-  "status": "open",
+  "status": "blocked",
   "owner": "Solomon Smith",
   "blocks": [
     "T19",
@@ -10,18 +10,23 @@
   "questions": [
     {
       "q": "Launch now?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Portfolio card now or later?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Public announcement channel?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "launch_now": "no",
+    "portfolio_card": "draft_only_after_review",
+    "announce": "private_first"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Launch blocked.",
+  "updated_at": "2026-11-07"
 }

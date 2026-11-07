@@ -1,7 +1,7 @@
 {
   "id": "DI-12",
   "title": "Request Send",
-  "status": "open",
+  "status": "blocked",
   "owner": "Solomon Smith",
   "blocks": [
     "T11"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Send CPRA requests now or defer?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Which request pack first?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Publish request text?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "send_now": "no",
+    "pack_ready": "yes",
+    "publish_request_text": "yes_as_template"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Pack ready in toolkit/cpra-request-pack.md; send blocked until Solomon locks.",
+  "updated_at": "2026-11-07"
 }

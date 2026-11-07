@@ -1,7 +1,7 @@
 {
   "id": "DI-14",
   "title": "Finding Bar",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T13"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Minimum claim grade to publish?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Minimum findings for launch?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Challenge SLA days?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "min_grade_to_publish": "Documented",
+    "min_findings_launch": 5,
+    "challenge_sla_days": 14
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "11 Documented findings currently exceed launch minimum.",
+  "updated_at": "2026-11-07"
 }

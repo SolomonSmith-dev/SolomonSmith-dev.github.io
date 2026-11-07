@@ -10,9 +10,17 @@ import re
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "evidence" / "sources"
+
+
+def redact_url(url: str) -> str:
+    """Drop query/fragment so transient tokens never land in git."""
+    parsed = urlparse(url)
+    return urlunparse((parsed.scheme, parsed.netloc, parsed.path, "", "", ""))
+
 
 
 def slugify(url: str) -> str:
@@ -45,8 +53,8 @@ def main() -> int:
         "id": eid,
         "title": args.title,
         "type": args.type,
-        "url": args.url,
-        "final_url": final_url,
+        "url": redact_url(args.url),
+        "final_url": redact_url(final_url),
         "retrieved_at": retrieved,
         "content_type": content_type,
         "sha256": digest,

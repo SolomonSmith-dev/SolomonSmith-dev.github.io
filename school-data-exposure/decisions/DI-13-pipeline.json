@@ -1,7 +1,7 @@
 {
   "id": "DI-13",
   "title": "Pipeline Freeze",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T12"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Freeze evidence schema v0.1?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Require sha256 always?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Allow PDF binary storage?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "freeze_schema_v01": "yes",
+    "require_sha256": "yes",
+    "store_pdf_binaries": "no_metadata_only"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Pipeline in use; metadata-only storage.",
+  "updated_at": "2026-11-07"
 }

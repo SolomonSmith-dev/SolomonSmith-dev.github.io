@@ -1,0 +1,15 @@
+{
+  "id": "FIND-014",
+  "title": "Instructure product privacy applies when schools use Canvas products",
+  "claim_grade": "Documented",
+  "severity": "S1",
+  "likelihood": "L3",
+  "summary": "Instructure's Product Privacy policy describes processing for academic institutions using its products, states it does not sell or rent personal information to third parties, and discusses cookies/similar tech and professional information categories. CSUSB's Canvas deployment therefore sits under both campus notices and Instructure's product privacy regime.",
+  "evidence_ids": [
+    "SRC-www-instructure-com-policies-privacy-b4b515d7",
+    "SRC-www-csusb-edu-canvas-fe4f6ffe"
+  ],
+  "student_action": "Read Instructure product privacy alongside campus FERPA pages.",
+  "school_action": "Surface Instructure privacy + subprocessors links from the Canvas help menu.",
+  "status": "open"
+}

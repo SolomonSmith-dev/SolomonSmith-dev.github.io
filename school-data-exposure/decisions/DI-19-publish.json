@@ -1,7 +1,7 @@
 {
   "id": "DI-19",
   "title": "Publish Gate",
-  "status": "open",
+  "status": "blocked",
   "owner": "Solomon Smith",
   "blocks": [
     "T18",
@@ -10,18 +10,23 @@
   "questions": [
     {
       "q": "Publish gate checklist complete?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Any findings to withhold?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Rollback owner?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "ready": "not_until_DI01_locked_and_demo_review",
+    "withhold": "Alleged_only_items",
+    "rollback_owner": "Solomon"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Publish gate awaits Solomon lock of earlier DIs + review.",
+  "updated_at": "2026-11-07"
 }

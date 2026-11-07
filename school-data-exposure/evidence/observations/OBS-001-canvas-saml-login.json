@@ -1,0 +1,14 @@
+{
+  "id": "OBS-001",
+  "title": "Public Canvas SAML login interstitial observation",
+  "method": "unauthenticated GET; follow redirects; redact query strings",
+  "url": "https://csusb.instructure.com/login/saml",
+  "hosts_referenced": [
+    "csusb.instructure.com",
+    "*.login.instructure.com",
+    "sso.canvaslms.com"
+  ],
+  "redirect_pattern": "csusb.instructure.com/login/saml -> Instructure Identity (*.login.instructure.com) involving sso.canvaslms.com callback",
+  "credentials_used": false,
+  "note": "Documents vendor-hosted auth for Canvas. No passwords entered."
+}

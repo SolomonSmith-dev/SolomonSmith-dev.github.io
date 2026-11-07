@@ -1,7 +1,7 @@
 {
   "id": "DI-11",
   "title": "Identity Publish",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T10"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Publish SSO hop diagram?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Discuss SAML attributes generally?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Any identity findings blocked?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "publish_sso_diagram": "yes_public_hops_only",
+    "discuss_saml_generally": "yes",
+    "blocked_findings": "none_for_public_hops"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Based on OBS-001 + FIND-012; no credential use.",
+  "updated_at": "2026-11-07"
 }

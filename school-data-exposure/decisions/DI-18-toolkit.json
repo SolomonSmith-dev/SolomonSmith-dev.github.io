@@ -1,7 +1,7 @@
 {
   "id": "DI-18",
   "title": "Toolkit Scope",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T17"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Toolkit for any school or CSUSB-only examples?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Include phone scripts?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "License?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "scope": "any_school_checklists_with_CSUSB_examples",
+    "phone_scripts": "no",
+    "license": "same_as_repo"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Toolkit checklist + CPRA templates present.",
+  "updated_at": "2026-11-07"
 }

@@ -1,0 +1,13 @@
+{
+  "id": "SRC-www-instructure-com-policies-privacy-b4b515d7",
+  "title": "Instructure Product Privacy Policy",
+  "type": "vendor",
+  "url": "https://www.instructure.com/policies/privacy",
+  "final_url": "https://www.instructure.com/policies/product-privacy-policy",
+  "retrieved_at": "2026-11-07T12:59:11Z",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "b4b515d7bfd7282d6402a1bdf1eca00e13c73c1821fdba2f19730a1e415e3931",
+  "bytes": 169402,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

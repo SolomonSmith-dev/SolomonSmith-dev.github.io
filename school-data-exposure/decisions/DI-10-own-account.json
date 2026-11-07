@@ -1,7 +1,7 @@
 {
   "id": "DI-10",
   "title": "Own-Account Audit",
-  "status": "open",
+  "status": "blocked",
   "owner": "Solomon Smith",
   "blocks": [
     "T09"
@@ -9,18 +9,27 @@
   "questions": [
     {
       "q": "Approve own-account capture method?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Which portals to audit first?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Publish redacted HAR summaries?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "capture_method": "devtools_HAR_redacted",
+    "portals_first": [
+      "Canvas",
+      "myCoyote"
+    ],
+    "publish_redacted_summaries": "yes_after_review",
+    "blocked_reason": "Requires Solomon interactive login; agent cannot use credentials"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Field work blocked until Solomon runs or authorizes an own-account session capture.",
+  "updated_at": "2026-11-07"
 }

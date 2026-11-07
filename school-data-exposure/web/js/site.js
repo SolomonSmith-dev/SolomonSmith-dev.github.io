@@ -157,6 +157,14 @@ function renderMap(graph) {
     line.setAttribute("stroke-width", "2");
     line.setAttribute("opacity", e.confidence === "Alleged" ? "0.45" : "0.85");
     svg.appendChild(line);
+    const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", (a.x + b.x) / 2);
+    label.setAttribute("y", (a.y + b.y) / 2 - 6);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("fill", "#9aa79f");
+    label.setAttribute("font-size", "10");
+    label.textContent = e.type || "";
+    svg.appendChild(label);
   }
 
   for (const n of nodes) {

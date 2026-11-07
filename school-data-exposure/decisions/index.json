@@ -90,7 +90,7 @@
       "blocks": [
         "T09"
       ],
-      "status": "open"
+      "status": "blocked"
     },
     {
       "id": "DI-11",
@@ -99,7 +99,7 @@
       "blocks": [
         "T10"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-12",
@@ -108,7 +108,7 @@
       "blocks": [
         "T11"
       ],
-      "status": "open"
+      "status": "blocked"
     },
     {
       "id": "DI-13",
@@ -117,7 +117,7 @@
       "blocks": [
         "T12"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-14",
@@ -126,7 +126,7 @@
       "blocks": [
         "T13"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-15",
@@ -135,7 +135,7 @@
       "blocks": [
         "T14"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-16",
@@ -144,7 +144,7 @@
       "blocks": [
         "T15"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-17",
@@ -153,7 +153,7 @@
       "blocks": [
         "T16"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-18",
@@ -162,7 +162,7 @@
       "blocks": [
         "T17"
       ],
-      "status": "open"
+      "status": "provisional"
     },
     {
       "id": "DI-19",
@@ -172,7 +172,7 @@
         "T18",
         "C08"
       ],
-      "status": "open"
+      "status": "blocked"
     },
     {
       "id": "DI-20",
@@ -182,7 +182,7 @@
         "T19",
         "C10"
       ],
-      "status": "open"
+      "status": "blocked"
     },
     {
       "id": "DI-21",

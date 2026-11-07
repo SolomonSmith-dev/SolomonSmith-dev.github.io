@@ -1,5 +1,5 @@
 {
-  "version": "0.2-provisional",
+  "version": "0.3-provisional",
   "decision_gate": "DI-07",
   "note": "Vendors/systems named only from public CSUSB pages. DI-07 still required before treating inventory as launch-frozen.",
   "vendors": [
@@ -8,7 +8,10 @@
       "name": "Google Analytics",
       "class": "analytics",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/about-csusb/privacy-and-security-notice"],
+      "sources": [
+        "https://www.csusb.edu/about-csusb/privacy-and-security-notice",
+        "https://support.google.com/analytics/answer/6004245"
+      ],
       "notes": "Named in Privacy and Security Notice for Sites analytics."
     },
     {
@@ -16,7 +19,11 @@
       "name": "Instructure Canvas",
       "class": "lms",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/canvas", "https://csusb.instructure.com/login/saml"],
+      "sources": [
+        "https://www.csusb.edu/canvas",
+        "https://csusb.instructure.com/login/saml",
+        "https://www.instructure.com/policies/privacy"
+      ],
       "notes": "Campus LMS; SAML login hosted on instructure.com."
     },
     {
@@ -24,7 +31,9 @@
       "name": "Turnitin",
       "class": "integrity",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"],
+      "sources": [
+        "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"
+      ],
       "notes": "Listed on Canvas Learning Apps for integrity/plagiarism/grading."
     },
     {
@@ -32,7 +41,10 @@
       "name": "Respondus LockDown Browser and Monitor",
       "class": "proctoring",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"],
+      "sources": [
+        "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+        "https://web.respondus.com/privacy-policy/"
+      ],
       "notes": "Webcam auto-proctoring capability described on public learning-apps page."
     },
     {
@@ -40,7 +52,10 @@
       "name": "Zoom",
       "class": "collaboration",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps", "https://csusb.zoom.us/j/9095377677"],
+      "sources": [
+        "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+        "https://csusb.zoom.us/j/9095377677"
+      ],
       "notes": "Listed among Canvas learning apps; also used in ITS support context."
     },
     {
@@ -48,7 +63,10 @@
       "name": "DUO Multi-Factor Authentication",
       "class": "identity",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements"],
+      "sources": [
+        "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+        "https://duo.com/legal/privacy"
+      ],
       "notes": "Campus MFA requirement and setup guides are public."
     },
     {
@@ -56,7 +74,10 @@
       "name": "myCoyote portal / mobile app",
       "class": "sis_portal",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/its/support/technology-support/about-mycoyote", "https://www.csusb.edu/its/services/portal-and-mobile-app"],
+      "sources": [
+        "https://www.csusb.edu/its/support/technology-support/about-mycoyote",
+        "https://www.csusb.edu/its/services/portal-and-mobile-app"
+      ],
       "notes": "Primary student portal surface per ITS docs."
     },
     {
@@ -64,7 +85,9 @@
       "name": "Coyote OneCard",
       "class": "campus_card",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/its/support/technology-support/coyote-onecard"],
+      "sources": [
+        "https://www.csusb.edu/its/support/technology-support/coyote-onecard"
+      ],
       "notes": "Campus card system documented by ITS."
     },
     {
@@ -72,7 +95,9 @@
       "name": "Campus Wireless Network (WiFi)",
       "class": "network",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/its/support/technology-support/wireless-network-wifi-access-csusb"],
+      "sources": [
+        "https://www.csusb.edu/its/support/technology-support/wireless-network-wifi-access-csusb"
+      ],
       "notes": "Public WiFi access documentation; telemetry details pending own-account/network policy review."
     },
     {
@@ -80,7 +105,9 @@
       "name": "CSUSB Information Technology Services",
       "class": "campus_it",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/its"],
+      "sources": [
+        "https://www.csusb.edu/its"
+      ],
       "notes": "Campus IT operator."
     },
     {
@@ -88,7 +115,9 @@
       "name": "CSUSB Registrar / Student Records",
       "class": "sis_records",
       "confidence": "Documented",
-      "sources": ["https://www.csusb.edu/registrar"],
+      "sources": [
+        "https://www.csusb.edu/registrar"
+      ],
       "notes": "Records administration surface."
     }
   ]

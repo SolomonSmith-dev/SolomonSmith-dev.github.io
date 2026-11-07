@@ -1,0 +1,13 @@
+{
+  "id": "SRC-policies-google-com-privacy-e0448244",
+  "title": "Google Privacy Policy",
+  "type": "vendor",
+  "url": "https://policies.google.com/privacy",
+  "final_url": "https://policies.google.com/privacy",
+  "retrieved_at": "2026-11-07T12:59:12Z",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "e044824449500b3cdbd06db4cf7cdd9c446d28be84f20e0fb9b2ced88a82b572",
+  "bytes": 665777,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

@@ -1,7 +1,7 @@
 {
-  "sources": 19,
-  "findings": 11,
-  "documented_or_verified": 11,
+  "sources": 27,
+  "findings": 14,
+  "documented_or_verified": 14,
   "errors": [],
   "warnings": [],
   "pass": true

@@ -1,0 +1,12 @@
+{
+  "id": "FIND-012",
+  "title": "Canvas login hands the browser to Instructure Identity / Canvas SSO hosts",
+  "claim_grade": "Documented",
+  "severity": "S2",
+  "likelihood": "L3",
+  "summary": "An unauthenticated request to https://csusb.instructure.com/login/saml redirects into Instructure-hosted identity infrastructure (*.login.instructure.com) with callback involvement of sso.canvaslms.com. Student authentication for coursework therefore begins on vendor-controlled domains, not csusb.edu. Transient OAuth/JWT query parameters were redacted from stored evidence.",
+  "evidence_ids": ["SRC-csusb-instructure-com-login-saml-01aa4673"],
+  "student_action": "Expect campus credentials to be checked in a vendor identity flow; review browser address bar before entering passwords.",
+  "school_action": "Publish a plain-language SSO hop diagram naming every domain in the login chain.",
+  "status": "open"
+}

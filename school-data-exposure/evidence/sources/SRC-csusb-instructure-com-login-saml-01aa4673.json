@@ -1,0 +1,19 @@
+{
+  "id": "SRC-csusb-instructure-com-login-saml-01aa4673",
+  "title": "CSUSB Canvas SAML login page",
+  "type": "other",
+  "url": "https://csusb.instructure.com/login/saml",
+  "final_url": "https://f0a833d2-f185-465e-80f3-c70925e7a00e.pdx.login.instructure.com/",
+  "retrieved_at": "2026-11-07T12:59:11Z",
+  "content_type": "text/html",
+  "sha256": "01aa4673a47e0469e9c17caae4a1d10fdd72ea0d2b66dcb04fd1953b71230d0c",
+  "bytes": 929,
+  "notes": "Query string redacted from final_url (contained transient OAuth/JWT state). Unauthenticated observation only.",
+  "claim_use": "Documented source candidate",
+  "final_url_hosts": [
+    "f0a833d2-f185-465e-80f3-c70925e7a00e.pdx.login.instructure.com",
+    "sso.canvaslms.com",
+    "csusb.instructure.com"
+  ],
+  "redirect_pattern": "csusb.instructure.com/login/saml -> *.login.instructure.com (Instructure Identity) with callback host sso.canvaslms.com"
+}

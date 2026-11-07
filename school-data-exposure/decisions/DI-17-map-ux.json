@@ -1,7 +1,7 @@
 {
   "id": "DI-17",
   "title": "Map UX",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T16"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Map library/approach?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Deep links required?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "No-JS fallback required?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "approach": "svg_js",
+    "deep_links": "optional",
+    "nojs_fallback": "case_file_markdown"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Map renders from graph.json.",
+  "updated_at": "2026-11-07"
 }

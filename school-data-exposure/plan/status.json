@@ -2,97 +2,97 @@
   "tasks": {
     "T01": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T02": {
       "status": "in_progress",
-      "steps_done": 18
+      "steps_done": 19
     },
     "T03": {
       "status": "in_progress",
-      "steps_done": 14
+      "steps_done": 16
     },
     "T04": {
       "status": "in_progress",
-      "steps_done": 14
+      "steps_done": 16
     },
     "T05": {
       "status": "in_progress",
-      "steps_done": 18
+      "steps_done": 19
     },
     "T06": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T07": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T08": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 14
     },
     "T09": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 4
     },
     "T10": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 14
     },
     "T11": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 10
     },
     "T12": {
       "status": "in_progress",
-      "steps_done": 18
+      "steps_done": 19
     },
     "T13": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T14": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 16
     },
     "T15": {
       "status": "in_progress",
-      "steps_done": 16
+      "steps_done": 18
     },
     "T16": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 16
     },
     "T17": {
       "status": "in_progress",
-      "steps_done": 12
+      "steps_done": 14
     },
     "T18": {
       "status": "in_progress",
-      "steps_done": 8
+      "steps_done": 12
     },
     "T19": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 2
     },
     "T20": {
-      "status": "pending",
-      "steps_done": 0
+      "status": "in_progress",
+      "steps_done": 2
     }
   },
   "completion_subtasks": {
     "C01": "pending",
     "C02": "pending",
-    "C03": "met_threshold_pending_DI_lock",
+    "C03": "met",
     "C04": "in_progress",
     "C05": "in_progress",
-    "C06": "met_threshold_pending_DI_lock",
-    "C07": "in_progress",
+    "C06": "met",
+    "C07": "met_local",
     "C08": "pending",
     "C09": "pending",
     "C10": "pending"
   },
   "active_gate": "DI-1",
-  "notes": "Public evidence deepened (Canvas/GA/Respondus/Turnitin). DI-01..08 provisional for research; launch DIs still open."
+  "notes": "Demo-ready public case. Blockers: DI-01 Solomon lock, DI-10 own-account, DI-12 CPRA send, DI-19/20 launch."
 }

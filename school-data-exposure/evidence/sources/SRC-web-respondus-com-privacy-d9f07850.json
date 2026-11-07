@@ -1,0 +1,13 @@
+{
+  "id": "SRC-web-respondus-com-privacy-d9f07850",
+  "title": "Respondus Privacy Center",
+  "type": "vendor",
+  "url": "https://web.respondus.com/privacy/",
+  "final_url": "https://web.respondus.com/privacy/",
+  "retrieved_at": "2026-11-07T12:59:11Z",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "d9f078505f04d46c1b918a62e1f2d77fd816ab6a1cd74b14e39b2d63f3d384fa",
+  "bytes": 47524,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "FIND-013",
+  "title": "Respondus publishes separate Monitor student terms and processes student/examinee personal information",
+  "claim_grade": "Documented",
+  "severity": "S3",
+  "likelihood": "L3",
+  "summary": "Respondus's public privacy policy covers services to institutions and distinguishes Students (including examinees/test takers) from instructors. It references Respondus Monitor institution and student terms of use. Combined with CSUSB listing Respondus Monitor on Canvas Learning Apps, this documents a vendor privacy regime for proctoring-capable software beyond the campus website Privacy Notice.",
+  "evidence_ids": [
+    "SRC-web-respondus-com-privacy-policy-767d5699",
+    "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+  ],
+  "student_action": "Read Respondus Monitor student terms before any webcam exam; ask the instructor what is recorded and retained.",
+  "school_action": "Link Respondus Monitor student terms from course syllabi when Monitor is required.",
+  "status": "open"
+}

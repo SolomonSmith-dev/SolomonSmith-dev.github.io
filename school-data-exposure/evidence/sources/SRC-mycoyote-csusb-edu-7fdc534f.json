@@ -1,0 +1,13 @@
+{
+  "id": "SRC-mycoyote-csusb-edu-7fdc534f",
+  "title": "myCoyote weblogon interstitial",
+  "type": "other",
+  "url": "https://mycoyote.csusb.edu/",
+  "final_url": "https://idp.csusb.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1",
+  "retrieved_at": "2026-11-07T12:59:13Z",
+  "content_type": "text/html;charset=utf-8",
+  "sha256": "7fdc534f37f55e40a2efce2f6c160411a5ba0c70b6515a795aec23f4adc11d7c",
+  "bytes": 2054,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}

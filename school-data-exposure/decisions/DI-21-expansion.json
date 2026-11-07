@@ -9,18 +9,19 @@
   "questions": [
     {
       "q": "Next school target?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Open contributions?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Success metric?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
   "answers": {},
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Not started.",
+  "updated_at": "2026-11-07"
 }

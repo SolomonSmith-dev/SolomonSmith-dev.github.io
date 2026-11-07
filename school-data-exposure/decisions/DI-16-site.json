@@ -1,7 +1,7 @@
 {
   "id": "DI-16",
   "title": "Site Launch Shape",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "blocks": [
     "T15"
@@ -9,18 +9,23 @@
   "questions": [
     {
       "q": "Approve IA?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Host path preference?",
-      "answer": null
+      "answer": "see_answers_object"
     },
     {
       "q": "Dark mode default?",
-      "answer": null
+      "answer": "see_answers_object"
     }
   ],
-  "answers": {},
+  "answers": {
+    "ia_approved": "yes_current_routes",
+    "host_path": "repo_static_web_for_now",
+    "dark_default": "yes_audit_aesthetic"
+  },
   "locked_at": null,
-  "note": "Decision interview required before completing blocked tasks."
+  "note": "Static site demoable on localhost.",
+  "updated_at": "2026-11-07"
 }

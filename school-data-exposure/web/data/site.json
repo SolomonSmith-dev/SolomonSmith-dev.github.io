@@ -4,6 +4,103 @@
   "disclaimer": "Not legal advice. Public-source research plus optional own-account audit only. No unauthorized access.",
   "sources": [
     {
+      "id": "SRC-csusb-instructure-com-login-saml-01aa4673",
+      "title": "CSUSB Canvas SAML login page",
+      "type": "other",
+      "url": "https://csusb.instructure.com/login/saml",
+      "final_url": "https://f0a833d2-f185-465e-80f3-c70925e7a00e.pdx.login.instructure.com/",
+      "retrieved_at": "2026-11-07T12:59:11Z",
+      "content_type": "text/html",
+      "sha256": "01aa4673a47e0469e9c17caae4a1d10fdd72ea0d2b66dcb04fd1953b71230d0c",
+      "bytes": 929,
+      "notes": "Query string redacted from final_url (contained transient OAuth/JWT state). Unauthenticated observation only.",
+      "claim_use": "Documented source candidate",
+      "final_url_hosts": [
+        "f0a833d2-f185-465e-80f3-c70925e7a00e.pdx.login.instructure.com",
+        "sso.canvaslms.com",
+        "csusb.instructure.com"
+      ],
+      "redirect_pattern": "csusb.instructure.com/login/saml -> *.login.instructure.com (Instructure Identity) with callback host sso.canvaslms.com"
+    },
+    {
+      "id": "SRC-duo-com-legal-privacy-4f7811e9",
+      "title": "Cisco Duo Privacy Notice",
+      "type": "vendor",
+      "url": "https://duo.com/legal/privacy",
+      "final_url": "https://duo.com/legal/cisco-online-privacy-statement",
+      "retrieved_at": "2026-11-07T12:59:26Z",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "4f7811e9ec77a4a88731f936e6b25eed2ce9f0ca15bdac1581ff4b37352567df",
+      "bytes": 65492,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-mycoyote-csusb-edu-7fdc534f",
+      "title": "myCoyote weblogon interstitial",
+      "type": "other",
+      "url": "https://mycoyote.csusb.edu/",
+      "final_url": "https://idp.csusb.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1",
+      "retrieved_at": "2026-11-07T12:59:13Z",
+      "content_type": "text/html;charset=utf-8",
+      "sha256": "7fdc534f37f55e40a2efce2f6c160411a5ba0c70b6515a795aec23f4adc11d7c",
+      "bytes": 2054,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-policies-google-com-privacy-e0448244",
+      "title": "Google Privacy Policy",
+      "type": "vendor",
+      "url": "https://policies.google.com/privacy",
+      "final_url": "https://policies.google.com/privacy",
+      "retrieved_at": "2026-11-07T12:59:12Z",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "e044824449500b3cdbd06db4cf7cdd9c446d28be84f20e0fb9b2ced88a82b572",
+      "bytes": 665777,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-support-google-com-analytics-answer-6004-f27df732",
+      "title": "Google Analytics safeguarding data",
+      "type": "vendor",
+      "url": "https://support.google.com/analytics/answer/6004245",
+      "final_url": "https://support.google.com/analytics/answer/6004245",
+      "retrieved_at": "2026-11-07T12:59:11Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "f27df732ef350bb003be0bdf5edcd413fe7bbba89eaa13ffc302d41c3be52110",
+      "bytes": 1685685,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-web-respondus-com-privacy-d9f07850",
+      "title": "Respondus Privacy Center",
+      "type": "vendor",
+      "url": "https://web.respondus.com/privacy/",
+      "final_url": "https://web.respondus.com/privacy/",
+      "retrieved_at": "2026-11-07T12:59:11Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "d9f078505f04d46c1b918a62e1f2d77fd816ab6a1cd74b14e39b2d63f3d384fa",
+      "bytes": 47524,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-web-respondus-com-privacy-policy-767d5699",
+      "title": "Respondus Privacy Policy",
+      "type": "vendor",
+      "url": "https://web.respondus.com/privacy-policy/",
+      "final_url": "https://web.respondus.com/privacy-policy/",
+      "retrieved_at": "2026-11-07T12:59:11Z",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "767d569986074834520b09ac48b4567662ec7c80dac389b812149cbc0d29956c",
+      "bytes": 70400,
+      "notes": "",
+      "claim_use": "Documented source candidate"
+    },
+    {
       "id": "SRC-www-csusb-edu-about-csusb-privacy-and-se-afc6f4d7",
       "title": "CSUSB Privacy and Security Notice",
       "type": "policy",
@@ -249,6 +346,19 @@
       "bytes": 133690,
       "notes": "",
       "claim_use": "Documented source candidate"
+    },
+    {
+      "id": "SRC-www-instructure-com-policies-privacy-b4b515d7",
+      "title": "Instructure Product Privacy Policy",
+      "type": "vendor",
+      "url": "https://www.instructure.com/policies/privacy",
+      "final_url": "https://www.instructure.com/policies/product-privacy-policy",
+      "retrieved_at": "2026-11-07T12:59:11Z",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "b4b515d7bfd7282d6402a1bdf1eca00e13c73c1821fdba2f19730a1e415e3931",
+      "bytes": 169402,
+      "notes": "",
+      "claim_use": "Documented source candidate"
     }
   ],
   "findings": [
@@ -409,10 +519,54 @@
       "student_action": "Map which apps appear under myCoyote after login (own account) and note unexpected third parties.",
       "school_action": "Publish the SSO attribute release matrix for major apps.",
       "status": "open"
+    },
+    {
+      "id": "FIND-012",
+      "title": "Canvas login hands the browser to Instructure Identity / Canvas SSO hosts",
+      "claim_grade": "Documented",
+      "severity": "S2",
+      "likelihood": "L3",
+      "summary": "An unauthenticated request to https://csusb.instructure.com/login/saml redirects into Instructure-hosted identity infrastructure (*.login.instructure.com) with callback involvement of sso.canvaslms.com. Student authentication for coursework therefore begins on vendor-controlled domains, not csusb.edu. Transient OAuth/JWT query parameters were redacted from stored evidence.",
+      "evidence_ids": [
+        "SRC-csusb-instructure-com-login-saml-01aa4673"
+      ],
+      "student_action": "Expect campus credentials to be checked in a vendor identity flow; review browser address bar before entering passwords.",
+      "school_action": "Publish a plain-language SSO hop diagram naming every domain in the login chain.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-013",
+      "title": "Respondus publishes separate Monitor student terms and processes student/examinee personal information",
+      "claim_grade": "Documented",
+      "severity": "S3",
+      "likelihood": "L3",
+      "summary": "Respondus's public privacy policy covers services to institutions and distinguishes Students (including examinees/test takers) from instructors. It references Respondus Monitor institution and student terms of use. Combined with CSUSB listing Respondus Monitor on Canvas Learning Apps, this documents a vendor privacy regime for proctoring-capable software beyond the campus website Privacy Notice.",
+      "evidence_ids": [
+        "SRC-web-respondus-com-privacy-policy-767d5699",
+        "SRC-www-csusb-edu-canvas-instructor-resource-cb6e66b7"
+      ],
+      "student_action": "Read Respondus Monitor student terms before any webcam exam; ask the instructor what is recorded and retained.",
+      "school_action": "Link Respondus Monitor student terms from course syllabi when Monitor is required.",
+      "status": "open"
+    },
+    {
+      "id": "FIND-014",
+      "title": "Instructure product privacy applies when schools use Canvas products",
+      "claim_grade": "Documented",
+      "severity": "S1",
+      "likelihood": "L3",
+      "summary": "Instructure's Product Privacy policy describes processing for academic institutions using its products, states it does not sell or rent personal information to third parties, and discusses cookies/similar tech and professional information categories. CSUSB's Canvas deployment therefore sits under both campus notices and Instructure's product privacy regime.",
+      "evidence_ids": [
+        "SRC-www-instructure-com-policies-privacy-b4b515d7",
+        "SRC-www-csusb-edu-canvas-fe4f6ffe"
+      ],
+      "student_action": "Read Instructure product privacy alongside campus FERPA pages.",
+      "school_action": "Surface Instructure privacy + subprocessors links from the Canvas help menu.",
+      "status": "open"
     }
   ],
   "vendors": {
-    "version": "0.2-provisional",
+    "version": "0.3-provisional",
     "decision_gate": "DI-07",
     "note": "Vendors/systems named only from public CSUSB pages. DI-07 still required before treating inventory as launch-frozen.",
     "vendors": [
@@ -422,7 +576,8 @@
         "class": "analytics",
         "confidence": "Documented",
         "sources": [
-          "https://www.csusb.edu/about-csusb/privacy-and-security-notice"
+          "https://www.csusb.edu/about-csusb/privacy-and-security-notice",
+          "https://support.google.com/analytics/answer/6004245"
         ],
         "notes": "Named in Privacy and Security Notice for Sites analytics."
       },
@@ -433,7 +588,8 @@
         "confidence": "Documented",
         "sources": [
           "https://www.csusb.edu/canvas",
-          "https://csusb.instructure.com/login/saml"
+          "https://csusb.instructure.com/login/saml",
+          "https://www.instructure.com/policies/privacy"
         ],
         "notes": "Campus LMS; SAML login hosted on instructure.com."
       },
@@ -453,7 +609,8 @@
         "class": "proctoring",
         "confidence": "Documented",
         "sources": [
-          "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps"
+          "https://www.csusb.edu/canvas/instructor-resources/canvas-learning-apps",
+          "https://web.respondus.com/privacy-policy/"
         ],
         "notes": "Webcam auto-proctoring capability described on public learning-apps page."
       },
@@ -474,7 +631,8 @@
         "class": "identity",
         "confidence": "Documented",
         "sources": [
-          "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements"
+          "https://www.csusb.edu/its/security/identity-access-services/multi-factor-authentication-mfa-requirements",
+          "https://duo.com/legal/privacy"
         ],
         "notes": "Campus MFA requirement and setup guides are public."
       },
@@ -532,7 +690,7 @@
     ]
   },
   "graph": {
-    "version": "0.2-provisional",
+    "version": "0.3-provisional",
     "decision_gate": "DI-08",
     "nodes": [
       {
@@ -594,6 +752,16 @@
         "id": "onecard",
         "label": "OneCard",
         "type": "campus"
+      },
+      {
+        "id": "instructure_id",
+        "label": "Instructure Identity",
+        "type": "vendor"
+      },
+      {
+        "id": "canvas_sso",
+        "label": "sso.canvaslms.com",
+        "type": "vendor"
       }
     ],
     "edges": [
@@ -693,6 +861,33 @@
         "evidence_ids": [
           "SRC-www-csusb-edu-its-support-technology-sup-afe514a0"
         ]
+      },
+      {
+        "from": "browser",
+        "to": "instructure_id",
+        "type": "auth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-csusb-instructure-com-login-saml-01aa4673"
+        ]
+      },
+      {
+        "from": "instructure_id",
+        "to": "canvas",
+        "type": "auth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-csusb-instructure-com-login-saml-01aa4673"
+        ]
+      },
+      {
+        "from": "instructure_id",
+        "to": "canvas_sso",
+        "type": "oauth",
+        "confidence": "Documented",
+        "evidence_ids": [
+          "SRC-csusb-instructure-com-login-saml-01aa4673"
+        ]
       }
     ]
   },
@@ -788,7 +983,7 @@
         "blocks": [
           "T09"
         ],
-        "status": "open"
+        "status": "blocked"
       },
       {
         "id": "DI-11",
@@ -797,7 +992,7 @@
         "blocks": [
           "T10"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-12",
@@ -806,7 +1001,7 @@
         "blocks": [
           "T11"
         ],
-        "status": "open"
+        "status": "blocked"
       },
       {
         "id": "DI-13",
@@ -815,7 +1010,7 @@
         "blocks": [
           "T12"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-14",
@@ -824,7 +1019,7 @@
         "blocks": [
           "T13"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-15",
@@ -833,7 +1028,7 @@
         "blocks": [
           "T14"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-16",
@@ -842,7 +1037,7 @@
         "blocks": [
           "T15"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-17",
@@ -851,7 +1046,7 @@
         "blocks": [
           "T16"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-18",
@@ -860,7 +1055,7 @@
         "blocks": [
           "T17"
         ],
-        "status": "open"
+        "status": "provisional"
       },
       {
         "id": "DI-19",
@@ -870,7 +1065,7 @@
           "T18",
           "C08"
         ],
-        "status": "open"
+        "status": "blocked"
       },
       {
         "id": "DI-20",
@@ -880,7 +1075,7 @@
           "T19",
           "C10"
         ],
-        "status": "open"
+        "status": "blocked"
       },
       {
         "id": "DI-21",
@@ -897,99 +1092,99 @@
     "tasks": {
       "T01": {
         "status": "in_progress",
-        "steps_done": 16
+        "steps_done": 18
       },
       "T02": {
         "status": "in_progress",
-        "steps_done": 18
+        "steps_done": 19
       },
       "T03": {
         "status": "in_progress",
-        "steps_done": 14
+        "steps_done": 16
       },
       "T04": {
         "status": "in_progress",
-        "steps_done": 14
+        "steps_done": 16
       },
       "T05": {
         "status": "in_progress",
-        "steps_done": 18
+        "steps_done": 19
       },
       "T06": {
         "status": "in_progress",
-        "steps_done": 16
+        "steps_done": 18
       },
       "T07": {
         "status": "in_progress",
-        "steps_done": 16
+        "steps_done": 18
       },
       "T08": {
         "status": "in_progress",
-        "steps_done": 12
+        "steps_done": 14
       },
       "T09": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 4
       },
       "T10": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 14
       },
       "T11": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 10
       },
       "T12": {
         "status": "in_progress",
-        "steps_done": 18
+        "steps_done": 19
       },
       "T13": {
         "status": "in_progress",
-        "steps_done": 16
+        "steps_done": 18
       },
       "T14": {
         "status": "in_progress",
-        "steps_done": 12
+        "steps_done": 16
       },
       "T15": {
         "status": "in_progress",
-        "steps_done": 16
+        "steps_done": 18
       },
       "T16": {
         "status": "in_progress",
-        "steps_done": 12
+        "steps_done": 16
       },
       "T17": {
         "status": "in_progress",
-        "steps_done": 12
+        "steps_done": 14
       },
       "T18": {
         "status": "in_progress",
-        "steps_done": 8
+        "steps_done": 12
       },
       "T19": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 2
       },
       "T20": {
-        "status": "pending",
-        "steps_done": 0
+        "status": "in_progress",
+        "steps_done": 2
       }
     },
     "completion_subtasks": {
       "C01": "pending",
       "C02": "pending",
-      "C03": "met_threshold_pending_DI_lock",
+      "C03": "met",
       "C04": "in_progress",
       "C05": "in_progress",
-      "C06": "met_threshold_pending_DI_lock",
-      "C07": "in_progress",
+      "C06": "met",
+      "C07": "met_local",
       "C08": "pending",
       "C09": "pending",
       "C10": "pending"
     },
     "active_gate": "DI-1",
-    "notes": "Public evidence deepened (Canvas/GA/Respondus/Turnitin). DI-01..08 provisional for research; launch DIs still open."
+    "notes": "Demo-ready public case. Blockers: DI-01 Solomon lock, DI-10 own-account, DI-12 CPRA send, DI-19/20 launch."
   },
   "completion_subtasks": [
     {
@@ -1083,10 +1278,10 @@
     }
   ],
   "stats": {
-    "sources": 19,
-    "findings": 11,
+    "sources": 27,
+    "findings": 14,
     "vendors": 11,
     "decision_interviews": 21,
-    "documented_findings": 11
+    "documented_findings": 14
   }
 }

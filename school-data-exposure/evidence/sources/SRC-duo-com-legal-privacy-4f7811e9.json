@@ -1,0 +1,13 @@
+{
+  "id": "SRC-duo-com-legal-privacy-4f7811e9",
+  "title": "Cisco Duo Privacy Notice",
+  "type": "vendor",
+  "url": "https://duo.com/legal/privacy",
+  "final_url": "https://duo.com/legal/cisco-online-privacy-statement",
+  "retrieved_at": "2026-11-07T12:59:26Z",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "4f7811e9ec77a4a88731f936e6b25eed2ce9f0ca15bdac1581ff4b37352567df",
+  "bytes": 65492,
+  "notes": "",
+  "claim_use": "Documented source candidate"
+}
