@@ -1,7 +1,7 @@
 {
   "id": "DI-09",
   "title": "Skills truth",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "banned_skills_clean": "yes",
+    "langgraph_present": "yes"
+  },
+  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "updated_at": "2026-11-07"
 }

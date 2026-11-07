@@ -1,7 +1,7 @@
 {
   "id": "DI-13",
   "title": "Demo proof",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "top_selected_have_visuals": "arda_soc",
+    "courtrules_live_link": "yes"
+  },
+  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "updated_at": "2026-11-07"
 }

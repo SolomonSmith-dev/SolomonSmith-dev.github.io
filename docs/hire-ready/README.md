@@ -31,6 +31,7 @@ python3 docs/hire-ready/scripts/generate_plan.py
 python3 docs/hire-ready/scripts/generate_plan.py
 python3 docs/hire-ready/scripts/validate_decisions.py --require DI-01
 python3 docs/hire-ready/scripts/link_qa.py
+python3 docs/hire-ready/scripts/check_hire_ready.py
 ```
 
 ## Provisional artifacts (no public site edits yet)

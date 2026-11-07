@@ -1,7 +1,7 @@
 {
   "id": "DI-04",
   "title": "Selected work order",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "keep_home_order": "CourtRules,ARDA,SOC,Sentinel",
+    "approve": "yes"
+  },
+  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "updated_at": "2026-11-07"
 }

@@ -1,7 +1,7 @@
 {
   "id": "DI-16",
   "title": "Link QA",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "live_crawl": "19/19",
+    "policy": "fix_or_remove"
+  },
+  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "updated_at": "2026-11-07"
 }

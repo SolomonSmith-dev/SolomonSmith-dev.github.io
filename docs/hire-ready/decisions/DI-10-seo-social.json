@@ -1,7 +1,7 @@
 {
   "id": "DI-10",
   "title": "SEO/social",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "aligned_with_positioning": "yes",
+    "no_copy_change_needed": "yes"
+  },
+  "note": "Provisional: work landed in branch; Solomon may lock.",
+  "updated_at": "2026-11-07"
 }

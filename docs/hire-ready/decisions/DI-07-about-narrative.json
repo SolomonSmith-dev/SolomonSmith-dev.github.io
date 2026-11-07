@@ -1,7 +1,7 @@
 {
   "id": "DI-07",
   "title": "About narrative",
-  "status": "open",
+  "status": "provisional",
   "owner": "Solomon Smith",
   "questions": [
     {
@@ -17,6 +17,10 @@
       "answer": null
     }
   ],
-  "answers": {},
-  "note": "Required before completing the matching task."
+  "answers": {
+    "keep_current_about": "yes",
+    "cta_row": "email_resume_linkedin",
+    "no_gpa": "yes"
+  },
+  "note": "About already hire-aligned; no copy change this pass."
 }
