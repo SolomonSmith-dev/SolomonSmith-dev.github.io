@@ -1,5 +1,306 @@
 [
   {
+    "week_start": "2026-11-02",
+    "week_end": "2026-11-08",
+    "repos": [
+      {
+        "name": "solomon-loop",
+        "url": "https://github.com/SolomonSmith-dev/solomon-loop",
+        "new": true,
+        "commits": 16,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+          "fix: ledger task base commit; instruction files are never light tier",
+          "fix: allowlist light tier, bind review to HEAD, wire SDD adapter",
+          "fix: full-tier file list in diff recheck, compliance checks on every tier",
+          "fix: address Codex review on tiers, lessons reads and reviewer writes"
+        ],
+        "prs": [
+          {
+            "number": 1,
+            "title": "Loop 1.0.3: two-attempt policy, review tiers, controller token cuts",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/1"
+          },
+          {
+            "number": 3,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/3"
+          }
+        ],
+        "releases": [
+          {
+            "tag": "v1.0.3",
+            "name": "v1.0.3",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/releases/tag/v1.0.3"
+          }
+        ]
+      },
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 15,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+          "Redirect /card/ to card.solomonsmith.dev",
+          "Add post: SolomonLoop, risk before code, challenge before merge",
+          "resume sync: ARDA 577 tests, offline in under 15 seconds",
+          "PhishGuard page: ONNX serving, pre-commit leakage hook and CI are now real"
+        ],
+        "prs": [
+          {
+            "number": 6,
+            "title": "Add Sentinel project",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/6"
+          },
+          {
+            "number": 8,
+            "title": "Harden weekly-activity script: User-Agent and explicit public-only fallback",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/8"
+          },
+          {
+            "number": 9,
+            "title": "Redirect /card/ to card.solomonsmith.dev",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/9"
+          },
+          {
+            "number": 10,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/10"
+          },
+          {
+            "number": 12,
+            "title": "Hire-ready portfolio: 20\u00d720 plan, locked decisions, conversion ship",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/12"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "arda",
+        "url": "https://github.com/SolomonSmith-dev/arda",
+        "new": false,
+        "commits": 12,
+        "commit_messages": [
+          "fix(factory): restore status shell syntax",
+          "Update factory/status.sh",
+          "fix(factory): parse status start time on macOS",
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing."
+        ],
+        "prs": [
+          {
+            "number": 111,
+            "title": "test(rumil): audit snapshot survives a Finrod restart (F-8)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/111"
+          },
+          {
+            "number": 112,
+            "title": "feat(earendil): ls <path> limited to EARENDIL_LS_ROOTS (F-3)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/112"
+          },
+          {
+            "number": 113,
+            "title": "README: recruiter-facing hero, evidence block, verified claims",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/113"
+          },
+          {
+            "number": 118,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/118"
+          },
+          {
+            "number": 119,
+            "title": "test(scripts): require cron:job:rumil_github_audit",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/119"
+          },
+          {
+            "number": 120,
+            "title": "docs(cutover): point real embeddings at the embeddings extra",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/120"
+          },
+          {
+            "number": 121,
+            "title": "feat(factory): flag a task with no commit for 30 minutes",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/121"
+          },
+          {
+            "number": 126,
+            "title": "fix(factory): clock status STALE from started or HEAD",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/126"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "phishguard",
+        "url": "https://github.com/SolomonSmith-dev/phishguard",
+        "new": false,
+        "commits": 9,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+          "Docs: pre-commit leakage hook, ONNX serving, CI, measured metrics",
+          "Add GitHub Actions CI",
+          "Serve the URL model through ONNX Runtime",
+          "Run the leakage tests as a pre-commit hook"
+        ],
+        "prs": [
+          {
+            "number": 4,
+            "title": "Add CI badge to README",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/4"
+          },
+          {
+            "number": 8,
+            "title": "Add Dependabot config: weekly grouped updates",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/8"
+          },
+          {
+            "number": 16,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/16"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "sentinel",
+        "url": "https://github.com/SolomonSmith-dev/sentinel",
+        "new": false,
+        "commits": 8,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+          "README: recruiter-facing evidence block, verified test counts",
+          "Schedule Sentinel EVE and model recovery capture",
+          "Capture Sentinel model and checkpointed EVE logs",
+          "Schedule verified coordinated Sentinel capture"
+        ],
+        "prs": [
+          {
+            "number": 9,
+            "title": "Add Dependabot config: weekly grouped updates",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/9"
+          },
+          {
+            "number": 19,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/19"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "DocMind",
+        "url": "https://github.com/SolomonSmith-dev/DocMind",
+        "new": false,
+        "commits": 4,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 14,
+            "title": "README: recruiter-facing hero, evidence block, verified claims",
+            "url": "https://github.com/SolomonSmith-dev/DocMind/pull/14"
+          },
+          {
+            "number": 15,
+            "title": "ci: make pip-audit green (setuptools bump, chromadb ignores)",
+            "url": "https://github.com/SolomonSmith-dev/DocMind/pull/15"
+          },
+          {
+            "number": 18,
+            "title": "Add Dependabot config: weekly grouped updates",
+            "url": "https://github.com/SolomonSmith-dev/DocMind/pull/18"
+          },
+          {
+            "number": 28,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/DocMind/pull/28"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev",
+        "new": false,
+        "commits": 3,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+          "Profile README: AI/Backend Engineer title, six pinned projects with verified evidence, drop weekly activity block and its workflow"
+        ],
+        "prs": [
+          {
+            "number": 4,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev/pull/4"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "agentic-engineering-os",
+        "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 49,
+            "title": "README: recruiter-facing hero, evidence block, verified claims",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/49"
+          },
+          {
+            "number": 56,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/56"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "neetcode-submissions",
+        "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing."
+        ],
+        "prs": [
+          {
+            "number": 1,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/neetcode-submissions/pull/1"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "soc-triage-ai",
+        "url": "https://github.com/SolomonSmith-dev/soc-triage-ai",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "README: recruiter-facing hero, evidence block, verified claims"
+        ],
+        "prs": [
+          {
+            "number": 18,
+            "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/18"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": null,
+    "totals": {
+      "repos": 10,
+      "commits": 73,
+      "prs": 29,
+      "releases": 1,
+      "new_repos": 1
+    }
+  },
+  {
     "week_start": "2026-10-26",
     "week_end": "2026-11-01",
     "repos": [

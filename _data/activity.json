@@ -1,141 +1,76 @@
 {
-  "week_start": "2026-10-26",
-  "week_end": "2026-11-01",
+  "week_start": "2026-11-02",
+  "week_end": "2026-11-08",
   "repos": [
     {
-      "name": "neetcode-submissions",
-      "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
-      "new": false,
-      "commits": 34,
+      "name": "solomon-loop",
+      "url": "https://github.com/SolomonSmith-dev/solomon-loop",
+      "new": true,
+      "commits": 16,
       "commit_messages": [
-        "Add: python-for-loops-reverse - submission-0",
-        "Add: python-for-loops-step - submission-0",
-        "Add: python-for-loops-start - submission-0",
-        "Add: python-for-loops - submission-0",
-        "Add: python-while-loops-multiples - submission-0"
-      ],
-      "prs": [],
-      "releases": []
-    },
-    {
-      "name": "sentinel",
-      "url": "https://github.com/SolomonSmith-dev/sentinel",
-      "new": false,
-      "commits": 22,
-      "commit_messages": [
-        "Exclude verified Access resource IDs from secret findings",
-        "Refresh dashboard screenshots using synthetic preview data",
-        "Record verified private deployment and security remediation",
-        "Enforce telemetry authentication for every request method",
-        "Preserve queued uploads across authentication proxy failures"
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+        "fix: ledger task base commit; instruction files are never light tier",
+        "fix: allowlist light tier, bind review to HEAD, wire SDD adapter",
+        "fix: full-tier file list in diff recheck, compliance checks on every tier",
+        "fix: address Codex review on tiers, lessons reads and reviewer writes"
       ],
       "prs": [
         {
           "number": 1,
-          "title": "fix(security): privatize telemetry and harden sensor deployment",
-          "url": "https://github.com/SolomonSmith-dev/sentinel/pull/1"
-        },
-        {
-          "number": 2,
-          "title": "Hourly rollups for the 24 h panels",
-          "url": "https://github.com/SolomonSmith-dev/sentinel/pull/2"
+          "title": "Loop 1.0.3: two-attempt policy, review tiers, controller token cuts",
+          "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/1"
         },
         {
           "number": 3,
-          "title": "Refresh row counts hourly, not every 5 minutes",
-          "url": "https://github.com/SolomonSmith-dev/sentinel/pull/3"
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/3"
         }
       ],
-      "releases": []
-    },
-    {
-      "name": "agentic-engineering-os",
-      "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os",
-      "new": false,
-      "commits": 13,
-      "commit_messages": [],
-      "prs": [
+      "releases": [
         {
-          "number": 26,
-          "title": "Build-order step 13: eval harness, ten Harbor-shaped tasks, baselines, report",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/26"
-        },
-        {
-          "number": 28,
-          "title": "Build-order step 14: BOOTSTRAP, SECURITY, THREAT_MODEL and schema-generated spec docs",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/28"
-        },
-        {
-          "number": 33,
-          "title": "Claude runs: srt denies the protected paths inside the target repository",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/33"
-        },
-        {
-          "number": 35,
-          "title": "Add focus hook, trace --focus, and approved role lessons",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/35"
-        },
-        {
-          "number": 36,
-          "title": "Architecture: time box as it happened, eval first pass, stand-in dogfood plan",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/36"
-        },
-        {
-          "number": 37,
-          "title": "Orchestrator and inspect commands write no bytecode (fixes the calc-add eval flake)",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/37"
-        },
-        {
-          "number": 38,
-          "title": "Orchestrator checks keep tool caches inside the sandbox (uv run failed under srt)",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/38"
-        },
-        {
-          "number": 39,
-          "title": "Issue 19 scope item: _pr uses ensure_run_branch (agent-written, run 20261029-193546-a9ff1e)",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/39"
-        },
-        {
-          "number": 40,
-          "title": "DISCOVERY gate: an errored reproduction command blocks instead of counting as reproduced",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/40"
-        },
-        {
-          "number": 41,
-          "title": "Installed tool finds its own canonical files and registry",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/41"
-        },
-        {
-          "number": 42,
-          "title": "Sandbox: tracked .env templates stay readable so test runners can collect",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/42"
-        },
-        {
-          "number": 43,
-          "title": "Deny ~/.codex to every sandboxed run, whatever the runtime",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/43"
-        },
-        {
-          "number": 44,
-          "title": "Design and plan: agent-team as Numenor's engine",
-          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/44"
+          "tag": "v1.0.3",
+          "name": "v1.0.3",
+          "url": "https://github.com/SolomonSmith-dev/solomon-loop/releases/tag/v1.0.3"
         }
-      ],
-      "releases": []
+      ]
     },
     {
       "name": "SolomonSmith-dev.github.io",
       "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
       "new": false,
-      "commits": 2,
+      "commits": 15,
       "commit_messages": [
-        "Fix weekly activity boundaries across DST transitions"
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+        "Redirect /card/ to card.solomonsmith.dev",
+        "Add post: SolomonLoop, risk before code, challenge before merge",
+        "resume sync: ARDA 577 tests, offline in under 15 seconds",
+        "PhishGuard page: ONNX serving, pre-commit leakage hook and CI are now real"
       ],
       "prs": [
         {
-          "number": 7,
-          "title": "Weekly GitHub activity on the homepage and a /log/ page",
-          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/7"
+          "number": 6,
+          "title": "Add Sentinel project",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/6"
+        },
+        {
+          "number": 8,
+          "title": "Harden weekly-activity script: User-Agent and explicit public-only fallback",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/8"
+        },
+        {
+          "number": 9,
+          "title": "Redirect /card/ to card.solomonsmith.dev",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/9"
+        },
+        {
+          "number": 10,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/10"
+        },
+        {
+          "number": 12,
+          "title": "Hire-ready portfolio: 20\u00d720 plan, locked decisions, conversion ship",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/12"
         }
       ],
       "releases": []
@@ -144,24 +79,212 @@
       "name": "arda",
       "url": "https://github.com/SolomonSmith-dev/arda",
       "new": false,
-      "commits": 1,
+      "commits": 12,
       "commit_messages": [
-        "gitignore: agent-team runtime state"
+        "fix(factory): restore status shell syntax",
+        "Update factory/status.sh",
+        "fix(factory): parse status start time on macOS",
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing."
       ],
-      "prs": [],
+      "prs": [
+        {
+          "number": 111,
+          "title": "test(rumil): audit snapshot survives a Finrod restart (F-8)",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/111"
+        },
+        {
+          "number": 112,
+          "title": "feat(earendil): ls <path> limited to EARENDIL_LS_ROOTS (F-3)",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/112"
+        },
+        {
+          "number": 113,
+          "title": "README: recruiter-facing hero, evidence block, verified claims",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/113"
+        },
+        {
+          "number": 118,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/118"
+        },
+        {
+          "number": 119,
+          "title": "test(scripts): require cron:job:rumil_github_audit",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/119"
+        },
+        {
+          "number": 120,
+          "title": "docs(cutover): point real embeddings at the embeddings extra",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/120"
+        },
+        {
+          "number": 121,
+          "title": "feat(factory): flag a task with no commit for 30 minutes",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/121"
+        },
+        {
+          "number": 126,
+          "title": "fix(factory): clock status STALE from started or HEAD",
+          "url": "https://github.com/SolomonSmith-dev/arda/pull/126"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "phishguard",
+      "url": "https://github.com/SolomonSmith-dev/phishguard",
+      "new": false,
+      "commits": 9,
+      "commit_messages": [
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+        "Docs: pre-commit leakage hook, ONNX serving, CI, measured metrics",
+        "Add GitHub Actions CI",
+        "Serve the URL model through ONNX Runtime",
+        "Run the leakage tests as a pre-commit hook"
+      ],
+      "prs": [
+        {
+          "number": 4,
+          "title": "Add CI badge to README",
+          "url": "https://github.com/SolomonSmith-dev/phishguard/pull/4"
+        },
+        {
+          "number": 8,
+          "title": "Add Dependabot config: weekly grouped updates",
+          "url": "https://github.com/SolomonSmith-dev/phishguard/pull/8"
+        },
+        {
+          "number": 16,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/phishguard/pull/16"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "sentinel",
+      "url": "https://github.com/SolomonSmith-dev/sentinel",
+      "new": false,
+      "commits": 8,
+      "commit_messages": [
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+        "README: recruiter-facing evidence block, verified test counts",
+        "Schedule Sentinel EVE and model recovery capture",
+        "Capture Sentinel model and checkpointed EVE logs",
+        "Schedule verified coordinated Sentinel capture"
+      ],
+      "prs": [
+        {
+          "number": 9,
+          "title": "Add Dependabot config: weekly grouped updates",
+          "url": "https://github.com/SolomonSmith-dev/sentinel/pull/9"
+        },
+        {
+          "number": 19,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/sentinel/pull/19"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "DocMind",
+      "url": "https://github.com/SolomonSmith-dev/DocMind",
+      "new": false,
+      "commits": 4,
+      "commit_messages": [],
+      "prs": [
+        {
+          "number": 14,
+          "title": "README: recruiter-facing hero, evidence block, verified claims",
+          "url": "https://github.com/SolomonSmith-dev/DocMind/pull/14"
+        },
+        {
+          "number": 15,
+          "title": "ci: make pip-audit green (setuptools bump, chromadb ignores)",
+          "url": "https://github.com/SolomonSmith-dev/DocMind/pull/15"
+        },
+        {
+          "number": 18,
+          "title": "Add Dependabot config: weekly grouped updates",
+          "url": "https://github.com/SolomonSmith-dev/DocMind/pull/18"
+        },
+        {
+          "number": 28,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/DocMind/pull/28"
+        }
+      ],
       "releases": []
     },
     {
       "name": "SolomonSmith-dev",
       "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev",
       "new": false,
-      "commits": 1,
+      "commits": 3,
+      "commit_messages": [
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing.",
+        "Profile README: AI/Backend Engineer title, six pinned projects with verified evidence, drop weekly activity block and its workflow"
+      ],
+      "prs": [
+        {
+          "number": 4,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev/pull/4"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "agentic-engineering-os",
+      "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os",
+      "new": false,
+      "commits": 2,
       "commit_messages": [],
       "prs": [
         {
-          "number": 3,
-          "title": "Weekly activity block in the profile README",
-          "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev/pull/3"
+          "number": 49,
+          "title": "README: recruiter-facing hero, evidence block, verified claims",
+          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/49"
+        },
+        {
+          "number": 56,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/56"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "neetcode-submissions",
+      "url": "https://github.com/SolomonSmith-dev/neetcode-submissions",
+      "new": false,
+      "commits": 2,
+      "commit_messages": [
+        "Add ICM-style CLAUDE.md and CONTEXT.md for agent routing."
+      ],
+      "prs": [
+        {
+          "number": 1,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/neetcode-submissions/pull/1"
+        }
+      ],
+      "releases": []
+    },
+    {
+      "name": "soc-triage-ai",
+      "url": "https://github.com/SolomonSmith-dev/soc-triage-ai",
+      "new": false,
+      "commits": 2,
+      "commit_messages": [
+        "README: recruiter-facing hero, evidence block, verified claims"
+      ],
+      "prs": [
+        {
+          "number": 18,
+          "title": "ICM project MD: CLAUDE.md + CONTEXT.md",
+          "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/18"
         }
       ],
       "releases": []
@@ -169,10 +292,10 @@
   ],
   "private": null,
   "totals": {
-    "repos": 6,
+    "repos": 10,
     "commits": 73,
-    "prs": 18,
-    "releases": 0,
-    "new_repos": 0
+    "prs": 29,
+    "releases": 1,
+    "new_repos": 1
   }
 }
