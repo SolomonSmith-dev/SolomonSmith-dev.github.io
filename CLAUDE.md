@@ -110,6 +110,8 @@ Sauron Stack (PM2-managed Debian server) appears on `projects.md` only. It is no
 - Recursa role title: standardize to "Software Engineering Intern" on LinkedIn.
 - RideSplits title: standardize to "Full-Stack Developer Intern" on LinkedIn.
 
+<!-- BEGIN icm-graphify generated -->
 ## ICM / Graphify
 
-When `graphify-out/graph.json` exists, answer codebase questions with `graphify query "<q>"` (also `path` / `explain`) before grep or explore agents. Rebuild with `graphify update` after large structural changes. Dual Develop: Hermes-first product build; Cursor for git/PR/evals/parallel. No secrets in commits or docs. Ops spine: `~/Projects/personal-tech-ops`.
+When `graphify-out/graph.json` exists, answer codebase questions with `graphify query "<q>"` (also `path` / `explain`) before grep or explore agents. Rebuild with `graphify update` after large structural changes. No secrets in commits or docs. Ops spine: `~/Projects/personal-tech-ops`.
+<!-- END icm-graphify generated -->
