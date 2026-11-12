@@ -2,11 +2,11 @@
 title: "PhishGuard"
 eyebrow: "Project &middot; PhishGuard"
 heading: "A phishing URL classifier I had to break before I could trust it."
-lede: "A LightGBM URL classifier served through FastAPI. The public dataset's labels were upside down and every legitimate URL in it began with https://www. The model that ships is the one that still passes the leakage tests after those shortcuts were removed."
+lede: "A LightGBM URL classifier served by FastAPI through ONNX Runtime. The public dataset's labels were upside down and every legitimate URL in it began with https://www. The model that ships is the one that still passes the leakage tests after those shortcuts were removed."
 description: "PhishGuard by Solomon Smith: LightGBM phishing URL classifier, test AUC 0.9943 and 1.54% false positives on Tranco top-5,000, with the PhiUSIIL dataset leakage found, fixed and locked by regression tests."
 order: 5
 status: "Active"
-stack: [Python, LightGBM, scikit-learn, FastAPI, Docker, PostgreSQL]
+stack: [Python, LightGBM, scikit-learn, ONNX Runtime, FastAPI, Docker, PostgreSQL]
 links:
   - label: "Source"
     url: "https://github.com/SolomonSmith-dev/phishguard"
@@ -30,9 +30,10 @@ The fixes are code and tests, not a footnote. Label polarity is normalized in th
 | AP 0.9948, F1 0.9782, Brier 0.0157 | `reports/url_baseline_v0_2.txt` |
 | 1.54% false positives on Tranco top-5,000 at threshold 0.7 | `reports/evaluation_v0_2.md`; 2.52% at 0.5, 0.90% at 0.9. Tranco was never trained on |
 | Top feature gain 27.16% (`subdomain_depth`), top-3 57.9% | `reports/url_baseline_v0_2.txt` |
+| ONNX output within 8.9e-8 of the native booster over all 23,537 test URLs and 5,000 Tranco URLs | `reports/url_onnx_2026-11-03.md`, `tests/test_onnx_serving.py` |
 | 35 test functions, 1 xfail on purpose | `grep -c "^def test_" tests/*.py`; run with `make test` |
 {: .evidence}
 
-ONNX Runtime export is scaffolded in-repo with parity tests; the public write-up treats FastAPI + the LightGBM booster as the serving path, not ONNX as production serving.
+ONNX Runtime is the production serving path, not a scaffold: `POST /predict` runs the exported LightGBM graph in an `onnxruntime.InferenceSession`, then applies the isotonic calibrator in Python (`src/phishguard/serving/url_onnx.py`). The export restores the float64 split thresholds the converter rounds to float32, and the parity check above runs on every re-export.
 
 The leakage tests run as a pre-commit hook on every commit (planting an inverted label makes the commit fail) and again in GitHub Actions CI. The before-and-after write-up is `LIMITATIONS.md`.

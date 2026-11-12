@@ -74,7 +74,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 ## Key Content Rules
 - **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
 - No emojis on the rendered site unless explicitly requested.
-- Target language: "Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027." No internship language.
+- Target language: "Graduating December 2026. Open to full-time Forward Deployed Engineer and AI/ML engineering roles starting January 2027." No internship language.
 - **No GPA and no Dean's List anywhere on the site.** Do not add either back without Solomon's explicit confirmation.
 - **Source of truth for experience and skills:** `~/Projects/swe-job-hunt/MATERIALS/Solomon-Smith_AI-Backend-Engineer_resume.md` and the PDF beside it. `resume.md` and `_includes/skills.html` are generated from it by `scripts/sync-resume.sh`; never hand-edit them. The phone number in the resume's contact line is deliberately left off the page. **Source of truth for project numbers:** each project's README (CourtRules: the resume). Every number on the site must appear in one of those files. Exception: the weekly GitHub activity block (home) and `/log/` show API counts that are exempt from this rule (Solomon, 2026-10-25).
 - **There was no Recursa internship (Dec 2025 to Mar 2026).** Never reintroduce it or its metrics: 200K documents, 99% extraction, 4s to 600ms, 12% hallucination regression, 70% fewer incidents.
@@ -87,7 +87,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 
 1. **soc-triage-ai**: RAG-grounded SOC alert triage. Tagged `v1.0-codepath-final`. Streamlit UI, Loom walkthrough.
 2. **arda**: LangGraph orchestrator on native Anthropic tool_use, Redis executor, LlamaIndex RAG, MCP server. 577 of 582 tests pass offline. Deployed 24/7.
-3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 35 test functions, 1 xfail. ONNX Runtime is scaffolded only (README), so the site does not list it as the serving layer.
+3. **phishguard**: LightGBM URL classifier, test AUC 0.9943, 1.54% FPR on Tranco top-5000. PhiUSIIL leakage found and fixed; 35 test functions, 1 xfail. ONNX Runtime is the production serving path behind FastAPI (README: `POST /predict` runs `onnxruntime.InferenceSession`, max abs diff 8.9e-8 vs the native booster). The HTML and screenshot models are the scaffolded parts.
 4. **DocMind**: RAG document Q&A with prompt injection defense. 113 tests. Active.
 
 5. **sentinel**: home-network monitor. 119 vitest, 197 pytest, 4 ctest. Dashboard is private (Cloudflare Access).
