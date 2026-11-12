@@ -5,15 +5,21 @@
   </div>
   <p class="project__summary">Claude Code workers in sandboxed git worktrees, every tool call recorded in SQLite, and a draft PR only after an independent reviewer approves the diff.</p>
   <dl class="project__facts">
-    <dt>Problem</dt>
-    <dd>An agent's word is a claim, not evidence.</dd>
-    <dt>Built</dt>
-    <dd>The orchestrator re-runs the reproduction before the fix, runs the tests itself at the reviewed commit, and hands the reviewer the plan, the diff and the test output, never the implementer's transcript. git push and gh never leave the orchestrator's process.</dd>
-    <dt>Tested</dt>
-    <dd>524 tests, run in CI on Ubuntu and macOS under the real sandbox runtime. 14 of 15 build steps merged, one PR per step. No paid eval has been run yet.</dd>
+    <div class="project__fact">
+      <dt>Problem</dt>
+      <dd>An agent's word is a claim, not evidence.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Built</dt>
+      <dd>The orchestrator re-runs the reproduction before the fix, runs the tests itself at the reviewed commit, and hands the reviewer the plan, the diff and the test output, never the implementer's transcript. git push and gh never leave the orchestrator's process.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Tested</dt>
+      <dd>524 tests, run in CI on Ubuntu and macOS under the real sandbox runtime. 14 of 15 build steps merged, one PR per step. No paid eval has been run yet.</dd>
+    </div>
   </dl>
   <div class="project__foot">
-    <ul class="stack"><li>Python</li><li>Typer</li><li>SQLite</li><li>Claude Code</li><li>srt sandbox</li></ul>
-    <div class="project__links"><a href="{{ '/projects/agentic-engineering-os/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/agentic-engineering-os" rel="noopener">Source</a></div>
+    <ul class="stack" aria-label="Technologies"><li>Python</li><li>Typer</li><li>SQLite</li><li>Claude Code</li><li>srt sandbox</li></ul>
+    <div class="project__links"><a href="{{ '/projects/agentic-engineering-os/' | relative_url }}" class="text-link">Case study</a><a href="https://github.com/SolomonSmith-dev/agentic-engineering-os" rel="noopener">Source</a></div>
   </div>
 </article>

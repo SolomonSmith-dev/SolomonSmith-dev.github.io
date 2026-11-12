@@ -5,15 +5,21 @@
   </div>
   <p class="project__summary">A phishing URL classifier I had to break before I could trust it. The dataset leakage I found is documented in the repo.</p>
   <dl class="project__facts">
-    <dt>Built</dt>
-    <dd>LightGBM URL classifier exported to ONNX. FastAPI serves it through ONNX Runtime in production, then applies the isotonic calibrator.</dd>
-    <dt>Result</dt>
-    <dd>Test AUC 0.9943 with a 1.54% false-positive rate on Tranco top-5,000 domains, which were never trained on.</dd>
-    <dt>Rigor</dt>
-    <dd>Found and fixed inverted labels and distribution leakage in the PhiUSIIL dataset (100% of legitimate URLs were https://www). Leakage tests run in pre-commit and the method is written up in LIMITATIONS.md. 35 test functions, 1 xfail on purpose.</dd>
+    <div class="project__fact">
+      <dt>Built</dt>
+      <dd>LightGBM URL classifier exported to ONNX. FastAPI serves it through ONNX Runtime in production, then applies the isotonic calibrator.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Result</dt>
+      <dd>Test AUC 0.9943 with a 1.54% false-positive rate on Tranco top-5,000 domains, which were never trained on.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Rigor</dt>
+      <dd>Found and fixed inverted labels and distribution leakage in the PhiUSIIL dataset (100% of legitimate URLs were https://www). Leakage tests run in pre-commit and the method is written up in LIMITATIONS.md. 35 test functions, 1 xfail on purpose.</dd>
+    </div>
   </dl>
   <div class="project__foot">
-    <ul class="stack"><li>Python</li><li>LightGBM</li><li>scikit-learn</li><li>ONNX Runtime</li><li>FastAPI</li></ul>
-    <div class="project__links"><a href="{{ '/projects/phishguard/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/phishguard" rel="noopener">Source</a></div>
+    <ul class="stack" aria-label="Technologies"><li>Python</li><li>LightGBM</li><li>scikit-learn</li><li>ONNX Runtime</li><li>FastAPI</li></ul>
+    <div class="project__links"><a href="{{ '/projects/phishguard/' | relative_url }}" class="text-link">Case study</a><a href="https://github.com/SolomonSmith-dev/phishguard" rel="noopener">Source</a></div>
   </div>
 </article>

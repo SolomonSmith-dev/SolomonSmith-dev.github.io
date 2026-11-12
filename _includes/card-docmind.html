@@ -5,15 +5,21 @@
   </div>
   <p class="project__summary">Upload a PDF, ask a question, get an answer that names the page it came from. Runs locally on Ollama and ChromaDB with no API key.</p>
   <dl class="project__facts">
-    <dt>Problem</dt>
-    <dd>Retrieved PDF text is attacker-controlled context. A RAG demo that skips injection filtering and page-level citations cannot be checked.</dd>
-    <dt>Built</dt>
-    <dd>Page-level citations carried from PyMuPDF through ChromaDB to the response, prompt-injection filtering on retrieved chunks, HS256 JWT auth, rate-limited upload and ask endpoints, and a confidence score with a low-confidence flag.</dd>
-    <dt>Tested</dt>
-    <dd>113 tests pass. CI runs ruff, pytest and pip-audit on every push; a Playwright E2E workflow covers login, upload and ask. Retrieval quality is not measured yet, and the README says so.</dd>
+    <div class="project__fact">
+      <dt>Problem</dt>
+      <dd>Retrieved PDF text is attacker-controlled context. A RAG demo that skips injection filtering and page-level citations cannot be checked.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Built</dt>
+      <dd>Page-level citations carried from PyMuPDF through ChromaDB to the response, prompt-injection filtering on retrieved chunks, HS256 JWT auth, rate-limited upload and ask endpoints, and a confidence score with a low-confidence flag.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Tested</dt>
+      <dd>113 tests pass. CI runs ruff, pytest and pip-audit on every push; a Playwright E2E workflow covers login, upload and ask. Retrieval quality is not measured yet, and the README says so.</dd>
+    </div>
   </dl>
   <div class="project__foot">
-    <ul class="stack"><li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>sentence-transformers</li><li>Ollama</li></ul>
-    <div class="project__links"><a href="{{ '/projects/docmind/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/DocMind" rel="noopener">Source</a></div>
+    <ul class="stack" aria-label="Technologies"><li>Python</li><li>FastAPI</li><li>ChromaDB</li><li>sentence-transformers</li><li>Ollama</li></ul>
+    <div class="project__links"><a href="{{ '/projects/docmind/' | relative_url }}" class="text-link">Case study</a><a href="https://github.com/SolomonSmith-dev/DocMind" rel="noopener">Source</a></div>
   </div>
 </article>
