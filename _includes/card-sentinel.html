@@ -5,15 +5,21 @@
   </div>
   <p class="project__summary">A security monitor for my own home network, built so no IP, MAC or payload leaves the house.</p>
   <dl class="project__facts">
-    <dt>Problem</dt>
-    <dd>I self-host DNS, media and services on a Debian server and wanted to watch that network with a tool I control, not a cloud one.</dd>
-    <dt>Built</dt>
-    <dd>A C++17 libpcap sensor and Suricata feed a Python shipper that runs detection rules and an isolation-forest anomaly score, then ships anonymized one-minute rollups to a Cloudflare Worker and D1 behind a private, email-authenticated dashboard.</dd>
-    <dt>Tested</dt>
-    <dd>119 vitest on the Workers runtime, 197 pytest, 4 ctest including exact-count pcap replays. Capture memory is bounded. Ingest is idempotent and rejects any batch containing an IP or MAC.</dd>
+    <div class="project__fact">
+      <dt>Problem</dt>
+      <dd>I self-host DNS, media and services on a Debian server and wanted to watch that network with a tool I control, not a cloud one.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Built</dt>
+      <dd>A C++17 libpcap sensor and Suricata feed a Python shipper that runs detection rules and an isolation-forest anomaly score, then ships anonymized one-minute rollups to a Cloudflare Worker and D1 behind a private, email-authenticated dashboard.</dd>
+    </div>
+    <div class="project__fact">
+      <dt>Tested</dt>
+      <dd>119 vitest on the Workers runtime, 197 pytest, 4 ctest including exact-count pcap replays. Capture memory is bounded. Ingest is idempotent and rejects any batch containing an IP or MAC.</dd>
+    </div>
   </dl>
   <div class="project__foot">
-    <ul class="stack"><li>C++</li><li>libpcap</li><li>Python</li><li>scikit-learn</li><li>Suricata</li><li>TypeScript</li><li>Cloudflare Workers</li><li>D1</li><li>React</li></ul>
-    <div class="project__links"><a href="{{ '/projects/sentinel/' | relative_url }}">Case study</a><a href="https://github.com/SolomonSmith-dev/sentinel" rel="noopener">Source</a></div>
+    <ul class="stack" aria-label="Technologies"><li>C++</li><li>libpcap</li><li>Python</li><li>scikit-learn</li><li>Suricata</li><li>TypeScript</li><li>Cloudflare Workers</li><li>D1</li><li>React</li></ul>
+    <div class="project__links"><a href="{{ '/projects/sentinel/' | relative_url }}" class="text-link">Case study</a><a href="https://github.com/SolomonSmith-dev/sentinel" rel="noopener">Source</a></div>
   </div>
 </article>

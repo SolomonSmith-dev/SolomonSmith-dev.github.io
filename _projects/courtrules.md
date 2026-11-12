@@ -39,85 +39,81 @@ The code is private, so these come from the product and my resume, not a public 
 
 ## Interactive verifier demo: FRCP 6(a) fail-closed quote check
 
-Test how the citation gate handles claims against a filed standing order. A claim renders **only** when the quoted span appears verbatim in the indexed source text; paraphrased or fabricated quotes fail closed even when paired with a valid source index.
+Try the citation gate with a public rule excerpt. This standalone illustration runs entirely in your browser, with no model, API, or production CourtRules code. It verifies quoted text only, not legal applicability or a calculated deadline.
 
 <div class="frcp-demo" id="frcp-demo">
   <div class="frcp-demo__source">
-    <div class="frcp-demo__label">Indexed Source · <code>standing_order_p12.txt</code> (Source ID: <code>ord-6a-01</code>)</div>
-    <blockquote id="frcp-source-text">Unless otherwise ordered by the Court, all opposition briefs to noticed motions shall be filed and served no later than fourteen (14) calendar days after service of the moving papers, computed in accordance with Federal Rule of Civil Procedure 6(a)(1). When the final day falls on a Saturday, Sunday, or legal holiday, the filing period continues to run until the end of the next day that is not a Saturday, Sunday, or legal holiday.</blockquote>
+    <p class="frcp-demo__label">Source <code>frcp-6a-1b</code> · <a href="https://www.law.cornell.edu/rules/frcp/rule_6">FRCP 6(a)(1)(B)</a></p>
+    <blockquote id="frcp-source-text">count every day, including intermediate Saturdays, Sundays, and legal holidays;</blockquote>
+    <p class="frcp-demo__meta">Excerpt for periods stated in days or a longer unit. This excerpt does not establish a motion's filing deadline.</p>
   </div>
-
   <div class="frcp-demo__presets" role="group" aria-label="Verifier test cases">
-    <button type="button" class="btn frcp-preset" data-case="valid">1. Verbatim quote (Pass)</button>
-    <button type="button" class="btn frcp-preset" data-case="bypass">2. Plausible paraphrase + valid ID (Blocked)</button>
-    <button type="button" class="btn frcp-preset" data-case="unsupported">3. Out-of-scope deadline guess (Refused)</button>
+    <button type="button" class="btn frcp-preset" data-case="valid">Verbatim quote</button>
+    <button type="button" class="btn frcp-preset" data-case="bypass">Paraphrase + valid ID</button>
+    <button type="button" class="btn frcp-preset" data-case="unsupported">Unsupported deadline</button>
   </div>
-
-  <label class="frcp-demo__field">
-    <span>Candidate model quote</span>
-    <textarea id="frcp-quote-input" rows="2">no later than fourteen (14) calendar days after service of the moving papers</textarea>
-  </label>
-
+  <label class="frcp-demo__field" for="frcp-source-id">Candidate source ID</label>
+  <input id="frcp-source-id" value="frcp-6a-1b" spellcheck="false" autocomplete="off">
+  <label class="frcp-demo__field" for="frcp-quote-input">Candidate model quote</label>
+  <textarea id="frcp-quote-input" rows="3" aria-describedby="frcp-policy">count every day, including intermediate Saturdays, Sundays, and legal holidays;</textarea>
+  <p id="frcp-policy" class="frcp-demo__meta">Exact, case-sensitive text only. Empty quotes and unknown source IDs are refused. A valid ID alone cannot pass.</p>
   <div class="frcp-demo__actions">
-    <button type="button" class="btn btn--primary" id="frcp-verify-btn">Run fail-closed verifier</button>
-    <span class="frcp-demo__meta">Source ID: <code>ord-6a-01</code></span>
+    <button type="button" class="btn btn--primary" id="frcp-verify-btn">Verify quote</button>
   </div>
-
-  <div class="frcp-demo__result" id="frcp-result" aria-live="polite"></div>
+  <div class="frcp-demo__result" id="frcp-result" role="status" aria-live="polite" aria-atomic="true">Not checked. Choose a test case or verify the quote.</div>
+  <noscript>Enable JavaScript to run this local demo. No quote has been verified.</noscript>
 </div>
-
-<style>
-.frcp-demo { border: 1px solid currentColor; border-opacity: 0.2; padding: 1.25rem; margin: 1.5rem 0; border-radius: 6px; }
-.frcp-demo__label { font-size: 0.85rem; opacity: 0.8; margin-bottom: 0.5rem; }
-.frcp-demo__source blockquote { margin: 0 0 1rem; padding-left: 0.9rem; border-left: 3px solid currentColor; font-size: 0.95rem; line-height: 1.55; }
-.frcp-demo__presets { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
-.frcp-demo__presets .btn { font-size: 0.85rem; padding: 0.35rem 0.7rem; cursor: pointer; }
-.frcp-demo__field { display: block; margin-bottom: 0.85rem; }
-.frcp-demo__field span { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; }
-.frcp-demo__field textarea { width: 100%; font: inherit; font-size: 0.92rem; padding: 0.6rem; border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit; }
-.frcp-demo__actions { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
-.frcp-demo__result { padding: 0.85rem 1rem; border-radius: 4px; font-size: 0.92rem; line-height: 1.5; border-left: 4px solid currentColor; }
-.frcp-demo__result--pass { background: rgba(34, 197, 94, 0.12); border-left-color: #16a34a; }
-.frcp-demo__result--fail { background: rgba(239, 68, 68, 0.12); border-left-color: #dc2626; }
-</style>
 
 <script>
 (function () {
+  "use strict";
+  const root = document.getElementById("frcp-demo");
+  const sourceText = document.getElementById("frcp-source-text").textContent;
+  const sources = new Map([["frcp-6a-1b", sourceText]]);
   const presets = {
-    valid: "no later than fourteen (14) calendar days after service of the moving papers",
-    bypass: "all opposition briefs must be submitted within fourteen (14) business days of service",
-    unsupported: "reply briefs are due seven (7) calendar days prior to the noticed hearing date"
+    valid: sourceText,
+    bypass: "Count all days, including weekends and legal holidays.",
+    unsupported: "Opposition briefs are due fourteen days after service."
   };
-  const norm = (s) => s.replace(/\s+/g, " ").trim();
-  const srcEl = document.getElementById("frcp-source-text");
-  const inputEl = document.getElementById("frcp-quote-input");
-  const outEl = document.getElementById("frcp-result");
+  const quoteInput = document.getElementById("frcp-quote-input");
+  const sourceInput = document.getElementById("frcp-source-id");
+  const result = document.getElementById("frcp-result");
+
+  function show(state, message) {
+    result.dataset.state = state;
+    result.textContent = message;
+  }
 
   function verify() {
-    const source = norm(srcEl.textContent);
-    const quote = norm(inputEl.value);
-    if (!quote || quote.length < 12) {
-      outEl.className = "frcp-demo__result frcp-demo__result--fail";
-      outEl.innerHTML = "<strong>FAIL-CLOSED REFUSAL (EMPTY_OR_SHORT_SPAN):</strong> No claim rendered. Verifier requires a verbatim span of at least 12 characters present in <code>ord-6a-01</code>.";
-      return;
-    }
-    const idx = source.indexOf(quote);
-    if (idx !== -1) {
-      outEl.className = "frcp-demo__result frcp-demo__result--pass";
-      outEl.innerHTML = "<strong>VERIFIED · CLAIM RENDERED:</strong> Exact substring match confirmed in <code>ord-6a-01</code> at char offset <code>" + idx + "–" + (idx + quote.length) + "</code>. Safe to stream to lawyer.";
+    const source = sources.get(sourceInput.value);
+    const quote = quoteInput.value;
+    if (source === undefined) {
+      show("refused", "REFUSED: Unknown source ID. No verified quote rendered.");
+    } else if (!quote.trim()) {
+      show("refused", "REFUSED: Empty quote. No verified quote rendered.");
+    } else if (source.includes(quote)) {
+      const offset = source.indexOf(quote);
+      show("pass", "PASS: Exact quote found at offset " + offset +
+        ". Verified quote: “" + quote + "” Text match only; no deadline validated.");
+    } else if (quote === presets.unsupported) {
+      show("refused", "REFUSED: The deadline guess is absent from this source. No verified quote rendered.");
     } else {
-      outEl.className = "frcp-demo__result frcp-demo__result--fail";
-      outEl.innerHTML = "<strong>FAIL-CLOSED REFUSAL (SUBSTRING_MISMATCH):</strong> Blocked despite valid source index <code>ord-6a-01</code>. Quoted text does not appear verbatim in the filed order; returning refusal instead of an unverified deadline.";
+      show("blocked", "BLOCKED: Valid source ID, but the quote is not verbatim. No verified quote rendered.");
     }
   }
 
-  document.querySelectorAll(".frcp-preset").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      inputEl.value = presets[btn.dataset.case];
+  root.querySelectorAll(".frcp-preset").forEach(function (button) {
+    button.addEventListener("click", function () {
+      sourceInput.value = "frcp-6a-1b";
+      quoteInput.value = presets[button.dataset.case];
       verify();
     });
   });
+  [quoteInput, sourceInput].forEach(function (input) {
+    input.addEventListener("input", function () {
+      show("pending", "Not checked. Input changed; verify the quote again.");
+    });
+  });
   document.getElementById("frcp-verify-btn").addEventListener("click", verify);
-  verify();
 })();
 </script>
