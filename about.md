@@ -4,8 +4,8 @@ title: "About"
 heading: "I build LLM systems that hold up in production."
 eyebrow: "About"
 permalink: /about/
-description: "About Solomon Smith, AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. CS senior at CSU San Bernardino after ten years as a professional chef."
-lede: "AI/Backend Engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
+description: "About Solomon Smith, Forward Deployed Engineer for ML and AI systems. Founding Engineer at Recursa AI / CourtRules. CS senior at CSU San Bernardino after ten years as a professional chef."
+lede: "Forward Deployed Engineer and Computer Science senior at Cal State San Bernardino, graduating December 2026."
 ---
 
 <img class="about-photo" src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Portrait of Solomon Smith" width="410" height="600" loading="lazy" decoding="async">

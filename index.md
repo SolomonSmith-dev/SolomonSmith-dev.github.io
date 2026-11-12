@@ -1,15 +1,16 @@
 ---
 layout: home
-title: "AI/Backend Engineer"
-description: "Solomon Smith, AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. B.S. Computer Science, CSU San Bernardino, December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
+title: "Forward Deployed Engineer"
+description: "Solomon Smith, Forward Deployed Engineer for ML and AI systems. Founding Engineer at Recursa AI / CourtRules, building grounded, fail-closed legal AI. B.S. Computer Science, CSU San Bernardino, December 2026. Available January 2027. Based in Montclair, CA, open to relocation or remote."
 permalink: /
-hero_lede: "As a founding engineer at Recursa AI / CourtRules, I shipped a retrieval-grounded assistant that shows a claim only when its quoted sentence appears verbatim in the filed court order. Before engineering, I spent ten years running professional kitchens."
-availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/ML and backend engineering roles from January 2027."
+hero_sub: "ML &amp; AI Systems &middot; B.S. Computer Science, CSUSB (Dec 2026) &middot; Available January 2027"
+hero_lede: "Founding Engineer building grounded, fail-closed legal AI at Recursa AI / <a href=\"https://courtrules.app\" rel=\"noopener\">CourtRules</a>. Before Computer Science, I spent 10+ years leading high-pressure kitchens, from dishwasher to Head Chef. Now I ship production AI systems directly with end users, under real-world constraints."
+availability: "Based in Montclair, CA. Open to relocation or remote."
 ---
 
 <ul class="metrics" aria-label="Selected results">
   <li class="metric"><span class="metric__value">1,653 judges</span><span class="metric__label">covered by CourtRules, where my fail-closed citation verifier gates every answer on judge pages</span></li>
-  <li class="metric"><span class="metric__value">577</span><span class="metric__label">ARDA tests that pass offline, with no API keys or network, in 29 seconds</span></li>
+  <li class="metric"><span class="metric__value">577</span><span class="metric__label">ARDA tests that pass offline, with no API keys or network</span></li>
   <li class="metric"><span class="metric__value">0.9943</span><span class="metric__label">test AUC on the PhishGuard URL classifier, 1.54% false positives on Tranco top-5,000</span></li>
 </ul>
 
@@ -22,21 +23,10 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
   <div class="projects">
 {% include card-courtrules.html %}
 {% include card-arda.html %}
+{% include card-phishguard.html %}
 {% include card-soc-triage.html %}
-{% include card-sentinel.html %}
   </div>
 </section>
-
-{%- if site.data.activity %}
-<section class="section" id="activity" aria-labelledby="activity-title">
-  <div class="section__head">
-    <h2 class="section__title" id="activity-title">Last week on GitHub</h2>
-    <a class="text-link" href="{{ '/log/' | relative_url }}">Full log</a>
-  </div>
-  <p class="activity__range">{{ site.data.activity.week_start | date: "%b %-d" }} to {{ site.data.activity.week_end | date: "%b %-d, %Y" }}</p>
-{% include activity-week.html week=site.data.activity %}
-</section>
-{%- endif %}
 
 <section class="section" aria-labelledby="exp-title">
   <div class="section__head">
@@ -93,12 +83,14 @@ availability: "Graduating Dec 2026, B.S. Computer Science. Open to full-time AI/
 </section>
 
 <section class="contact" aria-labelledby="contact-title">
-  <h2 class="contact__title" id="contact-title">Hiring for an AI/ML or backend role?</h2>
+  <h2 class="contact__title" id="contact-title">Hiring a Forward Deployed Engineer?</h2>
   <p class="contact__body">I'm available full-time from January 2027, based in Montclair, CA, and open to remote work or relocation. Email reaches me fastest.</p>
   <div class="btn-row">
     <a class="btn btn--primary" href="mailto:{{ site.email }}?subject=Opportunity%20for%20Solomon%20Smith">Email me</a>
     <a class="btn" href="{{ '/assets/resume/SolomonSmithResume.pdf' | relative_url }}">Download resume</a>
+    <a class="btn" href="https://github.com/{{ site.github_username }}" rel="noopener">GitHub</a>
     <a class="btn" href="https://linkedin.com/in/{{ site.linkedin_username }}" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://courtrules.app" rel="noopener">CourtRules</a>
   </div>
   <p class="contact__email">{{ site.email }}</p>
 </section>

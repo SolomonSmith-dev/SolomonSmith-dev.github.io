@@ -13,7 +13,8 @@ layout: page
   {%- if page.stack %}<ul class="stack" aria-label="Stack">{% for s in page.stack %}<li>{{ s }}</li>{% endfor %}</ul>{% endif %}
 </div>
 
-{%- if page.image %}
+{%- comment %} page.image is a string only when the project sets its own screenshot; the site-wide og:image default is a hash. {% endcomment %}
+{%- if page.image and page.image.path == nil %}
 <figure class="project-figure">
   <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}" width="{{ page.image_width }}" height="{{ page.image_height }}" loading="lazy" decoding="async">
   {%- if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}

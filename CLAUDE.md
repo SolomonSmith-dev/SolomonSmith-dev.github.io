@@ -40,7 +40,7 @@ Not imported anywhere. Do not edit.
 ### Layout inheritance chain
 All layouts extend `default.html`:
 - `default.html`: HTML shell, sticky header (Work / About / Resume / Writing + theme toggle + Contact), footer, JSON-LD.
-- `home.html`: hero (name + title "AI/Backend Engineer", the one-line thesis as the display heading, CTAs, availability line, headshot). Front matter `hero_lede` and `availability` in `index.md` feed it.
+- `home.html`: hero (name, "Forward Deployed Engineer" as the display heading, subheadline, CTAs: Email, Resume, GitHub, LinkedIn, location line, headshot). Front matter `hero_sub`, `hero_lede` and `availability` in `index.md` feed it.
 - `page.html`: `.intro` (optional `eyebrow`, `heading` overrides `title` for the H1, `lede`) + `.prose`. `wide: true` lets components span the container.
 - `project.html`: extends `page.html` for the `_projects/` collection. Front matter: `heading` (hero line), `lede` (what it does), `status`, `live`, `stack`, `links`, optional `image` fields. Body sections: What it does, Why it is hard, Evidence (a table with `{: .evidence}` whose rows pair each number with the command or file that reproduces it).
 - `post.html`: date, title, description, prose, back link.
@@ -58,7 +58,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 **Accessibility**: global `:focus-visible` ring, skip link, `aria-current` nav, reduced-motion kills the single hero fade-in.
 
 ## File Map
-- `index.md`: metrics strip (CourtRules 1,653 judges, ARDA 577 tests, PhishGuard AUC 0.9943), Selected work (CourtRules, ARDA, SOC Triage AI, Sentinel), Last week on GitHub, Experience timeline, Skills, Background split, Contact band.
+- `index.md`: metrics strip (CourtRules 1,653 judges, ARDA 577 tests, PhishGuard AUC 0.9943), Selected work (CourtRules, ARDA, PhishGuard, SOC Triage AI), Experience timeline, Skills, Background split, Contact band. The weekly GitHub feed lives on `/log/` only (removed from home 2026-11-12).
 - `about.md`: positioning bio, How I work, Before engineering, What I am looking for, Education. Experience lives on the resume only.
 - `projects.md`: seven cards in order: CourtRules, ARDA, SOC Triage AI, Sentinel, PhishGuard, agentic-engineering-os, DocMind. Each card title links to its `/projects/<slug>/` page. claude-agents, adversarial-search-csp (removed 2026-10-03) and the Sauron Stack card (folded into ARDA 2026-11-03) are gone; do not re-add.
 - `_projects/<slug>.md`: one page per project at `/projects/<slug>/`, 150 to 300 words, numbers only from that repo's README (CourtRules: the resume). Screenshots live in `assets/img/projects/` and are copied only from images the README already references.
@@ -67,7 +67,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 - `_posts/`: blog posts (Solomon writes these himself -- do not generate unless asked).
 - `404.html`: "Off the menu." 404.
 - `log.md` (`/log/`): weekly activity log, newest first, from `_data/activity_log.json` plus Solomon's notes in `_data/log_notes.yml` (keyed by the week's Monday).
-- `_includes/activity-week.html`: renders one week; used by the home "Last week on GitHub" section and `/log/`.
+- `_includes/activity-week.html`: renders one week; used by `/log/`.
 - `activity.json` (`/activity.json`): the latest week, published for the profile README workflow.
 - `assets/resume/SolomonSmithResume.pdf`: current downloadable resume.
 

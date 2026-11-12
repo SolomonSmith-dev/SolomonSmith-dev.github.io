@@ -1,6 +1,6 @@
 # Solomon Smith
 
-> AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. CS senior at CSU San Bernardino. Founding Engineer at Recursa AI / CourtRules (Jul 2026 to present). Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027.
+> Forward Deployed Engineer for ML and AI systems. Founding Engineer at Recursa AI / CourtRules (Jul 2026 to present), building grounded, fail-closed legal AI. CS senior at CSU San Bernardino, graduating December 2026. Available January 2027. Based in Montclair, CA, open to relocation or remote.
 
 - Site: https://solomonsmith.dev
 - Email: solomonsmithdev@gmail.com

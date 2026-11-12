@@ -1,5 +1,5 @@
 title: "Solomon Smith"
-description: "Solomon Smith, AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. Graduating December 2026. Open to full-time AI/ML and backend engineering roles starting January 2027."
+description: "Solomon Smith, Forward Deployed Engineer for ML and AI systems. Founding Engineer at Recursa AI / CourtRules, building grounded, fail-closed legal AI. Graduating December 2026, B.S. Computer Science, CSU San Bernardino. Available January 2027. Based in Montclair, CA, open to relocation or remote."
 url: "https://solomonsmith.dev"
 baseurl: ""
 lang: en
@@ -11,7 +11,7 @@ author:
 email: "solomonsmithdev@gmail.com"
 github_username: "SolomonSmith-dev"
 linkedin_username: "solomonsmithdev"
-bio: "AI/Backend Engineer. I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Founding Engineer at Recursa AI / CourtRules. Open to full-time AI/ML and backend engineering roles starting January 2027."
+bio: "Forward Deployed Engineer for ML and AI systems. Founding Engineer at Recursa AI / CourtRules, building grounded, fail-closed legal AI. Ten years leading professional kitchens before Computer Science. Available January 2027."
 
 # Build settings
 theme: minima
@@ -59,7 +59,7 @@ defaults:
     values:
       image:
         path: /assets/images/og-default.png
-        alt: "Solomon Smith. AI/Backend Engineer. Open to full-time roles from January 2027."
+        alt: "Solomon Smith. Forward Deployed Engineer. Available January 2027."
   - scope:
       path: ""
       type: posts

@@ -376,6 +376,13 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 }
 .hero__title em { font-style: italic; color: var(--accent); }
 
+.hero__sub {
+  margin-top: var(--space-3);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--text-2);
+}
+
 .hero__lede {
   max-width: var(--measure);
   margin-top: var(--space-3);
