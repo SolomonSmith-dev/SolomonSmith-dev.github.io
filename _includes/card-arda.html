@@ -7,11 +7,11 @@
   <dl class="project__facts">
     <div class="project__fact">
       <dt>Built</dt>
-      <dd>LangGraph orchestrator on native Anthropic tool_use, a Redis-backed shell executor, LlamaIndex RAG, and an MCP server: 7 agents behind 17 HTTP routes and 4 MCP tools.</dd>
+      <dd>LangGraph orchestrator on native Anthropic tool_use, a Redis-backed shell executor, LlamaIndex RAG, and an MCP server: 7 agents behind 20 HTTP routes and 4 MCP tools.</dd>
     </div>
     <div class="project__fact">
       <dt>Tested</dt>
-      <dd>577 of 582 tests pass with no API keys or network in 29 seconds (5 skips need a real key). CI runs ruff, mypy, pytest, and the mock evals twice, failing on drift from the committed baseline.</dd>
+      <dd>The whole test suite runs with no API keys or network, using deterministic mock LLM and embedder doubles. CI runs ruff, mypy, pytest, the mock evals and a README-results check on every PR, failing on drift from the committed baseline.</dd>
     </div>
     <div class="project__fact">
       <dt>Measured</dt>

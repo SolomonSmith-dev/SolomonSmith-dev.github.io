@@ -12,7 +12,7 @@ lede: "Forward Deployed Engineer and Computer Science senior at Cal State San Be
 
 I build LLM-backed features for products where a confident wrong answer costs more than no answer, and I write the tests that prove they refuse correctly. Getting a model to answer is the easy part. The work I care about is proving the answer is grounded, refusing when it is not, and keeping the service running after the demo.
 
-I'm a founding engineer at Recursa AI / CourtRules, the second engineer on a two-person team. I shipped the judge assistant, a retrieval-grounded Q&A feature that renders a claim only when its quoted sentence appears verbatim in the filed court order. Its tests caught a bypass, an invented quote passing on a plausible source index, before release. My own projects follow the same pattern: SOC Triage AI refuses out-of-scope alerts, ARDA's 577 passing tests run with no API keys or network, and PhishGuard documents the dataset leakage I found and fixed.
+I'm a founding engineer at Recursa AI / CourtRules, the second engineer on a two-person team. I shipped the judge assistant, a retrieval-grounded Q&A feature that renders a claim only when its quoted sentence appears verbatim in the filed court order. Its tests caught a bypass, an invented quote passing on a plausible source index, before release. My own projects follow the same pattern: SOC Triage AI refuses out-of-scope alerts, ARDA's test suite runs with no API keys or network, and PhishGuard documents the dataset leakage I found and fixed.
 
 ## How I work
 

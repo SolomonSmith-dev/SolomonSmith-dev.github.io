@@ -74,8 +74,8 @@ lede: "AI/Backend Engineer. LLM-backed features for products where a confident w
     <p class="entry__title"><a href="https://github.com/SolomonSmith-dev/arda">ARDA, multi-agent service</a> <span class="entry__org">&middot; LangGraph, LlamaIndex, Redis, MCP</span></p>
   </div>
   <ul>
-    <li>Built a LangGraph orchestrator on native Anthropic tool_use with a Redis-backed executor, LlamaIndex RAG, and an MCP server behind 17 documented FastAPI routes.</li>
-    <li>Designed a mock LLM and embedder layer so the 577-test suite runs offline in under 15 seconds; runs 24/7 on a self-hosted Debian server.</li>
+    <li>Built a LangGraph orchestrator on native Anthropic tool_use with a Redis-backed executor, LlamaIndex RAG, and an MCP server behind 20 documented FastAPI routes.</li>
+    <li>Designed a mock LLM and embedder layer so the test suite runs fully offline with no API keys; runs 24/7 on a self-hosted Debian server.</li>
   </ul>
 </div>
 
