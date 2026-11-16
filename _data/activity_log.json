@@ -1,5 +1,72 @@
 [
   {
+    "week_start": "2026-11-09",
+    "week_end": "2026-11-15",
+    "repos": [
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 6,
+        "commit_messages": [
+          "feat(portfolio): add FRCP 6(a) fail-closed quote verifier demo and polish recruiter surface",
+          "feat(courtrules): add interactive FRCP 6(a) fail-closed quote verifier demo",
+          "PhishGuard: ONNX Runtime is the production serving path",
+          "Reposition site as Forward Deployed Engineer"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "solomon-loop",
+        "url": "https://github.com/SolomonSmith-dev/solomon-loop",
+        "new": false,
+        "commits": 3,
+        "commit_messages": [
+          "fix(validate): rename CLAUDE.md to AGENTS.md so strict validate passes"
+        ],
+        "prs": [
+          {
+            "number": 4,
+            "title": "fix(validate): rename CLAUDE.md to AGENTS.md so strict validate passes",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/4"
+          },
+          {
+            "number": 5,
+            "title": "Solomon Loop 1.0.4: one cross-run lessons file, trimmed skill, no private names",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/5"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "phishguard",
+        "url": "https://github.com/SolomonSmith-dev/phishguard",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [
+          "readme: CI row now reflects passing runs on main, not 'first run pending push'"
+        ],
+        "prs": [
+          {
+            "number": 21,
+            "title": "readme: CI row reflects passing main",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/21"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": null,
+    "totals": {
+      "repos": 3,
+      "commits": 11,
+      "prs": 3,
+      "releases": 0,
+      "new_repos": 0
+    }
+  },
+  {
     "week_start": "2026-11-02",
     "week_end": "2026-11-08",
     "repos": [
