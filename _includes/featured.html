@@ -6,7 +6,7 @@
   </div>
 
   <p class="section__intro">Each number is paired with the command or source that reproduces it. If a number changes, the row changes with it.</p>
-  <div class="featured" role="region" aria-labelledby="featured-title" tabindex="0">
+  <div class="featured" role="region" aria-label="Featured numbers table" tabindex="0">
     <table class="featured__table" role="table">
       <caption class="visually-hidden">Featured project numbers and how each one is verified</caption>
       <thead role="rowgroup">
@@ -20,10 +20,10 @@
       <tbody role="rowgroup">
 {% for p in featured %}
         <tr role="row">
-          <th scope="row" role="rowheader">{% if p.url != "" %}<a href="{{ p.url | relative_url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</th>
-          <td class="featured__value" role="cell">{{ p.value }}</td>
-          <td role="cell">{{ p.label }}</td>
-          <td role="cell">{% if p.kind == "derived" and p.public_source != "" %}<code>{{ p.rederive }}</code> <a href="{{ p.public_source }}" rel="noopener">Source</a>{% else %}{{ p.evidence }}{% endif %}</td>
+          <th scope="row" role="rowheader">{% if p.url != "" %}<a href="{{ p.url | relative_url | escape }}">{{ p.name | escape }}</a>{% else %}{{ p.name | escape }}{% endif %}</th>
+          <td class="featured__value" role="cell">{{ p.value | escape }}</td>
+          <td role="cell">{{ p.label | escape }}</td>
+          <td role="cell"><span class="featured__cell-label" aria-hidden="true">How it is verified</span>{% if p.kind == "derived" and p.public_source != "" %}<code>{{ p.rederive | escape }}</code> <a href="{{ p.public_source | escape }}" rel="noopener">Source</a>{% else %}{{ p.evidence | escape }}{% endif %}</td>
         </tr>
 {% endfor %}
       </tbody>

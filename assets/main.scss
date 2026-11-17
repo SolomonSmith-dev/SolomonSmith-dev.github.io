@@ -621,6 +621,8 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
   white-space: normal;
   overflow-wrap: anywhere;
 }
+/* Shown only in the stacked phone layout, where the column headers are hidden. */
+.featured__cell-label { display: none; }
 /* Phone: each row stacks into a block so the command stays on screen.
    Explicit table roles in featured.html keep the table semantics. */
 @media (max-width: 600px) {
@@ -634,6 +636,7 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
   }
   .featured__table tr { padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
   .featured__table tbody th, .featured__table td { padding: 0.15rem 0; border-bottom: 0; white-space: normal; }
+  .featured__cell-label { display: block; color: var(--text-3); font-weight: 500; }
 }
 
 @media (max-width: 600px) {
