@@ -51,7 +51,7 @@
       "ref": "recursive-harness",
       "rederive": "git grep -hE '^[[:space:]]*def test_' \"$CLAIM_REF\" -- 'tests/test_harness_*.py' | wc -l | tr -d ' '",
       "public_source": "",
-      "evidence": ""
+      "evidence": "Private repo, not yet published. The count comes from the committed test files."
     }
   ]
 }

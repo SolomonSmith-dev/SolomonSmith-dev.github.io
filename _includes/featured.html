@@ -23,7 +23,7 @@
           <th scope="row" role="rowheader">{% if p.url != "" %}<a href="{{ p.url | relative_url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</th>
           <td class="featured__value" role="cell">{{ p.value }}</td>
           <td role="cell">{{ p.label }}</td>
-          <td role="cell">{% if p.kind == "derived" %}<code>{{ p.rederive }}</code> {% if p.public_source != "" %}<a href="{{ p.public_source }}" rel="noopener">Source</a>{% else %}<span>(private repo)</span>{% endif %}{% else %}{{ p.evidence }}{% endif %}</td>
+          <td role="cell">{% if p.kind == "derived" and p.public_source != "" %}<code>{{ p.rederive }}</code> <a href="{{ p.public_source }}" rel="noopener">Source</a>{% else %}{{ p.evidence }}{% endif %}</td>
         </tr>
 {% endfor %}
       </tbody>

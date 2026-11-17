@@ -62,6 +62,9 @@ def validate(data):
                 raise DataError("%s is derived but has no command" % r["id"])
             if not r["repo"] or not r["ref"]:
                 raise DataError("%s is derived but has no repo or ref" % r["id"])
+            if not r["public_source"] and not r["evidence"]:
+                # A private repo shows the evidence sentence instead of the command.
+                raise DataError("%s has no public source and no evidence" % r["id"])
     return data["projects"]
 
 

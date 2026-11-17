@@ -43,7 +43,7 @@ def row(**over):
         "id": "demo.count", "name": "Demo", "url": "", "value": "3",
         "label": "things", "kind": "derived", "repo": "demo", "ref": "main",
         "rederive": 'git show "$CLAIM_REF":data.txt | wc -l | tr -d " "',
-        "public_source": "", "evidence": "",
+        "public_source": "https://example.test/demo", "evidence": "",
     }
     base.update(over)
     return base
@@ -174,6 +174,14 @@ class MalformedTests(CheckFeaturedBase):
 
     def test_derived_without_command_exit_2(self):
         self.assertEqual(self.run_check([row(rederive="")])[0], 2)
+
+    def test_private_derived_without_evidence_exit_2(self):
+        # No public source means the page shows the evidence sentence, so it must exist.
+        self.assertEqual(self.run_check([row(public_source="")])[0], 2)
+
+    def test_private_derived_with_evidence_is_checked(self):
+        ok = row(public_source="", evidence="Private repo, not yet published.")
+        self.assertEqual(self.run_check([ok])[0], 0)
 
     def test_projects_not_a_list_exit_2(self):
         raw = json.dumps({"version": 1, "projects": {}})
