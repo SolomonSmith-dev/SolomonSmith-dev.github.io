@@ -72,7 +72,7 @@ Replaced the Matrix terminal theme. No terminal motifs, no rain, no katakana, no
 - `assets/resume/SolomonSmithResume.pdf`: current downloadable resume.
 
 ## Key Content Rules
-- **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, `--`, or rewrite.
+- **No em dashes anywhere** -- in frontmatter, body copy, descriptions, or commit messages. Use a colon, a period, or rewrite. Do not use `--` as a substitute.
 - No emojis on the rendered site unless explicitly requested.
 - Target language: "Graduating December 2026. Open to full-time Forward Deployed Engineer and AI/ML engineering roles starting January 2027." No internship language.
 - **No GPA and no Dean's List anywhere on the site.** Do not add either back without Solomon's explicit confirmation.
