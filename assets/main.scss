@@ -621,8 +621,19 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
   white-space: normal;
   overflow-wrap: anywhere;
 }
+/* Phone: each row stacks into a block so the command stays on screen.
+   Explicit table roles in featured.html keep the table semantics. */
 @media (max-width: 600px) {
-  .featured__table td:nth-child(4) { min-width: 14rem; }
+  .featured__table, .featured__table tbody, .featured__table tr,
+  .featured__table tbody th, .featured__table td { display: block; }
+  .featured__table thead {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .featured__table tr { padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+  .featured__table tbody th, .featured__table td { padding: 0.15rem 0; border-bottom: 0; white-space: normal; }
 }
 
 @media (max-width: 600px) {
