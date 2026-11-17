@@ -127,14 +127,16 @@ def render_entry(e: dict, kind: str) -> str:
         title = esc(head[0])
         org = esc(head[1]) if len(head) > 1 else ""
         meta = " &middot; ".join(esc(h) for h in head[2:])
-        out.append(f'    <p class="entry__title">{title}{f" <span class=\"entry__org\">&middot; {org}</span>" if org else ""}</p>')
+        org_span = f' <span class="entry__org">&middot; {org}</span>' if org else ""
+        out.append(f'    <p class="entry__title">{title}{org_span}</p>')
         if meta:
             out.append(f'    <p class="entry__meta">{meta}</p>')
     elif kind == "EDUCATION":
         org = esc(head[0])
         degree = esc(head[1]) if len(head) > 1 else ""
         meta = " &middot; ".join(esc(h) for h in head[2:])
-        out.append(f'    <p class="entry__title">{degree or org}{f" <span class=\"entry__org\">&middot; {org}</span>" if degree else ""}</p>')
+        org_span = f' <span class="entry__org">&middot; {org}</span>' if degree else ""
+        out.append(f'    <p class="entry__title">{degree or org}{org_span}</p>')
         if meta:
             out.append(f'    <p class="entry__meta">{meta}</p>')
     else:  # PROJECTS, OPEN SOURCE and anything else: title [| detail] [| link]
