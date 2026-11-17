@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "courtrules.judges",
+      "name": "CourtRules",
+      "url": "/projects/courtrules/",
+      "value": "1,653",
+      "label": "judges whose filing rules CourtRules covers",
+      "kind": "manual",
+      "repo": "",
+      "ref": "",
+      "rederive": "",
+      "public_source": "",
+      "evidence": "Production coverage data from a private client repository, so no public command reproduces it."
+    },
+    {
+      "id": "arda.http_routes_registered",
+      "name": "ARDA",
+      "url": "/projects/arda/",
+      "value": "20",
+      "label": "HTTP routes registered in the API: 17 documented plus 3 demo",
+      "kind": "derived",
+      "repo": "arda",
+      "ref": "origin/main",
+      "rederive": "git grep -hE '^@router\\.(get|post|put|patch|delete)\\(' \"$CLAIM_REF\" -- api | wc -l | tr -d ' '",
+      "public_source": "https://github.com/SolomonSmith-dev/arda",
+      "evidence": ""
+    },
+    {
+      "id": "phishguard.test_auc",
+      "name": "PhishGuard",
+      "url": "/projects/phishguard/",
+      "value": "0.9943",
+      "label": "test AUC of the v0.2 URL model",
+      "kind": "derived",
+      "repo": "phishguard",
+      "ref": "origin/main",
+      "rederive": "git show \"$CLAIM_REF\":reports/url_baseline_v0_2.txt | grep -E '^test +AUC=' | sed -E 's/^test +AUC=([0-9.]+).*/\\1/'",
+      "public_source": "https://github.com/SolomonSmith-dev/phishguard",
+      "evidence": ""
+    },
+    {
+      "id": "recursive_harness.unit_tests",
+      "name": "Recursive harness",
+      "url": "",
+      "value": "19",
+      "label": "unit test functions committed for the harness (a count, not a pass rate)",
+      "kind": "derived",
+      "repo": "_playground/deployable-factory",
+      "ref": "recursive-harness",
+      "rederive": "git grep -hE '^[[:space:]]*def test_' \"$CLAIM_REF\" -- 'tests/test_harness_*.py' | wc -l | tr -d ' '",
+      "public_source": "",
+      "evidence": "Private repo, not yet published. The count comes from the committed test files."
+    }
+  ]
+}
