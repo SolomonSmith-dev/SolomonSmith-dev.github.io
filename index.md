@@ -28,6 +28,7 @@ availability: "Based in Montclair, CA. Open to relocation or remote."
 {% include card-soc-triage.html %}
   </div>
 </section>
+{% include featured.html %}
 
 <section class="section" aria-labelledby="exp-title">
   <div class="section__head">

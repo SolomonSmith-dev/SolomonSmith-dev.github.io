@@ -44,6 +44,18 @@ Open `http://localhost:4000`.
 └── CNAME            # Custom domain
 ```
 
+## Featured numbers
+
+The "Numbers you can re-run" section on the home page is rendered from `_data/featured.json` by `_includes/featured.html` (one include line in `index.md`). Each row holds a value and, for `derived` rows, a read-only `rederive` command that prints it from a committed ref in a source repo under `~/Projects`. `manual` rows (private data) carry an `evidence` sentence instead.
+
+```bash
+python3 scripts/check_featured.py          # exit 0 verified/manual, 1 drift/error, 2 bad data file
+python3 scripts/check_featured.py --json   # same result as JSON
+python3 -m unittest discover -s tests -v   # includes tests/test_check_featured.py
+```
+
+A number changes only by changing its row and rerunning the check until it reports `verified`. The data file is trusted input: its commands run in a shell.
+
 ## Contributing
 
 Personal site. Issues are welcome (typo fixes, accessibility regressions, broken links). PRs are not.

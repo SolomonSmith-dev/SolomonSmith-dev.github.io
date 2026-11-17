@@ -600,6 +600,31 @@ main.shell { flex: 1 0 auto; padding-bottom: var(--space-12); }
 .evidence td:first-child { min-width: 9rem; }
 .evidence td code { white-space: normal; }
 
+/* Featured numbers (home, _includes/featured.html) */
+.featured { overflow-x: auto; }
+.featured__table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.featured__table th, .featured__table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.featured__table thead th { color: var(--text-3); font-weight: 500; }
+.featured__table tbody th { font-weight: 600; white-space: nowrap; }
+.featured__value { font-family: var(--font-display); font-size: var(--text-lg); white-space: nowrap; }
+.featured__table td code {
+  padding: 0.1em 0.35em;
+  background: var(--surface-2);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .featured__table td:nth-child(4) { min-width: 14rem; }
+}
+
 @media (max-width: 600px) {
   .project { padding: var(--space-3) var(--space-2); }
   .project__fact { grid-template-columns: 1fr; gap: var(--space-1); }

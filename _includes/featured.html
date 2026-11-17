@@ -1,0 +1,33 @@
+{% assign featured = site.data.featured.projects %}
+{% if featured and featured.size > 0 %}
+<section class="section" id="featured" aria-labelledby="featured-title">
+  <div class="section__head">
+    <h2 class="section__title" id="featured-title">Numbers you can re-run</h2>
+  </div>
+
+  <p class="section__intro">Each number is paired with the command or source that reproduces it. If a number changes, the row changes with it.</p>
+  <div class="featured" role="region" aria-labelledby="featured-title" tabindex="0">
+    <table class="featured__table">
+      <caption class="visually-hidden">Featured project numbers and how each one is verified</caption>
+      <thead>
+        <tr>
+          <th scope="col">Project</th>
+          <th scope="col">Number</th>
+          <th scope="col">What it measures</th>
+          <th scope="col">How it is verified</th>
+        </tr>
+      </thead>
+      <tbody>
+{% for p in featured %}
+        <tr>
+          <th scope="row">{% if p.url != "" %}<a href="{{ p.url | relative_url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</th>
+          <td class="featured__value">{{ p.value }}</td>
+          <td>{{ p.label }}</td>
+          <td>{% if p.kind == "derived" %}<code>{{ p.rederive }}</code> {% if p.public_source != "" %}<a href="{{ p.public_source }}" rel="noopener">Source</a>{% else %}<span>(private repo)</span>{% endif %}{% else %}{{ p.evidence }}{% endif %}</td>
+        </tr>
+{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
