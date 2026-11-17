@@ -6,7 +6,7 @@
       "name": "CourtRules",
       "url": "/projects/courtrules/",
       "value": "1,653",
-      "label": "federal and state judges covered",
+      "label": "judges whose filing rules CourtRules covers",
       "kind": "manual",
       "repo": "",
       "ref": "",
@@ -15,11 +15,11 @@
       "evidence": "Production coverage data from a private client repository, so no public command reproduces it."
     },
     {
-      "id": "arda.http_routes",
+      "id": "arda.http_routes_registered",
       "name": "ARDA",
       "url": "/projects/arda/",
       "value": "20",
-      "label": "HTTP routes declared in the API",
+      "label": "HTTP routes registered in the API: 17 documented plus 3 demo",
       "kind": "derived",
       "repo": "arda",
       "ref": "origin/main",
