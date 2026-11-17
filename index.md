@@ -10,7 +10,7 @@ availability: "Based in Montclair, CA. Open to relocation or remote."
 
 <ul class="metrics" aria-label="Selected results">
   <li class="metric"><span class="metric__context">CourtRules</span><span class="metric__value">1,653 judges</span><span class="metric__label">covered by CourtRules, where my fail-closed citation verifier gates every answer on judge pages</span></li>
-  <li class="metric"><span class="metric__context">ARDA</span><span class="metric__value">577</span><span class="metric__label">ARDA tests that pass offline, with no API keys or network</span></li>
+  <li class="metric"><span class="metric__context">ARDA</span><span class="metric__value">608</span><span class="metric__label">ARDA tests that pass offline, with no API keys or network</span></li>
   <li class="metric"><span class="metric__context">PhishGuard</span><span class="metric__value">0.9943</span><span class="metric__label">test AUC on the PhishGuard URL classifier, 1.54% false positives on Tranco top-5,000</span></li>
 </ul>
 
