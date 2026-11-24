@@ -1,5 +1,254 @@
 [
   {
+    "week_start": "2026-11-16",
+    "week_end": "2026-11-22",
+    "repos": [
+      {
+        "name": "phishguard",
+        "url": "https://github.com/SolomonSmith-dev/phishguard",
+        "new": false,
+        "commits": 9,
+        "commit_messages": [
+          "README: live URL, deploy commands, corrected counts",
+          "deploy: pin numpy 2.3.5 for the home server CPU",
+          "deploy: home server behind the Cloudflare tunnel (HF Docker Spaces need PRO)",
+          "prediction log: persist a host only if it is a plain hostname or IP",
+          "prediction log: public mode stores scheme://host only"
+        ],
+        "prs": [
+          {
+            "number": 27,
+            "title": "Public deploy: home server + Cloudflare tunnel, demo page, live smoke test",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/27"
+          },
+          {
+            "number": 30,
+            "title": "ci: pin GITHUB_TOKEN to contents: read",
+            "url": "https://github.com/SolomonSmith-dev/phishguard/pull/30"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "soc-triage-ai",
+        "url": "https://github.com/SolomonSmith-dev/soc-triage-ai",
+        "new": false,
+        "commits": 8,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 22,
+            "title": "Require API key on /triage and /cases routes",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/22"
+          },
+          {
+            "number": 23,
+            "title": "Public demo: cached mode replays harness recordings (no key, no spend)",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/23"
+          },
+          {
+            "number": 25,
+            "title": "Demo: review fixes before the Space deploy",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/25"
+          },
+          {
+            "number": 26,
+            "title": "Space: Gradio page on ZeroGPU, the free hosting tier",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/26"
+          },
+          {
+            "number": 27,
+            "title": "Space: send ZeroGPU's startup report under spaces 0.51.3",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/27"
+          },
+          {
+            "number": 28,
+            "title": "Space: close queue exhaustion, quiet the logs, refuse files; link the live demo",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/28"
+          },
+          {
+            "number": 31,
+            "title": "ci: pin GITHUB_TOKEN to contents: read",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/31"
+          },
+          {
+            "number": 32,
+            "title": "ci: fail if retrieval_results.json is missing and add ci-gate",
+            "url": "https://github.com/SolomonSmith-dev/soc-triage-ai/pull/32"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "arda",
+        "url": "https://github.com/SolomonSmith-dev/arda",
+        "new": false,
+        "commits": 4,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 134,
+            "title": "Public demo scripts, plus keyless CI access to the Claude API",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/134"
+          },
+          {
+            "number": 135,
+            "title": "ci: pause the paid AI code review (Anthropic API spend off)",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/135"
+          },
+          {
+            "number": 138,
+            "title": "ci: pin GITHUB_TOKEN to contents: read",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/138"
+          },
+          {
+            "number": 139,
+            "title": "ci: SHA-pin checkout and setup-uv",
+            "url": "https://github.com/SolomonSmith-dev/arda/pull/139"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "codenav",
+        "url": "https://github.com/SolomonSmith-dev/codenav",
+        "new": true,
+        "commits": 4,
+        "commit_messages": [
+          "fix: bind local container to loopback only",
+          "chore: add agent rules, readme, license and docker setup",
+          "chore: add ruff and pre-commit config",
+          "chore: ignore local data and secrets"
+        ],
+        "prs": [],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev.github.io",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io",
+        "new": false,
+        "commits": 4,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 15,
+            "title": "CLAUDE.md: Graphify paragraph becomes a generated block",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/15"
+          },
+          {
+            "number": 17,
+            "title": "Featured numbers section with a drift check",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/17"
+          },
+          {
+            "number": 18,
+            "title": "Resume page: ARDA suite time matches the README record",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/18"
+          },
+          {
+            "number": 20,
+            "title": "fix(resume_md): 3.9-safe f-strings (incident 112)",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev.github.io/pull/20"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "agentic-engineering-os",
+        "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 59,
+            "title": "ci: drop macOS from the test matrix",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/59"
+          },
+          {
+            "number": 60,
+            "title": "ci: pin Linux runner to ubuntu-24.04 (incident 117)",
+            "url": "https://github.com/SolomonSmith-dev/agentic-engineering-os/pull/60"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "sentinel",
+        "url": "https://github.com/SolomonSmith-dev/sentinel",
+        "new": false,
+        "commits": 2,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 25,
+            "title": "ci: pin GITHUB_TOKEN to contents: read",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/25"
+          },
+          {
+            "number": 26,
+            "title": "ci: fail on missing manifests and add ci-gate",
+            "url": "https://github.com/SolomonSmith-dev/sentinel/pull/26"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "DocMind",
+        "url": "https://github.com/SolomonSmith-dev/DocMind",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 39,
+            "title": "Require auth and owner scope on GET /api/documents; refuse boot with default secrets",
+            "url": "https://github.com/SolomonSmith-dev/DocMind/pull/39"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "solomon-loop",
+        "url": "https://github.com/SolomonSmith-dev/solomon-loop",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 7,
+            "title": "ci: SHA-pin actions and pin claude-code",
+            "url": "https://github.com/SolomonSmith-dev/solomon-loop/pull/7"
+          }
+        ],
+        "releases": []
+      },
+      {
+        "name": "SolomonSmith-dev",
+        "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev",
+        "new": false,
+        "commits": 1,
+        "commit_messages": [],
+        "prs": [
+          {
+            "number": 5,
+            "title": "README: state Forward Deployed Engineer and AI engineer goal",
+            "url": "https://github.com/SolomonSmith-dev/SolomonSmith-dev/pull/5"
+          }
+        ],
+        "releases": []
+      }
+    ],
+    "private": null,
+    "totals": {
+      "repos": 10,
+      "commits": 36,
+      "prs": 25,
+      "releases": 0,
+      "new_repos": 1
+    }
+  },
+  {
     "week_start": "2026-11-09",
     "week_end": "2026-11-15",
     "repos": [
