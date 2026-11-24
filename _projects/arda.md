@@ -3,7 +3,7 @@ title: "ARDA"
 eyebrow: "Project &middot; ARDA"
 heading: "A Claude orchestrator in front of a shell, with numbers on where the routing fails."
 lede: "A multi-agent service on one FastAPI surface: a LangGraph orchestrator on native Anthropic tool_use, a Redis-backed shell executor, LlamaIndex retrieval and an MCP server. The whole test suite runs with no API key."
-description: "ARDA by Solomon Smith: LangGraph multi-agent service on FastAPI with 577 offline tests, labelled prompt-injection evals and a demo mode that refuses shell execution structurally."
+description: "ARDA by Solomon Smith: LangGraph multi-agent service on FastAPI with 608 offline tests, labelled prompt-injection evals and a demo mode that refuses shell execution structurally."
 order: 2
 status: "Deployed"
 live: true
@@ -34,7 +34,7 @@ Every LLM has a deterministic mock, and a parity test introspects the installed 
 
 | Number | Reproduce with |
 |---|---|
-| 577 passed, 5 skipped, 582 collected, 29 s | `uv run pytest tests/ -q` from a clean clone, no network; the skips need a real `ANTHROPIC_API_KEY` |
+| 608 passed, 13 skipped, 621 collected, 21 s | `uv run pytest tests/ -q` from a clean clone, no network; 8 skips are the deploy-script harness, 4 need a real `ANTHROPIC_API_KEY`, 1 is an SDK-parity check |
 | 12 of 16 injections leak (mock) | `evals/results/2026-10-05-mock.json`; routing accuracy 75.9% (n=54), recall@5 81.6% |
 | 17 demo-mode safety tests | `tests/test_demo_mode.py`, including the OpenAPI sweep |
 | 7 agents, 17 routes, 4 MCP tools | `agents/`, `api/`, `mcp_server/server.py` |
